@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://tiffanywoo2016-alt.github.io/magnetic-track-lighting-website/sitemap.xml

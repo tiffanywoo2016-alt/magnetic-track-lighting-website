@@ -7,6 +7,26 @@
   <meta name="description" content="Professional supplier of magnetic track lighting systems. Complete B2B solutions including recessed/surface rails, LED modules, DALI/Tuya drivers for contractors and lighting projects." />
   <meta name="keywords" content="magnetic track lighting, magnetic track rail, LED track light modules, 48V magnetic track system, DALI track lighting, OEM lighting manufacturer" />
   
+  <!-- Open Graph / Social Sharing -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Magnetic Track Lighting System | One-Stop OEM/ODM Lighting Solution" />
+  <meta property="og:description" content="Professional supplier of magnetic track lighting systems. Complete B2B solutions including recessed/surface rails, LED modules, DALI/Tuya drivers for contractors and lighting projects." />
+  <meta property="og:url" content="https://tiffanywoo2016-alt.github.io/magnetic-track-lighting-website/" />
+  <meta property="og:site_name" content="MAGNETRACK Lighting" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Magnetic Track Lighting System | MAGNETRACK" />
+  <meta name="twitter:description" content="Complete B2B solutions — track rails, LED modules, drivers for contractors and lighting projects. OEM/ODM available." />
+  <link rel="canonical" href="https://tiffanywoo2016-alt.github.io/magnetic-track-lighting-website/" />
+
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-WXHSW5Y7V8"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-WXHSW5Y7V8');
+  </script>
+
   <!-- GEO/SEO Structured Data -->
   <script type="application/ld+json">
   {
@@ -114,7 +134,8 @@
       background: var(--dark);
     }
     .hero img {
-      position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover;
+      position: absolute; inset: 0; width: 100%; height: 100%; object-fit: contain;
+      background: var(--dark);
     }
     .hero::after {
       content: ""; position: absolute; inset: 0;
@@ -142,7 +163,7 @@
     .section-head p { color: #606060; font-size: 18px; line-height: 1.75; margin: 22px auto 0; }
     .grid-system { display: grid; grid-template-columns: 1.1fr .9fr; gap: 34px; align-items: stretch; }
     .img-panel { overflow: hidden; border-radius: 32px; background: #111; box-shadow: 0 25px 70px rgba(0,0,0,.22); }
-    .img-panel img { width: 100%; height: 100%; object-fit: cover; display: block; }
+    .img-panel img { width: 100%; height: 100%; object-fit: contain; display: block; background: #f5f3ef; }
     .system-img { min-height: 430px; }
     .card-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 18px; }
     .card {
@@ -214,13 +235,45 @@
     .solution-body h3 { font-size: 34px; margin: 22px 0 12px; letter-spacing: -.03em; }
     .solution-body p { color: rgba(255,255,255,.65); line-height: 1.75; }
     .solution-list { margin: 24px 0; display: grid; gap: 14px; color: rgba(255,255,255,.82); }
+
+    /* Contact Section */
+    .contact-section { background: white; padding: 96px 0; }
+    .contact-grid { display: grid; grid-template-columns: 1.2fr 0.8fr; gap: 44px; align-items: start; }
+    .contact-form { background: var(--bg); border-radius: 28px; padding: 34px; }
+    .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-bottom: 16px; }
+    .contact-form input, .contact-form select, .contact-form textarea {
+      width: 100%; padding: 14px 18px; border: 1px solid rgba(0,0,0,.08); border-radius: 14px;
+      font-size: 15px; font-family: inherit; background: white; color: var(--text);
+      transition: border .2s;
+    }
+    .contact-form input:focus, .contact-form select:focus, .contact-form textarea:focus {
+      outline: none; border-color: var(--gold); box-shadow: 0 0 0 3px rgba(176,138,87,.12);
+    }
+    .contact-form textarea { resize: vertical; margin-bottom: 16px; }
+    .submit-btn { width: 100%; }
+    .contact-info { display: grid; gap: 18px; }
+    .contact-card {
+      background: var(--bg); border-radius: 22px; padding: 24px; transition: all .22s ease;
+    }
+    .contact-card:hover { transform: translateY(-2px); box-shadow: 0 12px 30px rgba(0,0,0,.06); }
+    .contact-icon {
+      width: 44px; height: 44px; border-radius: 14px; background: var(--dark); color: var(--gold-light);
+      display: grid; place-items: center; font-size: 20px; margin-bottom: 14px;
+    }
+    .contact-card h3 { margin: 0 0 8px; font-size: 17px; }
+    .contact-card a { color: var(--gold); font-weight: 700; text-decoration: underline; }
+    .contact-card p { color: #666; font-size: 14px; line-height: 1.6; margin: 8px 0; }
+    .contact-card span { color: #666; font-size: 14px; }
+    .contact-card .btn { margin-top: 12px; display: inline-flex; }
+
     footer { background: #111; color: white; padding: 46px 0; }
     .footer-inner { display: flex; justify-content: space-between; gap: 26px; align-items: center; }
     .footer-links { display: flex; flex-wrap: wrap; gap: 18px; color: rgba(255,255,255,.6); font-size: 14px; }
     @media (max-width: 920px) {
       nav { display: none; }
-      .stats-grid, .grid-system, .installation-grid, .module-grid, .optics-grid, .applications, .oem-grid { grid-template-columns: 1fr; }
+      .stats-grid, .grid-system, .installation-grid, .module-grid, .optics-grid, .applications, .oem-grid, .contact-grid { grid-template-columns: 1fr; }
       .card-grid, .specs, .check-grid { grid-template-columns: 1fr; }
+      .form-row { grid-template-columns: 1fr; }
       .hero { min-height: 620px; }
       .footer-inner { flex-direction: column; align-items: flex-start; }
     }
@@ -243,13 +296,13 @@
         <a href="#applications">Applications</a>
         <a href="#oem">OEM/ODM</a>
       </nav>
-      <a class="btn btn-dark" href="#oem">Contact Us →</a>
+      <a class="btn btn-dark" href="#contact">Contact Us →</a>
     </div>
   </header>
 
   <main>
     <section class="hero">
-      <img alt="Professional magnetic track lighting solution" src="images/image_1.png" />
+      <img alt="48V magnetic track lighting system for B2B commercial projects" src="images/image_1.webp" />
       <div class="container hero-content">
         <div class="eyebrow">✦ One-Stop Magnetic Track Lighting Solution</div>
         <h1>Build complete lighting systems, not just fixtures.</h1>
@@ -278,7 +331,7 @@
           <p>For magnetic track lighting projects, the track, driver, connector, installation method and light module must be correctly matched.</p>
         </div>
         <div class="grid-system">
-          <div class="img-panel system-img"><img alt="Professional magnetic track lighting solution" src="images/image_2.png" /></div>
+          <div class="img-panel system-img"><img alt="Magnetic track rail and LED module system components overview" src="images/image_2.webp" /></div>
           <div class="card-grid">
             <div class="card"><div class="icon">▭</div><h3>Magnetic Track Rails</h3><p>Trimless recessed, recessed with trim, surface mounted and pendant mounted rails for different ceiling conditions.</p></div>
             <div class="card"><div class="icon">●</div><h3>Magnetic Light Modules</h3><p>Flood lights, grille lights, spotlights, linear lights, pendant modules and wall washer options.</p></div>
@@ -302,7 +355,7 @@
             <div class="install-item"><strong>Pendant Mounted</strong><span>Flexible open-space lighting for offices and showrooms.</span></div>
           </div>
         </div>
-        <div class="img-panel installation-img"><img alt="Professional magnetic track lighting solution" src="images/image_3.png" /></div>
+        <div class="img-panel installation-img"><img alt="Trimless recessed surface and pendant magnetic track installation methods" src="images/image_3.webp" /></div>
       </div>
     </section>
 
@@ -325,15 +378,15 @@
             <button class="module-btn" data-title="Sensor Module">Sensor Module <span>›</span></button>
           </div>
           <div class="module-card">
-            <div class="img-panel"><img alt="Professional magnetic track lighting solution" src="images/image_4.png" /></div>
+            <div class="img-panel"><img alt="LED magnetic track light modules grille flood spotlight linear" src="images/image_4.webp" /></div>
             <div class="selected">Selected Module</div>
             <h3 id="module-title">Magnetic Grille Light</h3>
             <p id="module-text">Low-glare linear lighting for offices, hotels and premium commercial interiors.</p>
             <div class="specs">
-              <div class="spec"><small>Spec</small><b>Power</b></div>
-              <div class="spec"><small>Spec</small><b>Beam Angle</b></div>
-              <div class="spec"><small>Spec</small><b>CCT</b></div>
-              <div class="spec"><small>Spec</small><b>CRI</b></div>
+              <div class="spec"><small>Power</small><b>12W</b></div>
+              <div class="spec"><small>Beam Angle</small><b>120°</b></div>
+              <div class="spec"><small>CCT</small><b>3000K-6000K</b></div>
+              <div class="spec"><small>CRI</small><b>Ra>90</b></div>
             </div>
           </div>
         </div>
@@ -348,7 +401,7 @@
           <p>Show beam angles, anti-glare design, wall washer effects and smart control options to build trust with lighting designers and contractors.</p>
         </div>
         <div class="optics-grid">
-          <div class="img-panel optics-img"><img alt="Professional magnetic track lighting solution" src="images/image_5.png" /></div>
+          <div class="img-panel optics-img"><img alt="Magnetic track lighting beam angle control and DALI smart dimming" src="images/image_5.webp" /></div>
           <div class="feature-stack">
             <div class="feature-card"><div class="icon">∠</div><h3>Precision Optical Control</h3><p>Choose from 15°, 24°, 36° and linear flood modules to create the exact lighting layer required.</p></div>
             <div class="feature-card"><div class="icon">🎚</div><h3>Smart Dimming Options</h3><p>Standard ON/OFF, DALI 2.0, 0-10V, Triac or Tuya Zigbee / Casambi wireless control.</p></div>
@@ -365,21 +418,21 @@
           <p>Instead of only listing product SKUs, guide buyers with recommended system combinations for offices, retail stores, hotels, villas and showrooms.</p>
         </div>
         <div class="applications">
-          <article class="app-card"><img alt="Professional magnetic track lighting solution" src="images/image_6.png" />
+          <article class="app-card"><img alt="Office lighting solution with magnetic track linear and grille modules" src="images/image_6.webp" />
           <div class="app-body">
             <h3>Office Lighting</h3>
             <div class="recommend">Recommended: Linear light + grille light + sensor module</div>
             <p>Low glare, flexible workstation layout, DALI optional.</p>
           </div>
         </article>
-        <article class="app-card"><img alt="Professional magnetic track lighting solution" src="images/image_7.png" />
+        <article class="app-card"><img alt="Retail store magnetic track spotlight and wall washer lighting" src="images/image_7.webp" />
           <div class="app-body">
             <h3>Retail Store Lighting</h3>
             <div class="recommend">Recommended: Flood light + spotlight + wall washer</div>
             <p>Highlight products and adapt to display changes.</p>
           </div>
         </article>
-        <article class="app-card"><img alt="Professional magnetic track lighting solution" src="images/image_8.png" />
+        <article class="app-card"><img alt="Hotel and villa trimless recessed magnetic track lighting installation" src="images/image_8.webp" />
           <div class="app-body">
             <h3>Hotel & Villa</h3>
             <div class="recommend">Recommended: Trimless track + grille + spotlight</div>
@@ -430,7 +483,7 @@
           </div>
         </div>
         <div class="solution-card">
-          <img alt="Professional magnetic track lighting solution" src="images/image_9.png" />
+          <img alt="OEM ODM magnetic track lighting factory custom solution" src="images/image_9.webp" />
           <div class="solution-body">
             <div class="icon">🏭</div>
             <h3>Get a complete project solution</h3>
@@ -441,12 +494,74 @@
               <div>• Control: standard, dimmable or smart control</div>
               <div>• Brand requirement: neutral, OEM or private label</div>
             </div>
-            <a class="btn btn-gold" href="mailto:sales@example.com">Request Project Solution →</a>
+            <a class="btn btn-gold" href="mailto:tiffanywoo2016@gmail.com">Request Project Solution →</a>
           </div>
         </div>
       </div>
     </section>
   </main>
+
+  <section id="contact" class="contact-section">
+    <div class="container">
+      <div class="section-head">
+        <div class="section-kicker">Get in Touch</div>
+        <h2>Send us your inquiry</h2>
+        <p>Tell us your project type, quantity and requirements — we'll reply within 24 hours.</p>
+      </div>
+      <div class="contact-grid">
+        <form class="contact-form" action="https://api.web3forms.com/submit" method="POST">
+          <input type="hidden" name="access_key" value="d4f062b2-2834-47cc-aa4f-d9f6619d2faf" />
+          <div class="form-row">
+            <input type="text" name="name" placeholder="Your Name *" required />
+            <input type="email" name="email" placeholder="Email Address *" required />
+          </div>
+          <div class="form-row">
+            <input type="text" name="company" placeholder="Company Name" />
+            <input type="text" name="phone" placeholder="WhatsApp / Phone" />
+          </div>
+          <div class="form-row">
+            <select name="inquiry_type">
+              <option value="">Inquiry Type</option>
+              <option value="product">Product Inquiry</option>
+              <option value="oem">OEM/ODM Project</option>
+              <option value="sample">Sample Request</option>
+              <option value="catalogue">Catalogue Request</option>
+              <option value="other">Other</option>
+            </select>
+            <input type="text" name="quantity" placeholder="Estimated Quantity" />
+          </div>
+          <textarea name="message" rows="5" placeholder="Describe your project — ceiling type, installation method, control preference, target quantity..." required></textarea>
+          <button type="submit" class="btn btn-dark submit-btn">Send Inquiry →</button>
+          <div id="form-success" style="display:none; margin-top:20px; padding:20px; background:#e8f5e9; border-radius:18px; text-align:center; font-weight:700; color:#2e7d32;">
+            ✓ Thank you! Your inquiry has been sent. We'll reply within 24 hours.
+          </div>
+        </form>
+        <div class="contact-info">
+          <div class="contact-card">
+            <div class="contact-icon">✉</div>
+            <h3>Email Us</h3>
+            <a href="mailto:tiffanywoo2016@gmail.com">tiffanywoo2016@gmail.com</a>
+          </div>
+          <div class="contact-card">
+            <div class="contact-icon">💬</div>
+            <h3>WhatsApp</h3>
+            <a href="https://wa.me/8613450802291" target="_blank" rel="noopener">+86 134 5080 2291</a>
+          </div>
+          <div class="contact-card">
+            <div class="contact-icon">📱</div>
+            <h3>WeChat</h3>
+            <span>Same as WhatsApp: +86 134 5080 2291</span>
+          </div>
+          <div class="contact-card">
+            <div class="contact-icon">📄</div>
+            <h3>Catalogue & Datasheets</h3>
+            <p>Download our product catalogue, installation guide and driver matching sheet.</p>
+            <a class="btn btn-gold" href="#">Download Catalogue ↓</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
   <footer>
     <div class="container footer-inner">
@@ -480,6 +595,29 @@
         document.getElementById('module-text').textContent = moduleText[title];
       });
     });
+  // Form submission with AJAX
+  document.querySelector('.contact-form').addEventListener('submit', async function(e) {
+    e.preventDefault();
+    const btn = this.querySelector('.submit-btn');
+    const success = document.getElementById('form-success');
+    btn.textContent = 'Sending...';
+    btn.disabled = true;
+    try {
+      const formData = new FormData(this);
+      const response = await fetch(this.action, { method: 'POST', body: formData });
+      if (response.ok) {
+        this.reset();
+        success.style.display = 'block';
+        setTimeout(() => success.style.display = 'none', 6000);
+      } else {
+        alert('Submission failed. Please try again or email us directly.');
+      }
+    } catch(e) {
+      alert('Network error. Please email us at tiffanywoo2016@gmail.com');
+    }
+    btn.textContent = 'Send Inquiry →';
+    btn.disabled = false;
+  });
   </script>
 </body>
 </html>
