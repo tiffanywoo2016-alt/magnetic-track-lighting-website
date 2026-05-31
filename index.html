@@ -197,6 +197,11 @@
     .app-body h3 { font-size: 22px; margin: 0; }
     .recommend { color: var(--gold); font-weight: 800; font-size: 14px; margin: 16px 0 12px; }
     .app-body p { color: #666; line-height: 1.65; }
+    .faq-section { background: white; padding: 96px 0; border-top: 1px solid rgba(0,0,0,.05); }
+    .faq-grid { display: grid; gap: 24px; max-width: 900px; margin: 0 auto; }
+    .faq-item { background: var(--bg); border-radius: 24px; padding: 32px; }
+    .faq-item h3 { margin: 0 0 12px; font-size: 20px; color: var(--dark); }
+    .faq-item p { margin: 0; line-height: 1.7; color: #555; }
     .oem-section { background: var(--soft); }
     .oem-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 44px; align-items: center; }
     .oem-copy h2 { font-size: clamp(34px, 5vw, 56px); line-height: 1.08; letter-spacing: -.045em; margin: 0; }
@@ -212,13 +217,7 @@
     footer { background: #111; color: white; padding: 46px 0; }
     .footer-inner { display: flex; justify-content: space-between; gap: 26px; align-items: center; }
     .footer-links { display: flex; flex-wrap: wrap; gap: 18px; color: rgba(255,255,255,.6); font-size: 14px; }
-      .faq-section { background: white; padding: 96px 0; border-top: 1px solid rgba(0,0,0,.05); }
-      .faq-grid { display: grid; gap: 24px; max-width: 900px; margin: 0 auto; }
-      .faq-item { background: var(--bg); border-radius: 24px; padding: 32px; }
-      .faq-item h3 { margin: 0 0 12px; font-size: 20px; color: var(--dark); }
-      .faq-item p { margin: 0; line-height: 1.7; color: #555; }
-      @media (max-width: 920px) {
-
+    @media (max-width: 920px) {
       nav { display: none; }
       .stats-grid, .grid-system, .installation-grid, .module-grid, .optics-grid, .applications, .oem-grid { grid-template-columns: 1fr; }
       .card-grid, .specs, .check-grid { grid-template-columns: 1fr; }
@@ -250,7 +249,7 @@
 
   <main>
     <section class="hero">
-      <img alt="Professional magnetic track lighting solution" src="images/image_1.png" alt="One-stop magnetic track lighting system" />
+      <img alt="Professional magnetic track lighting solution" src="images/image_1.png" />
       <div class="container hero-content">
         <div class="eyebrow">✦ One-Stop Magnetic Track Lighting Solution</div>
         <h1>Build complete lighting systems, not just fixtures.</h1>
@@ -279,7 +278,7 @@
           <p>For magnetic track lighting projects, the track, driver, connector, installation method and light module must be correctly matched.</p>
         </div>
         <div class="grid-system">
-          <div class="img-panel system-img"><img alt="Professional magnetic track lighting solution" src="images/image_2.png" alt="Magnetic track rails, drivers, lights and accessories" /></div>
+          <div class="img-panel system-img"><img alt="Professional magnetic track lighting solution" src="images/image_2.png" /></div>
           <div class="card-grid">
             <div class="card"><div class="icon">▭</div><h3>Magnetic Track Rails</h3><p>Trimless recessed, recessed with trim, surface mounted and pendant mounted rails for different ceiling conditions.</p></div>
             <div class="card"><div class="icon">●</div><h3>Magnetic Light Modules</h3><p>Flood lights, grille lights, spotlights, linear lights, pendant modules and wall washer options.</p></div>
@@ -303,7 +302,7 @@
             <div class="install-item"><strong>Pendant Mounted</strong><span>Flexible open-space lighting for offices and showrooms.</span></div>
           </div>
         </div>
-        <div class="img-panel installation-img"><img alt="Professional magnetic track lighting solution" src="images/image_3.png" alt="Four magnetic track lighting installation options" /></div>
+        <div class="img-panel installation-img"><img alt="Professional magnetic track lighting solution" src="images/image_3.png" /></div>
       </div>
     </section>
 
@@ -326,7 +325,7 @@
             <button class="module-btn" data-title="Sensor Module">Sensor Module <span>›</span></button>
           </div>
           <div class="module-card">
-            <div class="img-panel"><img alt="Professional magnetic track lighting solution" src="images/image_4.png" alt="Magnetic light module product matrix" /></div>
+            <div class="img-panel"><img alt="Professional magnetic track lighting solution" src="images/image_4.png" /></div>
             <div class="selected">Selected Module</div>
             <h3 id="module-title">Magnetic Grille Light</h3>
             <p id="module-text">Low-glare linear lighting for offices, hotels and premium commercial interiors.</p>
@@ -349,11 +348,10 @@
           <p>Show beam angles, anti-glare design, wall washer effects and smart control options to build trust with lighting designers and contractors.</p>
         </div>
         <div class="optics-grid">
-          <div class="img-panel optics-img"><img alt="Professional magnetic track lighting solution" src="images/image_5.png" alt="Optical beam effects and smart control options" /></div>
+          <div class="img-panel optics-img"><img alt="Professional magnetic track lighting solution" src="images/image_5.png" /></div>
           <div class="feature-stack">
-            <div class="feature-card"><div class="icon">◐</div><h3>Optical Options</h3><p>Spot, flood, wide flood, wall washer and low-glare grille options for different lighting effects.</p></div>
-            <div class="feature-card"><div class="icon">◎</div><h3>Anti-Glare Design</h3><p>UGR options for offices, hotels and comfortable commercial lighting environments.</p></div>
-            <div class="feature-card"><div class="icon">⌁</div><h3>Smart Control</h3><p>DALI, 0-10V, Triac, Tuya, Zigbee or Casambi can be customized by project needs.</p></div>
+            <div class="feature-card"><div class="icon">∠</div><h3>Precision Optical Control</h3><p>Choose from 15°, 24°, 36° and linear flood modules to create the exact lighting layer required.</p></div>
+            <div class="feature-card"><div class="icon">🎚</div><h3>Smart Dimming Options</h3><p>Standard ON/OFF, DALI 2.0, 0-10V, Triac or Tuya Zigbee / Casambi wireless control.</p></div>
           </div>
         </div>
       </div>
@@ -367,9 +365,27 @@
           <p>Instead of only listing product SKUs, guide buyers with recommended system combinations for offices, retail stores, hotels, villas and showrooms.</p>
         </div>
         <div class="applications">
-          <article class="app-card"><img alt="Professional magnetic track lighting solution" src="images/image_6.png" alt="Office Lighting" /><div class="app-body"><h3>Office Lighting</h3><div class="recommend">Recommended: Linear light + grille light + sensor module</div><p>Low glare, flexible workstation layout, DALI optional.</p></div></article>
-          <article class="app-card"><img alt="Professional magnetic track lighting solution" src="images/image_7.png" alt="Retail Store Lighting" /><div class="app-body"><h3>Retail Store Lighting</h3><div class="recommend">Recommended: Flood light + spotlight + wall washer</div><p>Highlight products and adapt to display changes.</p></div></article>
-          <article class="app-card"><img alt="Professional magnetic track lighting solution" src="images/image_8.png" alt="Hotel & Villa Lighting" /><div class="app-body"><h3>Hotel & Villa Lighting</h3><div class="recommend">Recommended: Trimless rail + spotlight + pendant module</div><p>Clean ceiling, premium design, warm atmosphere.</p></div></article>
+          <article class="app-card"><img alt="Professional magnetic track lighting solution" src="images/image_6.png" />
+          <div class="app-body">
+            <h3>Office Lighting</h3>
+            <div class="recommend">Recommended: Linear light + grille light + sensor module</div>
+            <p>Low glare, flexible workstation layout, DALI optional.</p>
+          </div>
+        </article>
+        <article class="app-card"><img alt="Professional magnetic track lighting solution" src="images/image_7.png" />
+          <div class="app-body">
+            <h3>Retail Store Lighting</h3>
+            <div class="recommend">Recommended: Flood light + spotlight + wall washer</div>
+            <p>Highlight products and adapt to display changes.</p>
+          </div>
+        </article>
+        <article class="app-card"><img alt="Professional magnetic track lighting solution" src="images/image_8.png" />
+          <div class="app-body">
+            <h3>Hotel & Villa</h3>
+            <div class="recommend">Recommended: Trimless track + grille + spotlight</div>
+            <p>High-end seamless integration for luxury residential and hospitality projects.</p>
+          </div>
+        </article>
         </div>
       </div>
     </section>
@@ -398,37 +414,12 @@
       </div>
     </section>
 
-    <section id="faq" class="faq-section">
-      <div class="container">
-        <div class="section-head">
-          <div class="section-kicker">Knowledge Base</div>
-          <h2>Frequently Asked Questions</h2>
-          <p>Professional planning and technical details for magnetic track lighting systems.</p>
-        </div>
-        <div class="faq-grid">
-          <div class="faq-item">
-            <h3>What components are needed for a complete system?</h3>
-            <p>A complete system consists of four key parts: Magnetic Track Rails, LED Light Modules, DC 48V Power Driver, and Accessories (Connectors, End caps).</p>
-          </div>
-          <div class="faq-item">
-            <h3>Does the system support smart control?</h3>
-            <p>Yes. We support DALI, 0-10V, and wireless smart home integration with Tuya Zigbee and Casambi.</p>
-          </div>
-          <div class="faq-item">
-            <h3>Which installation is best for premium interiors?</h3>
-            <p>Trimless recessed installation is highly recommended for luxury villas and hotels as it provides a clean, seamless ceiling finish.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
     <section id="oem" class="oem-section">
-
       <div class="container oem-grid">
         <div class="oem-copy">
-          <div class="section-kicker">OEM / ODM Support</div>
-          <h2>Built for distributors, contractors and project buyers.</h2>
-          <p>Support complete project matching, private label packaging, custom track length, color finish, logo printing and project-based lighting proposals.</p>
+          <div class="section-kicker">OEM/ODM Support</div>
+          <h2>Scale your lighting business with us.</h2>
+          <p>We support complete project matching, private label packaging, custom track length, color finish, logo printing and project-based lighting proposals.</p>
           <div class="check-grid">
             <div class="check">✓ Custom track length</div>
             <div class="check">✓ Private label packaging</div>
@@ -439,7 +430,7 @@
           </div>
         </div>
         <div class="solution-card">
-          <img alt="Professional magnetic track lighting solution" src="images/image_9.png" alt="OEM ODM project support for magnetic track lighting" />
+          <img alt="Professional magnetic track lighting solution" src="images/image_9.png" />
           <div class="solution-body">
             <div class="icon">🏭</div>
             <h3>Get a complete project solution</h3>
