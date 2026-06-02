@@ -36,10 +36,66 @@ header {
 }
 .brand-title { font-weight: 800; letter-spacing: -.02em; font-size: 19px; }
 .brand-sub { font-size: 11px; color: #777; letter-spacing: .18em; text-transform: uppercase; }
-nav { display: flex; gap: 28px; color: #4e4e4e; font-size: 14px; font-weight: 600; }
-nav a { transition: color .2s; }
-nav a:hover { color: var(--dark); }
-nav a.active { color: var(--dark); border-bottom: 2px solid var(--gold); padding-bottom: 2px; }
+
+/* Desktop Navigation */
+nav { display: flex; gap: 24px; color: #4e4e4e; font-size: 14px; font-weight: 600; align-items: center; }
+nav > a { transition: color .2s; padding: 6px 0; }
+nav > a:hover { color: var(--dark); }
+nav > a.active { color: var(--dark); border-bottom: 2px solid var(--gold); padding-bottom: 4px; }
+
+/* Dropdown */
+.nav-dropdown { position: relative; }
+.dropdown-trigger {
+  cursor: pointer; padding: 6px 0; transition: color .2s;
+  color: #4e4e4e; font-size: 14px; font-weight: 600; display: inline-block;
+}
+.dropdown-trigger.active { color: var(--dark); border-bottom: 2px solid var(--gold); padding-bottom: 4px; }
+.nav-dropdown:hover .dropdown-trigger { color: var(--dark); }
+.dropdown-menu {
+  display: none;
+  position: absolute; top: 100%; left: 50%; transform: translateX(-50%); margin-top: 12px;
+  background: white; border-radius: 20px; box-shadow: 0 20px 60px rgba(0,0,0,.15);
+  padding: 18px 0; min-width: 320px;
+  grid-template-columns: 1fr 1fr; gap: 0;
+  z-index: 100;
+}
+.nav-dropdown:hover .dropdown-menu { display: grid; }
+.dropdown-col { padding: 0 18px; }
+.dropdown-col:first-child { border-right: 1px solid rgba(0,0,0,.06); }
+.dropdown-label {
+  font-size: 13px; font-weight: 700; letter-spacing: .06em; text-transform: uppercase;
+  color: var(--gold); padding: 8px 10px 6px; margin-bottom: 2px;
+}
+.dropdown-menu a {
+  display: block; padding: 8px 10px; border-radius: 10px;
+  color: var(--text); font-weight: 500; font-size: 14px; transition: all .15s;
+}
+.dropdown-menu a:hover { background: rgba(176,138,87,.08); color: var(--gold); }
+
+/* Hamburger */
+.hamburger {
+  display: none; background: none; border: none; font-size: 28px;
+  cursor: pointer; color: var(--dark); padding: 4px 8px;
+}
+
+/* Mobile Menu */
+.mobile-menu {
+  display: none; flex-direction: column; padding: 0 28px 24px; gap: 4px;
+  border-top: 1px solid rgba(0,0,0,.06);
+}
+.mobile-menu.open { display: flex; }
+.mobile-menu a {
+  padding: 12px 10px; border-radius: 12px; color: var(--text); font-weight: 500; font-size: 14px;
+  transition: background .15s;
+}
+.mobile-menu a:hover { background: rgba(176,138,87,.08); }
+.mobile-menu a.active { color: var(--gold); font-weight: 700; }
+.mobile-group { margin: 4px 0; }
+.mobile-group-label {
+  font-size: 12px; font-weight: 700; text-transform: uppercase; letter-spacing: .08em;
+  color: var(--gold); padding: 8px 10px 4px;
+}
+.mobile-group a { padding-left: 20px; }
 
 /* Buttons */
 .btn {
@@ -80,6 +136,29 @@ section { padding: 96px 0; }
 }
 .card h3 { margin: 0; font-size: 19px; }
 .card p { color: #666; line-height: 1.65; font-size: 14px; }
+
+/* Track Grid — for overview pages */
+.track-grid {
+  display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 28px; margin: 48px 0;
+}
+.track-card {
+  background: white; border-radius: 28px; overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0,0,0,.04); border: 1px solid rgba(0,0,0,.04);
+  transition: all .25s ease; display: block;
+}
+.track-card:hover { transform: translateY(-6px); box-shadow: 0 22px 60px rgba(0,0,0,.1); }
+.track-card-img { height: 220px; overflow: hidden; background: #111; }
+.track-card-img img { width: 100%; height: 100%; object-fit: contain; display: block; background: #f5f3ef; }
+.track-card-body { padding: 26px; }
+.track-card-badge {
+  display: inline-block; background: var(--gold-light); color: var(--dark); border-radius: 999px;
+  padding: 4px 14px; font-size: 12px; font-weight: 700; margin-bottom: 12px;
+}
+.track-card-body h3 { margin: 0 0 10px; font-size: 21px; letter-spacing: -.03em; }
+.track-card-body p { color: #666; font-size: 14px; line-height: 1.65; margin: 0 0 14px; }
+.track-card-meta { display: flex; flex-wrap: wrap; gap: 10px; }
+.track-card-meta span { font-size: 13px; color: var(--muted); font-weight: 600; }
 
 /* Contact Section */
 .contact-section { background: white; padding: 96px 0; }
@@ -199,6 +278,7 @@ footer { background: #111; color: white; padding: 46px 0; }
 /* Responsive */
 @media (max-width: 920px) {
   nav { display: none; }
+  .hamburger { display: block; }
   .track-features, .accessory-grid, .light-type-intro { grid-template-columns: 1fr; }
   .contact-grid { grid-template-columns: 1fr; }
   .form-row { grid-template-columns: 1fr; }
