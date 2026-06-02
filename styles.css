@@ -45,6 +45,10 @@ nav > a.active { color: var(--dark); border-bottom: 2px solid var(--gold); paddi
 
 /* Dropdown */
 .nav-dropdown { position: relative; }
+.nav-dropdown::after {
+  content: ''; position: absolute;
+  top: 100%; left: 0; right: 0; height: 18px;
+}
 .dropdown-trigger {
   cursor: pointer; padding: 6px 0; transition: color .2s;
   color: #4e4e4e; font-size: 14px; font-weight: 600; display: inline-block;
