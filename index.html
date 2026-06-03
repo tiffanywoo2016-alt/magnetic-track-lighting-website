@@ -184,7 +184,7 @@
     .card h3 { margin: 0; font-size: 19px; }
     .card p { color: #666; line-height: 1.65; font-size: 14px; }
     .dark-section { background: var(--dark); color: white; }
-    .installation-grid { display: grid; grid-template-columns: .82fr 1.18fr; gap: 44px; align-items: center; }
+    .installation-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 44px; align-items: stretch; }
     .dark-section .section-kicker { color: var(--gold-light); }
     .dark-copy h2 { font-size: clamp(34px, 5vw, 56px); line-height: 1.08; letter-spacing: -.045em; margin: 0; }
     .dark-copy p { color: rgba(255,255,255,.65); font-size: 18px; line-height: 1.75; }
@@ -192,7 +192,8 @@
     .install-item { border: 1px solid rgba(255,255,255,.1); background: rgba(255,255,255,.07); border-radius: 22px; padding: 17px; }
     .install-item strong { display: block; }
     .install-item span { color: rgba(255,255,255,.56); font-size: 14px; }
-    .installation-img { min-height: 520px; }
+    .installation-img { min-height: 520px; height: 100%; }
+    .installation-img img { height: 100%; object-fit: cover; }
     .module-grid { display: grid; grid-template-columns: .9fr 1.1fr; gap: 34px; }
     .module-list { display: grid; gap: 12px; }
     .module-btn {
