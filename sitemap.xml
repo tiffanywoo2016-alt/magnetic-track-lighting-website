@@ -57,6 +57,11 @@
   </url>
   <!-- Blog Posts -->
   <url>
+    <loc>https://tiffanywoo2016-alt.github.io/magnetic-track-lighting-website/blog/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
     <loc>https://tiffanywoo2016-alt.github.io/magnetic-track-lighting-website/blog-post-1.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
