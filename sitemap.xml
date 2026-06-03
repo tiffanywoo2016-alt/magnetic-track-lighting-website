@@ -55,4 +55,20 @@
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
+  <!-- Blog Posts -->
+  <url>
+    <loc>https://tiffanywoo2016-alt.github.io/magnetic-track-lighting-website/blog-post-1.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://tiffanywoo2016-alt.github.io/magnetic-track-lighting-website/blog-post-2.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://tiffanywoo2016-alt.github.io/magnetic-track-lighting-website/blog-post-3.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
 </urlset>

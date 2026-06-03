@@ -64,6 +64,13 @@ nav > a.active { color: var(--dark); border-bottom: 2px solid var(--gold); paddi
   z-index: 100;
 }
 .nav-dropdown:hover .dropdown-menu { display: grid; }
+/* Blog dropdown — single column, narrower */
+.dropdown-menu-blog {
+  display: none;
+  grid-template-columns: 1fr;
+  min-width: 200px;
+}
+.nav-dropdown:hover .dropdown-menu-blog { display: grid; }
 .dropdown-col { padding: 0 18px; }
 .dropdown-col:first-child { border-right: 1px solid rgba(0,0,0,.06); }
 .dropdown-label {
