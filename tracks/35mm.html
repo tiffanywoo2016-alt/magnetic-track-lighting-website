@@ -102,6 +102,32 @@
       .compatible-lights, .install-methods { grid-template-columns: 1fr; }
     }
   </style>
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://tiffanywoo2016-alt.github.io/magnetic-track-lighting-website/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Track Rails",
+        "item": "https://tiffanywoo2016-alt.github.io/magnetic-track-lighting-website/tracks/index.html"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "35mm Track",
+        "item": "https://tiffanywoo2016-alt.github.io/magnetic-track-lighting-website/tracks/35mm.html"
+      }
+    ]
+  }
+  </script>
 </head>
 <body>
   <header>
@@ -113,10 +139,10 @@
           <div class="brand-sub">Lighting System</div>
         </div>
       </div>
-      <nav>
+      <nav aria-label="Main navigation">
         <a href="../index.html">Home</a>
         <div class="nav-dropdown">
-          <a href="#" class="dropdown-trigger">Product ▾</a>
+          <a href="../tracks/index.html" class="dropdown-trigger">Product ▾</a>
           <div class="dropdown-menu">
             <div class="dropdown-col">
               <div class="dropdown-label">Track Rails</div>
@@ -136,12 +162,13 @@
         </div>
         <a href="../index.html#installation">Installation</a>
         <a href="../index.html#oem">OEM/ODM</a>
+        <a href="../blog/index.html">Blog</a>
       </nav>
       <a class="btn btn-dark" href="../index.html#contact">Contact →</a>
       <button class="hamburger" onclick="toggleMobileMenu()">☰</button>
     </div>
     <!-- Mobile menu -->
-    <div class="mobile-menu" id="mobileMenu">
+    <div class="mobile-menu" id="mobileMenu" role="dialog" aria-label="Mobile navigation">
       <a href="../index.html">Home</a>
       <div class="mobile-group">
         <div class="mobile-group-label">Track Rails</div>
@@ -225,14 +252,15 @@
           <p>Available in three installation configurations for different ceiling types. All tracks operate on a 48V DC system with robust magnetic holding force suitable for commercial environments.</p>
         </div>
         <div class="spec-table-wrap">
-          <table class="spec-table">
+          <table
+            <caption>Installation Type Specifications</caption> class="spec-table">
             <thead>
               <tr>
-                <th>Installation Type</th>
-                <th>Model Code</th>
-                <th>Application</th>
-                <th>Typical Ceiling</th>
-                <th>Key Features</th>
+                <th scope="col">Installation Type</th>
+                <th scope="col">Model Code</th>
+                <th scope="col">Application</th>
+                <th scope="col">Typical Ceiling</th>
+                <th scope="col">Key Features</th>
               </tr>
             </thead>
             <tbody>
@@ -361,15 +389,16 @@
           <p>Wide-beam general illumination for commercial area lighting. 120° beam angle, uniform light distribution.</p>
         </div>
         <div class="spec-table-wrap">
-          <table class="spec-table">
+          <table
+            <caption>Model Specifications</caption> class="spec-table">
             <thead>
               <tr>
-                <th>Model</th>
-                <th>Power</th>
-                <th>Dimension</th>
-                <th>CRI</th>
-                <th>Beam Angle</th>
-                <th>CCT</th>
+                <th scope="col">Model</th>
+                <th scope="col">Power</th>
+                <th scope="col">Dimension</th>
+                <th scope="col">CRI</th>
+                <th scope="col">Beam Angle</th>
+                <th scope="col">CCT</th>
               </tr>
             </thead>
             <tbody>
@@ -407,15 +436,16 @@
           <p>Low-glare directional lighting with 24° beam angle for precise illumination of retail displays and shelving areas.</p>
         </div>
         <div class="spec-table-wrap">
-          <table class="spec-table">
+          <table
+            <caption>Model Specifications</caption> class="spec-table">
             <thead>
               <tr>
-                <th>Model</th>
-                <th>Power</th>
-                <th>Dimension</th>
-                <th>CRI</th>
-                <th>Beam Angle</th>
-                <th>CCT</th>
+                <th scope="col">Model</th>
+                <th scope="col">Power</th>
+                <th scope="col">Dimension</th>
+                <th scope="col">CRI</th>
+                <th scope="col">Beam Angle</th>
+                <th scope="col">CCT</th>
               </tr>
             </thead>
             <tbody>
@@ -453,15 +483,16 @@
           <p>Adjustable-angle grid light with compact form factor for flexible accent and display lighting in commercial interiors.</p>
         </div>
         <div class="spec-table-wrap">
-          <table class="spec-table">
+          <table
+            <caption>Model Specifications</caption> class="spec-table">
             <thead>
               <tr>
-                <th>Model</th>
-                <th>Power</th>
-                <th>Dimension</th>
-                <th>CRI</th>
-                <th>Beam Angle</th>
-                <th>CCT</th>
+                <th scope="col">Model</th>
+                <th scope="col">Power</th>
+                <th scope="col">Dimension</th>
+                <th scope="col">CRI</th>
+                <th scope="col">Beam Angle</th>
+                <th scope="col">CCT</th>
               </tr>
             </thead>
             <tbody>
@@ -496,14 +527,15 @@
           <p>Choose the right track width for your project. Each track system supports different light types and installation methods.</p>
         </div>
         <div class="comparison-wrap" style="background:rgba(255,255,255,.06);">
-          <table class="comparison-table" style="color:white;">
+          <table
+            <caption>Track Size Specifications</caption> class="comparison-table" style="color:white;">
             <thead>
               <tr>
-                <th>Track Size</th>
-                <th>Best For</th>
-                <th>Installation Methods</th>
-                <th>Power Range</th>
-                <th>Light Types</th>
+                <th scope="col">Track Size</th>
+                <th scope="col">Best For</th>
+                <th scope="col">Installation Methods</th>
+                <th scope="col">Power Range</th>
+                <th scope="col">Light Types</th>
               </tr>
             </thead>
             <tbody>
@@ -544,7 +576,7 @@
         </div>
         <div class="applications">
           <article class="app-card">
-            <img alt="Shopping mall magnetic track lighting with 35mm flood and grid modules" src="../images/image_6.webp" />
+            <img alt="Shopping mall magnetic track lighting with 35mm flood and grid modules" src="../images/image_6.webp" / loading="lazy" decoding="async"
             <div class="app-body">
               <h3>Shopping Mall Lighting</h3>
               <div class="recommend">Recommended: Surface Track WM990 + F35Y Flood + G35Y Grid</div>
@@ -552,7 +584,7 @@
             </div>
           </article>
           <article class="app-card">
-            <img alt="Supermarket and hypermarket 35mm track lighting installation" src="../images/image_7.webp" />
+            <img alt="Supermarket and hypermarket 35mm track lighting installation" src="../images/image_7.webp" / loading="lazy" decoding="async"
             <div class="app-body">
               <h3>Supermarket &amp; Hypermarket</h3>
               <div class="recommend">Recommended: Recessed Track WK990 + F35Y Flood + Z35Y Folding Grid</div>
@@ -560,7 +592,7 @@
             </div>
           </article>
           <article class="app-card">
-            <img alt="Large-scale commercial project with 35mm recessed magnetic track system" src="../images/image_8.webp" />
+            <img alt="Large-scale commercial project with 35mm recessed magnetic track system" src="../images/image_8.webp" / loading="lazy" decoding="async"
             <div class="app-body">
               <h3>Large Commercial Projects</h3>
               <div class="recommend">Recommended: Trimless Track WY990 + G35Y Grid + F35Y Flood</div>

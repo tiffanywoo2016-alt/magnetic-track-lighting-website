@@ -104,6 +104,32 @@
     ]
   }
   </script>
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://tiffanywoo2016-alt.github.io/magnetic-track-lighting-website/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Track Rails",
+        "item": "https://tiffanywoo2016-alt.github.io/magnetic-track-lighting-website/tracks/index.html"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "20mm Track",
+        "item": "https://tiffanywoo2016-alt.github.io/magnetic-track-lighting-website/tracks/20mm.html"
+      }
+    ]
+  }
+  </script>
 </head>
 <body>
 
@@ -117,10 +143,10 @@
           <div class="brand-sub">Lighting System</div>
         </div>
       </a>
-      <nav>
+      <nav aria-label="Main navigation">
         <a href="../index.html">Home</a>
         <div class="nav-dropdown">
-          <a href="#" class="dropdown-trigger">Product ▾</a>
+          <a href="../tracks/index.html" class="dropdown-trigger">Product ▾</a>
           <div class="dropdown-menu">
             <div class="dropdown-col">
               <div class="dropdown-label">Track Rails</div>
@@ -140,12 +166,13 @@
         </div>
         <a href="../index.html#installation">Installation</a>
         <a href="../index.html#oem">OEM/ODM</a>
+        <a href="../blog/index.html">Blog</a>
       </nav>
       <a class="btn btn-dark" href="../index.html#contact">Contact →</a>
       <button class="hamburger" onclick="toggleMobileMenu()">☰</button>
     </div>
     <!-- Mobile menu -->
-    <div class="mobile-menu" id="mobileMenu">
+    <div class="mobile-menu" id="mobileMenu" role="dialog" aria-label="Mobile navigation">
       <a href="../index.html">Home</a>
       <div class="mobile-group">
         <div class="mobile-group-label">Track Rails</div>
@@ -217,12 +244,13 @@
 
         <!-- Track Specs Table -->
         <div class="spec-table-wrap">
-          <table class="spec-table">
+          <table
+            <caption>Installation Method Specifications</caption> class="spec-table">
             <thead>
               <tr>
-                <th>Installation Method</th>
-                <th>Thickness</th>
-                <th>Color</th>
+                <th scope="col">Installation Method</th>
+                <th scope="col">Thickness</th>
+                <th scope="col">Color</th>
               </tr>
             </thead>
             <tbody>
@@ -269,15 +297,16 @@
 
         <!-- Flood Light 22Y -->
         <div class="spec-table-wrap">
-          <table class="spec-table">
+          <table
+            <caption>Model Specifications</caption> class="spec-table">
             <thead>
               <tr>
-                <th>Model</th>
-                <th>Power</th>
-                <th>Dimension</th>
-                <th>CRI</th>
-                <th>Beam Angle</th>
-                <th>CCT</th>
+                <th scope="col">Model</th>
+                <th scope="col">Power</th>
+                <th scope="col">Dimension</th>
+                <th scope="col">CRI</th>
+                <th scope="col">Beam Angle</th>
+                <th scope="col">CCT</th>
               </tr>
             </thead>
             <tbody>
@@ -304,15 +333,16 @@
         <!-- Grid Light 22Y -->
         <div style="margin-top:48px;"><h3 style="font-size:20px; margin:0 0 16px;">Grid Light</h3></div>
         <div class="spec-table-wrap">
-          <table class="spec-table">
+          <table
+            <caption>Model Specifications</caption> class="spec-table">
             <thead>
               <tr>
-                <th>Model</th>
-                <th>Power</th>
-                <th>Dimension</th>
-                <th>CRI</th>
-                <th>Beam Angle</th>
-                <th>CCT</th>
+                <th scope="col">Model</th>
+                <th scope="col">Power</th>
+                <th scope="col">Dimension</th>
+                <th scope="col">CRI</th>
+                <th scope="col">Beam Angle</th>
+                <th scope="col">CCT</th>
               </tr>
             </thead>
             <tbody>
@@ -339,15 +369,16 @@
         <!-- Folding Grid Light 22Y -->
         <div style="margin-top:48px;"><h3 style="font-size:20px; margin:0 0 16px;">Folding Grid Light</h3></div>
         <div class="spec-table-wrap">
-          <table class="spec-table">
+          <table
+            <caption>Model Specifications</caption> class="spec-table">
             <thead>
               <tr>
-                <th>Model</th>
-                <th>Power</th>
-                <th>Dimension</th>
-                <th>CRI</th>
-                <th>Beam Angle</th>
-                <th>CCT</th>
+                <th scope="col">Model</th>
+                <th scope="col">Power</th>
+                <th scope="col">Dimension</th>
+                <th scope="col">CRI</th>
+                <th scope="col">Beam Angle</th>
+                <th scope="col">CCT</th>
               </tr>
             </thead>
             <tbody>
@@ -374,15 +405,16 @@
         <!-- Track Spot Light 22Y -->
         <div style="margin-top:48px;"><h3 style="font-size:20px; margin:0 0 16px;">Track Spot Light</h3></div>
         <div class="spec-table-wrap">
-          <table class="spec-table">
+          <table
+            <caption>Model Specifications</caption> class="spec-table">
             <thead>
               <tr>
-                <th>Model</th>
-                <th>Power</th>
-                <th>Dimension</th>
-                <th>CRI</th>
-                <th>Beam Angle</th>
-                <th>CCT</th>
+                <th scope="col">Model</th>
+                <th scope="col">Power</th>
+                <th scope="col">Dimension</th>
+                <th scope="col">CRI</th>
+                <th scope="col">Beam Angle</th>
+                <th scope="col">CCT</th>
               </tr>
             </thead>
             <tbody>
@@ -422,15 +454,16 @@
 
         <!-- Flood Light 20B -->
         <div class="spec-table-wrap">
-          <table class="spec-table">
+          <table
+            <caption>Model Specifications</caption> class="spec-table">
             <thead>
               <tr>
-                <th>Model</th>
-                <th>Power</th>
-                <th>Dimension</th>
-                <th>CRI</th>
-                <th>Beam Angle</th>
-                <th>CCT</th>
+                <th scope="col">Model</th>
+                <th scope="col">Power</th>
+                <th scope="col">Dimension</th>
+                <th scope="col">CRI</th>
+                <th scope="col">Beam Angle</th>
+                <th scope="col">CCT</th>
               </tr>
             </thead>
             <tbody>
@@ -457,15 +490,16 @@
         <!-- Grid Light 20B -->
         <div style="margin-top:48px;"><h3 style="font-size:20px; margin:0 0 16px;">Grid Light</h3></div>
         <div class="spec-table-wrap">
-          <table class="spec-table">
+          <table
+            <caption>Model Specifications</caption> class="spec-table">
             <thead>
               <tr>
-                <th>Model</th>
-                <th>Power</th>
-                <th>Dimension</th>
-                <th>CRI</th>
-                <th>Beam Angle</th>
-                <th>CCT</th>
+                <th scope="col">Model</th>
+                <th scope="col">Power</th>
+                <th scope="col">Dimension</th>
+                <th scope="col">CRI</th>
+                <th scope="col">Beam Angle</th>
+                <th scope="col">CCT</th>
               </tr>
             </thead>
             <tbody>
@@ -492,15 +526,16 @@
         <!-- Folding Grid Light 20B -->
         <div style="margin-top:48px;"><h3 style="font-size:20px; margin:0 0 16px;">Folding Grid Light</h3></div>
         <div class="spec-table-wrap">
-          <table class="spec-table">
+          <table
+            <caption>Model Specifications</caption> class="spec-table">
             <thead>
               <tr>
-                <th>Model</th>
-                <th>Power</th>
-                <th>Dimension</th>
-                <th>CRI</th>
-                <th>Beam Angle</th>
-                <th>CCT</th>
+                <th scope="col">Model</th>
+                <th scope="col">Power</th>
+                <th scope="col">Dimension</th>
+                <th scope="col">CRI</th>
+                <th scope="col">Beam Angle</th>
+                <th scope="col">CCT</th>
               </tr>
             </thead>
             <tbody>
@@ -527,15 +562,16 @@
         <!-- Track Spot Light 20B -->
         <div style="margin-top:48px;"><h3 style="font-size:20px; margin:0 0 16px;">Track Spot Light</h3></div>
         <div class="spec-table-wrap">
-          <table class="spec-table">
+          <table
+            <caption>Model Specifications</caption> class="spec-table">
             <thead>
               <tr>
-                <th>Model</th>
-                <th>Power</th>
-                <th>Dimension</th>
-                <th>CRI</th>
-                <th>Beam Angle</th>
-                <th>CCT</th>
+                <th scope="col">Model</th>
+                <th scope="col">Power</th>
+                <th scope="col">Dimension</th>
+                <th scope="col">CRI</th>
+                <th scope="col">Beam Angle</th>
+                <th scope="col">CCT</th>
               </tr>
             </thead>
             <tbody>

@@ -70,6 +70,32 @@
     ]
   }
   </script>
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://tiffanywoo2016-alt.github.io/magnetic-track-lighting-website/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Track Lights",
+        "item": "https://tiffanywoo2016-alt.github.io/magnetic-track-lighting-website/lights/index.html"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Folding Grid Light",
+        "item": "https://tiffanywoo2016-alt.github.io/magnetic-track-lighting-website/lights/folding-grid.html"
+      }
+    ]
+  }
+  </script>
 </head>
 <body>
 
@@ -83,10 +109,10 @@
           <div class="brand-sub">Lighting System</div>
         </div>
       </a>
-      <nav>
+      <nav aria-label="Main navigation">
         <a href="../index.html">Home</a>
         <div class="nav-dropdown">
-          <a href="#" class="dropdown-trigger">Product ▾</a>
+          <a href="../lights/index.html" class="dropdown-trigger">Product ▾</a>
           <div class="dropdown-menu">
             <div class="dropdown-col">
               <div class="dropdown-label">Track Rails</div>
@@ -106,12 +132,13 @@
         </div>
         <a href="../index.html#installation">Installation</a>
         <a href="../index.html#oem">OEM/ODM</a>
+        <a href="../blog/index.html">Blog</a>
       </nav>
       <a class="btn btn-dark" href="../index.html#contact">Contact →</a>
       <button class="hamburger" onclick="toggleMobileMenu()">☰</button>
     </div>
     <!-- Mobile menu -->
-    <div class="mobile-menu" id="mobileMenu">
+    <div class="mobile-menu" id="mobileMenu" role="dialog" aria-label="Mobile navigation">
       <a href="../index.html">Home</a>
       <div class="mobile-group">
         <div class="mobile-group-label">Track Rails</div>
@@ -176,15 +203,16 @@
         </div>
 
         <div class="spec-table-wrap">
-          <table class="spec-table">
+          <table
+            <caption>Model Specifications</caption> class="spec-table">
             <thead>
               <tr>
-                <th>Model</th>
-                <th>Power</th>
-                <th>Dimension</th>
-                <th>CRI</th>
-                <th>Beam Angle</th>
-                <th>CCT</th>
+                <th scope="col">Model</th>
+                <th scope="col">Power</th>
+                <th scope="col">Dimension</th>
+                <th scope="col">CRI</th>
+                <th scope="col">Beam Angle</th>
+                <th scope="col">CCT</th>
               </tr>
             </thead>
             <tbody>
@@ -226,15 +254,16 @@
         </div>
 
         <div class="spec-table-wrap">
-          <table class="spec-table">
+          <table
+            <caption>Model Specifications</caption> class="spec-table">
             <thead>
               <tr>
-                <th>Model</th>
-                <th>Power</th>
-                <th>Dimension</th>
-                <th>CRI</th>
-                <th>Beam Angle</th>
-                <th>CCT</th>
+                <th scope="col">Model</th>
+                <th scope="col">Power</th>
+                <th scope="col">Dimension</th>
+                <th scope="col">CRI</th>
+                <th scope="col">Beam Angle</th>
+                <th scope="col">CCT</th>
               </tr>
             </thead>
             <tbody>
@@ -276,15 +305,16 @@
         </div>
 
         <div class="spec-table-wrap">
-          <table class="spec-table">
+          <table
+            <caption>Model Specifications</caption> class="spec-table">
             <thead>
               <tr>
-                <th>Model</th>
-                <th>Name</th>
-                <th>Power</th>
-                <th>CRI</th>
-                <th>Beam Angle</th>
-                <th>CCT</th>
+                <th scope="col">Model</th>
+                <th scope="col">Name</th>
+                <th scope="col">Power</th>
+                <th scope="col">CRI</th>
+                <th scope="col">Beam Angle</th>
+                <th scope="col">CCT</th>
               </tr>
             </thead>
             <tbody>
@@ -326,15 +356,16 @@
         </div>
 
         <div class="spec-table-wrap">
-          <table class="spec-table">
+          <table
+            <caption>Model Specifications</caption> class="spec-table">
             <thead>
               <tr>
-                <th>Model</th>
-                <th>Name</th>
-                <th>Power</th>
-                <th>CRI</th>
-                <th>Beam Angle</th>
-                <th>CCT</th>
+                <th scope="col">Model</th>
+                <th scope="col">Name</th>
+                <th scope="col">Power</th>
+                <th scope="col">CRI</th>
+                <th scope="col">Beam Angle</th>
+                <th scope="col">CCT</th>
               </tr>
             </thead>
             <tbody>
@@ -376,14 +407,15 @@
         </div>
 
         <div class="spec-table-wrap">
-          <table class="spec-table">
+          <table
+            <caption>Model Specifications</caption> class="spec-table">
             <thead>
               <tr>
-                <th>Model</th>
-                <th>Power</th>
-                <th>Dimension</th>
-                <th>CRI</th>
-                <th>CCT</th>
+                <th scope="col">Model</th>
+                <th scope="col">Power</th>
+                <th scope="col">Dimension</th>
+                <th scope="col">CRI</th>
+                <th scope="col">CCT</th>
               </tr>
             </thead>
             <tbody>
