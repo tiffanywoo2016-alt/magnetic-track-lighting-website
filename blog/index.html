@@ -138,7 +138,80 @@
       }
       .page-header { padding: 50px 0 40px; }
     }
+    .blog-card-date {
+      font-size: 13px;
+      color: #999;
+      margin-top: 4px;
+      font-weight: 500;
+    }
   </style>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Blog",
+  "name": "MAGNETRACK Journal",
+  "description": "Technical guides and design insights for magnetic track lighting professionals.",
+  "url": "https://tiffanywoo2016-alt.github.io/magnetic-track-lighting-website/blog/",
+  "blogPost": [
+    {
+      "@type": "BlogPosting",
+      "headline": "48V vs. 24V Magnetic Track Lighting: Which one is right for your project?",
+      "image": "https://tiffanywoo2016-alt.github.io/magnetic-track-lighting-website/images/blog_header_1.png",
+      "datePublished": "2026-05-28T08:00:00+08:00",
+      "dateModified": "2026-05-28T08:00:00+08:00",
+      "author": {
+        "@type": "Person",
+        "name": "Tiffany Woo"
+      },
+      "url": "https://tiffanywoo2016-alt.github.io/magnetic-track-lighting-website/blog-post-1.html"
+    },    {
+      "@type": "BlogPosting",
+      "headline": "Mastering Smart Lighting Control: DALI, 0-10V, and Wireless Protocols",
+      "image": "https://tiffanywoo2016-alt.github.io/magnetic-track-lighting-website/images/blog_header_2.png",
+      "datePublished": "2026-05-30T08:00:00+08:00",
+      "dateModified": "2026-05-30T08:00:00+08:00",
+      "author": {
+        "@type": "Person",
+        "name": "Tiffany Woo"
+      },
+      "url": "https://tiffanywoo2016-alt.github.io/magnetic-track-lighting-website/blog-post-2.html"
+    },    {
+      "@type": "BlogPosting",
+      "headline": "The Art of Invisible Lighting: Why Trimless is the New Standard",
+      "image": "https://tiffanywoo2016-alt.github.io/magnetic-track-lighting-website/images/blog_header_3.png",
+      "datePublished": "2026-06-01T08:00:00+08:00",
+      "dateModified": "2026-06-01T08:00:00+08:00",
+      "author": {
+        "@type": "Person",
+        "name": "Tiffany Woo"
+      },
+      "url": "https://tiffanywoo2016-alt.github.io/magnetic-track-lighting-website/blog-post-3.html"
+    },    {
+      "@type": "BlogPosting",
+      "headline": "Beyond the Lumen: Why Color Fidelity is the True Measure of Premium Lighting",
+      "image": "https://tiffanywoo2016-alt.github.io/magnetic-track-lighting-website/images/blog_header_4.png",
+      "datePublished": "2026-06-03T08:00:00+08:00",
+      "dateModified": "2026-06-03T08:00:00+08:00",
+      "author": {
+        "@type": "Person",
+        "name": "Tiffany Woo"
+      },
+      "url": "https://tiffanywoo2016-alt.github.io/magnetic-track-lighting-website/blog-post-4.html"
+    },    {
+      "@type": "BlogPosting",
+      "headline": "How to Specify Magnetic Track Lighting for 5 Commercial Project Types",
+      "image": "https://tiffanywoo2016-alt.github.io/magnetic-track-lighting-website/images/blog_header_5.jpg",
+      "datePublished": "2026-06-05T08:00:00+08:00",
+      "dateModified": "2026-06-05T08:00:00+08:00",
+      "author": {
+        "@type": "Person",
+        "name": "Tiffany Woo"
+      },
+      "url": "https://tiffanywoo2016-alt.github.io/magnetic-track-lighting-website/blog-post-5.html"
+    }
+  ]
+}
+</script>
 </head>
 <body>
   <!-- Header (imported from main site) -->
@@ -216,57 +289,77 @@
       <div class="blog-grid">
 
         <!-- Blog Post 1 -->
-        <article class="blog-card">
-          <img class="blog-card-image" src="../images/blog_header_1.png" alt="48V vs 24V magnetic track lighting comparison" loading="lazy">
+        <article class="blog-card" itemscope itemtype="https://schema.org/BlogPosting">
+          <meta itemprop="headline" content="48V vs. 24V Magnetic Track Lighting: Which one is right for your project?">
+          <meta itemprop="datePublished" content="2026-05-28T08:00:00+08:00">
+          <meta itemprop="author" content="Tiffany Woo">
+          <img class="blog-card-image" src="../images/blog_header_1.png" alt="48V versus 24V magnetic track lighting system comparison for commercial projects" loading="lazy" itemprop="image">
           <div class="blog-card-body">
             <div class="blog-card-tag">Technical Insight</div>
-            <h2 class="blog-card-title">48V vs. 24V Magnetic Track Lighting: Which one is right for your project?</h2>
-            <p class="blog-card-excerpt">A professional technical comparison of 48V and 24V systems covering voltage drop, efficiency, safety, and market standards for commercial and residential projects.</p>
-            <a href="../blog-post-1.html" class="blog-card-link">Read Article →</a>
+            <h2 class="blog-card-title" itemprop="name">48V vs. 24V Magnetic Track Lighting: Which one is right for your project?</h2>
+            <div class="blog-card-date">May 28, 2026</div>
+            <p class="blog-card-excerpt" itemprop="description">A professional technical comparison of 48V and 24V systems covering voltage drop, efficiency, safety, and market standards for commercial and residential projects.</p>
+            <a href="../blog-post-1.html" class="blog-card-link" itemprop="url">Read Article →</a>
           </div>
         </article>
 
         <!-- Blog Post 2 -->
-        <article class="blog-card">
-          <img class="blog-card-image" src="../images/blog_header_2.png" alt="Smart lighting control protocols" loading="lazy">
+        <article class="blog-card" itemscope itemtype="https://schema.org/BlogPosting">
+          <meta itemprop="headline" content="Mastering Smart Lighting Control: DALI, 0-10V, and Wireless Protocols">
+          <meta itemprop="datePublished" content="2026-05-30T08:00:00+08:00">
+          <meta itemprop="author" content="Tiffany Woo">
+          <img class="blog-card-image" src="../images/blog_header_2.png" alt="Smart lighting control protocols DALI 0-10V Zigbee Casambi comparison diagram" loading="lazy" itemprop="image">
           <div class="blog-card-body">
             <div class="blog-card-tag">Smart Solutions</div>
-            <h2 class="blog-card-title">Mastering Smart Lighting Control: DALI, 0-10V, and Wireless Protocols</h2>
-            <p class="blog-card-excerpt">A deep technical guide for architects and contractors on choosing the right control protocol — wired vs wireless, dimming precision, and project scalability.</p>
-            <a href="../blog-post-2.html" class="blog-card-link">Read Article →</a>
+            <h2 class="blog-card-title" itemprop="name">Mastering Smart Lighting Control: DALI, 0-10V, and Wireless Protocols</h2>
+            <div class="blog-card-date">May 30, 2026</div>
+            <p class="blog-card-excerpt" itemprop="description">A deep technical guide for architects and contractors on choosing the right control protocol — wired vs wireless, dimming precision, and project scalability.</p>
+            <a href="../blog-post-2.html" class="blog-card-link" itemprop="url">Read Article →</a>
           </div>
         </article>
 
         <!-- Blog Post 3 -->
-        <article class="blog-card">
-          <img class="blog-card-image" src="../images/blog_header_3.png" alt="Trimless invisible lighting design" loading="lazy">
+        <article class="blog-card" itemscope itemtype="https://schema.org/BlogPosting">
+          <meta itemprop="headline" content="The Art of Invisible Lighting: Why Trimless is the New Standard">
+          <meta itemprop="datePublished" content="2026-06-01T08:00:00+08:00">
+          <meta itemprop="author" content="Tiffany Woo">
+          <img class="blog-card-image" src="../images/blog_header_3.png" alt="Trimless recessed magnetic track lighting integrated into luxury ceiling design" loading="lazy" itemprop="image">
           <div class="blog-card-body">
             <div class="blog-card-tag">Design Trends 2026</div>
-            <h2 class="blog-card-title">The Art of Invisible Lighting: Why Trimless is the New Standard</h2>
-            <p class="blog-card-excerpt">Explore the architectural purity of trimless magnetic track lighting and why invisible design is becoming the defining trend for luxury interiors.</p>
-            <a href="../blog-post-3.html" class="blog-card-link">Read Article →</a>
+            <h2 class="blog-card-title" itemprop="name">The Art of Invisible Lighting: Why Trimless is the New Standard</h2>
+            <div class="blog-card-date">June 1, 2026</div>
+            <p class="blog-card-excerpt" itemprop="description">Explore the architectural purity of trimless magnetic track lighting and why invisible design is becoming the defining trend for luxury interiors.</p>
+            <a href="../blog-post-3.html" class="blog-card-link" itemprop="url">Read Article →</a>
           </div>
         </article>
 
         <!-- Blog Post 4 -->
-        <article class="blog-card">
-          <img class="blog-card-image" src="../images/blog_header_4.png" alt="Color fidelity and CRI 90+ lighting quality" loading="lazy">
+        <article class="blog-card" itemscope itemtype="https://schema.org/BlogPosting">
+          <meta itemprop="headline" content="Beyond the Lumen: Why Color Fidelity is the True Measure of Premium Lighting">
+          <meta itemprop="datePublished" content="2026-06-03T08:00:00+08:00">
+          <meta itemprop="author" content="Tiffany Woo">
+          <img class="blog-card-image" src="../images/blog_header_4.png" alt="High CRI 90 plus magnetic track spotlight illuminating artwork in luxury gallery" loading="lazy" itemprop="image">
           <div class="blog-card-body">
             <div class="blog-card-tag">Technical Excellence</div>
-            <h2 class="blog-card-title">Beyond the Lumen: Why Color Fidelity is the True Measure of Premium Lighting</h2>
-            <p class="blog-card-excerpt">Why CRI 90+ and R9 values matter in premium magnetic track lighting. A technical guide for architects on color fidelity standards.</p>
-            <a href="../blog-post-4.html" class="blog-card-link">Read Article →</a>
+            <h2 class="blog-card-title" itemprop="name">Beyond the Lumen: Why Color Fidelity is the True Measure of Premium Lighting</h2>
+            <div class="blog-card-date">June 3, 2026</div>
+            <p class="blog-card-excerpt" itemprop="description">Why CRI 90+ and R9 values matter in premium magnetic track lighting. A technical guide for architects on color fidelity standards.</p>
+            <a href="../blog-post-4.html" class="blog-card-link" itemprop="url">Read Article →</a>
           </div>
         </article>
 
         <!-- Blog Post 5 -->
-        <article class="blog-card">
-          <img class="blog-card-image" src="../images/blog_header_5.jpg" alt="Commercial magnetic track lighting for hotel, retail, gallery, office, and restaurant projects" loading="lazy">
+        <article class="blog-card" itemscope itemtype="https://schema.org/BlogPosting">
+          <meta itemprop="headline" content="How to Specify Magnetic Track Lighting for 5 Commercial Project Types">
+          <meta itemprop="datePublished" content="2026-06-05T08:00:00+08:00">
+          <meta itemprop="author" content="Tiffany Woo">
+          <img class="blog-card-image" src="../images/blog_header_5.jpg" alt="Commercial magnetic track lighting installation in hotel lobby retail store and art gallery" loading="lazy" itemprop="image">
           <div class="blog-card-body">
             <div class="blog-card-tag">Application Guide</div>
-            <h2 class="blog-card-title">How to Specify Magnetic Track Lighting for 5 Commercial Project Types</h2>
-            <p class="blog-card-excerpt">Practical specification guide for architects and contractors: hotel, retail, gallery, office, and restaurant magnetic track lighting design with module recommendations.</p>
-            <a href="../blog-post-5.html" class="blog-card-link">Read Article →</a>
+            <h2 class="blog-card-title" itemprop="name">How to Specify Magnetic Track Lighting for 5 Commercial Project Types</h2>
+            <div class="blog-card-date">June 5, 2026</div>
+            <p class="blog-card-excerpt" itemprop="description">Practical specification guide for architects and contractors: hotel, retail, gallery, office, and restaurant magnetic track lighting design with module recommendations.</p>
+            <a href="../blog-post-5.html" class="blog-card-link" itemprop="url">Read Article →</a>
           </div>
         </article>
 
