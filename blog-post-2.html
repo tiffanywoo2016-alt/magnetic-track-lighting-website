@@ -58,14 +58,80 @@
     
     footer { background: #111; color: white; padding: 60px 0; margin-top: 80px; }
   </style>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Article",
+      "headline": "Mastering Smart Lighting Control: A Deep Dive into DALI, 0-10V, and Wireless Protocols",
+      "description": "A technical guide for architects and contractors on choosing the right smart control protocol for magnetic track lighting: DALI, 0-10V, Zigbee, and Casambi.",
+      "image": "https://tiffanywoo2016-alt.github.io/magnetic-track-lighting-website/images/blog_header_2.png",
+      "datePublished": "2026-05-30T08:00:00+08:00",
+      "dateModified": "2026-05-30T08:00:00+08:00",
+      "author": {
+        "@type": "Person",
+        "name": "Tiffany Woo",
+        "url": "https://tiffanywoo2016-alt.github.io/magnetic-track-lighting-website/"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "MAGNETRACK Lighting",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://tiffanywoo2016-alt.github.io/magnetic-track-lighting-website/images/logo.png"
+        }
+      },
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://tiffanywoo2016-alt.github.io/magnetic-track-lighting-website/blog-post-2.html"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://tiffanywoo2016-alt.github.io/magnetic-track-lighting-website/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Blog",
+          "item": "https://tiffanywoo2016-alt.github.io/magnetic-track-lighting-website/blog/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Mastering Smart Lighting Control: A Deep Dive into DALI, 0-10V, and Wireless Protocols",
+          "item": "https://tiffanywoo2016-alt.github.io/magnetic-track-lighting-website/blog-post-2.html"
+        }
+      ]
+    }
+  ]
+}
+</script>
 </head>
 <body>
   <header>
     <div class="container nav">
       <a href="index.html" class="logo">MAGNETRACK</a>
-      <a href="index.html" class="back-link">← Back to Home</a>
+      <a href="blog/index.html" class="back-link">← Back to Blog</a>
     </div>
   </header>
+  <!-- Breadcrumb Navigation -->
+  <nav aria-label="breadcrumb" style="background:#f9f9f9; padding:12px 0; border-bottom:1px solid #eee;">
+    <div class="container" style="font-size:13px; color:#888;">
+      <a href="index.html" style="color:#888; text-decoration:none;">Home</a>
+      <span style="margin:0 8px; color:#ccc;">/</span>
+      <a href="blog/index.html" style="color:#888; text-decoration:none;">Blog</a>
+      <span style="margin:0 8px; color:#ccc;">/</span>
+      <span style="color:#b08a57; font-weight:600;">Article</span>
+    </div>
+  </nav>
+
 
   <main class="container">
     <article>
@@ -76,7 +142,7 @@
         <span style="color:#ddd;">|</span>
         <span>May 30, 2026</span>
       </div>
-      <img src="images/blog_header_2.png" alt="Smart Lighting Control Interface" class="featured-img">
+      <img src="images/blog_header_2.png" alt="Smart lighting control protocols DALI 0-10V Zigbee Casambi comparison diagram" class="featured-img">
       
       <div class="content">
         <p>In modern architectural lighting, the ability to dim and control fixtures is no longer a luxury—it is a baseline requirement. For magnetic track lighting systems, choosing the right control protocol determines the scalability, stability, and user experience of the entire project.</p>
@@ -166,7 +232,23 @@
           <p><strong>Contact us today for a technical consultation.</strong></p>
         </div>
       </div>
-    </article>
+    
+    <!-- Related Articles -->
+    <section style="margin-top:80px; padding-top:60px; border-top:1px solid #eee;">
+      <h2 style="font-size:24px; font-weight:800; margin-bottom:32px; color:#151515;">Related Articles</h2>
+      <div style="display:grid; grid-template-columns:repeat(auto-fill, minmax(280px, 1fr)); gap:20px;">
+      <a href="blog-post-1.html" style="display:block; background:white; border-radius:16px; padding:24px; text-decoration:none; box-shadow:0 4px 20px rgba(0,0,0,0.04); transition:transform 0.2s, box-shadow 0.2s; border:1px solid #f0f0f0;">
+        <div style="font-size:11px; font-weight:700; text-transform:uppercase; letter-spacing:1.5px; color:#b08a57; margin-bottom:8px;">Technical Insight</div>
+        <div style="font-size:16px; font-weight:700; color:#151515; line-height:1.4;">48V vs. 24V Magnetic Track Lighting: Which one is right for your project?</div>
+      </a>
+      <a href="blog-post-5.html" style="display:block; background:white; border-radius:16px; padding:24px; text-decoration:none; box-shadow:0 4px 20px rgba(0,0,0,0.04); transition:transform 0.2s, box-shadow 0.2s; border:1px solid #f0f0f0;">
+        <div style="font-size:11px; font-weight:700; text-transform:uppercase; letter-spacing:1.5px; color:#b08a57; margin-bottom:8px;">Application Guide</div>
+        <div style="font-size:16px; font-weight:700; color:#151515; line-height:1.4;">How to Specify Magnetic Track Lighting for 5 Commercial Project Types</div>
+      </a>
+      </div>
+    </section>
+
+</article>
   </main>
 
   <footer>
