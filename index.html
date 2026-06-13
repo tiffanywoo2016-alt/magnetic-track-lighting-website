@@ -272,6 +272,10 @@
     .faq-item h3 { margin: 0 0 12px; font-size: 20px; color: var(--dark); }
     .faq-item p { margin: 0; line-height: 1.7; color: #555; }
     .oem-section { background: var(--soft); }
+    .blog-preview-grid { display:grid; grid-template-columns:repeat(3, 1fr); gap:24px; }
+    .blog-preview-card { display:block; text-decoration:none; background:white; border-radius:20px; padding:0 0 28px; transition:transform 0.2s, box-shadow 0.2s; box-shadow:0 4px 20px rgba(0,0,0,0.04); border:1px solid #f0f0f0; overflow:hidden; }
+    .blog-preview-card:hover { transform:translateY(-3px); box-shadow:0 12px 40px rgba(0,0,0,0.08); }
+    @media (max-width:768px) { .blog-preview-grid { grid-template-columns:1fr; } }
     .oem-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 44px; align-items: center; }
     .oem-copy h2 { font-size: clamp(34px, 5vw, 56px); line-height: 1.08; letter-spacing: -.045em; margin: 0; }
     .oem-copy p { color: #5f5f5f; font-size: 18px; line-height: 1.75; }
@@ -530,6 +534,46 @@
             <p>High-end seamless integration for luxury residential and hospitality projects.</p>
           </div>
         </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- From Our Blog Section -->
+    <section id="blog-preview" style="background:white; padding:80px 0;">
+      <div class="container">
+        <div class="section-head">
+          <div class="section-kicker">From Our Blog</div>
+          <h2>Professional Insights for<br>Lighting Specifiers</h2>
+          <p>Technical guides, design trends, and real project case studies written by our team.</p>
+        </div>
+        <div class="blog-preview-grid">
+          <a href="blog-post-6.html" class="blog-preview-card">
+            <div class="blog-preview-img" style="background:#f0ebe3; border-radius:16px; overflow:hidden;">
+              <img src="images/blog_header_6.webp" alt="Boutique hotel lobby with warm magnetic track lighting" loading="lazy" width="400" height="225" style="width:100%; height:auto; object-fit:cover; display:block;">
+            </div>
+            <div class="blog-preview-tag" style="display:inline-block; background:#f5f3ef; color:#b08a57; font-size:11px; font-weight:700; text-transform:uppercase; letter-spacing:1px; padding:5px 12px; border-radius:4px; margin-top:20px;">Project Case Study</div>
+            <h3 style="font-size:17px; font-weight:700; line-height:1.4; margin:12px 0 8px; color:#151515;">How a Lisbon Boutique Hotel Unified Its Guest Experience with One Magnetic Track System</h3>
+            <p style="font-size:14px; color:#888; line-height:1.5; margin:0;">Before: 5 lamp types, 3 colour temps. After: 1 MAGNETRACK 48V system across all spaces. Ambiance +0.9, energy −34%.</p>
+          </a>
+          <a href="blog-post-5.html" class="blog-preview-card">
+            <div class="blog-preview-img" style="background:#f0ebe3; border-radius:16px; overflow:hidden;">
+              <img src="images/blog_header_5.jpg" alt="Commercial magnetic track lighting specification guide" loading="lazy" width="400" height="225" style="width:100%; height:auto; object-fit:cover; display:block;">
+            </div>
+            <div class="blog-preview-tag" style="display:inline-block; background:#f5f3ef; color:#b08a57; font-size:11px; font-weight:700; text-transform:uppercase; letter-spacing:1px; padding:5px 12px; border-radius:4px; margin-top:20px;">Application Guide</div>
+            <h3 style="font-size:17px; font-weight:700; line-height:1.4; margin:12px 0 8px; color:#151515;">How to Specify Magnetic Track Lighting for 5 Commercial Project Types</h3>
+            <p style="font-size:14px; color:#888; line-height:1.5; margin:0;">Hotel, retail, gallery, office, restaurant — practical module recommendations for each commercial space.</p>
+          </a>
+          <a href="blog-post-1.html" class="blog-preview-card">
+            <div class="blog-preview-img" style="background:#f0ebe3; border-radius:16px; overflow:hidden;">
+              <img src="images/blog_header_1.png" alt="48V versus 24V magnetic track lighting comparison" loading="lazy" width="400" height="225" style="width:100%; height:auto; object-fit:cover; display:block;">
+            </div>
+            <div class="blog-preview-tag" style="display:inline-block; background:#f5f3ef; color:#b08a57; font-size:11px; font-weight:700; text-transform:uppercase; letter-spacing:1px; padding:5px 12px; border-radius:4px; margin-top:20px;">Technical Insight</div>
+            <h3 style="font-size:17px; font-weight:700; line-height:1.4; margin:12px 0 8px; color:#151515;">48V vs. 24V Magnetic Track Lighting: Which One Is Right for Your Project?</h3>
+            <p style="font-size:14px; color:#888; line-height:1.5; margin:0;">Voltage drop, efficiency, safety, and market standards — a professional comparison for specifiers.</p>
+          </a>
+        </div>
+        <div style="text-align:center; margin-top:40px;">
+          <a href="blog/index.html" style="display:inline-block; background:#b08a57; color:white; font-weight:700; font-size:14px; padding:14px 36px; border-radius:40px; text-decoration:none; transition:background 0.2s;">View All Articles →</a>
         </div>
       </div>
     </section>
