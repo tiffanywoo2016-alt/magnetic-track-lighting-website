@@ -275,6 +275,26 @@
     .install-item span { color: rgba(255,255,255,.56); font-size: 14px; }
     .installation-img { min-height: 520px; height: 100%; }
     .installation-img img { height: 100%; object-fit: cover; }
+    .why-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 18px;
+    }
+    .why-card {
+      background: var(--bg);
+      border-radius: 24px;
+      padding: 28px;
+      transition: all .22s ease;
+    }
+    .why-card:hover { transform: translateY(-3px); box-shadow: 0 12px 30px rgba(0,0,0,.06); }
+    .why-icon {
+      width: 48px; height: 48px; border-radius: 16px;
+      background: var(--dark); color: var(--gold-light);
+      display: grid; place-items: center;
+      font-size: 21px; margin-bottom: 16px;
+    }
+    .why-card h3 { margin: 0 0 10px; font-size: 18px; }
+    .why-card p { color: #5a5a5a; line-height: 1.65; font-size: 14px; margin: 0; }
     .module-grid { display: grid; grid-template-columns: .9fr 1.1fr; gap: 34px; }
     .module-list { display: grid; gap: 12px; }
     .module-btn {
@@ -367,6 +387,7 @@
     @media (max-width: 920px) {
       nav { display: none; }
       .stats-grid, .grid-system, .installation-grid, .module-grid, .optics-grid, .applications, .oem-grid, .contact-grid { grid-template-columns: 1fr; }
+      .why-grid { grid-template-columns: 1fr; }
       .card-grid, .specs, .check-grid { grid-template-columns: 1fr; }
       .form-row { grid-template-columns: 1fr; }
       .hero { min-height: 620px; }
@@ -440,24 +461,67 @@
 
   <main>
     <section class="hero" role="banner">
-      <img alt="48V magnetic track lighting system for B2B commercial projects" src="images/image_1.webp" width="1920" height="1080" loading="eager" decoding="async" />
+      <img alt="48V magnetic track lighting system for commercial projects and B2B procurement" src="images/image_1.webp" width="1920" height="1080" loading="eager" decoding="async" />
       <div class="container hero-content">
-        <div class="eyebrow">✦ One-Stop Magnetic Track Lighting Solution</div>
-        <h1>Build complete lighting systems, not just fixtures.</h1>
-        <p>Track rails, magnetic light modules, drivers and accessories — supplied as a complete system for distributors, contractors and modern lighting projects.</p>
+        <div class="eyebrow">✦ 13 Years · Direct from Foshan Factory</div>
+        <h1>Source complete 48V magnetic track systems — not just parts.</h1>
+        <p>Stop piecing together tracks, modules, and drivers from different suppliers. We deliver fully matched systems with CE/RoHS certification, OEM/ODM support, and specification guidance for your projects.</p>
         <div class="hero-actions">
-          <a class="btn btn-gold" href="#system">Explore System →</a>
-          <a class="btn btn-ghost" href="#oem">Download Catalogue ↓</a>
+          <a class="btn btn-gold" href="#why">Why MAGNETRACK →</a>
+          <a class="btn btn-ghost" href="#contact">Get a Quotation ↓</a>
         </div>
       </div>
     </section>
 
     <section class="stats">
       <div class="container stats-grid">
-        <div><div class="stat-title">Track Rails</div><div class="stat-sub">Recessed / Surface / Pendant</div></div>
-        <div><div class="stat-title">Light Modules</div><div class="stat-sub">Flood / Grille / Spot / Linear</div></div>
-        <div><div class="stat-title">Power Matching</div><div class="stat-sub">Built-in / External / Remote</div></div>
-        <div><div class="stat-title">Control Options</div><div class="stat-sub">DALI / 0-10V / Smart Optional</div></div>
+        <div><div class="stat-title">13+ Years</div><div class="stat-sub">Magnetic track lighting manufacturing since 2012</div></div>
+        <div><div class="stat-title">100+ SKUs</div><div class="stat-sub">Tracks · Modules · Drivers · Accessories</div></div>
+        <div><div class="stat-title">CE &amp; RoHS</div><div class="stat-sub">Full compliance for European &amp; global projects</div></div>
+        <div><div class="stat-title">24h Response</div><div class="stat-sub">Specification support &amp; quotation turnaround</div></div>
+      </div>
+    </section>
+
+    <!-- Why MAGNETRACK — NEW AIDA Interest/Desire block -->
+    <section id="why" style="background:white; padding:80px 0;">
+      <div class="container">
+        <div class="section-head">
+          <div class="section-kicker">Why MAGNETRACK</div>
+          <h2>We don't just supply components — we match your project.</h2>
+          <p>B2B buyers need a partner who understands specification, compliance, and delivery. Here's why European and Middle East clients choose us.</p>
+        </div>
+        <div class="why-grid">
+          <div class="why-card">
+            <div class="why-icon">🏭</div>
+            <h3>Factory-Direct Since 2012</h3>
+            <p>Based in Foshan, China's lighting manufacturing hub. We control every step — from rail extrusion to driver assembly — to ensure consistent quality.</p>
+          </div>
+          <div class="why-card">
+            <div class="why-icon">✓</div>
+            <h3>CE &amp; RoHS Certified</h3>
+            <p>All products are CE and RoHS compliant by default. We support buyers who need ENEC, SAA, or other regional certifications for their market.</p>
+          </div>
+          <div class="why-card">
+            <div class="why-icon">⚙</div>
+            <h3>Complete System Matching</h3>
+            <p>Tracks (20/23/35mm), light modules, drivers (built-in/external/DALI/Tuya), connectors, and accessories — all tested to work together.</p>
+          </div>
+          <div class="why-card">
+            <div class="why-icon">📦</div>
+            <h3>OEM / ODM / Private Label</h3>
+            <p>Custom branding, packaging, and specification sheets. We support distributor catalogues, lighting showroom stock, and project-based procurement.</p>
+          </div>
+          <div class="why-card">
+            <div class="why-icon">🌍</div>
+            <h3>Export to 30+ Countries</h3>
+            <p>Regular shipments to Europe, the Middle East, Southeast Asia, and South America. We understand international shipping, documentation, and customs requirements.</p>
+          </div>
+          <div class="why-card">
+            <div class="why-icon">📋</div>
+            <h3>Specification Support</h3>
+            <p>Send us your project type, ceiling condition, and control preference. We'll recommend the exact track-module-driver combination — no guesswork.</p>
+          </div>
+        </div>
       </div>
     </section>
 
