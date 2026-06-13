@@ -307,8 +307,10 @@
     .recommend { color: var(--gold); font-weight: 800; font-size: 14px; margin: 16px 0 12px; }
     .app-body p { color: #666; line-height: 1.65; }
     .faq-section { background: white; padding: 96px 0; border-top: 1px solid rgba(0,0,0,.05); }
-    .faq-grid { display: grid; gap: 24px; max-width: 900px; margin: 0 auto; }
-    .faq-item { background: var(--bg); border-radius: 24px; padding: 32px; }
+    .faq-grid { display: grid; gap: 20px; max-width: 900px; margin: 0 auto; }
+    .faq-grid { grid-template-columns: 1fr 1fr; }
+    @media (max-width:640px) { .faq-grid { grid-template-columns: 1fr; } }
+    .faq-item { background: var(--bg); border-radius: 24px; padding: 24px 28px; }
     .faq-item h3 { margin: 0 0 12px; font-size: 20px; color: var(--dark); }
     .faq-item p { margin: 0; line-height: 1.7; color: #555; }
     .oem-section { background: var(--soft); }
