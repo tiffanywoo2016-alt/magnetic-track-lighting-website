@@ -217,7 +217,7 @@
     .btn-gold:hover { background: #f1d1a2; transform: translateY(-1px); }
     .btn-ghost { background: rgba(255,255,255,.1); border-color: rgba(255,255,255,.32); color: white; }
     .hero {
-      position: relative; min-height: 680px; display: flex; align-items: center; overflow: hidden;
+      position: relative; min-height: 600px; display: flex; align-items: center; overflow: hidden;
       background: var(--dark);
     }
     .hero img {
@@ -226,28 +226,22 @@
     }
     .hero::after {
       content: ""; position: absolute; inset: 0;
-      background: linear-gradient(90deg, rgba(0,0,0,.82), rgba(0,0,0,.45), rgba(0,0,0,.04));
+      background: linear-gradient(90deg, rgba(0,0,0,.75), rgba(0,0,0,.38), rgba(0,0,0,.04));
     }
-    .hero-content { position: relative; z-index: 2; color: white; max-width: 780px; padding: 100px 0; }
-    .eyebrow {
-      display: inline-flex; align-items: center; gap: 8px;
-      border: 1px solid rgba(255,255,255,.18); background: rgba(255,255,255,.1);
-      color: var(--gold-light); border-radius: 999px; padding: 9px 15px;
-      font-size: 14px; font-weight: 700; margin-bottom: 28px;
-      backdrop-filter: blur(10px);
-    }
-    .hero h1 { margin: 0; font-size: clamp(48px, 8vw, 88px); line-height: 1.02; letter-spacing: -.05em; }
-    .hero p { max-width: 640px; font-size: 20px; line-height: 1.75; color: rgba(255,255,255,.82); margin: 30px 0 42px; }
-    .hero-actions { display: flex; flex-wrap: wrap; gap: 16px; }
-    .stats { background: white; border-block: 1px solid rgba(0,0,0,.04); padding: 24px 0; }
-    .stats-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 0; padding: 8px 0; }
+    .hero-content { position: relative; z-index: 2; color: white; max-width: 740px; padding: 80px 0; text-align: center; margin: 0 auto; }
+    .hero h1 { margin: 0; font-size: clamp(36px, 5vw, 56px); line-height: 1.15; letter-spacing: -.03em; font-weight: 800; }
+    .hero p { max-width: 640px; font-size: 16px; line-height: 1.7; color: rgba(255,255,255,.78); margin: 16px auto 28px; }
+    .hero-actions { display: flex; flex-wrap: wrap; gap: 12px; justify-content: center; }
+    .hero-actions .btn { padding: 12px 28px; font-size: 14px; }
+    .stats { background: transparent; padding: 0; }
+    .stats-grid { display: flex; justify-content: center; gap: 0; padding: 14px 0; }
     .stats-grid > div {
-      text-align: center; padding: 20px 16px;
-      border-right: 1px solid rgba(0,0,0,.06);
+      padding: 0 20px;
+      font-size: 13px; color: rgba(255,255,255,.75);
+      border-right: 1px solid rgba(255,255,255,.15);
+      line-height: 1.3;
     }
     .stats-grid > div:last-child { border-right: none; }
-    .stat-title { font-size: 28px; font-weight: 800; letter-spacing: -.02em; }
-    .stat-sub { color: #777; font-size: 13px; margin-top: 6px; line-height: 1.4; }
     section { padding: 96px 0; }
     .section-head { max-width: 820px; margin: 0 auto 56px; text-align: center; }
     .section-kicker { color: var(--gold); text-transform: uppercase; letter-spacing: .22em; font-weight: 800; font-size: 13px; margin-bottom: 14px; }
@@ -396,8 +390,8 @@
       nav { display: none; }
       .stats-grid, .grid-system, .installation-grid, .module-grid, .optics-grid, .applications, .oem-grid, .contact-grid { grid-template-columns: 1fr; }
       .why-grid { grid-template-columns: 1fr; }
-      .stats-grid > div { border-right: none; border-bottom: 1px solid rgba(0,0,0,.06); }
-      .stats-grid > div:last-child { border-bottom: none; }
+      .stats-grid { flex-wrap: wrap; }
+      .stats-grid > div { border-right: none; padding: 4px 12px; }
       .card-grid, .specs, .check-grid { grid-template-columns: 1fr; }
       .form-row { grid-template-columns: 1fr; }
       .hero { min-height: 620px; }
@@ -473,22 +467,20 @@
     <section class="hero" role="banner">
       <img alt="48V magnetic track lighting system for commercial projects and B2B procurement" src="images/image_1.webp" width="1920" height="1080" loading="eager" decoding="async" />
       <div class="container hero-content">
-        <div class="eyebrow">✦ 13 Years · Direct from Foshan Factory</div>
-        <h1>Source complete 48V magnetic track systems — not just parts.</h1>
-        <p>Stop piecing together tracks, modules, and drivers from different suppliers. We deliver fully matched systems with CE/RoHS certification, OEM/ODM support, and specification guidance for your projects.</p>
+        <h1>One-Stop Magnetic Track Lighting System Supplier</h1>
+        <p>48V tracks, magnetic light modules, drivers and accessories — fully matched for distributors, contractors and lighting projects.</p>
         <div class="hero-actions">
-          <a class="btn btn-gold" href="#why">Why MAGNETRACK →</a>
-          <a class="btn btn-ghost" href="#contact">Get a Quotation ↓</a>
+          <a class="btn btn-gold" href="#contact">Get a Quotation →</a>
+          <a class="btn btn-ghost" href="#system">View System →</a>
         </div>
-      </div>
-    </section>
-
-    <section class="stats">
-      <div class="container stats-grid">
-        <div><div class="stat-title">13+ Years</div><div class="stat-sub">Magnetic track lighting manufacturing since 2012</div></div>
-        <div><div class="stat-title">100+ SKUs</div><div class="stat-sub">Tracks · Modules · Drivers · Accessories</div></div>
-        <div><div class="stat-title">CE &amp; RoHS</div><div class="stat-sub">Full compliance for European &amp; global projects</div></div>
-        <div><div class="stat-title">24h Response</div><div class="stat-sub">Specification support &amp; quotation turnaround</div></div>
+        <div class="stats">
+          <div class="stats-grid">
+            <div>13+ Years</div>
+            <div>Complete System</div>
+            <div>CE &amp; RoHS</div>
+            <div>OEM/ODM Support</div>
+          </div>
+        </div>
       </div>
     </section>
 
