@@ -247,19 +247,33 @@
     .hero-sub { max-width: 680px; font-size: 18px; line-height: 1.7; color: rgba(255,255,255,.88); margin: 32px auto 36px; font-weight: 450; }
     .hero-actions { display: flex; flex-wrap: wrap; gap: 16px; justify-content: center; margin-bottom: 44px; }
     .hero-actions .btn { padding: 16px 36px; font-size: 15px; letter-spacing: .02em; }
-    .hero-stats {
-      display: flex; justify-content: center; gap: 14px; flex-wrap: wrap;
-      padding-top: 32px;
-      border-top: 1px solid rgba(255,255,255,.15);
+    .hero-pills {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 12px;
+      flex-wrap: nowrap;
+      margin-top: 28px;
     }
-    .hero-stats span {
-      display: inline-block;
-      background: rgba(255,255,255,.08);
-      border: 1px solid rgba(255,255,255,.12);
-      color: rgba(255,255,255,.9);
+    .hero-pill {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      white-space: nowrap;
+      padding: 8px 18px;
       border-radius: 999px;
-      padding: 8px 20px;
-      font-size: 13px; font-weight: 600;
+      font-size: 12px;
+      font-weight: 700;
+      line-height: 1;
+      color: #ffffff;
+      background: rgba(255, 255, 255, 0.14);
+      border: 1px solid rgba(255, 255, 255, 0.36);
+      backdrop-filter: blur(8px);
+      -webkit-backdrop-filter: blur(8px);
+    }
+    .hero-pill:hover {
+      background: rgba(198, 156, 93, 0.22);
+      border-color: rgba(198, 156, 93, 0.72);
     }
     section { padding: 96px 0; }
     .section-head { max-width: 820px; margin: 0 auto 56px; text-align: center; }
@@ -486,6 +500,7 @@
       .card-grid, .specs, .check-grid { grid-template-columns: 1fr; }
       .form-row { grid-template-columns: 1fr; }
       .hero { min-height: 620px; }
+      .hero-pills { flex-wrap: wrap; }
       .footer-inner { flex-direction: column; align-items: flex-start; }
     }
   </style>
@@ -559,16 +574,15 @@
       <img alt="48V magnetic track lighting system for commercial projects and B2B procurement" src="images/image_1.webp" width="1920" height="1080" loading="eager" decoding="async" />
       <div class="container hero-content">
         <h1>Complete 48V Magnetic Track Lighting<br>for Modern Interior Projects</h1>
-        <p class="hero-sub">Tracks, magnetic modules, drivers and accessories matched as one 48V system — for villas, apartments, retail stores, offices, hotels and showrooms.</p>
+        <p class="hero-sub">Tracks, magnetic modules, drivers and accessories matched as one 48V system — for residential, retail, office, hotel and showroom projects.</p>
         <div class="hero-actions">
           <a class="btn btn-gold" href="#contact">Get a Quotation →</a>
           <a class="btn btn-ghost" href="#system">View System →</a>
         </div>
-        <div class="hero-stats">
-          <span>20 / 23 / 35mm Systems</span>
-          <span>Tracks + Modules + Drivers</span>
-          <span>OEM / ODM Support</span>
-          <span>Project Matching Guide</span>
+        <div class="hero-pills">
+          <span class="hero-pill">20 / 23 / 35mm Systems</span>
+          <span class="hero-pill">Complete 48V Kit</span>
+          <span class="hero-pill">OEM / ODM Ready</span>
         </div>
       </div>
     </section>
