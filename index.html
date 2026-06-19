@@ -292,30 +292,96 @@
     .install-item strong { display: block; }
     .install-item span { color: rgba(255,255,255,.56); font-size: 14px; }
     .installation-img { min-height: 520px; height: 100%; }
-    .installation-img img { height: 100%; object-fit: cover; }
-    .why-grid {
+    #why { padding: 96px 0; }
+
+    .why-split {
       display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 20px;
+      grid-template-columns: 1fr 1.2fr;
+      gap: 48px;
+      align-items: start;
     }
-    .why-card {
-      background: white;
-      border-radius: 20px;
-      padding: 28px 26px;
+
+    .why-left {
+      position: sticky;
+      top: 100px;
+    }
+
+    .why-statement {
+      font-size: clamp(22px, 2.8vw, 30px);
+      font-weight: 700;
+      line-height: 1.3;
+      letter-spacing: -.03em;
+      color: var(--dark);
+      margin-bottom: 28px;
+      max-width: 400px;
+    }
+
+    .why-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .why-tag {
+      display: inline-block;
+      background: var(--dark);
+      color: #f1d1a2;
+      border-radius: 999px;
+      padding: 8px 18px;
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: .02em;
+    }
+
+    .why-right {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .issue-card {
+      display: flex;
+      align-items: flex-start;
+      gap: 20px;
+      background: var(--bg);
       border: 1px solid rgba(0,0,0,.04);
-      box-shadow: 0 4px 20px rgba(0,0,0,.04);
+      border-radius: 18px;
+      padding: 20px 24px;
       transition: all .25s ease;
     }
-    .why-card:hover { transform: translateY(-4px); box-shadow: 0 16px 40px rgba(0,0,0,.08); }
-    .why-icon {
-      width: 48px; height: 48px; border-radius: 14px;
-      background: var(--dark); color: var(--gold-light);
-      display: grid; place-items: center;
-      font-size: 22px; margin-bottom: 18px;
+
+    .issue-card:hover {
+      transform: translateX(4px);
+      border-color: rgba(176,138,87,.2);
+      box-shadow: 0 6px 20px rgba(0,0,0,.04);
     }
-    .why-card h3 { margin: 0 0 8px; font-size: 17px; }
-    .why-card p { color: #5a5a5a; line-height: 1.6; font-size: 14px; margin: 0; }
-    #why { padding: 80px 0; }
+
+    .issue-num {
+      flex-shrink: 0;
+      width: 32px;
+      font-size: 13px;
+      font-weight: 800;
+      color: var(--gold);
+      letter-spacing: .08em;
+      padding-top: 1px;
+    }
+
+    .issue-body {
+      flex: 1;
+    }
+
+    .issue-title {
+      font-size: 17px;
+      font-weight: 700;
+      color: var(--dark);
+      margin-bottom: 4px;
+    }
+
+    .issue-desc {
+      font-size: 14px;
+      line-height: 1.65;
+      color: #5a5a5a;
+    }
     .module-grid { display: grid; grid-template-columns: .9fr 1.1fr; gap: 34px; }
     .module-list { display: grid; gap: 12px; }
     .module-btn {
@@ -408,7 +474,7 @@
     @media (max-width: 920px) {
       nav { display: none; }
       .stats-grid, .grid-system, .installation-grid, .module-grid, .optics-grid, .applications, .oem-grid, .contact-grid { grid-template-columns: 1fr; }
-      .why-grid { grid-template-columns: 1fr; }
+      .why-split { grid-template-columns: 1fr; }
       .card-grid, .specs, .check-grid { grid-template-columns: 1fr; }
       .form-row { grid-template-columns: 1fr; }
       .hero { min-height: 620px; }
@@ -484,59 +550,76 @@
     <section class="hero" role="banner">
       <img alt="48V magnetic track lighting system for commercial projects and B2B procurement" src="images/image_1.webp" width="1920" height="1080" loading="eager" decoding="async" />
       <div class="container hero-content">
-        <h1>One-Stop Magnetic Track Lighting System Supplier</h1>
-        <p>48V tracks, magnetic light modules, drivers and accessories — fully matched for distributors, contractors and lighting projects.</p>
+        <h1>Complete 48V Magnetic Track Lighting Systems<br>for Modern Interior Projects</h1>
+        <p>One supplier for tracks, magnetic light modules, drivers, connectors and accessories — matched for villas, apartments, retail stores, offices, hotels and showrooms.</p>
         <div class="hero-actions">
           <a class="btn btn-gold" href="#contact">Get a Quotation →</a>
           <a class="btn btn-ghost" href="#system">View System →</a>
         </div>
         <div class="hero-stats">
-          <span>13+ Years</span>
-          <span>Complete System</span>
-          <span>CE &amp; RoHS</span>
-          <span>OEM/ODM Support</span>
+          <span>20 / 23 / 35mm Systems</span>
+          <span>Tracks + Modules + Drivers</span>
+          <span>OEM / ODM Support</span>
+          <span>Project Matching Guide</span>
         </div>
       </div>
     </section>
 
-    <!-- Why Tracklinear — NEW AIDA Interest/Desire block -->
+    <!-- Why Tracklinear — AIDA: Interest/Desire -->
     <section id="why" style="background:white;">
       <div class="container">
         <div class="section-head">
           <div class="section-kicker">Why Tracklinear</div>
-          <h2>We don't just supply components — we match your project.</h2>
-          <p>B2B buyers need a partner who understands specification, compliance, and delivery. Here's why European and Middle East clients choose us.</p>
+          <h2>Why Project Buyers Work With Tracklinear</h2>
+          <p>Magnetic track lighting requires more than choosing a rail or a light module. We help buyers match the full system before ordering.</p>
         </div>
-        <div class="why-grid">
-          <div class="why-card">
-            <div class="why-icon">🏭</div>
-            <h3>Factory-Direct Since 2012</h3>
-            <p>Based in Foshan, China's lighting manufacturing hub. We control every step — from rail extrusion to driver assembly — to ensure consistent quality.</p>
+        <div class="why-split">
+          <!-- Left: Strong statement + tags -->
+          <div class="why-left">
+            <div class="why-statement">We reduce system-matching risk before production.</div>
+            <div class="why-tags">
+              <span class="why-tag">Track + Module Matching</span>
+              <span class="why-tag">Driver + Control Matching</span>
+              <span class="why-tag">OEM / Project Support</span>
+            </div>
           </div>
-          <div class="why-card">
-            <div class="why-icon">✓</div>
-            <h3>CE &amp; RoHS Certified</h3>
-            <p>All products are CE and RoHS compliant by default. We support buyers who need ENEC, SAA, or other regional certifications for their market.</p>
-          </div>
-          <div class="why-card">
-            <div class="why-icon">⚙</div>
-            <h3>Complete System Matching</h3>
-            <p>Tracks (20/23/35mm), light modules, drivers (built-in/external/DALI/Tuya), connectors, and accessories — all tested to work together.</p>
-          </div>
-          <div class="why-card">
-            <div class="why-icon">📦</div>
-            <h3>OEM / ODM / Private Label</h3>
-            <p>Custom branding, packaging, and specification sheets. We support distributor catalogues, lighting showroom stock, and project-based procurement.</p>
-          </div>
-          <div class="why-card">
-            <div class="why-icon">🌍</div>
-            <h3>Export to 30+ Countries</h3>
-            <p>Regular shipments to Europe, the Middle East, Southeast Asia, and South America. We understand international shipping, documentation, and customs requirements.</p>
-          </div>
-          <div class="why-card">
-            <div class="why-icon">📋</div>
-            <h3>Specification Support</h3>
-            <p>Send us your project type, ceiling condition, and control preference. We'll recommend the exact track-module-driver combination — no guesswork.</p>
+          <!-- Right: 5 horizontal issue cards -->
+          <div class="why-right">
+            <div class="issue-card">
+              <div class="issue-num">01</div>
+              <div class="issue-body">
+                <div class="issue-title">Compatibility</div>
+                <div class="issue-desc">Track width, conductor position, module structure and accessories are checked as one system.</div>
+              </div>
+            </div>
+            <div class="issue-card">
+              <div class="issue-num">02</div>
+              <div class="issue-body">
+                <div class="issue-title">Driver Matching</div>
+                <div class="issue-desc">Total wattage, track length and control method are reviewed before quotation.</div>
+              </div>
+            </div>
+            <div class="issue-card">
+              <div class="issue-num">03</div>
+              <div class="issue-body">
+                <div class="issue-title">Installation Fit</div>
+                <div class="issue-desc">Surface, recessed, trimless and pendant options are recommended by ceiling condition.</div>
+              </div>
+            </div>
+            <div class="issue-card">
+              <div class="issue-num">04</div>
+              <div class="issue-body">
+                <div class="issue-title">Project Scene</div>
+                <div class="issue-desc">Residential, retail, office, hotel and showroom layouts are matched with suitable modules.</div>
+              </div>
+            </div>
+            <div class="issue-card">
+              <div class="issue-num">05</div>
+              <div class="issue-body">
+                <div class="issue-title">OEM Supply</div>
+                <div class="issue-desc">Private label packaging, neutral products and project documents are supported for distributors.</div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
