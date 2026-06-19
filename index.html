@@ -231,7 +231,7 @@
     .btn-gold:hover { background: #f1d1a2; transform: translateY(-1px); }
     .btn-ghost { background: rgba(255,255,255,.1); border-color: rgba(255,255,255,.32); color: white; }
     .hero {
-      position: relative; min-height: 600px; display: flex; align-items: center; overflow: hidden;
+      position: relative; min-height: 620px; display: flex; align-items: center; overflow: hidden;
       background: var(--dark);
     }
     .hero img {
@@ -240,13 +240,13 @@
     }
     .hero::after {
       content: ""; position: absolute; inset: 0;
-      background: linear-gradient(90deg, rgba(0,0,0,.75), rgba(0,0,0,.38), rgba(0,0,0,.04));
+      background: linear-gradient(90deg, rgba(0,0,0,.78), rgba(0,0,0,.40), rgba(0,0,0,.06));
     }
-    .hero-content { position: relative; z-index: 2; color: white; max-width: 740px; padding: 100px 0; text-align: center; margin: 0 auto; }
-    .hero h1 { margin: 0; font-size: clamp(38px, 5.5vw, 58px); line-height: 1.2; letter-spacing: -.03em; font-weight: 800; }
-    .hero p { max-width: 640px; font-size: 18px; line-height: 1.7; color: rgba(255,255,255,.92); margin: 24px auto 32px; font-weight: 500; }
-    .hero-actions { display: flex; flex-wrap: wrap; gap: 14px; justify-content: center; margin-bottom: 36px; }
-    .hero-actions .btn { padding: 14px 32px; font-size: 15px; }
+    .hero-content { position: relative; z-index: 2; color: white; max-width: 780px; padding: 120px 0; text-align: center; margin: 0 auto; }
+    .hero h1 { margin: 0; font-size: clamp(38px, 5.5vw, 58px); line-height: 1.15; letter-spacing: -.03em; font-weight: 800; }
+    .hero-sub { max-width: 680px; font-size: 18px; line-height: 1.7; color: rgba(255,255,255,.88); margin: 32px auto 36px; font-weight: 450; }
+    .hero-actions { display: flex; flex-wrap: wrap; gap: 16px; justify-content: center; margin-bottom: 44px; }
+    .hero-actions .btn { padding: 16px 36px; font-size: 15px; letter-spacing: .02em; }
     .hero-stats {
       display: flex; justify-content: center; gap: 14px; flex-wrap: wrap;
       padding-top: 32px;
@@ -312,14 +312,22 @@
       line-height: 1.3;
       letter-spacing: -.03em;
       color: var(--dark);
-      margin-bottom: 28px;
+      margin-bottom: 18px;
       max-width: 400px;
+    }
+
+    .why-desc {
+      font-size: 15px;
+      line-height: 1.75;
+      color: #5a5a5a;
+      margin-bottom: 24px;
+      max-width: 420px;
     }
 
     .why-tags {
       display: flex;
       flex-wrap: wrap;
-      gap: 10px;
+      gap: 8px;
     }
 
     .why-tag {
@@ -327,38 +335,38 @@
       background: var(--dark);
       color: #f1d1a2;
       border-radius: 999px;
-      padding: 8px 18px;
-      font-size: 13px;
+      padding: 7px 16px;
+      font-size: 12px;
       font-weight: 700;
-      letter-spacing: .02em;
+      letter-spacing: .03em;
     }
 
     .why-right {
       display: flex;
       flex-direction: column;
-      gap: 10px;
+      gap: 12px;
     }
 
     .issue-card {
       display: flex;
       align-items: flex-start;
       gap: 20px;
-      background: var(--bg);
-      border: 1px solid rgba(0,0,0,.04);
+      background: #f7f5f1;
+      border: 1px solid rgba(0,0,0,.05);
       border-radius: 18px;
       padding: 20px 24px;
-      transition: all .25s ease;
+      transition: all .3s ease;
     }
 
     .issue-card:hover {
-      transform: translateX(4px);
-      border-color: rgba(176,138,87,.2);
-      box-shadow: 0 6px 20px rgba(0,0,0,.04);
+      transform: translateY(-2px);
+      border-color: rgba(176,138,87,.25);
+      box-shadow: 0 8px 24px rgba(20,20,20,.05);
     }
 
     .issue-num {
       flex-shrink: 0;
-      width: 32px;
+      width: 36px;
       font-size: 13px;
       font-weight: 800;
       color: var(--gold);
@@ -371,10 +379,10 @@
     }
 
     .issue-title {
-      font-size: 17px;
+      font-size: 16px;
       font-weight: 700;
       color: var(--dark);
-      margin-bottom: 4px;
+      margin-bottom: 3px;
     }
 
     .issue-desc {
@@ -550,8 +558,8 @@
     <section class="hero" role="banner">
       <img alt="48V magnetic track lighting system for commercial projects and B2B procurement" src="images/image_1.webp" width="1920" height="1080" loading="eager" decoding="async" />
       <div class="container hero-content">
-        <h1>Complete 48V Magnetic Track Lighting Systems<br>for Modern Interior Projects</h1>
-        <p>One supplier for tracks, magnetic light modules, drivers, connectors and accessories — matched for villas, apartments, retail stores, offices, hotels and showrooms.</p>
+        <h1>Complete 48V Magnetic Track Lighting<br>for Modern Interior Projects</h1>
+        <p class="hero-sub">Tracks, magnetic modules, drivers and accessories matched as one 48V system — for villas, apartments, retail stores, offices, hotels and showrooms.</p>
         <div class="hero-actions">
           <a class="btn btn-gold" href="#contact">Get a Quotation →</a>
           <a class="btn btn-ghost" href="#system">View System →</a>
@@ -574,9 +582,10 @@
           <p>Magnetic track lighting requires more than choosing a rail or a light module. We help buyers match the full system before ordering.</p>
         </div>
         <div class="why-split">
-          <!-- Left: Strong statement + tags -->
+          <!-- Left: Strong statement + description + tags -->
           <div class="why-left">
             <div class="why-statement">We reduce system-matching risk before production.</div>
+            <div class="why-desc">Before quotation, we help check track type, module wattage, driver capacity, control method and accessories — so buyers receive a complete system instead of mismatched components.</div>
             <div class="why-tags">
               <span class="why-tag">Track + Module Matching</span>
               <span class="why-tag">Driver + Control Matching</span>
@@ -588,35 +597,35 @@
             <div class="issue-card">
               <div class="issue-num">01</div>
               <div class="issue-body">
-                <div class="issue-title">Compatibility</div>
+                <div class="issue-title">System Compatibility</div>
                 <div class="issue-desc">Track width, conductor position, module structure and accessories are checked as one system.</div>
               </div>
             </div>
             <div class="issue-card">
               <div class="issue-num">02</div>
               <div class="issue-body">
-                <div class="issue-title">Driver Matching</div>
-                <div class="issue-desc">Total wattage, track length and control method are reviewed before quotation.</div>
+                <div class="issue-title">Driver &amp; Control Matching</div>
+                <div class="issue-desc">Total wattage, track length, power feed position and dimming method are reviewed before quotation.</div>
               </div>
             </div>
             <div class="issue-card">
               <div class="issue-num">03</div>
               <div class="issue-body">
-                <div class="issue-title">Installation Fit</div>
+                <div class="issue-title">Installation Method Fit</div>
                 <div class="issue-desc">Surface, recessed, trimless and pendant options are recommended by ceiling condition.</div>
               </div>
             </div>
             <div class="issue-card">
               <div class="issue-num">04</div>
               <div class="issue-body">
-                <div class="issue-title">Project Scene</div>
+                <div class="issue-title">Project Scene Matching</div>
                 <div class="issue-desc">Residential, retail, office, hotel and showroom layouts are matched with suitable modules.</div>
               </div>
             </div>
             <div class="issue-card">
               <div class="issue-num">05</div>
               <div class="issue-body">
-                <div class="issue-title">OEM Supply</div>
+                <div class="issue-title">OEM / Distributor Support</div>
                 <div class="issue-desc">Private label packaging, neutral products and project documents are supported for distributors.</div>
               </div>
             </div>
