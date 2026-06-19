@@ -707,10 +707,11 @@
     <div class="container">
       <div class="section-head">
         <div class="section-kicker">Frequently Asked Questions</div>
-        <h2>20mm Magnetic Track — B2B Buyer's FAQ</h2>
+        <h2>Common Questions About<br>20mm Magnetic Track Systems</h2>
+        <p>Practical answers for importers, contractors and lighting specifiers working on 48V magnetic track lighting projects.</p>
       </div>
       <div class="faq-list">
-        <div class="faq-item">
+        <div class="faq-card">
           <div class="faq-number">01</div>
           <button class="faq-question" onclick="toggleFaq(this)">
             <span>How many LED fixtures can a single 20mm magnetic track support without voltage drop?</span>
@@ -721,7 +722,7 @@
             <p>For longer runs or higher total wattage, we recommend mid-point feeding, dual-end feeding, or separate power zones to reduce voltage drop and keep brightness stable.</p>
           </div>
         </div>
-        <div class="faq-item">
+        <div class="faq-card">
           <div class="faq-number">02</div>
           <button class="faq-question" onclick="toggleFaq(this)">
             <span>Are 20mm magnetic tracks from different brands interchangeable with the same LED modules?</span>
@@ -732,7 +733,7 @@
             <p>Our 20mm magnetic track is designed to match most standard 20mm magnetic lighting modules on the market. However, for project orders or bulk purchasing, we always recommend sample testing before mass production to confirm compatibility.</p>
           </div>
         </div>
-        <div class="faq-item">
+        <div class="faq-card">
           <div class="faq-number">03</div>
           <button class="faq-question" onclick="toggleFaq(this)">
             <span>Does a 20mm magnetic track support DALI or 0-10V dimming?</span>
@@ -831,7 +832,10 @@
       document.getElementById('mobileMenu').classList.toggle('open');
     }
     function toggleFaq(btn) {
-      btn.parentElement.classList.toggle('open');
+      const card = btn.parentElement;
+      const icon = card.querySelector('.faq-icon');
+      const isOpen = card.classList.toggle('open');
+      icon.textContent = isOpen ? '–' : '+';
     }
     // Form submission with AJAX
     document.querySelector('.contact-form').addEventListener('submit', async function(e) {
