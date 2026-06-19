@@ -313,21 +313,27 @@
       display: grid;
       grid-template-columns: 1fr 1.2fr;
       gap: 48px;
-      align-items: start;
+      align-items: stretch;
     }
 
     .why-left {
       position: sticky;
       top: 100px;
+      display: flex;
+      flex-direction: column;
+      height: 100%;
     }
     .why-img-wrap {
+      flex: 1;
       border-radius: 20px;
       overflow: hidden;
       margin-top: 20px;
+      min-height: 120px;
     }
     .why-img-wrap img {
       width: 100%;
-      height: auto;
+      height: 100%;
+      object-fit: cover;
       display: block;
       border-radius: 20px;
     }
