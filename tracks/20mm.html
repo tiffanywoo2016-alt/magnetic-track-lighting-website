@@ -712,12 +712,12 @@
       </div>
       <div class="faq-list">
         <div class="faq-card">
-          <div class="faq-card-inner">
+          <div class="faq-card-inner" onclick="toggleFaq(this)">
             <div class="faq-number">01</div>
-            <button class="faq-question" onclick="toggleFaq(this)">
-              <span>How many LED fixtures can a single 20mm magnetic track support without voltage drop?</span>
+            <div class="faq-question">
+              <span class="faq-text">How many LED fixtures can a single 20mm magnetic track support without voltage drop?</span>
               <span class="faq-icon">+</span>
-            </button>
+            </div>
           </div>
           <div class="faq-answer">
             <p>A single 20mm 48V magnetic track can usually support around <strong>120–150W per power feed</strong>, depending on track length, conductor design, fixture wattage, and feed position. For example, one feed may support about <strong>8–12 pcs of 10W</strong> magnetic light modules or <strong>6–8 pcs of 15–20W</strong> modules.</p>
@@ -725,12 +725,12 @@
           </div>
         </div>
         <div class="faq-card">
-          <div class="faq-card-inner">
+          <div class="faq-card-inner" onclick="toggleFaq(this)">
             <div class="faq-number">02</div>
-            <button class="faq-question" onclick="toggleFaq(this)">
-              <span>Are 20mm magnetic tracks from different brands interchangeable with the same LED modules?</span>
+            <div class="faq-question">
+              <span class="faq-text">Are 20mm magnetic tracks from different brands interchangeable with the same LED modules?</span>
               <span class="faq-icon">+</span>
-            </button>
+            </div>
           </div>
           <div class="faq-answer">
             <p>Not always. Although many systems are called 20mm magnetic track, different brands may use different <strong>conductor positions</strong>, <strong>magnetic contacts</strong>, <strong>locking structures</strong>, and <strong>fixture connection designs</strong>.</p>
@@ -738,12 +738,12 @@
           </div>
         </div>
         <div class="faq-card">
-          <div class="faq-card-inner">
+          <div class="faq-card-inner" onclick="toggleFaq(this)">
             <div class="faq-number">03</div>
-            <button class="faq-question" onclick="toggleFaq(this)">
-              <span>Does a 20mm magnetic track support DALI or 0-10V dimming?</span>
+            <div class="faq-question">
+              <span class="faq-text">Does a 20mm magnetic track support DALI or 0-10V dimming?</span>
               <span class="faq-icon">+</span>
-            </button>
+            </div>
           </div>
           <div class="faq-answer">
             <p>The 20mm magnetic track itself is mainly a <strong>48V low-voltage power rail</strong>. Whether the system supports <strong>DALI</strong>, <strong>0-10V</strong>, <strong>TRIAC</strong>, <strong>smart control</strong>, or simple on/off switching depends on the selected driver and control system.</p>
@@ -837,8 +837,8 @@
     function toggleMobileMenu() {
       document.getElementById('mobileMenu').classList.toggle('open');
     }
-    function toggleFaq(btn) {
-      const card = btn.closest('.faq-card');
+    function toggleFaq(el) {
+      const card = el.parentElement;
       const icon = card.querySelector('.faq-icon');
       const isOpen = card.classList.toggle('open');
       icon.textContent = isOpen ? '–' : '+';

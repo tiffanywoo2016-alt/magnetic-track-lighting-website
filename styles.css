@@ -345,21 +345,20 @@ footer { background: #111; color: white; padding: 46px 0; }
   align-items: center;
   gap: 12px;
   padding: 16px 24px 16px 12px;
-  background: none;
-  border: none;
   cursor: pointer;
   font-size: 18px;
   font-weight: 600;
   color: #111111;
   text-align: left;
   line-height: 1.5;
+  user-select: none;
 }
 
 .faq-card.open .faq-question {
   padding-bottom: 8px;
 }
 
-.faq-question span:first-child {
+.faq-text {
   flex: 1;
 }
 
