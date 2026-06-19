@@ -702,6 +702,46 @@
     </section>
   </main>
 
+  <!-- FAQ Section -->
+  <section class="faq-section">
+    <div class="container">
+      <div class="section-head">
+        <div class="section-kicker">Frequently Asked Questions</div>
+        <h2>Common Questions About 20mm Magnetic Track</h2>
+        <p>Answers for importers, contractors and lighting specifiers considering 20mm track for commercial projects.</p>
+      </div>
+      <div class="faq-list">
+        <div class="faq-item">
+          <button class="faq-question" onclick="toggleFaq(this)">
+            <span>How many LED fixtures can a single 20mm magnetic track run support without voltage drop?</span>
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>The maximum continuous load for a 20mm 48V magnetic track depends on the conductor gauge and total run length. For runs up to 10 meters, a single feed supports up to 150W (roughly 6-8 standard spot modules). For longer runs exceeding 15 meters or higher load requirements, we recommend mid-point power feeds or dual feeds to prevent voltage drop across the circuit. Your specific configuration can be verified by sharing your project layout with our engineering team.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question" onclick="toggleFaq(this)">
+            <span>Are 20mm magnetic tracks from different brands interchangeable with the same LED modules?</span>
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>Not all 20mm magnetic tracks use the same magnetic retention force or conductor alignment. Our 20mm track uses a standardized 5mm copper conductor pitch and 5-8 kg magnetic retention per connection point, making it compatible with most open-standard 20mm modules on the market. However, some brands use proprietary locking mechanisms that are not interchangeable. We recommend testing a sample before committing to large quantities, and we offer free sample boards for volume buyers.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question" onclick="toggleFaq(this)">
+            <span>Does the 20mm track support DALI dimming or 0-10V control, or is it only on/off switching?</span>
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>Yes, the 20mm 48V magnetic track supports multiple dimming protocols depending on the driver selected. Our 22Y Series modules with built-in driver support TRIAC phase-cut dimming, while external driver configurations can support DALI and 0-10V dimming. For commercial projects requiring centralized lighting control (hotels, offices, retail), we can supply compatible drivers and control gear. Please specify your control system when ordering so we can match the driver output accordingly.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- Contact Section -->
   <section id="contact" class="contact-section">
     <div class="container">
@@ -781,6 +821,9 @@
   <script>
     function toggleMobileMenu() {
       document.getElementById('mobileMenu').classList.toggle('open');
+    }
+    function toggleFaq(btn) {
+      btn.parentElement.classList.toggle('open');
     }
     // Form submission with AJAX
     document.querySelector('.contact-form').addEventListener('submit', async function(e) {
