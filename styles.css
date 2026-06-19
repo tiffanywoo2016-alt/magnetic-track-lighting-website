@@ -307,21 +307,21 @@ footer { background: #111; color: white; padding: 46px 0; }
 
 .faq-card {
   background: #ffffff;
-  border: 1px solid #e7e1d8;
+  border: 1px solid #e0d8cf;
   border-radius: 16px;
   overflow: hidden;
-  box-shadow: 0 10px 30px rgba(20, 20, 20, 0.04);
+  box-shadow: 0 4px 16px rgba(20, 20, 20, 0.05);
   transition: box-shadow .25s ease;
   max-width: 840px;
   margin: 0 auto;
 }
 
 .faq-card:hover {
-  box-shadow: 0 10px 30px rgba(20, 20, 20, 0.07);
+  box-shadow: 0 4px 20px rgba(20, 20, 20, 0.07);
 }
 
 .faq-card.open {
-  box-shadow: 0 10px 30px rgba(20, 20, 20, 0.07);
+  box-shadow: 0 4px 20px rgba(20, 20, 20, 0.07);
 }
 
 .faq-card-inner {
