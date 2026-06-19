@@ -331,8 +331,10 @@ footer { background: #111; color: white; padding: 46px 0; }
 
 .faq-number {
   flex-shrink: 0;
-  padding: 24px 0 0 24px;
-  width: 40px;
+  width: 48px;
+  min-width: 48px;
+  text-align: center;
+  padding: 24px 0 0 0;
   font-size: 12px;
   font-weight: 700;
   color: #b88746;
@@ -389,12 +391,12 @@ footer { background: #111; color: white; padding: 46px 0; }
   max-height: 0;
   overflow: hidden;
   transition: max-height .4s ease, padding .4s ease;
-  padding: 0 24px 0 76px;
+  padding: 0 24px 0 60px;
 }
 
 .faq-card.open .faq-answer {
   max-height: 500px;
-  padding: 0 24px 28px 76px;
+  padding: 0 24px 28px 60px;
 }
 
 .faq-answer p {
@@ -433,8 +435,9 @@ footer { background: #111; color: white; padding: 46px 0; }
 
 @media (max-width: 640px) {
   .faq-number {
-    padding: 18px 0 0 16px;
-    width: 30px;
+    padding: 18px 0 0 0;
+    width: 38px;
+    min-width: 38px;
     font-size: 11px;
   }
   .faq-question {
@@ -449,10 +452,10 @@ footer { background: #111; color: white; padding: 46px 0; }
     font-size: 17px;
   }
   .faq-answer {
-    padding: 0 16px 0 56px;
+    padding: 0 16px 0 48px;
   }
   .faq-card.open .faq-answer {
-    padding: 0 16px 22px 56px;
+    padding: 0 16px 22px 48px;
   }
   .faq-answer p {
     font-size: 15px;
