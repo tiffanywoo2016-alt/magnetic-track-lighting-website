@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Loading — Tracklinear Lighting</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300..800&display=swap" rel="stylesheet" />
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, sans-serif;
+      background: #151515;
+      color: #fff;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+      position: relative;
+    }
+
+    /* ── Ambient glow ── */
+    body::before {
+      content: "";
+      position: absolute;
+      top: -30%;
+      left: -20%;
+      width: 140%;
+      height: 160%;
+      background: radial-gradient(ellipse at 50% 30%, rgba(176, 138, 87, 0.08), transparent 60%);
+      pointer-events: none;
+    }
+
+    /* ── Attention (Awareness) ── */
+    .bg-track {
+      position: absolute;
+      width: 1px;
+      height: 0;
+      background: linear-gradient(180deg, transparent, rgba(176, 138, 87, 0.18), transparent);
+      top: 0;
+      left: 50%;
+      animation: trackGrow 2.2s ease-out forwards;
+    }
+    @keyframes trackGrow {
+      0%   { height: 0; }
+      100% { height: 100vh; }
+    }
+
+    .top-ring {
+      position: absolute;
+      top: 22%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 140px;
+      height: 140px;
+      border: 1px solid rgba(176, 138, 87, 0.10);
+      border-radius: 50%;
+      animation: ringPulse 2.8s ease-in-out infinite;
+    }
+    @keyframes ringPulse {
+      0%, 100% { transform: translate(-50%, -50%) scale(1); opacity: 0.40; }
+      50%      { transform: translate(-50%, -50%) scale(1.25); opacity: 0.08; }
+    }
+
+    /* ── Logo animation (Interest) ── */
+    .logo-wrap {
+      position: relative;
+      margin-bottom: 42px;
+      animation: fadeSlideIn 1s ease-out 0.6s both;
+    }
+    .logo-mark {
+      width: 68px;
+      height: 68px;
+      border-radius: 22px;
+      background: #fff;
+      color: #151515;
+      display: grid;
+      place-items: center;
+      font-weight: 800;
+      font-size: 22px;
+      letter-spacing: -0.02em;
+      margin: 0 auto;
+      position: relative;
+      box-shadow: 0 0 60px rgba(176, 138, 87, 0.20);
+    }
+    .logo-mark::after {
+      content: "";
+      position: absolute;
+      inset: -3px;
+      border-radius: 25px;
+      border: 1px solid rgba(176, 138, 87, 0.25);
+    }
+
+    /* ── Headline (Desire) ── */
+    .headline {
+      text-align: center;
+      animation: fadeSlideIn 1s ease-out 1s both;
+    }
+    .headline h1 {
+      font-size: clamp(24px, 4vw, 44px);
+      font-weight: 700;
+      letter-spacing: -0.03em;
+      line-height: 1.2;
+      margin-bottom: 16px;
+    }
+    .headline h1 span {
+      background: linear-gradient(135deg, #e6c08c, #b08a57);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+    .headline p {
+      font-size: clamp(13px, 1.8vw, 16px);
+      color: rgba(255, 255, 255, 0.55);
+      line-height: 1.65;
+      max-width: 460px;
+      font-weight: 400;
+      margin: 0 auto;
+    }
+
+    /* ── Progress bar (Action signal) ── */
+    .progress-wrap {
+      margin-top: 52px;
+      width: 200px;
+      height: 3px;
+      border-radius: 999px;
+      background: rgba(255, 255, 255, 0.08);
+      overflow: hidden;
+      animation: fadeSlideIn 0.8s ease-out 1.6s both;
+    }
+    .progress-bar {
+      height: 100%;
+      width: 0%;
+      border-radius: 999px;
+      background: linear-gradient(90deg, #b08a57, #e6c08c);
+      animation: loadProgress 2.8s cubic-bezier(0.22, 1, 0.36, 1) 1.8s forwards;
+    }
+    @keyframes loadProgress {
+      0%   { width: 0%; }
+      30%  { width: 22%; }
+      60%  { width: 55%; }
+      85%  { width: 82%; }
+      100% { width: 100%; }
+    }
+
+    .progress-label {
+      text-align: center;
+      margin-top: 12px;
+      font-size: 12px;
+      font-weight: 500;
+      color: rgba(255, 255, 255, 0.30);
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      animation: fadeSlideIn 0.8s ease-out 2s both;
+    }
+
+    /* ── Bottom line ── */
+    .footnote {
+      position: absolute;
+      bottom: 40px;
+      font-size: 12px;
+      color: rgba(255, 255, 255, 0.16);
+      letter-spacing: 0.08em;
+      font-weight: 400;
+      animation: fadeIn 1s ease 2.4s both;
+    }
+
+    /* ── Shared animation ── */
+    @keyframes fadeSlideIn {
+      0%   { opacity: 0; transform: translateY(18px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+    @keyframes fadeIn {
+      0%   { opacity: 0; }
+      100% { opacity: 1; }
+    }
+
+    /* ── Scatter dots (ambient texture) ── */
+    .dot { position: absolute; border-radius: 50%; background: rgba(176, 138, 87, 0.08); }
+    .dot-1 { width: 4px; height: 4px; top: 14%; left: 18%; }
+    .dot-2 { width: 6px; height: 6px; bottom: 28%; right: 15%; }
+    .dot-3 { width: 3px; height: 3px; top: 60%; left: 78%; }
+    .dot-4 { width: 5px; height: 5px; top: 32%; right: 22%; }
+    .dot-5 { width: 3px; height: 3px; bottom: 38%; left: 12%; }
+
+    /* ── Mobile ── */
+    @media (max-width: 640px) {
+      .top-ring { width: 100px; height: 100px; top: 15%; }
+      .logo-mark { width: 56px; height: 56px; font-size: 18px; border-radius: 18px; }
+      .logo-mark::after { border-radius: 21px; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Ambient decoration -->
+  <div class="bg-track"></div>
+  <div class="top-ring"></div>
+  <div class="dot dot-1"></div>
+  <div class="dot dot-2"></div>
+  <div class="dot dot-3"></div>
+  <div class="dot dot-4"></div>
+  <div class="dot dot-5"></div>
+
+  <!-- Logo → Interest (A) -->
+  <div class="logo-wrap">
+    <div class="logo-mark">TL</div>
+  </div>
+
+  <!-- Headline → Desire (D) -->
+  <div class="headline">
+    <h1>Your <span>Tracklinear</span> experience<br>is loading</h1>
+    <p>Premium magnetic track lighting systems — 48V tracks, LED modules, DALI/Tuya smart drivers and accessories for distributors and contractors worldwide.</p>
+  </div>
+
+  <!-- Progress bar → Action (A) -->
+  <div class="progress-wrap">
+    <div class="progress-bar"></div>
+  </div>
+  <div class="progress-label">Preparing your experience</div>
+
+  <div class="footnote">Tracklinear Lighting &nbsp;·&nbsp; tracklinear.com</div>
+
+  <!-- ── Auto-redirect after progress completes ── -->
+  <script>
+    // Total animation duration until progress hits 100%
+    const PROGRESS_END = 2800;   // progress bar animation duration (ms)
+    const START_DELAY = 1800;    // progress bar start delay (ms)
+    const TOTAL_WAIT = START_DELAY + PROGRESS_END + 400;  // +400ms buffer
+
+    const progressLabel = document.querySelector('.progress-label');
+
+    // Fake statuses for interest
+    const statuses = [
+      { at: 0,    text: 'Initializing' },
+      { at: 0.25, text: 'Loading modules' },
+      { at: 0.50, text: 'Configuring system' },
+      { at: 0.75, text: 'Almost ready' },
+      { at: 1,    text: 'Redirecting...' },
+    ];
+
+    function updateLabel(progress) {
+      let last = statuses[0];
+      for (const s of statuses) {
+        if (progress >= s.at) last = s;
+      }
+      progressLabel.textContent = last.text;
+    }
+
+    const startTime = Date.now() + START_DELAY;
+
+    function tick() {
+      const elapsed = Date.now() - startTime;
+      const p = Math.min(elapsed / PROGRESS_END, 1);
+      updateLabel(p);
+      if (p < 1) requestAnimationFrame(tick);
+    }
+
+    setTimeout(tick, START_DELAY);
+
+    // Redirect to homepage
+    setTimeout(() => {
+      window.location.href = 'https://tracklinear.com/';
+    }, TOTAL_WAIT);
+  </script>
+
+</body>
+</html>
