@@ -3,224 +3,210 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Spot, Flood, Linear Flood, or Grille — A Practical Guide to Choosing the Right Beam Angle</title>
-  <meta name="description" content="Compare spotlight, flood, linear flood and grille modules for magnetic track lighting. Find the right beam angle for retail, hotel, office and gallery projects.">
-  <link rel="canonical" href="https://tracklinear.com/blog-post-10.html">
-  <meta name="theme-color" content="#111">
-
-  <link rel="dns-prefetch" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400;14..32,500;14..32,600;14..32,700&display=swap" rel="stylesheet">
-
-  <!-- Open Graph -->
-  <meta property="og:title" content="Spot, Flood, Linear Flood, or Grille — A Practical Guide to Choosing the Right Beam Angle">
+  <meta property="og:title" content="Spot, Flood, Linear Flood, or Grille — A Practical Guide to Choosing the Right Beam Angle for Your Magnetic Track Lighting Project">
   <meta property="og:description" content="Compare spotlight, flood, linear flood and grille modules for magnetic track lighting. Find the right beam angle for retail, hotel, office and gallery projects.">
   <meta property="og:url" content="https://tracklinear.com/blog-post-10.html">
   <meta property="og:type" content="article">
   <meta property="og:image" content="https://tracklinear.com/images/blog10_hero.webp">
   <meta property="og:site_name" content="Tracklinear Lighting">
-
-  <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Spot, Flood, Linear Flood, or Grille — A Practical Guide to Choosing the Right Beam Angle">
+  <meta name="twitter:title" content="Spot, Flood, Linear Flood, or Grille — A Practical Guide to Choosing the Right Beam Angle for Your Magnetic Track Lighting Project">
+  <meta name="twitter:description" content="Compare spotlight, flood, linear flood and grille modules for magnetic track lighting. Find the right beam angle for retail, hotel, office and gallery projects.">
   <meta name="twitter:image" content="https://tracklinear.com/images/blog10_hero.webp">
 
+  <meta name="theme-color" content="#1a1a1a">
+  <link rel="canonical" href="https://tracklinear.com/blog-post-10.html">
+  <link rel="dns-prefetch" href="https://fonts.googleapis.com">
+  <link rel="dns-prefetch" href="https://fonts.gstatic.com">
+  <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <title>Spot, Flood, Linear Flood, or Grille — Beam Angle Guide | Tracklinear</title>
+  <meta name="description" content="Compare spotlight, flood, linear flood and grille modules for magnetic track lighting. Find the right beam angle for retail, hotel, office and gallery projects.">
   <style>
-    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --bg: #f5f3ef;
+      --dark: #151515;
+      --text: #161616;
+      --muted: #666;
+      --gold: #b08a57;
+      --gold-light: #e6c08c;
+    }
     body {
-      font-family: 'Inter', -apple-system, sans-serif;
-      background: #f8f8f8;
-      color: #222;
-      line-height: 1.7;
+      margin: 0;
+      font-family: Inter, system-ui, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
     }
-    .container { max-width: 780px; margin: 0 auto; padding: 0 24px; }
+    .container { max-width: 800px; margin: 0 auto; padding: 0 28px; }
     header {
-      background: #111;
-      padding: 20px 0;
+      padding: 24px 0;
+      border-bottom: 1px solid rgba(0,0,0,.06);
+      background: white;
     }
-    header .container {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      max-width: 1200px;
-    }
-    header .logo { color: white; font-size: 20px; font-weight: 700; text-decoration: none; letter-spacing: -.5px; }
-    header nav a { color: rgba(255,255,255,.6); text-decoration: none; font-size: 14px; margin-left: 28px; transition: color .2s; }
-    header nav a:hover { color: white; }
+    .nav { display: flex; align-items: center; justify-content: space-between; }
+    .logo { font-weight: 800; font-size: 20px; text-decoration: none; color: var(--dark); }
+    .back-link { font-size: 14px; font-weight: 600; color: var(--gold); text-decoration: none; }
 
     .breadcrumb {
-      margin-top: 32px;
       font-size: 13px;
-      color: #888;
+      color: var(--muted);
+      margin: 28px 0;
     }
-    .breadcrumb a { color: #888; text-decoration: none; }
-    .breadcrumb a:hover { color: #111; }
+    .breadcrumb a { color: var(--gold); text-decoration: none; }
 
+    h1 { font-size: 36px; line-height: 1.2; margin: 8px 0 16px; font-weight: 800; }
+    .meta {
+      font-size: 14px;
+      color: var(--muted);
+      display: flex;
+      gap: 12px;
+      align-items: center;
+      flex-wrap: wrap;
+      margin-bottom: 32px;
+    }
     .tag {
       display: inline-block;
-      background: #e8e8e8;
-      padding: 4px 14px;
-      border-radius: 20px;
-      font-size: 12px;
-      font-weight: 600;
-      color: #555;
-      margin: 24px 0 12px;
-    }
-    h1 {
-      font-size: 32px;
+      background: var(--gold);
+      color: white;
+      font-size: 11px;
       font-weight: 700;
-      line-height: 1.25;
-      letter-spacing: -.5px;
-      margin-bottom: 12px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      padding: 4px 12px;
+      border-radius: 4px;
     }
-    .meta {
-      font-size: 13px;
-      color: #888;
-      margin-bottom: 28px;
-    }
-    .meta span { margin-right: 6px; }
 
     .img-full {
       width: 100%;
       border-radius: 16px;
-      margin: 8px 0 32px;
+      margin: 28px 0;
+      box-shadow: 0 8px 30px rgba(0,0,0,0.08);
     }
 
-    p { margin-bottom: 20px; font-size: 16px; color: #333; }
-    .label {
-      display: inline-block;
-      background: #111;
-      color: white;
-      padding: 2px 10px;
-      border-radius: 4px;
-      font-size: 13px;
-      font-weight: 600;
-    }
+    h2 { font-size: 26px; margin: 48px 0 16px; font-weight: 700; }
+    h3 { font-size: 20px; margin: 32px 0 12px; font-weight: 700; color: var(--dark); }
+    p { font-size: 16px; line-height: 1.75; color: #2a2a2a; margin: 0 0 20px; }
+    ul { padding-left: 20px; margin: 16px 0; }
+    ul li { font-size: 15px; line-height: 1.7; margin-bottom: 6px; }
+
     .quick-answer {
-      background: #111;
-      color: rgba(255,255,255,.85);
-      padding: 28px 32px;
-      border-radius: 16px;
+      background: var(--dark);
+      color: white;
+      padding: 32px;
+      border-radius: 20px;
       margin: 28px 0;
     }
-    .quick-answer h3 {
-      color: white;
-      font-size: 18px;
-      margin-bottom: 16px;
-    }
-    .quick-answer p { color: rgba(255,255,255,.8); font-size: 15px; margin-bottom: 12px; }
-    .quick-answer p:last-child { margin-bottom: 0; }
-    .quick-answer .label { background: #2a2a2a; color: #ddd; font-size: 12px; }
-
-    h2 {
-      font-size: 22px;
+    .quick-answer h3 { color: white; font-size: 18px; margin: 0 0 16px; font-weight: 700; }
+    .quick-answer p { color: rgba(255,255,255,.85); font-size: 15px; margin-bottom: 12px; }
+    .quick-answer .label {
+      display: inline-block;
+      background: rgba(255,255,255,.12);
+      color: var(--gold-light);
+      padding: 2px 10px;
+      border-radius: 4px;
+      font-size: 12px;
       font-weight: 700;
-      margin: 40px 0 16px;
-      letter-spacing: -.3px;
+      text-transform: uppercase;
+      letter-spacing: .5px;
     }
-    h3 {
-      font-size: 17px;
-      font-weight: 600;
-      margin: 28px 0 8px;
-    }
-    ul, ol { margin: 0 0 20px 20px; }
-    li { margin-bottom: 8px; font-size: 15px; color: #333; }
-    strong { color: #111; }
 
     .decision-table {
       width: 100%;
       border-collapse: collapse;
       margin: 24px 0 32px;
       font-size: 14px;
+      background: white;
+      border-radius: 16px;
+      overflow: hidden;
+      box-shadow: 0 4px 20px rgba(0,0,0,.04);
     }
     .decision-table th {
-      background: #111;
+      background: var(--dark);
       color: white;
-      padding: 12px 16px;
+      padding: 14px 18px;
       text-align: left;
       font-weight: 600;
     }
     .decision-table td {
-      padding: 12px 16px;
+      padding: 14px 18px;
       border-bottom: 1px solid #eee;
     }
+    .decision-table tr:last-child td { border-bottom: none; }
     .decision-table tr:nth-child(even) td { background: #fafafa; }
-    .decision-table td:first-child { font-weight: 600; color: #111; }
+    .decision-table td:first-child { font-weight: 600; color: var(--dark); }
 
-    .faq {
+    .faq-section {
       background: white;
-      border-radius: 16px;
+      border-radius: 20px;
       padding: 32px;
       margin: 40px 0;
-      box-shadow: 0 2px 16px rgba(0,0,0,.04);
+      box-shadow: 0 4px 20px rgba(0,0,0,.04);
     }
-    .faq h2 { margin-top: 0; }
+    .faq-section h2 { margin-top: 0; }
     .faq-item { border-bottom: 1px solid #eee; padding: 20px 0; }
     .faq-item:last-child { border-bottom: none; padding-bottom: 0; }
-    .faq-q { font-weight: 600; margin-bottom: 8px; color: #111; font-size: 15px; }
-    .faq-a { font-size: 15px; color: #555; line-height: 1.7; }
+    .faq-q { font-weight: 700; margin-bottom: 8px; color: var(--dark); font-size: 16px; }
+    .faq-a { font-size: 15px; color: var(--muted); line-height: 1.7; }
 
     .cta-box {
-      background: #f0f0f0;
-      border-radius: 16px;
-      padding: 28px 32px;
+      background: var(--dark);
+      color: rgba(255,255,255,.85);
+      border-radius: 20px;
+      padding: 32px;
       margin: 40px 0;
       text-align: center;
     }
-    .cta-box p { margin-bottom: 0; font-size: 15px; color: #444; }
-
-    .back-link {
-      display: inline-block;
-      margin: 32px 0;
-      font-size: 14px;
-      color: #888;
-      text-decoration: none;
-    }
-    .back-link:hover { color: #111; }
+    .cta-box p { color: rgba(255,255,255,.85); margin-bottom: 0; font-size: 15px; }
+    .cta-box a { color: var(--gold-light); text-decoration: underline; }
 
     .related-articles {
-      border-top: 1px solid #ddd;
+      border-top: 1px solid rgba(0,0,0,.08);
       padding-top: 32px;
       margin: 40px 0 60px;
     }
     .related-articles h3 { font-size: 18px; margin-bottom: 16px; }
     .related-articles a {
       display: block;
-      padding: 12px 0;
-      border-bottom: 1px solid #eee;
-      color: #333;
+      padding: 14px 0;
+      border-bottom: 1px solid rgba(0,0,0,.06);
+      color: var(--text);
       text-decoration: none;
       font-size: 15px;
+      font-weight: 600;
     }
-    .related-articles a:hover { color: #111; }
-    .related-articles a span { color: #888; font-size: 13px; display: block; margin-top: 2px; }
+    .related-articles a:hover { color: var(--gold); }
+    .related-articles a span { color: var(--muted); font-size: 13px; font-weight: 400; display: block; margin-top: 2px; }
 
-    footer { background: #111; color: white; padding: 40px 0; margin-top: 60px; }
-    footer .container { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 16px; max-width: 1200px; }
-    footer a { color: rgba(255,255,255,.5); text-decoration: none; font-size: 14px; }
+    footer {
+      background: var(--dark);
+      color: rgba(255,255,255,.6);
+      padding: 40px 0;
+      margin-top: 60px;
+      text-align: center;
+      font-size: 14px;
+    }
+    footer a { color: rgba(255,255,255,.5); text-decoration: none; }
     footer a:hover { color: white; }
 
     @media (max-width: 600px) {
       h1 { font-size: 24px; }
       .container { padding: 0 16px; }
       .quick-answer { padding: 20px; }
-      .faq { padding: 20px; }
+      .faq-section { padding: 20px; }
       .decision-table { font-size: 13px; }
       .decision-table th, .decision-table td { padding: 10px 12px; }
+      .meta { flex-direction: column; gap: 4px; }
     }
   </style>
 </head>
 <body>
 
 <header>
-  <div class="container">
+  <div class="container nav">
     <a href="index.html" class="logo">Tracklinear</a>
-    <nav>
-      <a href="tracks/index.html">Tracks</a>
-      <a href="lights/index.html">Lights</a>
-      <a href="blog/index.html">Blog</a>
-    </nav>
+    <a href="blog/index.html" class="back-link">← Back to Blog</a>
   </div>
 </header>
 
@@ -258,36 +244,40 @@
 
   <h2>Which Module for Which Scenario</h2>
 
-  <h3>Retail display or window &mdash; Spotlight</h3>
+  <h3>Retail display or window — Spotlight</h3>
   <p>Tight beam (15° to 30°) creates contrast between product and background, drawing the customer&#8217;s eye. Avoid flood in this role — it washes out the product and removes the visual hierarchy a display needs.</p>
 
-  <h3>Gallery artwork &mdash; Spotlight 15°–24°</h3>
+  <h3>Gallery artwork — Spotlight 15°–24°</h3>
   <p>Precise accent with minimal light spill onto adjacent pieces. Head angle is critical here — aim a 15° spotlight 30° off-target and the beam misses the artwork entirely. Always account for swivel range when positioning spotlights above a gallery wall.</p>
 
-  <h3>Open office or meeting room &mdash; Flood 60°–120°</h3>
+  <h3>Open office or meeting room — Flood 60°–120°</h3>
   <p>Even general illumination with soft falloff. No hot spots, no harsh shadows. This is a pure ambient role — spotlights create distracting contrast in a work environment.</p>
 
-  <h3>Hotel corridor or passageway &mdash; Grille module</h3>
+  <h3>Hotel corridor or passageway — Grille module</h3>
   <p>Guests naturally look up while walking through a corridor. A standard flood creates direct glare at these viewing angles. A grille module uses a micro-louvre structure to cut glare above 45°, making the space comfortable to walk through. Trade-off: grille modules output 10–15% fewer lumens than a comparable open flood.</p>
 
-  <h3>Wall washing or shelf lighting &mdash; Linear flood</h3>
-  <p>Rectangular beam pattern washes a wall or shelf from end to end evenly. A round spotlight or standard flood creates scalloped pools of light — linear flood is the only module type that gives a continuous clean wash across a long surface.</p>
+  <img src="images/blog10_grille.webp" alt="Hotel corridor with grille module magnetic track lighting showing controlled glare-free illumination and even light distribution along the passageway" class="img-full" loading="lazy">
 
-  <h3>Restaurant dining table &mdash; Spotlight or Pendant</h3>
+  <h3>Wall washing or shelf lighting — Linear flood</h3>
+  <p>Rectangular beam pattern washes a wall or shelf from end to end evenly. A round spotlight or standard flood creates scalloped pools of light — linear flood is the only module type that gives a continuous clean wash across a long surface. This makes it the preferred choice for retail wall displays, library shelving and feature walls in hotel lobbies.</p>
+
+  <h3>Restaurant dining table — Spotlight or Pendant</h3>
   <p>Spotlight for focused table illumination that separates the dining zone from the ambient space. Pendant for a decorative presence at a lower mounting height — especially effective over island counters or centre tables.</p>
 
-  <h3>Reading area, library or classroom &mdash; Grille module</h3>
+  <h3>Reading area, library or classroom — Grille module</h3>
   <p>Low UGR for extended visual comfort. People in these spaces will look up at the ceiling — a flood module causes eye fatigue over time. Grille is the correct choice wherever occupants stay in the same zone for more than 30 minutes.</p>
 
-  <h3>Reception desk or counter &mdash; Spotlight</h3>
+  <h3>Reception desk or counter — Spotlight</h3>
   <p>Directional accent aimed at the desk surface creates a professional, intentional look. Mount one spotlight per desk zone — two spotlights on the same counter create competing highlights that confuse the eye.</p>
+
+  <img src="images/blog10_reception.webp" alt="Reception desk with directional spotlight accent from a 48V magnetic track system creating professional warm focused illumination" class="img-full" loading="lazy">
 
   <table class="decision-table">
     <thead>
       <tr>
         <th>Space Type</th>
-        <th>Module</th>
-        <th>Beam</th>
+        <th>Recommended Module</th>
+        <th>Beam Angle</th>
       </tr>
     </thead>
     <tbody>
@@ -302,7 +292,7 @@
     </tbody>
   </table>
 
-  <div class="faq">
+  <div class="faq-section">
     <h2>FAQ: Beam Angle Selection for Magnetic Track Lighting</h2>
 
     <div class="faq-item">
@@ -322,20 +312,20 @@
   </div>
 
   <div class="cta-box">
-    <p>Not sure which module mix suits your project? Tell us your ceiling type, room dimensions and primary use case — we can match the right combination as one complete 48V system. <a href="mailto:info@tracklinear.com" style="color:#111;text-decoration:underline;">Email us your project brief</a>.</p>
+    <p>Not sure which module mix suits your project? Tell us your ceiling type, room dimensions and primary use case — we can match the right combination as one complete 48V system. <a href="mailto:info@tracklinear.com">Email us your project brief</a>.</p>
   </div>
 
-  <a href="blog/index.html" class="back-link">← Back to Blog</a>
+  <a href="blog/index.html" class="back-link" style="margin-bottom:0;">← Back to Blog</a>
 
   <div class="related-articles">
     <h3>Related Articles</h3>
     <a href="blog-post-8.html">
       Track Lighting vs Magnetic Track Lighting: Which One Fits Your Project?
-      <span>Comparison guide for traditional track vs 48V systems</span>
+      <span>Comparison guide for traditional track vs 48V systems — cost, flexibility, application</span>
     </a>
     <a href="blog-post-9.html">
       Surface, Recessed, or Trimless? Choose the Right Installation Method
-      <span>Installation options for concrete, drop and luxury ceilings</span>
+      <span>Installation comparison for concrete ceilings, drop ceilings and luxury interiors</span>
     </a>
   </div>
 
@@ -343,8 +333,7 @@
 
 <footer>
   <div class="container">
-    <span>© 2026 Tracklinear Lighting. All rights reserved.</span>
-    <a href="mailto:info@tracklinear.com">info@tracklinear.com</a>
+    <p>© 2026 Tracklinear Lighting. All rights reserved. <a href="mailto:info@tracklinear.com">info@tracklinear.com</a></p>
   </div>
 </footer>
 
