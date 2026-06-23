@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Spot, Flood, Linear Flood, or Grille — A Practical Guide to Choosing the Right Beam Angle</title>
+  <meta name="description" content="Compare spotlight, flood, linear flood and grille modules for magnetic track lighting. Find the right beam angle for retail, hotel, office and gallery projects.">
+  <link rel="canonical" href="https://tracklinear.com/blog-post-10.html">
+  <meta name="theme-color" content="#111">
+
+  <link rel="dns-prefetch" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400;14..32,500;14..32,600;14..32,700&display=swap" rel="stylesheet">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Spot, Flood, Linear Flood, or Grille — A Practical Guide to Choosing the Right Beam Angle">
+  <meta property="og:description" content="Compare spotlight, flood, linear flood and grille modules for magnetic track lighting. Find the right beam angle for retail, hotel, office and gallery projects.">
+  <meta property="og:url" content="https://tracklinear.com/blog-post-10.html">
+  <meta property="og:type" content="article">
+  <meta property="og:image" content="https://tracklinear.com/images/blog10_hero.webp">
+  <meta property="og:site_name" content="Tracklinear Lighting">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Spot, Flood, Linear Flood, or Grille — A Practical Guide to Choosing the Right Beam Angle">
+  <meta name="twitter:image" content="https://tracklinear.com/images/blog10_hero.webp">
+
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'Inter', -apple-system, sans-serif;
+      background: #f8f8f8;
+      color: #222;
+      line-height: 1.7;
+    }
+    .container { max-width: 780px; margin: 0 auto; padding: 0 24px; }
+    header {
+      background: #111;
+      padding: 20px 0;
+    }
+    header .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      max-width: 1200px;
+    }
+    header .logo { color: white; font-size: 20px; font-weight: 700; text-decoration: none; letter-spacing: -.5px; }
+    header nav a { color: rgba(255,255,255,.6); text-decoration: none; font-size: 14px; margin-left: 28px; transition: color .2s; }
+    header nav a:hover { color: white; }
+
+    .breadcrumb {
+      margin-top: 32px;
+      font-size: 13px;
+      color: #888;
+    }
+    .breadcrumb a { color: #888; text-decoration: none; }
+    .breadcrumb a:hover { color: #111; }
+
+    .tag {
+      display: inline-block;
+      background: #e8e8e8;
+      padding: 4px 14px;
+      border-radius: 20px;
+      font-size: 12px;
+      font-weight: 600;
+      color: #555;
+      margin: 24px 0 12px;
+    }
+    h1 {
+      font-size: 32px;
+      font-weight: 700;
+      line-height: 1.25;
+      letter-spacing: -.5px;
+      margin-bottom: 12px;
+    }
+    .meta {
+      font-size: 13px;
+      color: #888;
+      margin-bottom: 28px;
+    }
+    .meta span { margin-right: 6px; }
+
+    .img-full {
+      width: 100%;
+      border-radius: 16px;
+      margin: 8px 0 32px;
+    }
+
+    p { margin-bottom: 20px; font-size: 16px; color: #333; }
+    .label {
+      display: inline-block;
+      background: #111;
+      color: white;
+      padding: 2px 10px;
+      border-radius: 4px;
+      font-size: 13px;
+      font-weight: 600;
+    }
+    .quick-answer {
+      background: #111;
+      color: rgba(255,255,255,.85);
+      padding: 28px 32px;
+      border-radius: 16px;
+      margin: 28px 0;
+    }
+    .quick-answer h3 {
+      color: white;
+      font-size: 18px;
+      margin-bottom: 16px;
+    }
+    .quick-answer p { color: rgba(255,255,255,.8); font-size: 15px; margin-bottom: 12px; }
+    .quick-answer p:last-child { margin-bottom: 0; }
+    .quick-answer .label { background: #2a2a2a; color: #ddd; font-size: 12px; }
+
+    h2 {
+      font-size: 22px;
+      font-weight: 700;
+      margin: 40px 0 16px;
+      letter-spacing: -.3px;
+    }
+    h3 {
+      font-size: 17px;
+      font-weight: 600;
+      margin: 28px 0 8px;
+    }
+    ul, ol { margin: 0 0 20px 20px; }
+    li { margin-bottom: 8px; font-size: 15px; color: #333; }
+    strong { color: #111; }
+
+    .decision-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 24px 0 32px;
+      font-size: 14px;
+    }
+    .decision-table th {
+      background: #111;
+      color: white;
+      padding: 12px 16px;
+      text-align: left;
+      font-weight: 600;
+    }
+    .decision-table td {
+      padding: 12px 16px;
+      border-bottom: 1px solid #eee;
+    }
+    .decision-table tr:nth-child(even) td { background: #fafafa; }
+    .decision-table td:first-child { font-weight: 600; color: #111; }
+
+    .faq {
+      background: white;
+      border-radius: 16px;
+      padding: 32px;
+      margin: 40px 0;
+      box-shadow: 0 2px 16px rgba(0,0,0,.04);
+    }
+    .faq h2 { margin-top: 0; }
+    .faq-item { border-bottom: 1px solid #eee; padding: 20px 0; }
+    .faq-item:last-child { border-bottom: none; padding-bottom: 0; }
+    .faq-q { font-weight: 600; margin-bottom: 8px; color: #111; font-size: 15px; }
+    .faq-a { font-size: 15px; color: #555; line-height: 1.7; }
+
+    .cta-box {
+      background: #f0f0f0;
+      border-radius: 16px;
+      padding: 28px 32px;
+      margin: 40px 0;
+      text-align: center;
+    }
+    .cta-box p { margin-bottom: 0; font-size: 15px; color: #444; }
+
+    .back-link {
+      display: inline-block;
+      margin: 32px 0;
+      font-size: 14px;
+      color: #888;
+      text-decoration: none;
+    }
+    .back-link:hover { color: #111; }
+
+    .related-articles {
+      border-top: 1px solid #ddd;
+      padding-top: 32px;
+      margin: 40px 0 60px;
+    }
+    .related-articles h3 { font-size: 18px; margin-bottom: 16px; }
+    .related-articles a {
+      display: block;
+      padding: 12px 0;
+      border-bottom: 1px solid #eee;
+      color: #333;
+      text-decoration: none;
+      font-size: 15px;
+    }
+    .related-articles a:hover { color: #111; }
+    .related-articles a span { color: #888; font-size: 13px; display: block; margin-top: 2px; }
+
+    footer { background: #111; color: white; padding: 40px 0; margin-top: 60px; }
+    footer .container { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 16px; max-width: 1200px; }
+    footer a { color: rgba(255,255,255,.5); text-decoration: none; font-size: 14px; }
+    footer a:hover { color: white; }
+
+    @media (max-width: 600px) {
+      h1 { font-size: 24px; }
+      .container { padding: 0 16px; }
+      .quick-answer { padding: 20px; }
+      .faq { padding: 20px; }
+      .decision-table { font-size: 13px; }
+      .decision-table th, .decision-table td { padding: 10px 12px; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="container">
+    <a href="index.html" class="logo">Tracklinear</a>
+    <nav>
+      <a href="tracks/index.html">Tracks</a>
+      <a href="lights/index.html">Lights</a>
+      <a href="blog/index.html">Blog</a>
+    </nav>
+  </div>
+</header>
+
+<main class="container">
+
+  <div class="breadcrumb">
+    <a href="index.html">Home</a> / <a href="blog/index.html">Blog</a> / Beam Angle Guide
+  </div>
+
+  <div class="tag">Module Selection</div>
+
+  <h1>Spot, Flood, Linear Flood, or Grille — A Practical Guide to Choosing the Right Beam Angle for Your Magnetic Track Lighting Project</h1>
+
+  <div class="meta">
+    <span>By Tiffany Woo</span>
+    <span>•</span>
+    <span>June 22, 2026</span>
+    <span>•</span>
+    <span>5 min read</span>
+  </div>
+
+  <img src="images/blog10_hero.webp" alt="Magnetic track lighting modules with different beam angles including spotlight flood linear flood and grille types in a commercial interior setting" class="img-full" loading="lazy">
+
+  <p>Most buyers choose the wrong beam angle because they pick a module by appearance before they know what the light needs to do. A spotlight looks elegant in a showroom, but put it in a corridor and you get glare complaints. A flood light feels safe, but aim it at artwork and the accent is gone.</p>
+
+  <p>The beam angle is not a cosmetic choice — it is the single most important technical decision in a magnetic track lighting specification. Here is a practical guide for importers, lighting designers and contractors who want to get it right the first time.</p>
+
+  <div class="quick-answer">
+    <h3>Quick Answer</h3>
+    <p><span class="label">Spotlight</span> — accent lighting for retail displays, artwork and reception desks where direction and contrast matter.</p>
+    <p><span class="label">Flood / Linear Flood</span> — even ambient light for corridors, offices and wall washing.</p>
+    <p><span class="label">Grille module</span> — anti-glare control for reading areas, hotel corridors and classrooms where people spend extended time under direct light.</p>
+    <p><span class="label">Pendant</span> — decorative hanging installation for dining tables, bar counters and lounge zones.</p>
+  </div>
+
+  <h2>Which Module for Which Scenario</h2>
+
+  <h3>Retail display or window &mdash; Spotlight</h3>
+  <p>Tight beam (15° to 30°) creates contrast between product and background, drawing the customer&#8217;s eye. Avoid flood in this role — it washes out the product and removes the visual hierarchy a display needs.</p>
+
+  <h3>Gallery artwork &mdash; Spotlight 15°–24°</h3>
+  <p>Precise accent with minimal light spill onto adjacent pieces. Head angle is critical here — aim a 15° spotlight 30° off-target and the beam misses the artwork entirely. Always account for swivel range when positioning spotlights above a gallery wall.</p>
+
+  <h3>Open office or meeting room &mdash; Flood 60°–120°</h3>
+  <p>Even general illumination with soft falloff. No hot spots, no harsh shadows. This is a pure ambient role — spotlights create distracting contrast in a work environment.</p>
+
+  <h3>Hotel corridor or passageway &mdash; Grille module</h3>
+  <p>Guests naturally look up while walking through a corridor. A standard flood creates direct glare at these viewing angles. A grille module uses a micro-louvre structure to cut glare above 45°, making the space comfortable to walk through. Trade-off: grille modules output 10–15% fewer lumens than a comparable open flood.</p>
+
+  <h3>Wall washing or shelf lighting &mdash; Linear flood</h3>
+  <p>Rectangular beam pattern washes a wall or shelf from end to end evenly. A round spotlight or standard flood creates scalloped pools of light — linear flood is the only module type that gives a continuous clean wash across a long surface.</p>
+
+  <h3>Restaurant dining table &mdash; Spotlight or Pendant</h3>
+  <p>Spotlight for focused table illumination that separates the dining zone from the ambient space. Pendant for a decorative presence at a lower mounting height — especially effective over island counters or centre tables.</p>
+
+  <h3>Reading area, library or classroom &mdash; Grille module</h3>
+  <p>Low UGR for extended visual comfort. People in these spaces will look up at the ceiling — a flood module causes eye fatigue over time. Grille is the correct choice wherever occupants stay in the same zone for more than 30 minutes.</p>
+
+  <h3>Reception desk or counter &mdash; Spotlight</h3>
+  <p>Directional accent aimed at the desk surface creates a professional, intentional look. Mount one spotlight per desk zone — two spotlights on the same counter create competing highlights that confuse the eye.</p>
+
+  <table class="decision-table">
+    <thead>
+      <tr>
+        <th>Space Type</th>
+        <th>Module</th>
+        <th>Beam</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr><td>Retail display / window</td><td>Spotlight</td><td>15°–30°</td></tr>
+      <tr><td>Gallery artwork</td><td>Spotlight</td><td>15°–24°</td></tr>
+      <tr><td>Open office / meeting room</td><td>Flood</td><td>60°–120°</td></tr>
+      <tr><td>Hotel corridor</td><td>Grille</td><td>Low UGR</td></tr>
+      <tr><td>Wall washing / shelf</td><td>Linear flood</td><td>Rectangular</td></tr>
+      <tr><td>Restaurant dining</td><td>Spotlight or Pendant</td><td>15°–30°</td></tr>
+      <tr><td>Reading area / classroom</td><td>Grille</td><td>Low UGR</td></tr>
+      <tr><td>Reception desk</td><td>Spotlight</td><td>15°–30°</td></tr>
+    </tbody>
+  </table>
+
+  <div class="faq">
+    <h2>FAQ: Beam Angle Selection for Magnetic Track Lighting</h2>
+
+    <div class="faq-item">
+      <div class="faq-q">Can I mix spot, flood and grille modules on the same track?</div>
+      <div class="faq-a">Yes. One magnetic track circuit can carry any combination of module types — accent spots for display zones, floods for ambient areas, grille modules for corridor sections — all on the same 48V rail. This modularity is the main advantage of a magnetic track system over fixed linear lighting.</div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-q">Does a grille module reduce brightness significantly?</div>
+      <div class="faq-a">A grille module outputs approximately 10–15% fewer lumens than an open flood of the same wattage and LED chip. This is the physical result of the micro-louvre structure. The trade-off is significantly improved visual comfort. Always account for this reduction when calculating total module count for a space.</div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-q">How do I decide between a round flood and a linear flood?</div>
+      <div class="faq-a">Use round flood when the light needs to cover a compact area — a meeting table, a corridor junction, a lounge seating zone. Use linear flood when the target surface is long and narrow — a wall, a shelf row, a reception counter. Linear flood produces a rectangular beam; round flood produces a circular one. Match the beam shape to the surface shape.</div>
+    </div>
+  </div>
+
+  <div class="cta-box">
+    <p>Not sure which module mix suits your project? Tell us your ceiling type, room dimensions and primary use case — we can match the right combination as one complete 48V system. <a href="mailto:info@tracklinear.com" style="color:#111;text-decoration:underline;">Email us your project brief</a>.</p>
+  </div>
+
+  <a href="blog/index.html" class="back-link">← Back to Blog</a>
+
+  <div class="related-articles">
+    <h3>Related Articles</h3>
+    <a href="blog-post-8.html">
+      Track Lighting vs Magnetic Track Lighting: Which One Fits Your Project?
+      <span>Comparison guide for traditional track vs 48V systems</span>
+    </a>
+    <a href="blog-post-9.html">
+      Surface, Recessed, or Trimless? Choose the Right Installation Method
+      <span>Installation options for concrete, drop and luxury ceilings</span>
+    </a>
+  </div>
+
+</main>
+
+<footer>
+  <div class="container">
+    <span>© 2026 Tracklinear Lighting. All rights reserved.</span>
+    <a href="mailto:info@tracklinear.com">info@tracklinear.com</a>
+  </div>
+</footer>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Article",
+      "headline": "Spot, Flood, Linear Flood, or Grille — A Practical Guide to Choosing the Right Beam Angle for Your Magnetic Track Lighting Project",
+      "description": "Compare spotlight, flood, linear flood and grille modules for magnetic track lighting. Find the right beam angle for retail, hotel, office and gallery projects.",
+      "image": "https://tracklinear.com/images/blog10_hero.webp",
+      "datePublished": "2026-06-22T08:00:00+08:00",
+      "dateModified": "2026-06-22T08:00:00+08:00",
+      "author": {
+        "@type": "Person",
+        "name": "Tiffany Woo",
+        "url": "https://tracklinear.com/"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Tracklinear Lighting",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://tracklinear.com/images/image_1.webp"
+        }
+      },
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://tracklinear.com/blog-post-10.html"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://tracklinear.com/" },
+        { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://tracklinear.com/blog/index.html" },
+        { "@type": "ListItem", "position": 3, "name": "Beam Angle Guide", "item": "https://tracklinear.com/blog-post-10.html" }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Can I mix spot, flood and grille modules on the same track?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. One magnetic track circuit can carry any combination of module types — accent spots for display zones, floods for ambient areas, grille modules for corridor sections — all on the same 48V rail. This modularity is the main advantage of a magnetic track system over fixed linear lighting."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does a grille module reduce brightness significantly?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A grille module outputs approximately 10-15% fewer lumens than an open flood of the same wattage and LED chip. This is the physical result of the micro-louvre structure. The trade-off is significantly improved visual comfort. Always account for this reduction when calculating total module count for a space."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do I decide between a round flood and a linear flood?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Use round flood when the light needs to cover a compact area — a meeting table, a corridor junction, a lounge seating zone. Use linear flood when the target surface is long and narrow — a wall, a shelf row, a reception counter. Linear flood produces a rectangular beam; round flood produces a circular one. Match the beam shape to the surface shape."
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
+
+</body>
+</html>
