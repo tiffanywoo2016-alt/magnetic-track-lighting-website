@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta property="og:title" content="48V Track Load Planning: How Many Fixtures Per Run and How to Avoid a Costly Re-Work">
+  <meta property="og:description" content="Learn how to plan 48V magnetic track power load — voltage drop, feed position, driver headroom and real-world configuration examples for contractors and specifiers.">
+  <meta property="og:url" content="https://tracklinear.com/blog-post-11.html">
+  <meta property="og:type" content="article">
+  <meta property="og:image" content="https://tracklinear.com/images/blog11_hero.webp">
+  <meta property="og:site_name" content="Tracklinear Lighting">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="48V Track Load Planning: How Many Fixtures Per Run and How to Avoid a Costly Re-Work">
+  <meta name="twitter:description" content="Learn how to plan 48V magnetic track power load — voltage drop, feed position, driver headroom and real-world configuration examples for contractors and specifiers.">
+  <meta name="twitter:image" content="https://tracklinear.com/images/blog11_hero.webp">
+
+  <meta name="theme-color" content="#1a1a1a">
+  <link rel="canonical" href="https://tracklinear.com/blog-post-11.html">
+  <link rel="dns-prefetch" href="https://fonts.googleapis.com">
+  <link rel="dns-prefetch" href="https://fonts.gstatic.com">
+  <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <title>48V Track Load Planning: How Many Fixtures Per Run | Tracklinear</title>
+  <meta name="description" content="Learn how to plan 48V magnetic track power load — voltage drop, feed position, driver headroom and real-world configuration examples for contractors and specifiers.">
+  <style>
+    :root {
+      --bg: #f5f3ef;
+      --dark: #151515;
+      --text: #161616;
+      --muted: #666;
+      --gold: #b08a57;
+      --gold-light: #e6c08c;
+    }
+    body {
+      margin: 0;
+      font-family: Inter, system-ui, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+    .container { max-width: 800px; margin: 0 auto; padding: 0 28px; }
+    header {
+      padding: 24px 0;
+      border-bottom: 1px solid rgba(0,0,0,.06);
+      background: white;
+    }
+    .nav { display: flex; align-items: center; justify-content: space-between; }
+    .logo { font-weight: 800; font-size: 20px; text-decoration: none; color: var(--dark); }
+    .back-link { font-size: 14px; font-weight: 600; color: var(--gold); text-decoration: none; }
+
+    .breadcrumb {
+      font-size: 13px;
+      color: var(--muted);
+      margin: 28px 0;
+    }
+    .breadcrumb a { color: var(--gold); text-decoration: none; }
+
+    h1 { font-size: 36px; line-height: 1.2; margin: 8px 0 16px; font-weight: 800; }
+    .meta {
+      font-size: 14px;
+      color: var(--muted);
+      display: flex;
+      gap: 12px;
+      align-items: center;
+      flex-wrap: wrap;
+      margin-bottom: 32px;
+    }
+    .tag {
+      display: inline-block;
+      background: var(--gold);
+      color: white;
+      font-size: 11px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      padding: 4px 12px;
+      border-radius: 4px;
+    }
+
+    .img-full {
+      width: 100%;
+      border-radius: 16px;
+      margin: 28px 0;
+      box-shadow: 0 8px 30px rgba(0,0,0,0.08);
+    }
+    .img-caption {
+      font-size: 13px;
+      color: #999;
+      text-align: center;
+      margin: -20px 0 32px;
+      font-style: italic;
+    }
+
+    blockquote {
+      border-left: 4px solid var(--gold);
+      margin: 32px 0;
+      padding: 20px 28px;
+      background: white;
+      border-radius: 0 16px 16px 0;
+      font-size: 18px;
+      font-weight: 500;
+      box-shadow: 0 4px 20px rgba(0,0,0,.04);
+      font-style: italic;
+    }
+
+    h2 { font-size: 26px; margin: 48px 0 16px; font-weight: 700; }
+    h3 { font-size: 20px; margin: 32px 0 12px; font-weight: 700; color: var(--dark); }
+    p { font-size: 16px; line-height: 1.75; color: #2a2a2a; margin: 0 0 20px; }
+    ul { padding-left: 20px; margin: 16px 0; }
+    ul li { font-size: 15px; line-height: 1.7; margin-bottom: 6px; }
+
+    .quick-answer {
+      background: var(--dark);
+      color: white;
+      padding: 32px;
+      border-radius: 20px;
+      margin: 28px 0;
+    }
+    .quick-answer h3 {
+      color: var(--gold-light);
+      margin: 0 0 16px;
+      font-size: 20px;
+    }
+    .quick-answer p {
+      color: rgba(255,255,255,0.85);
+      font-size: 15px;
+      line-height: 1.7;
+      margin: 0 0 12px;
+    }
+    .quick-answer p:last-child { margin-bottom: 0; }
+    .quick-answer .label { color: var(--gold-light); font-weight: 700; }
+
+    .spec-table {
+      width: 100%; border-collapse: collapse; margin: 28px 0;
+      background: white; border-radius: 16px; overflow: hidden; box-shadow: 0 4px 20px rgba(0,0,0,.05);
+    }
+    .spec-table th, .spec-table td { padding: 14px; text-align: left; border-bottom: 1px solid #eee; font-size: 14px; }
+    .spec-table th { background: var(--dark); color: white; font-size: 13px; text-transform: uppercase; letter-spacing: .5px; }
+    .spec-table tr:last-child td { border-bottom: none; }
+
+    .faq {
+      margin: 40px 0;
+      background: white;
+      border-radius: 20px;
+      padding: 32px;
+      box-shadow: 0 4px 20px rgba(0,0,0,.04);
+    }
+    .faq h2 { margin-top: 0; font-size: 24px; }
+    .faq-item {
+      border-bottom: 1px solid #eee;
+      padding: 20px 0;
+    }
+    .faq-item:last-child { border-bottom: none; }
+    .faq-q {
+      font-weight: 700;
+      font-size: 16px;
+      margin-bottom: 8px;
+      color: var(--dark);
+    }
+    .faq-a {
+      font-size: 14px;
+      color: var(--muted);
+      line-height: 1.7;
+    }
+
+    .cta-box {
+      background: var(--dark); color: white; padding: 40px; border-radius: 28px; margin-top: 40px;
+    }
+    .cta-box h3 { color: var(--gold-light); margin-top: 0; font-size: 22px; }
+    .cta-box p { color: rgba(255,255,255,0.7); font-size: 16px; }
+    .cta-box .btn {
+      display: inline-block;
+      background: var(--gold);
+      color: white;
+      padding: 14px 32px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: 600;
+      margin-top: 12px;
+    }
+
+    .related { margin-top: 60px; }
+    .related h3 { font-size: 20px; margin-bottom: 16px; }
+    .related a {
+      display: block;
+      padding: 16px 20px;
+      background: white;
+      border-radius: 12px;
+      text-decoration: none;
+      color: var(--text);
+      margin-bottom: 8px;
+      font-weight: 500;
+      box-shadow: 0 2px 12px rgba(0,0,0,.04);
+      transition: box-shadow .2s;
+    }
+    .related a:hover { box-shadow: 0 4px 20px rgba(0,0,0,.08); }
+    .related a span { color: var(--muted); font-weight: 400; font-size: 13px; display: block; margin-top: 2px; }
+
+    footer { background: #111; color: white; padding: 60px 0; margin-top: 80px; }
+    footer .container { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 16px; }
+    footer a { color: rgba(255,255,255,.5); text-decoration: none; font-size: 14px; }
+    footer a:hover { color: white; }
+  </style>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Article",
+      "headline": "48V Track Load Planning: How Many Fixtures Per Run and How to Avoid a Costly Re-Work",
+      "description": "Learn how to plan 48V magnetic track power load — voltage drop, feed position, driver headroom and real-world configuration examples for contractors and specifiers.",
+      "image": "https://tracklinear.com/images/blog11_hero.webp",
+      "datePublished": "2026-06-24T08:00:00+08:00",
+      "dateModified": "2026-06-24T08:00:00+08:00",
+      "author": {
+        "@type": "Person",
+        "name": "Tiffany Woo",
+        "url": "https://tracklinear.com/"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Tracklinear Lighting",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://tracklinear.com/images/image_1.webp"
+        }
+      },
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://tracklinear.com/blog-post-11.html"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://tracklinear.com/" },
+        { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://tracklinear.com/blog/" },
+        { "@type": "ListItem", "position": 3, "name": "48V Track Load Planning Guide" }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Can I mix 48V track from different brands on the same load calculation?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. Different brands use different copper conductor cross-sections and quality. Always calculate based on your specific track's rated current, not a generic number."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What if I need more power than one track can handle?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Split into separate zones. Each zone gets its own driver and feed. This is standard for commercial installations with long ceiling runs."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does dimming affect 48V track load planning?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Dimmable drivers typically have lower maximum wattage than basic on/off drivers. If your project includes DALI or 0-10V dimming, adjust your load calculation downward by about 15-20%."
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
+</head>
+<body>
+  <header>
+    <div class="container nav">
+      <a href="index.html" class="logo">Tracklinear</a>
+      <a href="blog/index.html" class="back-link">← Back to Blog</a>
+    </div>
+  </header>
+
+  <main class="container">
+    <div class="breadcrumb">
+      <a href="index.html">Home</a> / <a href="blog/index.html">Blog</a> / 48V Track Load Planning Guide
+    </div>
+
+    <div class="tag">Technical Guide</div>
+    <h1>48V Track Load Planning: How Many Fixtures Per Run and How to Avoid a Costly Re-Work</h1>
+    <div class="meta">
+      <span>By Tiffany Woo</span>
+      <span>•</span>
+      <span>June 24, 2026</span>
+      <span>•</span>
+      <span>5 min read</span>
+    </div>
+
+    <img src="images/blog11_hero.webp" alt="48V magnetic track lighting installation with multiple LED fixtures along a single track run showing power feed connection" class="img-full" loading="lazy">
+
+    <p>You quoted a project — 5m of track, 10 fixtures, single-end feed. Looks clean on paper. Installation day goes smoothly. Then the client walks in, looks up, and says: "The lights at the far end are darker than the ones near the wall."</p>
+
+    <p>Now you need to either:
+    (A) Add a second feed — cutting into the ceiling, extra labour, re-inspection.
+    (B) Replace the driver — which may not fix the issue if the voltage drop is in the track conductor, not the power supply.
+    (C) Explain to your client that the system was "designed for this effect."</p>
+
+    <p>None of these are good. Option A costs you time and reputation. And the fix was a 5-minute calculation at the quoting stage — before the ceiling was closed. This is why understanding <strong>48V track power planning</strong> is one of the most valuable skills a contractor or specifier can develop.</p>
+
+    <div class="quick-answer">
+      <h3>Quick Answer</h3>
+      <p>A single 48V magnetic track supports roughly <strong>120–150W total</strong> from one feed point. The usable load depends on track length, fixture wattage and feed position — not just the driver rating.</p>
+      <p><span class="label">Under 3m, under 100W</span> → End feed works fine. Simple installation, no special planning needed.</p>
+      <p><span class="label">3–5m, 100–150W</span> → Use mid-point feed. Same track, same fixtures, but power connects at the center — halves the distance voltage needs to travel.</p>
+      <p><span class="label">Over 5m or over 150W</span> → Plan for dual-end feed or separate power zones. This is standard for commercial track lighting layouts with long ceiling runs.</p>
+    </div>
+
+    <h2>Why 48V Track Voltage Drop Matters in Commercial Projects</h2>
+
+    <p>Magnetic track lighting looks simple to install — clip modules onto a live rail and they light up. That simplicity hides a trap.</p>
+
+    <p>Each fixture draws power from the same copper conductor inside the track. As electricity travels down that conductor, some voltage is lost to resistance. The longer the run and the higher the total wattage, the more the <strong>low voltage track voltage drop</strong> becomes visible.</p>
+
+    <p>At the far end, the fixtures receive less than 48V. This means lower brightness, a slight colour shift toward warm, and potential flicker on dimmable setups. The frustrating part? <strong>The lights still turn on.</strong> The <strong>voltage drop magnetic track</strong> systems experience doesn't cause a shutdown — it produces an uneven result that looks unprofessional. And by the time anyone notices, the ceiling is closed.</p>
+
+    <p>For any <strong>commercial track lighting layout</strong>, this is a risk that should be eliminated at the design stage, not discovered during the client walk-through.</p>
+
+    <h2>Think of It Like a Garden Hose — Pressure Drops as You Go Further</h2>
+
+    <p>Imagine a garden hose with five spray nozzles attached along its length. Turn on only the first nozzle — water comes out strong. Turn on all five — the last one trickles. The water pressure dropped as it traveled, feeding each nozzle along the way.</p>
+
+    <p><strong>48V track power feed</strong> behaves the same way. Voltage is highest at the feed point and drops gradually along the conductor. Understanding this relationship makes <strong>magnetic track power planning</strong> intuitive instead of theoretical.</p>
+
+    <h2>The Three Levers That Control Load Capacity</h2>
+
+    <h3>1. Fixture Wattage — Simple Math, Often Overlooked</h3>
+
+    <p>Every LED module has a wattage rating — 10W, 15W, 20W. The starting point is dead simple: add up every fixture on one track run.</p>
+
+    <p>A 10W spotlight + a 15W flood + a 12W grille = 37W total. Well within range. The problem happens when a long run has 15 fixtures at 15W each — that is 225W on one feed, and the last fixtures will be visibly dim regardless of the driver size.</p>
+
+    <p>For any <strong>track lighting load calculation</strong>, the math is the easy part. The hard part is anticipating total <strong>LED fixtures per track</strong> before the design is locked in — and accounting for how the load changes as modules are added or moved.</p>
+
+    <h3>2. Feed Position — the Biggest Lever, Most Often Ignored</h3>
+
+    <p>This is the single most impactful decision, and most project planners overlook it.</p>
+
+    <ul>
+      <li><strong>End feed</strong> — simplest installation. Voltage drops across the full length. Fine for short runs under 3m.</li>
+      <li><strong>Mid-point feed</strong> — power enters at the centre. Voltage drops in both directions, so each side sees half the distance. Effectively doubles the usable load for the same track.</li>
+      <li><strong>Dual-end feed</strong> — power at both ends. Voltage feeds from both sides toward the middle. Best for runs over 4m.</li>
+      <li><strong>Zone separation</strong> — multiple power feeds on the same physical track, each feeding its own segment. Standard for large commercial installations.</li>
+    </ul>
+
+    <p><strong>Cost note:</strong> Adding a mid-point feed during initial installation costs almost nothing — just a junction box at the planned position. Adding it after the ceiling is closed costs 3–5× more in labour. This is the kind of detail that separates a smooth project from an expensive re-work.</p>
+
+    <img src="images/blog11_feed.webp" alt="End feed mid-point feed and dual-end feed positions on a 48V magnetic track lighting layout showing voltage drop distribution" class="img-full" loading="lazy">
+
+    <h3>3. Driver Headroom — the Common Mistake</h3>
+
+    <p>A 120W load does not mean a 120W driver is enough. Drivers should run at 80–85% of rated capacity for efficiency and lifespan. A 150W driver is the right match for a 120W load. A 120W driver on a 120W load runs hot, ages faster, and may trip overload protection during startup.</p>
+
+    <p>This is essential <strong>magnetic track driver sizing</strong> knowledge that many first-time buyers miss. When in doubt, size up.</p>
+
+    <h2>Real-World Configuration Reference for Magnetic Track Load Calculation</h2>
+
+    <table class="spec-table">
+      <thead>
+        <tr>
+          <th>Setup</th>
+          <th>Feed Type</th>
+          <th>Result</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>2m track, 6×10W fixtures</strong></td>
+          <td>End feed</td>
+          <td>✅ Perfect — no voltage drop issue</td>
+        </tr>
+        <tr>
+          <td><strong>3m track, 8×12W fixtures (96W)</strong></td>
+          <td>Mid-point feed</td>
+          <td>✅ Even across all fixtures</td>
+        </tr>
+        <tr>
+          <td><strong>4m track, 10×12W fixtures (120W)</strong></td>
+          <td>Mid-point or dual-end</td>
+          <td>✅ Both work — dual-end gives more headroom</td>
+        </tr>
+        <tr>
+          <td><strong>5m track, 12×12W fixtures (144W)</strong></td>
+          <td>End feed only</td>
+          <td>❌ Last 3–4 fixtures will be visibly dim</td>
+        </tr>
+        <tr>
+          <td><strong>5m track, 12×12W fixtures (144W)</strong></td>
+          <td>Dual-end feed</td>
+          <td>✅ Even distribution, full brightness</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h2>How to Talk About This With Your Customer</h2>
+
+    <blockquote>
+      "Think of it like a garden hose — the water pressure at the end depends on how many nozzles are open and how long the hose is. Same with a magnetic track. The voltage enters the track at one point, and as it passes each fixture, a tiny bit is used. Plan the feed position before installation, and every light will look identical."
+    </blockquote>
+
+    <p>This framing works for importers, wholesalers and contractors explaining <strong>48V track system planning</strong> to their own clients. It turns a technical concept into something anyone can visualise.</p>
+
+    <h2>What to Send Your Supplier — Save This Checklist</h2>
+
+    <p>When you need a load check, send these 4 things. A supplier who asks for this information before quoting is someone who has dealt with rework before.</p>
+
+    <ul>
+      <li><strong>Track length</strong> per run (in metres)</li>
+      <li><strong>Fixture types + wattages</strong> on each run</li>
+      <li><strong>Ceiling type</strong> — determines whether junction boxes for mid-point feeds are possible</li>
+      <li><strong>Dimmers or smart controls</strong> — DALI, 0-10V and Triac all have different driver matching requirements that affect <strong>magnetic track driver sizing</strong></li>
+    </ul>
+
+    <div class="faq">
+      <h2>FAQ: 48V Track Load Planning</h2>
+
+      <div class="faq-item">
+        <div class="faq-q">Can I add more lights later if I leave empty track sections?</div>
+        <div class="faq-a">Yes — but only if the remaining power capacity is enough. If you plan to expand later, oversize the driver from the start. It is far cheaper than upgrading later or running a second feed.</div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-q">What happens if I exceed the track's maximum load?</div>
+        <div class="faq-a">The driver may shut down from overload protection, or the last fixtures on the run will be visibly dim with a noticeable colour shift. Neither is acceptable for a completed commercial installation. Re-working a closed ceiling to add a second feed is expensive.</div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-q">Is 48V or 24V better for longer track runs?</div>
+        <div class="faq-a">48V is significantly better. Lower voltage means higher current for the same wattage, which means more voltage drop. For any run over 2m, 48V is the standard choice. This is one reason why 48V dominates the <strong>commercial track lighting layout</strong> market.</div>
+      </div>
+    </div>
+
+    <div class="cta-box">
+      <h3>Not sure if your layout needs mid-point or dual-end feed?</h3>
+      <p>Send us your run lengths, fixture list and ceiling type. We will check the load and recommend the right feed positions and <strong>magnetic track driver sizing</strong> — before you install, not after.</p>
+      <a href="mailto:info@tracklinear.com" class="btn">Get Load Check →</a>
+    </div>
+
+    <div class="related">
+      <h3>Related Articles</h3>
+      <a href="blog-post-10.html">
+        Spot, Flood, Linear Flood, or Grille — Beam Angle Selection Guide
+        <span>Practical beam angle guide for magnetic track lighting modules, organised by project scenario</span>
+      </a>
+      <a href="blog-post-7.html">
+        Why Does a Magnetic Track Light Still Need a Driver If the Track Already Has 48V Power?
+        <span>Understanding built-in drivers vs no-driver modules in magnetic track lighting systems</span>
+      </a>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container">
+      <span>© 2026 Tracklinear Lighting</span>
+      <div>
+        <a href="index.html">Home</a> · <a href="blog/index.html">Blog</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
