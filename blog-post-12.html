@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta property="og:title" content="Where Should You Place the Driver for 48V Magnetic Track Lighting? Power Feed and Circuit Planning Guide">
+  <meta property="og:description" content="Learn where to place the driver, how to plan power feed positions, and what to confirm before installation — so your 48V track project runs smoothly from the first fix.">
+  <meta property="og:url" content="https://tracklinear.com/blog-post-12.html">
+  <meta property="og:type" content="article">
+  <meta property="og:image" content="https://tracklinear.com/images/blog12_hero.webp">
+  <meta property="og:site_name" content="Tracklinear Lighting">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Where Should You Place the Driver for 48V Magnetic Track Lighting? Power Feed and Circuit Planning Guide">
+  <meta name="twitter:description" content="Learn where to place the driver, how to plan power feed positions, and what to confirm before installation — so your 48V track project runs smoothly from the first fix.">
+  <meta name="twitter:image" content="https://tracklinear.com/images/blog12_hero.webp">
+
+  <meta name="theme-color" content="#1a1a1a">
+  <link rel="canonical" href="https://tracklinear.com/blog-post-12.html">
+  <link rel="dns-prefetch" href="https://fonts.googleapis.com">
+  <link rel="dns-prefetch" href="https://fonts.gstatic.com">
+  <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <title>Where Should You Place the Driver for 48V Magnetic Track Lighting? | Tracklinear</title>
+  <meta name="description" content="Learn where to place the driver, how to plan power feed positions, and what to confirm before installation — so your 48V track project runs smoothly from the first fix.">
+  <style>
+    :root {
+      --bg: #f5f3ef;
+      --dark: #151515;
+      --text: #161616;
+      --muted: #666;
+      --gold: #b08a57;
+      --gold-light: #e6c08c;
+    }
+    body {
+      margin: 0;
+      font-family: Inter, system-ui, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+    .container { max-width: 800px; margin: 0 auto; padding: 0 28px; }
+    header {
+      padding: 24px 0;
+      border-bottom: 1px solid rgba(0,0,0,.06);
+      background: white;
+    }
+    .nav { display: flex; align-items: center; justify-content: space-between; }
+    .logo { font-weight: 800; font-size: 20px; text-decoration: none; color: var(--dark); }
+    .back-link { font-size: 14px; font-weight: 600; color: var(--gold); text-decoration: none; }
+
+    .breadcrumb {
+      font-size: 13px;
+      color: var(--muted);
+      margin: 28px 0;
+    }
+    .breadcrumb a { color: var(--gold); text-decoration: none; }
+
+    h1 { font-size: 36px; line-height: 1.2; margin: 8px 0 16px; font-weight: 800; }
+    .meta {
+      font-size: 14px;
+      color: var(--muted);
+      display: flex;
+      gap: 12px;
+      align-items: center;
+      flex-wrap: wrap;
+      margin-bottom: 32px;
+    }
+    .tag {
+      display: inline-block;
+      background: var(--gold);
+      color: white;
+      font-size: 11px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      padding: 4px 12px;
+      border-radius: 4px;
+    }
+
+    .img-full {
+      width: 100%;
+      border-radius: 16px;
+      margin: 28px 0;
+      box-shadow: 0 8px 30px rgba(0,0,0,0.08);
+    }
+    .img-caption {
+      font-size: 13px;
+      color: #999;
+      text-align: center;
+      margin: -20px 0 32px;
+      font-style: italic;
+    }
+
+    blockquote {
+      border-left: 4px solid var(--gold);
+      margin: 32px 0;
+      padding: 20px 28px;
+      background: white;
+      border-radius: 0 16px 16px 0;
+      font-size: 18px;
+      font-weight: 500;
+      box-shadow: 0 4px 20px rgba(0,0,0,.04);
+      font-style: italic;
+    }
+
+    h2 { font-size: 26px; margin: 48px 0 16px; font-weight: 700; }
+    h3 { font-size: 20px; margin: 32px 0 12px; font-weight: 700; color: var(--dark); }
+    p { font-size: 16px; line-height: 1.75; color: #2a2a2a; margin: 0 0 20px; }
+    ul { padding-left: 20px; margin: 16px 0; }
+    ul li { font-size: 15px; line-height: 1.7; margin-bottom: 6px; }
+
+    .quick-answer {
+      background: var(--dark);
+      color: white;
+      padding: 32px;
+      border-radius: 20px;
+      margin: 28px 0;
+    }
+    .quick-answer h3 {
+      color: var(--gold-light);
+      margin: 0 0 16px;
+      font-size: 20px;
+    }
+    .quick-answer p {
+      color: rgba(255,255,255,0.85);
+      font-size: 15px;
+      line-height: 1.7;
+      margin: 0 0 12px;
+    }
+    .quick-answer p:last-child { margin-bottom: 0; }
+    .quick-answer .label { color: var(--gold-light); font-weight: 700; }
+
+    .spec-table {
+      width: 100%; border-collapse: collapse; margin: 28px 0;
+      background: white; border-radius: 16px; overflow: hidden; box-shadow: 0 4px 20px rgba(0,0,0,.05);
+    }
+    .spec-table th, .spec-table td { padding: 14px; text-align: left; border-bottom: 1px solid #eee; font-size: 14px; }
+    .spec-table th { background: var(--dark); color: white; font-size: 13px; text-transform: uppercase; letter-spacing: .5px; }
+    .spec-table tr:last-child td { border-bottom: none; }
+
+    .faq {
+      margin: 40px 0;
+      background: white;
+      border-radius: 20px;
+      padding: 32px;
+      box-shadow: 0 4px 20px rgba(0,0,0,.04);
+    }
+    .faq h2 { margin-top: 0; font-size: 24px; }
+    .faq-item {
+      border-bottom: 1px solid #eee;
+      padding: 20px 0;
+    }
+    .faq-item:last-child { border-bottom: none; }
+    .faq-q {
+      font-weight: 700;
+      font-size: 16px;
+      margin-bottom: 8px;
+      color: var(--dark);
+    }
+    .faq-a {
+      font-size: 14px;
+      color: var(--muted);
+      line-height: 1.7;
+    }
+
+    .cta-box {
+      background: var(--dark); color: white; padding: 40px; border-radius: 28px; margin-top: 40px;
+    }
+    .cta-box h3 { color: var(--gold-light); margin-top: 0; font-size: 22px; }
+    .cta-box p { color: rgba(255,255,255,0.7); font-size: 16px; }
+    .cta-box .btn {
+      display: inline-block;
+      background: var(--gold);
+      color: white;
+      padding: 14px 32px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: 600;
+      margin-top: 12px;
+    }
+
+    .related { margin-top: 60px; }
+    .related h3 { font-size: 20px; margin-bottom: 16px; }
+    .related a {
+      display: block;
+      padding: 16px 20px;
+      background: white;
+      border-radius: 12px;
+      text-decoration: none;
+      color: var(--text);
+      margin-bottom: 8px;
+      font-weight: 500;
+      box-shadow: 0 2px 12px rgba(0,0,0,.04);
+      transition: box-shadow .2s;
+    }
+    .related a:hover { box-shadow: 0 4px 20px rgba(0,0,0,.08); }
+    .related a span { color: var(--muted); font-weight: 400; font-size: 13px; display: block; margin-top: 2px; }
+
+    footer { background: #111; color: white; padding: 60px 0; margin-top: 80px; }
+    footer .container { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 16px; }
+    footer a { color: rgba(255,255,255,.5); text-decoration: none; font-size: 14px; }
+    footer a:hover { color: white; }
+  </style>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Article",
+      "headline": "Where Should You Place the Driver for 48V Magnetic Track Lighting? Power Feed and Circuit Planning Guide",
+      "description": "Learn where to place the driver, how to plan power feed positions, and what to confirm before installation — so your 48V track project runs smoothly from the first fix.",
+      "image": "https://tracklinear.com/images/blog12_hero.webp",
+      "datePublished": "2026-06-25T08:00:00+08:00",
+      "dateModified": "2026-06-25T08:00:00+08:00",
+      "author": {
+        "@type": "Person",
+        "name": "Tiffany Woo",
+        "url": "https://tracklinear.com/"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Tracklinear Lighting",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://tracklinear.com/images/image_1.webp"
+        }
+      },
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://tracklinear.com/blog-post-12.html"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://tracklinear.com/" },
+        { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://tracklinear.com/blog/" },
+        { "@type": "ListItem", "position": 3, "name": "48V Track Driver and Power Feed Guide" }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Can the driver be hidden inside the ceiling without an access panel?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Not recommended. Drivers generate heat and may fail. Always plan an access panel for maintenance, especially in recessed or trimless ceiling installations."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How far can the driver be from the magnetic track?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Keep the distance under 2–3 metres. Longer cable runs add resistance and voltage drop, which reduces fixture brightness and may cause uneven lighting at the far end."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can one driver power two separate track sections?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, if the combined load is within the driver's rated capacity and both sections are wired into the same circuit. Confirm with a load calculation review before fixing cable routes."
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
+</head>
+<body>
+  <header>
+    <div class="container nav">
+      <a href="index.html" class="logo">Tracklinear</a>
+      <a href="blog/index.html" class="back-link">← Back to Blog</a>
+    </div>
+  </header>
+
+  <main class="container">
+    <div class="breadcrumb">
+      <a href="index.html">Home</a> / <a href="blog/index.html">Blog</a> / 48V Track Driver and Power Feed Guide
+    </div>
+
+    <div class="tag">Project Guide</div>
+    <h1>Where Should You Place the Driver for 48V Magnetic Track Lighting?</h1>
+    <div class="meta">
+      <span>By Tiffany Woo</span>
+      <span>•</span>
+      <span>June 25, 2026</span>
+      <span>•</span>
+      <span>6 min read</span>
+    </div>
+
+    <img src="images/blog12_hero.webp" alt="48V magnetic track lighting installation with driver access panel visible on ceiling before drywall closure" class="img-full" loading="lazy">
+
+    <p>In many 48V magnetic track projects, the track and light modules are selected correctly, but the installation still becomes difficult because the <strong>48V magnetic track driver placement</strong> and power feed were not planned before ceiling work started.</p>
+
+    <p>The result: last-minute ceiling cuts, difficult maintenance access, voltage drop, or expensive rework.</p>
+
+    <p>This guide covers where to place the driver, how to plan the power feed position, and what to confirm before installation — so your project runs smoothly from the first fix.</p>
+
+    <h2>Why Driver Position Matters Before Installation</h2>
+
+    <p>A 48V LED driver is not something you can hide anywhere. Its position affects several critical aspects of the installation:</p>
+
+    <ul>
+      <li><strong>Space requirement.</strong> A typical 150–300W driver measures roughly 200×70×40mm — it needs a dedicated enclosure or ceiling cavity.</li>
+      <li><strong>Heat dissipation.</strong> Drivers generate heat during operation. Enclosed in a tight space without airflow, they overheat, reduce lifespan, or trigger thermal protection.</li>
+      <li><strong>Maintenance access.</strong> Drivers can fail. If the driver is buried inside a sealed ceiling, replacing it means cutting through drywall. An access panel solves this at the framing stage for almost nothing — adding one later costs 10× more.</li>
+      <li><strong>Cable length to the track.</strong> The distance between driver and track feed point adds resistance. A long cable run means voltage drop before the power even reaches the track — reducing overall <strong>track lighting driver position</strong> efficiency.</li>
+      <li><strong>Dimming and control wiring.</strong> DALI, 0-10V, and smart controls require extra control wires between the driver and the control system. These must be routed during installation.</li>
+      <li><strong>Ceiling type.</strong> Recessed and trimless ceilings are the most difficult to modify after installation. Once closed, adding a driver access point or relocating a feed requires cutting into finished surfaces.</li>
+    </ul>
+
+    <h2>Common Driver Positions for 48V Magnetic Track Lighting</h2>
+
+    <table class="spec-table">
+      <thead>
+        <tr>
+          <th>Driver Position</th>
+          <th>Suitable For</th>
+          <th>Notes</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>Inside ceiling with access panel</strong></td>
+          <td>Hotels, villas, retail projects</td>
+          <td>Best for maintenance — easy to service when needed</td>
+        </tr>
+        <tr>
+          <td><strong>Inside track cavity</strong></td>
+          <td>Clean appearance, small systems</td>
+          <td>Limited space — typically max 60–100W</td>
+        </tr>
+        <tr>
+          <td><strong>Near track end</strong></td>
+          <td>Short simple runs</td>
+          <td>Easy wiring, but longer distance increases <strong>LED track driver location</strong> voltage drop risk</td>
+        </tr>
+        <tr>
+          <td><strong>Central electrical box</strong></td>
+          <td>Large commercial projects</td>
+          <td>Needs proper <strong>48V track circuit planning</strong> and distribution</td>
+        </tr>
+        <tr>
+          <td><strong>Cabinet / service area</strong></td>
+          <td>Retail and hospitality</td>
+          <td>Easy access — works if distance to track is under 2–3m</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <blockquote>Never permanently seal the driver in a ceiling area without maintenance access. This is especially important for trimless ceilings, recessed track, hotel corridors, villa living rooms, and retail ceilings — where cutting into the finished surface later is disruptive and expensive.</blockquote>
+
+    <h2>How to Choose the Power Feed Position</h2>
+
+    <p>The power feed position determines how far voltage travels along the track and how evenly fixtures perform. It should be decided together with the driver location, because the feed point affects cable routing, track length, fixture concentration, and ceiling structure.</p>
+
+    <ul>
+      <li><strong>End feed</strong> — Power enters at one end. Simple, suitable for short runs.</li>
+      <li><strong>Mid-point feed</strong> — Power enters at the centre. Voltage travels half the distance in each direction.</li>
+      <li><strong>Dual-end feed</strong> — Power enters from both ends. Best for long or high-load runs.</li>
+    </ul>
+
+    <p>The right <strong>magnetic track power feed</strong> position depends on where the driver is placed, how the cable runs are routed, where fixtures are concentrated on the track, and what ceiling structure allows.</p>
+
+    <blockquote>For detailed load calculation, fixture limits per feed point, and voltage drop planning, read: <a href="blog-post-11.html" style="color:var(--gold);">How Many Lights Can You Install on a 48V Magnetic Track Without Voltage Drop?</a></blockquote>
+
+    <h2>One Track Run Does Not Always Mean One Circuit</h2>
+
+    <p>This is one of the most commonly overlooked details in <strong>commercial track lighting circuit</strong> projects.</p>
+
+    <p>A long magnetic track may look continuous on the ceiling, but electrically it can be divided into several circuits — each with its own driver, its own feed, and its own control group.</p>
+
+    <table class="spec-table">
+      <thead>
+        <tr>
+          <th>Project Situation</th>
+          <th>Suggested Circuit Planning</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>3–4m short track</strong></td>
+          <td>1 driver / 1 circuit</td>
+        </tr>
+        <tr>
+          <td><strong>6–8m medium track</strong></td>
+          <td>1–2 circuits depending on total wattage</td>
+        </tr>
+        <tr>
+          <td><strong>10–12m long track</strong></td>
+          <td>2–3 circuits recommended</td>
+        </tr>
+        <tr>
+          <td><strong>Retail store or showroom</strong></td>
+          <td>Divide by lighting zones, not track length</td>
+        </tr>
+        <tr>
+          <td><strong>Hotel corridor</strong></td>
+          <td>Split by area for easier maintenance</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p>Splitting a long track into multiple circuits gives you higher total load capacity, independent zone control, redundancy if one driver fails, and smaller drivers that are easier to install and maintain.</p>
+
+    <h2>Dimming and Smart Control Must Be Confirmed Before Wiring</h2>
+
+    <p>The dimming method must be confirmed <strong>before</strong> the driver is selected and wiring is routed. Each method requires different driver compatibility and control wiring:</p>
+
+    <ul>
+      <li>Non-dim / On-Off</li>
+      <li>DALI (needs 2 extra control wires)</li>
+      <li>0-10V (analogue — needs 2 control wires)</li>
+      <li>Triac (phase-cut — common in retrofit)</li>
+      <li>Tuya / Zigbee (wireless — no extra control wires, needs gateway placement)</li>
+      <li>CCT tunable (needs separate controller per channel)</li>
+      <li>Separate group control (each zone needs its own control pair)</li>
+    </ul>
+
+    <p>Planning <strong>dimmable magnetic track wiring</strong> at the start is far cheaper than pulling extra cables after the ceiling is closed.</p>
+
+    <blockquote>For a full comparison of smart dimming and control options, read: <a href="blog-post-2.html" style="color:var(--gold);">Mastering Smart Lighting Control: DALI, 0-10V, and Wireless Protocols</a></blockquote>
+
+    <h2>Pre-Installation Checklist for Contractors and Specifiers</h2>
+
+    <table class="spec-table">
+      <thead>
+        <tr>
+          <th>Item to Confirm</th>
+          <th>Why It Matters</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>Track layout</strong></td>
+          <td>Determines track length, feed points, and circuit zones</td>
+        </tr>
+        <tr>
+          <td><strong>Fixture quantity</strong></td>
+          <td>Helps calculate total load</td>
+        </tr>
+        <tr>
+          <td><strong>Fixture wattage</strong></td>
+          <td>Determines correct driver capacity</td>
+        </tr>
+        <tr>
+          <td><strong>Driver location</strong></td>
+          <td>Affects wiring, maintenance access, and heat dissipation</td>
+        </tr>
+        <tr>
+          <td><strong>Ceiling type</strong></td>
+          <td>Impacts installation method and access options</td>
+        </tr>
+        <tr>
+          <td><strong>Dimming method</strong></td>
+          <td>Affects driver choice and control wiring</td>
+        </tr>
+        <tr>
+          <td><strong>Access panel</strong></td>
+          <td>Makes future <strong>track lighting maintenance access</strong> possible — essential for sealed ceilings</td>
+        </tr>
+        <tr>
+          <td><strong>Future expansion</strong></td>
+          <td>Keeps spare driver capacity for added fixtures later</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h2>Common Mistakes That Cause Rework</h2>
+
+    <ol>
+      <li><strong>Driver hidden without access panel.</strong> A failed driver in a sealed ceiling costs hours of labour to replace. An access panel costs 10 minutes to install at framing stage.</li>
+      <li><strong>Driver too far from the track.</strong> Long cable runs add voltage drop before power even reaches the track. Keep the <strong>driver accessibility track lighting</strong> distance under 2–3m.</li>
+      <li><strong>Long track powered from one end only.</strong> 5m+ runs on end feed will have noticeable dimness at the far end. Use mid-point or dual-end feed.</li>
+      <li><strong>Dimming method confirmed after wiring.</strong> Choosing DALI after standard wiring is installed means pulling new cables through finished ceilings.</li>
+      <li><strong>No spare capacity for future lights.</strong> A fully loaded driver leaves no room for expansion. Leave 20% headroom.</li>
+    </ol>
+
+    <div class="faq">
+      <h2>FAQ: 48V Track Driver and Power Feed Planning</h2>
+
+      <div class="faq-item">
+        <div class="faq-q">Can the driver be hidden inside the ceiling without an access panel?</div>
+        <div class="faq-a">Not recommended. Drivers generate heat and may fail. Always plan an access panel for maintenance, especially in recessed or trimless ceiling installations.</div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-q">How far can the driver be from the magnetic track?</div>
+        <div class="faq-a">Keep the distance under 2–3 metres. Longer cable runs add resistance and voltage drop, which reduces fixture brightness and may cause uneven lighting at the far end.</div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-q">Can one driver power two separate track sections?</div>
+        <div class="faq-a">Yes, if the combined load is within the driver's rated capacity and both sections are wired into the same circuit. Confirm with a <strong>magnetic track pre-installation checklist</strong> review before fixing cable routes.</div>
+      </div>
+    </div>
+
+    <div class="cta-box">
+      <h3>Planning a 48V magnetic track project?</h3>
+      <p>Send us your ceiling layout, track length, fixture list, driver location, and control requirements. We can help check driver capacity, <strong>power feed position track lighting</strong> layout, and circuit planning before installation.</p>
+      <p style="color:rgba(255,255,255,0.5);font-size:14px;">如果你正在做酒店、别墅、零售店或展厅项目，可以把天花图、轨道长度、灯具数量、功率和控制方式发给我们，我们可以帮你提前检查电源容量、供电点和回路规划，避免安装后返工。</p>
+      <a href="mailto:info@tracklinear.com" class="btn">Get Project Check →</a>
+    </div>
+
+    <div class="related">
+      <h3>Related Articles</h3>
+      <a href="blog-post-11.html">
+        How Many Lights Can You Install on a 48V Magnetic Track Without Voltage Drop?
+        <span>Fixture load planning, voltage drop limits, and feed point decisions per run</span>
+      </a>
+      <a href="blog-post-2.html">
+        Mastering Smart Lighting Control: DALI, 0-10V, and Wireless Protocols
+        <span>Deep technical guide on choosing the right control protocol for magnetic track lighting</span>
+      </a>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container">
+      <span>© 2026 Tracklinear Lighting</span>
+      <div>
+        <a href="index.html">Home</a> · <a href="blog/index.html">Blog</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
