@@ -454,8 +454,29 @@
     .recommend { color: var(--gold); font-weight: 800; font-size: 14px; margin: 16px 0 12px; }
     .app-body p { color: #666; line-height: 1.65; }
     .faq-section { background: var(--bg); padding: 96px 0; }
-    .faq-grid { display: grid; gap: 16px; max-width: 960px; margin: 0 auto; grid-template-columns: 1fr 1fr; }
-    @media (max-width:640px) { .faq-grid { grid-template-columns: 1fr; } }
+    .faq-split {
+      display: grid;
+      grid-template-columns: 1fr 1.4fr;
+      gap: 48px;
+      align-items: start;
+    }
+    .faq-left {
+      position: sticky;
+      top: 100px;
+    }
+    .faq-left img {
+      width: 100%;
+      height: auto;
+      border-radius: 24px;
+      display: block;
+      box-shadow: 0 12px 40px rgba(0,0,0,.08);
+    }
+    .faq-grid { display: flex; flex-direction: column; gap: 12px; }
+    @media (max-width: 920px) {
+      .faq-split { grid-template-columns: 1fr; }
+      .faq-left { position: static; }
+      .faq-left img { max-height: 200px; object-fit: cover; border-radius: 16px; }
+    }
     .faq-item {
       background: white;
       border-radius: 16px;
@@ -1109,7 +1130,12 @@
           <h2>Frequently Asked Questions</h2>
           <p>Get professional answers about magnetic track lighting system planning and technical details.</p>
         </div>
-        <div class="faq-grid">
+        <div class="faq-split">
+          <div class="faq-left">
+            <img alt="Magnetic track lighting beam angle control and smart dimming technology" src="images/image_5.webp" width="1200" height="900" loading="lazy" decoding="async" />
+          </div>
+          <div class="faq-right">
+            <div class="faq-grid">
           <div class="faq-item" onclick="this.classList.toggle('open')">
             <div class="faq-question">
               What certifications do your products have?
@@ -1165,6 +1191,7 @@
               <span class="faq-toggle">+</span>
             </div>
             <div class="faq-answer">Yes. Custom branding, packaging, and private-label production for overseas buyers.</div>
+          </div>
           </div>
         </div>
       </div>
