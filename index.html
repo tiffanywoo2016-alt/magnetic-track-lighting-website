@@ -511,6 +511,117 @@
     footer { background: #111; color: white; padding: 46px 0; }
     .footer-inner { display: flex; justify-content: space-between; gap: 26px; align-items: center; }
     .footer-links { display: flex; flex-wrap: wrap; gap: 18px; color: rgba(255,255,255,.6); font-size: 14px; }
+    /* Trust & Certifications Bar */
+    .trust-bar {
+      padding: 48px 0 20px;
+      background: white;
+    }
+    .trust-label {
+      text-align: center;
+      font-size: 12px;
+      text-transform: uppercase;
+      letter-spacing: .18em;
+      color: #999;
+      font-weight: 700;
+      margin-bottom: 16px;
+    }
+    .trust-items {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 24px;
+      flex-wrap: wrap;
+    }
+    .trust-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 10px 22px;
+      background: var(--bg);
+      border: 1px solid #e0d8cc;
+      border-radius: 10px;
+      font-size: 13px;
+      font-weight: 700;
+      color: #4a3f33;
+      letter-spacing: .02em;
+    }
+    .trust-badge .icon {
+      width: 20px; height: 20px;
+      border-radius: 0;
+      background: none;
+      margin: 0;
+      font-size: 16px;
+      color: #4a3f33;
+    }
+
+    /* Testimonials */
+    .testimonials {
+      background: var(--bg);
+      padding: 96px 0;
+    }
+    .testimonials-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 24px;
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+    .testimonial-card {
+      background: white;
+      border-radius: 24px;
+      padding: 32px;
+      border: 1px solid #e8e0d4;
+      transition: all .22s ease;
+    }
+    .testimonial-card:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 16px 40px rgba(0,0,0,.06);
+    }
+    .testimonial-stars {
+      color: var(--gold);
+      font-size: 18px;
+      letter-spacing: 2px;
+      margin-bottom: 14px;
+    }
+    .testimonial-text {
+      font-size: 15px;
+      line-height: 1.7;
+      color: #333;
+      margin: 0 0 20px;
+      font-style: italic;
+    }
+    .testimonial-text::before {
+      content: "“";
+      color: var(--gold);
+      font-size: 24px;
+      font-weight: 800;
+      margin-right: 2px;
+    }
+    .testimonial-author {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+    .testimonial-avatar {
+      width: 40px; height: 40px;
+      border-radius: 50%;
+      background: var(--gold-light);
+      color: var(--dark);
+      display: grid;
+      place-items: center;
+      font-weight: 800;
+      font-size: 16px;
+    }
+    .testimonial-name {
+      font-weight: 700;
+      font-size: 14px;
+      color: var(--dark);
+    }
+    .testimonial-role {
+      font-size: 12px;
+      color: #888;
+    }
+
     @media (max-width: 920px) {
       nav { display: none; }
       .stats-grid, .grid-system, .installation-grid, .module-grid, .optics-grid, .applications, .oem-grid, .contact-grid { grid-template-columns: 1fr; }
@@ -679,6 +790,19 @@
           <span class="hero-pill">20 / 23 / 35mm Systems</span>
           <span class="hero-pill">Complete 48V System</span>
           <span class="hero-pill">OEM / ODM Ready</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Trust & Certifications -->
+    <section class="trust-bar">
+      <div class="container">
+        <div class="trust-label">Certified & Compliant</div>
+        <div class="trust-items">
+          <span class="trust-badge">✅ CE Certified</span>
+          <span class="trust-badge">✅ RoHS Compliant</span>
+          <span class="trust-badge">✅ 48V SELV Safe</span>
+          <span class="trust-badge">✅ IP65 Rated Modules</span>
         </div>
       </div>
     </section>
@@ -881,6 +1005,56 @@
             <p>High-end seamless integration for luxury residential and hospitality projects.</p>
           </div>
         </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials" id="testimonials">
+      <div class="container">
+        <div class="section-head">
+          <div class="section-kicker">From Our Customers</div>
+          <h2>Buyers Who Trust Tracklinear</h2>
+          <p>Real feedback from project buyers and distributors who have worked with us.</p>
+        </div>
+        <div class="testimonials-grid">
+
+          <div class="testimonial-card">
+            <div class="testimonial-stars">★★★★★</div>
+            <p class="testimonial-text">I contacted them for resort entrance decoration — outdoor lighting for a beachfront property. I didn't have a clear spec, just some ideas. Instead of pushing a standard quote, they asked about the location, the atmosphere I wanted, the environment near the ocean. Then recommended a different product set that fit better than what I originally asked for. Communication was clear, no overpromising. From a rough inquiry to order placed, smooth.</p>
+            <div class="testimonial-author">
+              <div class="testimonial-avatar">M</div>
+              <div>
+                <div class="testimonial-name">Manuel R.</div>
+                <div class="testimonial-role">Resort Owner, Philippines</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-card">
+            <div class="testimonial-stars">★★★★★</div>
+            <p class="testimonial-text">I'm a distributor and needed to test a few models before committing to volume. Other suppliers had MOQ or were vague on warranty. Tracklinear said 2 years warranty, no MOQ, and shipped 3 days after payment. What I received matched exactly what they described. Not the cheapest I've seen, but the quality is consistent. Placed a repeat order two weeks later.</p>
+            <div class="testimonial-author">
+              <div class="testimonial-avatar">D</div>
+              <div>
+                <div class="testimonial-name">David Chen</div>
+                <div class="testimonial-role">Lighting Distributor, Singapore</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-card">
+            <div class="testimonial-stars">★★★★★</div>
+            <p class="testimonial-text">What I value most is honesty. When a product isn't right for my project, they tell me before I order, not after. I've had other suppliers say yes to everything, then the product doesn't work on site. Tracklinear doesn't oversell. That's worth more than a low price from someone who says yes to anything. We've been working together for over a year now.</p>
+            <div class="testimonial-author">
+              <div class="testimonial-avatar">A</div>
+              <div>
+                <div class="testimonial-name">Alexandre P.</div>
+                <div class="testimonial-role">Lighting Contractor, France</div>
+              </div>
+            </div>
+          </div>
+
         </div>
       </div>
     </section>
