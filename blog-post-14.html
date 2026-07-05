@@ -20,6 +20,7 @@
   <link rel="dns-prefetch" href="https://fonts.gstatic.com">
   <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
   <title>Before You Compare Prices, Check These 10 Engineering Details | Tracklinear Buyer's Handbook</title>
   <meta name="description" content="A complete guide to evaluating magnetic track lighting quality before comparing prices. 10 engineering details that determine whether your project succeeds or becomes a costly lesson.">
@@ -136,6 +137,19 @@
     .toc-section ol li a { color: var(--gold); text-decoration: none; }
     .toc-section ol li a:hover { text-decoration: underline; }
 
+    /* Back to top */
+    .back-to-top {
+      position: fixed; bottom: 32px; right: 32px;
+      background: var(--dark); color: var(--gold-light);
+      width: 44px; height: 44px; border-radius: 50%;
+      display: flex; align-items: center; justify-content: center;
+      text-decoration: none; font-size: 20px;
+      box-shadow: 0 4px 16px rgba(0,0,0,.15);
+      transition: opacity .3s, transform .3s;
+      z-index: 100;
+    }
+    .back-to-top:hover { transform: translateY(-3px); opacity: .9; }
+
 </style>
 <script type="application/ld+json">
 {
@@ -147,7 +161,7 @@
       "description": "A complete guide to evaluating magnetic track lighting quality before comparing prices. 10 engineering details that determine whether your project succeeds or becomes a costly lesson.",
       "image": "https://tracklinear.com/images/blog14_hero.webp",
       "datePublished": "2026-07-03T08:00:00+08:00",
-      "dateModified": "2026-07-03T08:00:00+08:00",
+      "dateModified": "2026-07-05T08:00:00+08:00",
       "author": { "@type": "Person", "name": "Tiffany Woo", "url": "https://tracklinear.com/" },
       "publisher": {
         "@type": "Organization",
@@ -361,7 +375,7 @@
     <p>If the supplier cannot explain how the end cap is sealed, or if the housing uses clip-only assembly without screws, this is a strong indicator of low manufacturing precision. In projects where lights operate in temperature-varying environments (hotels with HVAC cycling, retail with high ceilings), clip-only assemblies develop visible light leakage and loose end caps within 6-12 months.</p>
   </div>
 
-  <img class="img-full" src="images/blog14_endcap_comparison.webp" alt="Comparison of screw-fastened end cap vs glue-only end cap showing light leakage difference">
+  <img class="img-full" loading="lazy" src="images/blog14_endcap_comparison.webp" alt="Comparison of screw-fastened end cap vs glue-only end cap showing light leakage difference">
 
   <p class="img-caption">End cap assembly is a visible indicator of overall housing quality. A supplier that skips screws on the end cap likely uses clip-only assembly throughout the entire housing.</p>
 
@@ -442,7 +456,7 @@
     <p>Single-row LED layout on FR4 PCB in a module rated above 10W is a design compromise. In retail or hospitality projects where uniform light distribution is required, this combination consistently produces visible hot spots and accelerated lumen depreciation within the first year.</p>
   </div>
 
-  <img class="img-full" src="images/blog14_ledlayout_comparison.webp" alt="Comparison of single-row vs double-row LED layout inside a magnetic track light module with diffuser removed">
+  <img class="img-full" loading="lazy" src="images/blog14_ledlayout_comparison.webp" alt="Comparison of single-row vs double-row LED layout inside a magnetic track light module with diffuser removed">
 
   <p class="img-caption">Single-row layout (left) is more prone to hot spots and uneven light distribution. Double-row layout (right) with aluminum PCB delivers more uniform illumination and better thermal management — a key quality indicator for commercial projects.</p>
 
@@ -555,7 +569,7 @@
     <p>Unplated brass or steel contacts are a significant reliability risk in humid environments (coastal regions, bathrooms, indoor pools) or projects with frequent reconfiguration. Oxidation builds up within months, causing intermittent contact and flickering that is difficult to diagnose without replacing the module.</p>
   </div>
 
-  <img class="img-full" src="images/blog14_contact_comparison.webp" alt="Side-by-side comparison of gold-plated copper electrical contacts vs unplated brass contacts">
+  <img class="img-full" loading="lazy" src="images/blog14_contact_comparison.webp" alt="Side-by-side comparison of gold-plated copper electrical contacts vs unplated brass contacts">
 
   <div class="project-impact">
     <h4>📊 Project Impact</h4>
@@ -713,7 +727,7 @@
 
   <p>When you apply these 10 checks, the differences between suppliers become clear. Here is a summary of what typically distinguishes a quality-focused supplier from a price-focused one:</p>
 
-  <img class="img-full" src="images/blog14_supplier_comparison.webp" alt="Visual comparison of two different magnetic track lighting systems side by side">
+  <img class="img-full" loading="lazy" src="images/blog14_supplier_comparison.webp" alt="Visual comparison of two different magnetic track lighting systems side by side">
 
   <table class="comparison-table">
     <tr>
@@ -906,6 +920,8 @@
   <p style="text-align: center; font-size: 14px; color: #999; margin-top: 16px;">We help buyers judge magnetic track lighting quality — not just sell it.</p>
 
 </div>
+
+<a href="#" class="back-to-top" aria-label="Back to top">↑</a>
 
 <footer>
   <div class="container">
