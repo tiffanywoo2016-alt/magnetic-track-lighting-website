@@ -123,7 +123,20 @@
     footer .container { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 16px; }
     footer a { color: rgba(255,255,255,.5); text-decoration: none; font-size: 14px; }
     footer a:hover { color: white; }
-  </style>
+  
+    html { scroll-behavior: smooth; }
+    .mistake-number { display: inline-block; background: #151515; color: #e6c08c; font-size: 11px; font-weight: 800; padding: 4px 12px; border-radius: 6px; letter-spacing: 1px; margin-bottom: 4px; }
+    .mistake-divider { height: 1px; background: linear-gradient(to right, transparent, #b08a57, transparent); margin: 48px 0; opacity: 0.3; }
+    .buyer-decision { border-left: 4px solid #b08a57; }
+    .comparison-table tr:hover td { background: #f5f3ef; }
+    .toc-section { background: #f9f7f2; border-radius: 16px; padding: 24px 28px; margin: 28px 0; border: 1px solid #e8e4dc; }
+    .toc-section h3 { margin-top: 0; font-size: 16px; color: var(--dark); }
+    .toc-section ol { margin: 12px 0 0; padding-left: 20px; }
+    .toc-section ol li { font-size: 14px; margin-bottom: 6px; }
+    .toc-section ol li a { color: var(--gold); text-decoration: none; }
+    .toc-section ol li a:hover { text-decoration: underline; }
+
+</style>
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -285,6 +298,23 @@
 
   <p>This is not a technical encyclopedia. It is a <strong>purchasing decision framework</strong> organized around the 10 most common mistakes buyers make when comparing magnetic track lighting systems.</p>
 
+  <!-- TABLE OF CONTENTS -->
+  <div class="toc-section">
+    <h3>📖 What You&#39;ll Learn in This Chapter</h3>
+    <ol>
+      <li><a href="#mistake-1">Judging Quality by Appearance Instead of Structure</a></li>
+      <li><a href="#mistake-2">Assuming Brightness Equals Quality</a></li>
+      <li><a href="#mistake-3">Comparing LED Quantity Instead of LED Layout and PCB Quality</a></li>
+      <li><a href="#mistake-4">Ignoring Optical Design Because &quot;It&#39;s Just a Light&quot;</a></li>
+      <li><a href="#mistake-5">Thinking Stronger Magnets Always Mean Better Quality</a></li>
+      <li><a href="#mistake-6">Overlooking the Most Common Failure Point: Electrical Contact</a></li>
+      <li><a href="#mistake-7">Treating the Power Supply as an Accessory</a></li>
+      <li><a href="#mistake-8">Asking &quot;How Bright?&quot; Instead of &quot;Is It Comfortable?&quot;</a></li>
+      <li><a href="#mistake-9">Ignoring CRI and Color Consistency Across Fixtures</a></li>
+      <li><a href="#mistake-10">Confusing Switchable CCT with True Dimming</a></li>
+    </ol>
+  </div>
+
   <!-- THE 10 MISTAKES OVERVIEW -->
   <h2>The 10 Engineering Details That Professional Buyers Never Ignore</h2>
 
@@ -306,7 +336,8 @@
   <p>Each section below follows the same structure: the mistake → why it happens → how to verify → the project impact → and the warning signs that tell you whether to proceed or pause.</p>
 
   <!-- ====== MISTAKE #1 ====== -->
-  <h2>Mistake #1 — Judging Quality by Appearance Instead of Structure</h2>
+  <span class="mistake-number">MISTAKE 1</span>
+  <h2 id="mistake-1">Judging Quality by Appearance Instead of Structure</h2>
 
   <p>Walk through a lighting exhibition and you will notice something: many magnetic track luminaires look remarkably similar. The housing shape, finish, and dimensions appear almost identical. Product photos make the differences even harder to spot.</p>
 
@@ -342,8 +373,11 @@
     </ul>
   </div>
 
+  <div class="mistake-divider"></div>
+
   <!-- ====== MISTAKE #2 ====== -->
-  <h2>Mistake #2 — Assuming Brightness Equals Quality</h2>
+  <span class="mistake-number">MISTAKE 2</span>
+  <h2 id="mistake-2">Assuming Brightness Equals Quality</h2>
 
   <p>A brighter light often appears to be a better product. Many buyers compare lumens first. But brightness alone tells very little about long-term performance.</p>
 
@@ -380,8 +414,11 @@
     </ul>
   </div>
 
+  <div class="mistake-divider"></div>
+
   <!-- ====== MISTAKE #3 ====== -->
-  <h2>Mistake #3 — Comparing LED Quantity Instead of LED Layout and PCB Quality</h2>
+  <span class="mistake-number">MISTAKE 3</span>
+  <h2 id="mistake-3">Comparing LED Quantity Instead of LED Layout and PCB Quality</h2>
 
   <p>More LEDs do not automatically mean better quality. In fact, some suppliers crowd LEDs onto a narrow strip to create the appearance of higher brightness, while ignoring the optical and thermal consequences.</p>
 
@@ -414,8 +451,11 @@
     </ul>
   </div>
 
+  <div class="mistake-divider"></div>
+
   <!-- ====== MISTAKE #4 ====== -->
-  <h2>Mistake #4 — Ignoring Optical Design Because "It's Just a Light"</h2>
+  <span class="mistake-number">MISTAKE 4</span>
+  <h2 id="mistake-4">Ignoring Optical Design Because "It's Just a Light"</h2>
 
   <p>Good magnetic track lighting is not only bright. It must distribute light properly. The optical system — diffuser, reflector, lens — determines how efficiently light reaches the target surface and whether the result looks professional or amateur.</p>
 
@@ -450,8 +490,11 @@
     </ul>
   </div>
 
+  <div class="mistake-divider"></div>
+
   <!-- ====== MISTAKE #5 ====== -->
-  <h2>Mistake #5 — Thinking Stronger Magnets Always Mean Better Quality</h2>
+  <span class="mistake-number">MISTAKE 5</span>
+  <h2 id="mistake-5">Thinking Stronger Magnets Always Mean Better Quality</h2>
 
   <p>Magnetic force is important, but stronger is not always better. The goal is balance — enough holding force for secure installation without making removal difficult or damaging the track surface.</p>
 
@@ -481,8 +524,11 @@
     </ul>
   </div>
 
+  <div class="mistake-divider"></div>
+
   <!-- ====== MISTAKE #6 ====== -->
-  <h2>Mistake #6 — Overlooking the Most Common Failure Point: Electrical Contact</h2>
+  <span class="mistake-number">MISTAKE 6</span>
+  <h2 id="mistake-6">Overlooking the Most Common Failure Point: Electrical Contact</h2>
 
   <p>The electrical connection between the track and the module is the most failure-prone area in magnetic track lighting systems — and the most commonly overlooked during sample evaluation.</p>
 
@@ -517,8 +563,11 @@
     </ul>
   </div>
 
+  <div class="mistake-divider"></div>
+
   <!-- ====== MISTAKE #7 ====== -->
-  <h2>Mistake #7 — Treating the Power Supply as an Accessory</h2>
+  <span class="mistake-number">MISTAKE 7</span>
+  <h2 id="mistake-7">Treating the Power Supply as an Accessory</h2>
 
   <p>Even though magnetic track lighting operates at 48V low voltage, the power supply (driver) remains the single most critical component for system reliability — and the most common point of failure.</p>
 
@@ -549,8 +598,11 @@
     </ul>
   </div>
 
+  <div class="mistake-divider"></div>
+
   <!-- ====== MISTAKE #8 ====== -->
-  <h2>Mistake #8 — Asking "How Bright?" Instead of "Is It Comfortable?"</h2>
+  <span class="mistake-number">MISTAKE 8</span>
+  <h2 id="mistake-8">Asking "How Bright?" Instead of "Is It Comfortable?"</h2>
 
   <p>For international B2B projects — especially hotels, villas, offices, and premium retail — visual comfort matters as much as brightness. A light that is uncomfortably bright creates glare, eye strain, and a negative impression of the space.</p>
 
@@ -580,8 +632,11 @@
     </ul>
   </div>
 
+  <div class="mistake-divider"></div>
+
   <!-- ====== MISTAKE #9 ====== -->
-  <h2>Mistake #9 — Ignoring CRI and Color Consistency Across Fixtures</h2>
+  <span class="mistake-number">MISTAKE 9</span>
+  <h2 id="mistake-9">Ignoring CRI and Color Consistency Across Fixtures</h2>
 
   <p>CRI and color consistency directly affect how a space looks. Two lights with the same CRI rating can produce visibly different light quality when installed side by side. The difference is in color consistency — measured by SDCM (Standard Deviation of Color Matching).</p>
 
@@ -611,8 +666,11 @@
     </ul>
   </div>
 
+  <div class="mistake-divider"></div>
+
   <!-- ====== MISTAKE #10 ====== -->
-  <h2>Mistake #10 — Confusing Switchable CCT with True Dimming</h2>
+  <span class="mistake-number">MISTAKE 10</span>
+  <h2 id="mistake-10">Confusing Switchable CCT with True Dimming</h2>
 
   <p>One of the most common misunderstandings in magnetic track lighting procurement is the difference between "switchable CCT" and "dimmable." They are not the same thing.</p>
 
@@ -643,6 +701,8 @@
       <li><strong>Unhappy end users</strong> — clients who specified "dimmable" receive lights that only switch color temperatures</li>
     </ul>
   </div>
+
+  <div class="mistake-divider"></div>
 
   <!-- ====== SUPPLIER COMPARISON ====== -->
   <h2>Supplier Comparison: What Professional Suppliers Offer vs What Budget Suppliers Hide</h2>
