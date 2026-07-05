@@ -194,26 +194,56 @@
     footer a { color: rgba(255,255,255,.5); text-decoration: none; font-size: 14px; }
     footer a:hover { color: white; }
   
-    /* Floating contact sidebar */
+    /* Floating contact sidebar — inquiry form */
     .contact-sidebar {
-      position: fixed; right: 0; top: 50%; transform: translateY(-50%);
-      z-index: 99; display: flex; flex-direction: column; gap: 2px;
+      position: fixed; left: calc(50% + 460px); top: 50%; transform: translateY(-50%);
+      z-index: 99; width: 380px;
+      background: white; border-radius: 20px;
+      box-shadow: 0 12px 48px rgba(0,0,0,.14);
+      padding: 28px 26px;
+      border: 1px solid #e8e4dc;
     }
-    .contact-sidebar a {
-      display: flex; align-items: center; gap: 10px;
-      background: #151515; color: white;
-      padding: 10px 14px 10px 12px;
-      text-decoration: none; font-size: 13px; font-weight: 600;
-      border-radius: 8px 0 0 8px;
-      transition: all .25s ease;
-      white-space: nowrap;
+    .contact-sidebar h4 {
+      margin: 0 0 2px; font-size: 19px; font-weight: 800; color: var(--dark);
     }
-    .contact-sidebar a:hover {
-      background: #2a2a2a; padding-right: 20px;
+    .contact-sidebar .sub {
+      margin: 0 0 18px; font-size: 13px; color: var(--muted);
     }
-    .contact-sidebar .icon { font-size: 18px; flex-shrink: 0; }
-    .contact-sidebar .label { line-height: 1; }
-    @media (max-width: 640px) {
+    .contact-sidebar input, .contact-sidebar textarea {
+      width: 100%; box-sizing: border-box;
+      border: 1px solid #e0dcd4; border-radius: 12px;
+      padding: 13px 16px; font-size: 15px; font-family: inherit;
+      margin-bottom: 12px; background: #faf8f4; color: var(--text);
+      outline: none; transition: border .2s, box-shadow .2s;
+    }
+    .contact-sidebar input:focus, .contact-sidebar textarea:focus {
+      border-color: var(--gold); box-shadow: 0 0 0 3px rgba(176,138,87,.12);
+    }
+    .contact-sidebar textarea { resize: none; height: 72px; }
+    .contact-sidebar .btn-send {
+      display: block; width: 100%; box-sizing: border-box;
+      background: var(--dark); color: white; border: none;
+      border-radius: 12px; padding: 14px; font-size: 15px; font-weight: 700;
+      cursor: pointer; transition: background .2s;
+    }
+    .contact-sidebar .btn-send:hover { background: #2a2a2a; }
+    .contact-sidebar .wa-row {
+      display: flex; align-items: center; justify-content: center;
+      margin-top: 16px; gap: 6px;
+    }
+    .contact-sidebar .wa-row span {
+      font-size: 13px; color: var(--muted);
+    }
+    .contact-sidebar .wa-row a {
+      display: inline-flex; align-items: center; justify-content: center;
+      width: 44px; height: 44px; border-radius: 50%;
+      background: #25D366; color: white; font-size: 22px;
+      text-decoration: none; transition: transform .2s, box-shadow .2s;
+    }
+    .contact-sidebar .wa-row a:hover {
+      transform: scale(1.12); box-shadow: 0 4px 18px rgba(37,211,102,.4);
+    }
+    @media (max-width: 1100px) {
       .contact-sidebar { display: none; }
     }
   </style>
@@ -348,11 +378,22 @@
 </main>
 
 <div class="contact-sidebar">
-  <a href="mailto:tiffany@henglunco.com?subject=Inquiry%20from%20Tracklinear" target="_blank" rel="noopener">
-    <span class="icon">✉️</span>
-    <span class="label">Send Inquiry</span>
-  </a>
-  <a href="https://wa.me/8613450802291" target="_blank" rel="noopener">
+  <h4>📩 Send Your Inquiry</h4>
+  <p class="sub">We'll reply within 24 hours</p>
+  <form action="https://api.web3forms.com/submit" method="POST">
+    <input type="hidden" name="access_key" value="d4f062b2-2834-47cc-aa4f-d9f6619d2faf">
+    <input type="hidden" name="subject" value="Blog Inquiry">
+    <input type="text" name="name" placeholder="Your Name *" required>
+    <input type="email" name="email" placeholder="Email Address *" required>
+    <input type="text" name="phone" placeholder="WhatsApp / Phone">
+    <textarea name="message" placeholder="Describe your project — ceiling type, quantity, requirements..."></textarea>
+    <button type="submit" class="btn-send">Send Inquiry →</button>
+  </form>
+  <div class="wa-row">
+    <span>Or chat with us</span>
+    <a href="https://wa.me/8613450802291" target="_blank" rel="noopener" aria-label="WhatsApp">💬</a>
+  </div>
+</div>
     <span class="icon">💬</span>
     <span class="label">WhatsApp</span>
   </a>
