@@ -152,52 +152,52 @@
 
     /* Floating contact sidebar — wide form style */
     .contact-sidebar {
-      position: fixed; right: 2%; top: 50%; transform: translateY(-50%);
-      z-index: 99; width: 380px; max-width: 40vw;
+      position: fixed; right: 3%; top: 50%; transform: translateY(-50%);
+      z-index: 99; width: 500px; max-width: 55vw;
       background: white; border-radius: 20px;
       box-shadow: 0 12px 48px rgba(0,0,0,.14);
-      padding: 28px 26px;
+      padding: 32px 30px;
       border: 1px solid #e8e4dc;
     }
     .contact-sidebar h4 {
-      margin: 0 0 2px; font-size: 17px; font-weight: 800; color: var(--dark);
+      margin: 0 0 2px; font-size: 19px; font-weight: 800; color: var(--dark);
     }
     .contact-sidebar .sub {
-      margin: 0 0 16px; font-size: 12px; color: var(--muted);
+      margin: 0 0 18px; font-size: 13px; color: var(--muted);
     }
     .contact-sidebar input, .contact-sidebar textarea {
       width: 100%; box-sizing: border-box;
-      border: 1px solid #e0dcd4; border-radius: 10px;
-      padding: 11px 14px; font-size: 14px; font-family: inherit;
-      margin-bottom: 10px; background: #faf8f4; color: var(--text);
+      border: 1px solid #e0dcd4; border-radius: 12px;
+      padding: 13px 16px; font-size: 15px; font-family: inherit;
+      margin-bottom: 12px; background: #faf8f4; color: var(--text);
       outline: none; transition: border .2s, box-shadow .2s;
     }
     .contact-sidebar input:focus, .contact-sidebar textarea:focus {
       border-color: var(--gold); box-shadow: 0 0 0 3px rgba(176,138,87,.12);
     }
-    .contact-sidebar textarea { resize: none; height: 64px; }
+    .contact-sidebar textarea { resize: none; height: 72px; }
     .contact-sidebar .btn-send {
       display: block; width: 100%; box-sizing: border-box;
       background: var(--dark); color: white; border: none;
-      border-radius: 10px; padding: 12px; font-size: 14px; font-weight: 700;
+      border-radius: 12px; padding: 14px; font-size: 15px; font-weight: 700;
       cursor: pointer; transition: background .2s;
     }
     .contact-sidebar .btn-send:hover { background: #2a2a2a; }
-    .contact-sidebar .wa-icon {
+    .contact-sidebar .wa-row {
       display: flex; align-items: center; justify-content: center;
-      margin-top: 14px; gap: 8px;
+      margin-top: 16px; gap: 6px;
     }
-    .contact-sidebar .wa-icon a {
+    .contact-sidebar .wa-row span {
+      font-size: 13px; color: var(--muted);
+    }
+    .contact-sidebar .wa-row a {
       display: inline-flex; align-items: center; justify-content: center;
-      width: 36px; height: 36px; border-radius: 50%;
-      background: #25D366; color: white; font-size: 18px;
+      width: 44px; height: 44px; border-radius: 50%;
+      background: #25D366; color: white; font-size: 22px;
       text-decoration: none; transition: transform .2s, box-shadow .2s;
     }
-    .contact-sidebar .wa-icon a:hover {
-      transform: scale(1.1); box-shadow: 0 4px 16px rgba(37,211,102,.35);
-    }
-    .contact-sidebar .wa-icon span {
-      font-size: 12px; color: var(--muted);
+    .contact-sidebar .wa-row a:hover {
+      transform: scale(1.12); box-shadow: 0 4px 18px rgba(37,211,102,.4);
     }
 
     @media (max-width: 1100px) {
@@ -989,7 +989,7 @@
     <textarea name="message" placeholder="Describe your project — ceiling type, quantity, requirements..."></textarea>
     <button type="submit" class="btn-send">Send Inquiry →</button>
   </form>
-  <div class="wa-icon">
+  <div class="wa-row">
     <span>Or chat with us</span>
     <a href="https://wa.me/8613450802291" target="_blank" rel="noopener" aria-label="WhatsApp">💬</a>
   </div>
