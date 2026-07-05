@@ -201,6 +201,29 @@
     footer .container { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 16px; }
     footer a { color: rgba(255,255,255,.5); text-decoration: none; font-size: 14px; }
     footer a:hover { color: white; }
+  
+    /* Floating contact sidebar */
+    .contact-sidebar {
+      position: fixed; right: 0; top: 50%; transform: translateY(-50%);
+      z-index: 99; display: flex; flex-direction: column; gap: 2px;
+    }
+    .contact-sidebar a {
+      display: flex; align-items: center; gap: 10px;
+      background: #151515; color: white;
+      padding: 10px 14px 10px 12px;
+      text-decoration: none; font-size: 13px; font-weight: 600;
+      border-radius: 8px 0 0 8px;
+      transition: all .25s ease;
+      white-space: nowrap;
+    }
+    .contact-sidebar a:hover {
+      background: #2a2a2a; padding-right: 20px;
+    }
+    .contact-sidebar .icon { font-size: 18px; flex-shrink: 0; }
+    .contact-sidebar .label { line-height: 1; }
+    @media (max-width: 640px) {
+      .contact-sidebar { display: none; }
+    }
   </style>
 <script type="application/ld+json">
 {
@@ -440,7 +463,18 @@
     </div>
   </main>
 
-  <footer>
+  <div class="contact-sidebar">
+  <a href="mailto:tiffany@henglunco.com?subject=Inquiry%20from%20Tracklinear" target="_blank" rel="noopener">
+    <span class="icon">✉️</span>
+    <span class="label">Send Inquiry</span>
+  </a>
+  <a href="https://wa.me/8613450802291" target="_blank" rel="noopener">
+    <span class="icon">💬</span>
+    <span class="label">WhatsApp</span>
+  </a>
+</div>
+
+<footer>
     <div class="container">
       <span>© 2026 Tracklinear Lighting</span>
       <div>
