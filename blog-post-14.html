@@ -45,28 +45,31 @@
     ul { padding-left: 20px; margin: 16px 0; }
     ul li { font-size: 15px; line-height: 1.7; margin-bottom: 6px; }
 
-    /* Dark-style Info Boxes */
+    /* Info Boxes — matching article story-box design language */
     .red-flag-box, .warning-box, .safe-box {
-      background: #1e1e1e;
-      border-radius: 14px;
-      padding: 24px 28px;
+      background: white;
+      border-radius: 0 16px 16px 0;
+      padding: 20px 24px;
       margin: 28px 0;
-      border: 1px solid rgba(255,255,255,0.06);
+      box-shadow: 0 2px 12px rgba(0,0,0,.04);
     }
+    .red-flag-box { border-left: 4px solid #d94a3d; }
+    .warning-box { border-left: 4px solid #d4a030; }
+    .safe-box { border-left: 4px solid #27ae60; }
     .red-flag-box h4, .warning-box h4, .safe-box h4 {
       margin: 0 0 6px;
       font-size: 13px;
       font-weight: 700;
-      letter-spacing: 0.5px;
       text-transform: uppercase;
+      letter-spacing: 0.5px;
     }
-    .red-flag-box h4 { color: #e74c3c; }
-    .warning-box h4 { color: #f0a830; }
-    .safe-box h4 { color: #2ecc71; }
+    .red-flag-box h4 { color: #d94a3d; }
+    .warning-box h4 { color: #b8860b; }
+    .safe-box h4 { color: #27ae60; }
     .red-flag-box p, .warning-box p, .safe-box p {
       font-size: 14px;
       line-height: 1.65;
-      color: rgba(255,255,255,0.75);
+      color: var(--muted);
       margin: 0;
     }
 
