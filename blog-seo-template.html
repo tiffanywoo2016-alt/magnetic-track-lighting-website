@@ -125,26 +125,48 @@
     .back-to-top { position: fixed; bottom: 32px; right: 32px; background: var(--dark); color: var(--gold-light); width: 44px; height: 44px; border-radius: 50%; display: flex; align-items: center; justify-content: center; text-decoration: none; font-size: 20px; box-shadow: 0 4px 16px rgba(0,0,0,.15); transition: opacity .3s, transform .3s; z-index: 100; }
     .back-to-top:hover { transform: translateY(-3px); opacity: .9; }
 
-    /* Floating contact sidebar */
+    /* Floating contact sidebar — form style */
     .contact-sidebar {
       position: fixed; right: 0; top: 50%; transform: translateY(-50%);
-      z-index: 99; display: flex; flex-direction: column; gap: 2px;
+      z-index: 99; width: 280px;
+      background: white; border-radius: 16px 0 0 16px;
+      box-shadow: 0 8px 32px rgba(0,0,0,.12);
+      padding: 20px 18px;
+      border: 1px solid #e8e4dc; border-right: none;
     }
-    .contact-sidebar a {
-      display: flex; align-items: center; gap: 10px;
-      background: var(--dark); color: white;
-      padding: 10px 14px 10px 12px;
-      text-decoration: none; font-size: 13px; font-weight: 600;
-      border-radius: 8px 0 0 8px;
-      transition: all .25s ease;
-      white-space: nowrap;
+    .contact-sidebar h4 {
+      margin: 0 0 4px; font-size: 14px; font-weight: 700; color: var(--dark);
     }
-    .contact-sidebar a:hover {
-      background: #2a2a2a; padding-right: 20px;
+    .contact-sidebar p {
+      margin: 0 0 12px; font-size: 11px; color: var(--muted); line-height: 1.4;
     }
-    .contact-sidebar .icon { font-size: 18px; flex-shrink: 0; }
-    .contact-sidebar .label { line-height: 1; }
-    @media (max-width: 640px) {
+    .contact-sidebar input, .contact-sidebar textarea {
+      width: 100%; box-sizing: border-box;
+      border: 1px solid #e0dcd4; border-radius: 8px;
+      padding: 8px 10px; font-size: 12px; font-family: inherit;
+      margin-bottom: 8px; background: #faf8f4; color: var(--text);
+      outline: none; transition: border .2s;
+    }
+    .contact-sidebar input:focus, .contact-sidebar textarea:focus {
+      border-color: var(--gold);
+    }
+    .contact-sidebar textarea { resize: none; height: 52px; }
+    .contact-sidebar .btn-send {
+      display: block; width: 100%; box-sizing: border-box;
+      background: var(--dark); color: white; border: none;
+      border-radius: 8px; padding: 9px; font-size: 12px; font-weight: 700;
+      cursor: pointer; transition: background .2s;
+    }
+    .contact-sidebar .btn-send:hover { background: #2a2a2a; }
+    .contact-sidebar .wa-link {
+      display: flex; align-items: center; gap: 6px; justify-content: center;
+      margin-top: 10px; font-size: 12px; color: var(--muted);
+      text-decoration: none; font-weight: 600;
+    }
+    .contact-sidebar .wa-link:hover { color: var(--gold); }
+    .contact-sidebar .wa-link .icon { font-size: 16px; }
+
+    @media (max-width: 1024px) {
       .contact-sidebar { display: none; }
     }
   </style>
@@ -244,13 +266,19 @@
 <a href="#" class="back-to-top" aria-label="Back to top">↑</a>
 
 <div class="contact-sidebar">
-  <a href="mailto:tiffany@henglunco.com?subject=Inquiry%20from%20Tracklinear" target="_blank" rel="noopener">
-    <span class="icon">✉️</span>
-    <span class="label">Send Inquiry</span>
-  </a>
-  <a href="https://wa.me/8613450802291" target="_blank" rel="noopener">
-    <span class="icon">💬</span>
-    <span class="label">WhatsApp</span>
+  <h4>📩 Quick Inquiry</h4>
+  <p>We reply within 24 hours</p>
+  <form action="https://api.web3forms.com/submit" method="POST">
+    <input type="hidden" name="access_key" value="d4f062b2-2834-47cc-aa4f-d9f6619d2faf">
+    <input type="hidden" name="subject" value="Blog Inquiry">
+    <input type="text" name="name" placeholder="Your Name *" required>
+    <input type="email" name="email" placeholder="Email *" required>
+    <input type="text" name="phone" placeholder="WhatsApp / Phone">
+    <textarea name="message" placeholder="Project / Quantity / Requirements..."></textarea>
+    <button type="submit" class="btn-send">Send Inquiry →</button>
+  </form>
+  <a class="wa-link" href="https://wa.me/8613450802291" target="_blank" rel="noopener">
+    <span class="icon">💬</span> WhatsApp: +86 134 5080 2291
   </a>
 </div>
 
