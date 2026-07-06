@@ -357,6 +357,14 @@
       fill: white;
     }
 
+  
+    @media (max-width: 768px) {
+      .footer-grid { flex-direction: column; gap: 28px; }
+      .footer-links { flex-direction: row; flex-wrap: wrap; gap: 14px; }
+      .footer-contact { display: flex; flex-direction: column; gap: 4px; }
+      .footer-sep { display: none; }
+    }
+
   </style>
 </head>
 <body>
@@ -493,8 +501,31 @@
 
 <footer>
   <div class="container">
-    <span>© 2026 Tracklinear Lighting. All rights reserved.</span>
-    <a href="mailto:info@tracklinear.com">info@tracklinear.com</a>
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="footer-logo">Tracklinear</div>
+        <p class="footer-tagline">One-stop magnetic track lighting system for B2B projects worldwide.</p>
+        <div class="footer-contact">
+          <a href="mailto:info@tracklinear.com">info@tracklinear.com</a>
+          <span class="footer-sep">|</span>
+          <a href="https://wa.me/8613450802291" target="_blank" rel="noopener">WhatsApp: +86 134 5080 2291</a>
+        </div>
+      </div>
+      <div class="footer-resources">
+        <span class="footer-label">Resources</span>
+        <div class="footer-links">
+          <a href="mailto:info@tracklinear.com?subject=Catalogue%20Request">Catalogue</a>
+          <a href="mailto:info@tracklinear.com?subject=Installation%20Guide%20Request">Installation Guide</a>
+          <a href="mailto:info@tracklinear.com?subject=Datasheet%20Request">Datasheet</a>
+          <a href="mailto:info@tracklinear.com?subject=Driver%20Matching%20Guide%20Request">Driver Matching Guide</a>
+          <a href="/blog/">Blog</a>
+          <a href="/buyers-handbook/">Buyer's Handbook</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; 2026 Tracklinear. All rights reserved.</span>
+    </div>
   </div>
 </footer>
 
