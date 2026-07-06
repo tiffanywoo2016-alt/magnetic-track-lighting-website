@@ -24,7 +24,7 @@
   <title>Stop Comparing Prices First: How to Evaluate Magnetic Track Lighting Suppliers | Tracklinear</title>
   <meta name="description" content="Learn how professional buyers evaluate magnetic track lighting suppliers before comparing prices. A 5-filter engineering elimination system — PASS/FAIL checkpoints, red flags, and a decision filter.">
   <style>
-    :root { --bg: #f5f3ef; --dark: #151515; --text: #161616; --muted: #666; --gold: #b08a57; --gold-light: #e6c08c; }
+    :root { --bg: #f5f3ef; --dark: #151515; --text: #161616; --muted: #666; --gold: #b08a57; --gold-light: #e6c08c; --flag: #8b6f47; --flag-bg: #f7f3eb; --pass: #6b7c6b; }
     body { margin: 0; font-family: Inter, system-ui, sans-serif; background: var(--bg); color: var(--text); line-height: 1.6; }
     .container { max-width: 800px; margin: 0 auto; padding: 0 28px; }
     header { padding: 24px 0; border-bottom: 1px solid rgba(0,0,0,.06); background: white; }
@@ -49,8 +49,8 @@
     .comparison-table th, .comparison-table td { padding: 14px 16px; text-align: left; border-bottom: 1px solid #eee; font-size: 14px; }
     .comparison-table th { background: var(--dark); color: white; font-size: 13px; text-transform: uppercase; letter-spacing: .5px; }
     .comparison-table tr:last-child td { border-bottom: none; }
-    .comparison-table .good { color: #2a7d2a; font-weight: 600; }
-    .comparison-table .bad { color: #b04a4a; font-weight: 600; }
+    .comparison-table .good { color: var(--pass); font-weight: 600; }
+    .comparison-table .bad { color: var(--flag); font-weight: 600; }
     .cta-box { background: var(--dark); color: white; padding: 40px; border-radius: 28px; margin-top: 40px; }
     .cta-box h3 { color: var(--gold-light); margin-top: 0; font-size: 22px; }
     .cta-box p { color: rgba(255,255,255,0.7); font-size: 16px; }
@@ -85,10 +85,10 @@
     .core-idea .highlight { font-weight: 700; font-size: 18px; color: var(--dark); }
     .key-insight { background: #fffdf5; border-left: 4px solid var(--gold); border-radius: 0 16px 16px 0; padding: 20px 24px; margin: 24px 0; }
     .key-insight p { margin: 0; font-size: 15px; color: var(--dark); font-weight: 500; }
-    .red-flag { background: #fdf6f5; border: 1px solid #f0dcc0; border-radius: 16px; padding: 22px 26px; margin: 24px 0; }
-    .red-flag .flag-label { font-size: 11px; font-weight: 800; color: #b04a4a; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 8px; }
+    .red-flag { background: var(--flag-bg); border: 1px solid #e0d5c0; border-radius: 16px; padding: 22px 26px; margin: 24px 0; border-left: 4px solid var(--gold); }
+    .red-flag .flag-label { font-size: 11px; font-weight: 800; color: var(--flag); text-transform: uppercase; letter-spacing: 1px; margin-bottom: 8px; }
     .red-flag .flag-body { font-size: 15px; color: var(--dark); }
-    .red-flag .flag-body strong { color: #b04a4a; }
+    .red-flag .flag-body strong { color: var(--flag); }
     .decision-filter { background: var(--dark); color: white; border-radius: 28px; padding: 32px; margin: 28px 0; }
     .decision-filter h3 { color: var(--gold-light); margin-top: 0; font-size: 20px; }
     .decision-filter p { color: rgba(255,255,255,0.85); font-size: 16px; }
@@ -97,6 +97,8 @@
     .signal-table th { background: var(--dark); color: white; padding: 14px 16px; text-align: left; font-size: 13px; text-transform: uppercase; letter-spacing: .5px; }
     .signal-table td { padding: 14px 16px; font-size: 14px; border-bottom: 1px solid #eee; }
     .signal-table tr:last-child td { border-bottom: none; }
+    .signal-table .pass { color: var(--pass); font-weight: 600; }
+    .signal-table .fail { color: var(--flag); font-weight: 600; }
     .tracklinear-judgment { background: var(--dark); color: white; border-radius: 28px; padding: 36px 32px; margin: 28px 0; text-align: center; }
     .tracklinear-judgment p { color: rgba(255,255,255,0.9); font-size: 18px; font-style: italic; margin: 0 0 12px; line-height: 1.6; }
     .tracklinear-judgment p:last-child { margin-bottom: 0; }
@@ -358,7 +360,7 @@
 
   <p>Professional buyers do NOT evaluate like this:</p>
   <table class="comparison-table">
-    <tr><th>❌</th><th>✅</th></tr>
+    <tr><th>✕</th><th>✓</th></tr>
     <tr><td class="bad">price</td><td class="good">structural reliability</td></tr>
     <tr><td class="bad">wattage</td><td class="good">electrical stability</td></tr>
     <tr><td class="bad">lumens</td><td class="good">thermal safety</td></tr>
