@@ -1,600 +1,618 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta property="og:title" content="48V vs. 24V Magnetic Track Lighting: Which One Is Right for Your Project?">
-  <meta property="og:description" content="Compare 48V track vs 24V track for magnetic track lighting. Learn about voltage drop, max track length, safety and why 48V is the commercial standard.">
-  <meta property="og:url" content="https://tracklinear.com/blog-post-1.html">
-  <meta property="og:type" content="article">
-  <meta property="og:image" content="https://tracklinear.com/images/blog_header_1.webp">
-  <meta property="og:site_name" content="Tracklinear Lighting">
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="48V vs. 24V Magnetic Track Lighting: Which One Is Right for Your Project?">
-  <meta name="twitter:description" content="Compare 48V track vs 24V track for magnetic track lighting. Learn about voltage drop, max track length, safety and why 48V is the commercial standard.">
-  <meta name="twitter:image" content="https://tracklinear.com/images/blog_header_1.webp">
+     1|<!DOCTYPE html>
+     2|<html lang="en">
+     3|<head>
+     4|  <meta charset="UTF-8">
+     5|  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     6|  <meta property="og:title" content="48V vs. 24V Magnetic Track Lighting: Which One Is Right for Your Project?">
+     7|  <meta property="og:description" content="Compare 48V track vs 24V track for magnetic track lighting. Learn about voltage drop, max track length, safety and why 48V is the commercial standard.">
+     8|  <meta property="og:url" content="https://tracklinear.com/blog-post-1.html">
+     9|  <meta property="og:type" content="article">
+    10|  <meta property="og:image" content="https://tracklinear.com/images/blog_header_1.webp">
+    11|  <meta property="og:site_name" content="Tracklinear Lighting">
+    12|  <meta name="twitter:card" content="summary_large_image">
+    13|  <meta name="twitter:title" content="48V vs. 24V Magnetic Track Lighting: Which One Is Right for Your Project?">
+    14|  <meta name="twitter:description" content="Compare 48V track vs 24V track for magnetic track lighting. Learn about voltage drop, max track length, safety and why 48V is the commercial standard.">
+    15|  <meta name="twitter:image" content="https://tracklinear.com/images/blog_header_1.webp">
+    16|
+    17|  <meta name="theme-color" content="#1a1a1a">
+    18|  <link rel="canonical" href="https://tracklinear.com/blog-post-1.html">
+    19|  <link rel="dns-prefetch" href="https://fonts.googleapis.com">
+    20|  <link rel="dns-prefetch" href="https://fonts.gstatic.com">
+    21|  <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
+    22|  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    23|
+    24|  <title>48V vs. 24V Magnetic Track Lighting: The Professional Guide | Tracklinear</title>
+    25|  <meta name="description" content="Compare 48V track vs 24V track for magnetic track lighting. Learn about voltage drop, max track length, safety and why 48V is the commercial standard.">
+    26|  <style>
+    27|    :root {
+    28|      --bg: #f5f3ef;
+    29|      --dark: #151515;
+    30|      --text: #161616;
+    31|      --muted: #666;
+    32|      --gold: #b08a57;
+    33|      --gold-light: #e6c08c;
+    34|    }
+    35|    body {
+    36|      margin: 0;
+    37|      font-family: Inter, system-ui, sans-serif;
+    38|      background: var(--bg);
+    39|      color: var(--text);
+    40|      line-height: 1.6;
+    41|    }
+    42|    .container { max-width: 800px; margin: 0 auto; padding: 0 28px; }
+    43|    header {
+    44|      padding: 24px 0;
+    45|      border-bottom: 1px solid rgba(0,0,0,.06);
+    46|      background: white;
+    47|    }
+    48|    .nav { display: flex; align-items: center; justify-content: space-between; }
+    49|    .logo { font-weight: 800; font-size: 20px; text-decoration: none; color: var(--dark); }
+    50|    .back-link { font-size: 14px; font-weight: 600; color: var(--gold); text-decoration: none; }
+    51|
+    52|    .breadcrumb {
+    53|      font-size: 13px;
+    54|      color: var(--muted);
+    55|      margin: 28px 0;
+    56|    }
+    57|    .breadcrumb a { color: var(--gold); text-decoration: none; }
+    58|
+    59|    h1 { font-size: 36px; line-height: 1.2; margin: 8px 0 16px; font-weight: 800; }
+    60|    .meta {
+    61|      font-size: 14px;
+    62|      color: var(--muted);
+    63|      display: flex;
+    64|      gap: 12px;
+    65|      align-items: center;
+    66|      flex-wrap: wrap;
+    67|      margin-bottom: 32px;
+    68|    }
+    69|    .tag {
+    70|      display: inline-block;
+    71|      background: var(--gold);
+    72|      color: white;
+    73|      font-size: 11px;
+    74|      font-weight: 700;
+    75|      text-transform: uppercase;
+    76|      letter-spacing: 1px;
+    77|      padding: 4px 12px;
+    78|      border-radius: 4px;
+    79|    }
+    80|
+    81|    .img-full {
+    82|      width: 100%;
+    83|      border-radius: 16px;
+    84|      margin: 28px 0;
+    85|      box-shadow: 0 8px 30px rgba(0,0,0,0.08);
+    86|    }
+    87|
+    88|    h2 { font-size: 26px; margin: 48px 0 16px; font-weight: 700; }
+    89|    h3 { font-size: 20px; margin: 32px 0 12px; font-weight: 700; color: var(--dark); }
+    90|    p { font-size: 16px; line-height: 1.75; color: #2a2a2a; margin: 0 0 20px; }
+    91|    ul { padding-left: 20px; margin: 16px 0; }
+    92|    ul li { font-size: 15px; line-height: 1.7; margin-bottom: 6px; }
+    93|
+    94|    .quick-answer {
+    95|      background: var(--dark);
+    96|      color: white;
+    97|      padding: 32px;
+    98|      border-radius: 20px;
+    99|      margin: 28px 0;
+   100|    }
+   101|    .quick-answer h3 { color: var(--gold-light); margin: 0 0 16px; font-size: 20px; }
+   102|    .quick-answer p { color: rgba(255,255,255,0.85); font-size: 15px; line-height: 1.7; margin: 0 0 12px; }
+   103|    .quick-answer p:last-child { margin-bottom: 0; }
+   104|    .quick-answer .label { color: var(--gold-light); font-weight: 700; }
+   105|
+   106|    table {
+   107|      width: 100%; border-collapse: collapse; margin: 28px 0;
+   108|      background: white; border-radius: 16px; overflow: hidden; box-shadow: 0 4px 20px rgba(0,0,0,.05);
+   109|    }
+   110|    th, td { padding: 14px; text-align: left; border-bottom: 1px solid #eee; font-size: 14px; }
+   111|    th { background: var(--dark); color: white; font-size: 13px; text-transform: uppercase; letter-spacing: .5px; }
+   112|    tr:last-child td { border-bottom: none; }
+   113|
+   114|    .faq {
+   115|      margin: 40px 0;
+   116|      background: white;
+   117|      border-radius: 20px;
+   118|      padding: 32px;
+   119|      box-shadow: 0 4px 20px rgba(0,0,0,.04);
+   120|    }
+   121|    .faq h2 { margin-top: 0; font-size: 24px; }
+   122|    .faq-item { border-bottom: 1px solid #eee; padding: 20px 0; }
+   123|    .faq-item:last-child { border-bottom: none; }
+   124|    .faq-q { font-weight: 700; font-size: 16px; margin-bottom: 8px; color: var(--dark); }
+   125|    .faq-a { font-size: 14px; color: var(--muted); line-height: 1.7; }
+   126|
+   127|    .cta-box {
+   128|      background: var(--dark); color: white; padding: 40px; border-radius: 28px; margin-top: 40px;
+   129|    }
+   130|    .cta-box p { color: rgba(255,255,255,0.7); font-size: 16px; }
+   131|    .cta-box .btn {
+   132|      display: inline-block;
+   133|      background: var(--gold);
+   134|      color: white;
+   135|      padding: 14px 32px;
+   136|      border-radius: 8px;
+   137|      text-decoration: none;
+   138|      font-weight: 600;
+   139|      margin-top: 12px;
+   140|    }
+   141|
+   142|    .related { margin-top: 60px; }
+   143|    .related h3 { font-size: 20px; margin-bottom: 16px; }
+   144|    .related a {
+   145|      display: block;
+   146|      padding: 16px 20px;
+   147|      background: white;
+   148|      border-radius: 12px;
+   149|      text-decoration: none;
+   150|      color: var(--text);
+   151|      margin-bottom: 8px;
+   152|      font-weight: 500;
+   153|      box-shadow: 0 2px 12px rgba(0,0,0,.04);
+   154|      transition: box-shadow .2s;
+   155|    }
+   156|    .related a:hover { box-shadow: 0 4px 20px rgba(0,0,0,.08); }
+   157|    .related a span { color: var(--muted); font-weight: 400; font-size: 13px; display: block; margin-top: 2px; }
+   158|
+   159|    footer { background: #111; color: white; padding: 60px 0; margin-top: 80px; }
+   160|    footer .container { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 16px; }
+   161|    footer a { color: rgba(255,255,255,.5); text-decoration: none; font-size: 14px; }
+   162|    footer a:hover { color: white; }
+   163|  
+   164|        html { scroll-behavior: smooth; }
 
-  <meta name="theme-color" content="#1a1a1a">
-  <link rel="canonical" href="https://tracklinear.com/blog-post-1.html">
-  <link rel="dns-prefetch" href="https://fonts.googleapis.com">
-  <link rel="dns-prefetch" href="https://fonts.gstatic.com">
-  <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-  <title>48V vs. 24V Magnetic Track Lighting: The Professional Guide | Tracklinear</title>
-  <meta name="description" content="Compare 48V track vs 24V track for magnetic track lighting. Learn about voltage drop, max track length, safety and why 48V is the commercial standard.">
-  <style>
-    :root {
-      --bg: #f5f3ef;
-      --dark: #151515;
-      --text: #161616;
-      --muted: #666;
-      --gold: #b08a57;
-      --gold-light: #e6c08c;
-    }
-    body {
-      margin: 0;
-      font-family: Inter, system-ui, sans-serif;
-      background: var(--bg);
-      color: var(--text);
-      line-height: 1.6;
-    }
-    .container { max-width: 800px; margin: 0 auto; padding: 0 28px; }
-    header {
-      padding: 24px 0;
-      border-bottom: 1px solid rgba(0,0,0,.06);
-      background: white;
-    }
-    .nav { display: flex; align-items: center; justify-content: space-between; }
-    .logo { font-weight: 800; font-size: 20px; text-decoration: none; color: var(--dark); }
-    .back-link { font-size: 14px; font-weight: 600; color: var(--gold); text-decoration: none; }
-
-    .breadcrumb {
-      font-size: 13px;
-      color: var(--muted);
-      margin: 28px 0;
-    }
-    .breadcrumb a { color: var(--gold); text-decoration: none; }
-
-    h1 { font-size: 36px; line-height: 1.2; margin: 8px 0 16px; font-weight: 800; }
-    .meta {
-      font-size: 14px;
-      color: var(--muted);
-      display: flex;
-      gap: 12px;
-      align-items: center;
-      flex-wrap: wrap;
-      margin-bottom: 32px;
-    }
-    .tag {
-      display: inline-block;
-      background: var(--gold);
-      color: white;
-      font-size: 11px;
-      font-weight: 700;
-      text-transform: uppercase;
-      letter-spacing: 1px;
-      padding: 4px 12px;
-      border-radius: 4px;
-    }
-
-    .img-full {
-      width: 100%;
-      border-radius: 16px;
-      margin: 28px 0;
-      box-shadow: 0 8px 30px rgba(0,0,0,0.08);
-    }
-
-    h2 { font-size: 26px; margin: 48px 0 16px; font-weight: 700; }
-    h3 { font-size: 20px; margin: 32px 0 12px; font-weight: 700; color: var(--dark); }
-    p { font-size: 16px; line-height: 1.75; color: #2a2a2a; margin: 0 0 20px; }
-    ul { padding-left: 20px; margin: 16px 0; }
-    ul li { font-size: 15px; line-height: 1.7; margin-bottom: 6px; }
-
-    .quick-answer {
-      background: var(--dark);
-      color: white;
-      padding: 32px;
-      border-radius: 20px;
-      margin: 28px 0;
-    }
-    .quick-answer h3 { color: var(--gold-light); margin: 0 0 16px; font-size: 20px; }
-    .quick-answer p { color: rgba(255,255,255,0.85); font-size: 15px; line-height: 1.7; margin: 0 0 12px; }
-    .quick-answer p:last-child { margin-bottom: 0; }
-    .quick-answer .label { color: var(--gold-light); font-weight: 700; }
-
-    table {
-      width: 100%; border-collapse: collapse; margin: 28px 0;
-      background: white; border-radius: 16px; overflow: hidden; box-shadow: 0 4px 20px rgba(0,0,0,.05);
-    }
-    th, td { padding: 14px; text-align: left; border-bottom: 1px solid #eee; font-size: 14px; }
-    th { background: var(--dark); color: white; font-size: 13px; text-transform: uppercase; letter-spacing: .5px; }
-    tr:last-child td { border-bottom: none; }
-
-    .faq {
-      margin: 40px 0;
-      background: white;
-      border-radius: 20px;
-      padding: 32px;
-      box-shadow: 0 4px 20px rgba(0,0,0,.04);
-    }
-    .faq h2 { margin-top: 0; font-size: 24px; }
-    .faq-item { border-bottom: 1px solid #eee; padding: 20px 0; }
-    .faq-item:last-child { border-bottom: none; }
-    .faq-q { font-weight: 700; font-size: 16px; margin-bottom: 8px; color: var(--dark); }
-    .faq-a { font-size: 14px; color: var(--muted); line-height: 1.7; }
-
-    .cta-box {
-      background: var(--dark); color: white; padding: 40px; border-radius: 28px; margin-top: 40px;
-    }
-    .cta-box p { color: rgba(255,255,255,0.7); font-size: 16px; }
-    .cta-box .btn {
-      display: inline-block;
-      background: var(--gold);
-      color: white;
-      padding: 14px 32px;
-      border-radius: 8px;
-      text-decoration: none;
-      font-weight: 600;
-      margin-top: 12px;
-    }
-
-    .related { margin-top: 60px; }
-    .related h3 { font-size: 20px; margin-bottom: 16px; }
-    .related a {
-      display: block;
-      padding: 16px 20px;
-      background: white;
-      border-radius: 12px;
-      text-decoration: none;
-      color: var(--text);
-      margin-bottom: 8px;
-      font-weight: 500;
-      box-shadow: 0 2px 12px rgba(0,0,0,.04);
-      transition: box-shadow .2s;
-    }
-    .related a:hover { box-shadow: 0 4px 20px rgba(0,0,0,.08); }
-    .related a span { color: var(--muted); font-weight: 400; font-size: 13px; display: block; margin-top: 2px; }
-
-    footer { background: #111; color: white; padding: 60px 0; margin-top: 80px; }
-    footer .container { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 16px; }
-    footer a { color: rgba(255,255,255,.5); text-decoration: none; font-size: 14px; }
-    footer a:hover { color: white; }
-  
-    /* Floating contact sidebar — inquiry form */
-    .contact-sidebar {
-      position: fixed; left: calc(50% + 460px); top: 50%; transform: translateY(-50%);
-      z-index: 99; width: 380px;
-      background: white; border-radius: 20px;
-      box-shadow: 0 12px 48px rgba(0,0,0,.14);
-      padding: 28px 26px;
-      border: 1px solid #e8e4dc;
-    }
-    .contact-sidebar h4 {
-      margin: 0 0 2px; font-size: 19px; font-weight: 800; color: var(--dark);
-    }
-    .contact-sidebar .sub {
-      margin: 0 0 18px; font-size: 13px; color: var(--muted);
-    }
-    .contact-sidebar input, .contact-sidebar textarea {
-      width: 100%; box-sizing: border-box;
-      border: 1px solid #e0dcd4; border-radius: 12px;
-      padding: 13px 16px; font-size: 15px; font-family: inherit;
-      margin-bottom: 12px; background: #faf8f4; color: var(--text);
-      outline: none; transition: border .2s, box-shadow .2s;
-    }
-    .contact-sidebar input:focus, .contact-sidebar textarea:focus {
-      border-color: var(--gold); box-shadow: 0 0 0 3px rgba(176,138,87,.12);
-    }
-    .contact-sidebar textarea { resize: none; height: 72px; }
-    .contact-sidebar .btn-send {
-      display: block; width: 100%; box-sizing: border-box;
-      background: var(--dark); color: white; border: none;
-      border-radius: 12px; padding: 14px; font-size: 15px; font-weight: 700;
-      cursor: pointer; transition: background .2s;
-    }
-    .contact-sidebar .btn-send:hover { background: #2a2a2a; }
-    .contact-sidebar .wa-row {
+    /* Back to top */
+    .back-to-top {
+      position: fixed; bottom: 32px; right: 32px;
+      background: var(--dark); color: var(--gold-light);
+      width: 44px; height: 44px; border-radius: 50%;
       display: flex; align-items: center; justify-content: center;
-      margin-top: 16px; gap: 6px;
+      text-decoration: none; font-size: 20px;
+      box-shadow: 0 4px 16px rgba(0,0,0,.15);
+      transition: opacity .3s, transform .3s;
+      z-index: 100;
     }
-    .contact-sidebar .wa-row span {
-      font-size: 13px; color: var(--muted);
-    }
-    .contact-sidebar .wa-row a {
-      display: inline-flex; align-items: center; justify-content: center;
-      width: 48px; height: 48px; border-radius: 50%;
-      background: #25D366; color: white; font-size: 22px;
-      text-decoration: none; transition: transform .2s, box-shadow .2s;
-    }
-    .contact-sidebar .wa-row a:hover {
-      transform: scale(1.12); box-shadow: 0 4px 18px rgba(37,211,102,.4);
-    }
-    @media (max-width: 1100px) {
-      .contact-sidebar { display: none; }
-    }
-  
-    /* === Responsive Design === */
-    @media (max-width: 1100px) {
-      .contact-sidebar { display: none; }
-      /* 移动端底部固定WhatsApp按钮 */
-      .mobile-wa-float { display: flex; }
-    }
-    @media (min-width: 1101px) {
-      .mobile-wa-float { display: none !important; }
-    }
-    @media (max-width: 768px) {
-      .container { padding: 0 16px; }
-      h1 { font-size: 24px !important; line-height: 1.25 !important; }
-      h2 { font-size: 20px !important; }
-      h3 { font-size: 17px !important; }
-      p, li { font-size: 15px !important; }
-      .meta { flex-wrap: wrap; gap: 6px; font-size: 12px !important; }
-      .img-full { border-radius: 12px; margin: 20px 0; }
-      blockquote { margin: 24px 0; padding: 16px 20px; font-size: 16px !important; }
-      .breadcrumb { font-size: 12px !important; margin: 20px 0 !important; }
-      .comparison-table { font-size: 13px !important; display: block; overflow-x: auto; -webkit-overflow-scrolling: touch; }
-      .comparison-table th, .comparison-table td { padding: 10px 12px !important; font-size: 13px !important; white-space: nowrap; }
-      .signal-table { display: block; overflow-x: auto; -webkit-overflow-scrolling: touch; }
-      .signal-table th, .signal-table td { padding: 10px 12px !important; font-size: 13px !important; white-space: nowrap; }
-      .cta-box { padding: 24px 20px !important; border-radius: 20px !important; }
-      .cta-box h3 { font-size: 18px !important; }
-      .cta-box p { font-size: 15px !important; }
-      .core-idea { padding: 24px 20px !important; }
-      .red-flag { padding: 18px 20px !important; }
-      .decision-filter { padding: 24px 20px !important; border-radius: 20px !important; }
-      .tracklinear-judgment { padding: 28px 20px !important; border-radius: 20px !important; }
-      .related a { padding: 14px 16px !important; }
-      header { padding: 16px 0 !important; }
-      .nav .logo { font-size: 17px !important; }
-      footer { padding: 40px 0 !important; margin-top: 60px !important; }
-      footer .container { flex-direction: column; text-align: center; gap: 12px; }
-      .pillar-note { padding: 12px 16px !important; font-size: 13px !important; }
-      .key-insight { padding: 16px 18px !important; }
-    }
-    @media (max-width: 480px) {
-      h1 { font-size: 20px !important; }
-      .container { padding: 0 12px; }
-      .tag { font-size: 10px !important; padding: 3px 10px !important; }
-      blockquote { padding: 12px 16px; font-size: 15px !important; }
-    }
-    /* 底部浮动的WhatsApp按钮（手机专用） */
-    .mobile-wa-float {
-      position: fixed;
-      bottom: 24px;
-      right: 24px;
-      z-index: 1000;
-      display: none;
-      align-items: center;
-      justify-content: center;
-      width: 56px;
-      height: 56px;
-      border-radius: 50%;
-      background: #25D366;
-      box-shadow: 0 4px 20px rgba(37,211,102,0.35);
-      text-decoration: none;
-      transition: transform 0.2s, box-shadow 0.2s;
-    }
-    .mobile-wa-float:hover {
-      transform: scale(1.08);
-      box-shadow: 0 6px 28px rgba(37,211,102,0.45);
-    }
-    .mobile-wa-float svg {
-      width: 28px;
-      height: 28px;
-      fill: white;
-    }
+    .back-to-top:hover { transform: translateY(-3px); opacity: .9; }
 
-  
-    /* === Responsive Design === */
-    @media (max-width: 1100px) {
-      .contact-sidebar { display: none; }
-      /* 移动端底部固定WhatsApp按钮 */
-      .mobile-wa-float { display: flex; }
-    }
-    @media (min-width: 1101px) {
-      .mobile-wa-float { display: none !important; }
-    }
-    @media (max-width: 768px) {
-      .container { padding: 0 16px; }
-      h1 { font-size: 24px !important; line-height: 1.25 !important; }
-      h2 { font-size: 20px !important; }
-      h3 { font-size: 17px !important; }
-      p, li { font-size: 15px !important; }
-      .meta { flex-wrap: wrap; gap: 6px; font-size: 12px !important; }
-      .img-full { border-radius: 12px; margin: 20px 0; }
-      blockquote { margin: 24px 0; padding: 16px 20px; font-size: 16px !important; }
-      .breadcrumb { font-size: 12px !important; margin: 20px 0 !important; }
-      .comparison-table { font-size: 13px !important; display: block; overflow-x: auto; -webkit-overflow-scrolling: touch; }
-      .comparison-table th, .comparison-table td { padding: 10px 12px !important; font-size: 13px !important; white-space: nowrap; }
-      .signal-table { display: block; overflow-x: auto; -webkit-overflow-scrolling: touch; }
-      .signal-table th, .signal-table td { padding: 10px 12px !important; font-size: 13px !important; white-space: nowrap; }
-      .cta-box { padding: 24px 20px !important; border-radius: 20px !important; }
-      .cta-box h3 { font-size: 18px !important; }
-      .cta-box p { font-size: 15px !important; }
-      .core-idea { padding: 24px 20px !important; }
-      .red-flag { padding: 18px 20px !important; }
-      .decision-filter { padding: 24px 20px !important; border-radius: 20px !important; }
-      .tracklinear-judgment { padding: 28px 20px !important; border-radius: 20px !important; }
-      .related a { padding: 14px 16px !important; }
-      header { padding: 16px 0 !important; }
-      .nav .logo { font-size: 17px !important; }
-      footer { padding: 40px 0 !important; margin-top: 60px !important; }
-      footer .container { flex-direction: column; text-align: center; gap: 12px; }
-      .pillar-note { padding: 12px 16px !important; font-size: 13px !important; }
-      .key-insight { padding: 16px 18px !important; }
-    }
-    @media (max-width: 480px) {
-      h1 { font-size: 20px !important; }
-      .container { padding: 0 12px; }
-      .tag { font-size: 10px !important; padding: 3px 10px !important; }
-      blockquote { padding: 12px 16px; font-size: 15px !important; }
-    }
-    /* 底部浮动的WhatsApp按钮（手机专用） */
-    .mobile-wa-float {
-      position: fixed;
-      bottom: 24px;
-      right: 24px;
-      z-index: 1000;
-      display: none;
-      align-items: center;
-      justify-content: center;
-      width: 56px;
-      height: 56px;
-      border-radius: 50%;
-      background: #25D366;
-      box-shadow: 0 4px 20px rgba(37,211,102,0.35);
-      text-decoration: none;
-      transition: transform 0.2s, box-shadow 0.2s;
-    }
-    .mobile-wa-float:hover {
-      transform: scale(1.08);
-      box-shadow: 0 6px 28px rgba(37,211,102,0.45);
-    }
-    .mobile-wa-float svg {
-      width: 28px;
-      height: 28px;
-      fill: white;
-    }
+    /* Floating contact sidebar — inquiry form */
+   165|    .contact-sidebar {
+   166|      position: fixed; left: calc(50% + 460px); top: 50%; transform: translateY(-50%);
+   167|      z-index: 99; width: 380px;
+   168|      background: white; border-radius: 20px;
+   169|      box-shadow: 0 12px 48px rgba(0,0,0,.14);
+   170|      padding: 28px 26px;
+   171|      border: 1px solid #e8e4dc;
+   172|    }
+   173|    .contact-sidebar h4 {
+   174|      margin: 0 0 2px; font-size: 19px; font-weight: 800; color: var(--dark);
+   175|    }
+   176|    .contact-sidebar .sub {
+   177|      margin: 0 0 18px; font-size: 13px; color: var(--muted);
+   178|    }
+   179|    .contact-sidebar input, .contact-sidebar textarea {
+   180|      width: 100%; box-sizing: border-box;
+   181|      border: 1px solid #e0dcd4; border-radius: 12px;
+   182|      padding: 13px 16px; font-size: 15px; font-family: inherit;
+   183|      margin-bottom: 12px; background: #faf8f4; color: var(--text);
+   184|      outline: none; transition: border .2s, box-shadow .2s;
+   185|    }
+   186|    .contact-sidebar input:focus, .contact-sidebar textarea:focus {
+   187|      border-color: var(--gold); box-shadow: 0 0 0 3px rgba(176,138,87,.12);
+   188|    }
+   189|    .contact-sidebar textarea { resize: none; height: 72px; }
+   190|    .contact-sidebar .btn-send {
+   191|      display: block; width: 100%; box-sizing: border-box;
+   192|      background: var(--dark); color: white; border: none;
+   193|      border-radius: 12px; padding: 14px; font-size: 15px; font-weight: 700;
+   194|      cursor: pointer; transition: background .2s;
+   195|    }
+   196|    .contact-sidebar .btn-send:hover { background: #2a2a2a; }
+   197|    .contact-sidebar .wa-row {
+   198|      display: flex; align-items: center; justify-content: center;
+   199|      margin-top: 16px; gap: 6px;
+   200|    }
+   201|    .contact-sidebar .wa-row span {
+   202|      font-size: 13px; color: var(--muted);
+   203|    }
+   204|    .contact-sidebar .wa-row a {
+   205|      display: inline-flex; align-items: center; justify-content: center;
+   206|      width: 48px; height: 48px; border-radius: 50%;
+   207|      background: #25D366; color: white; font-size: 22px;
+   208|      text-decoration: none; transition: transform .2s, box-shadow .2s;
+   209|    }
+   210|    .contact-sidebar .wa-row a:hover {
+   211|      transform: scale(1.12); box-shadow: 0 4px 18px rgba(37,211,102,.4);
+   212|    }
+   213|    @media (max-width: 1100px) {
+   214|      .contact-sidebar { display: none; }
+   215|    }
+   216|  
+   217|    /* === Responsive Design === */
+   218|    @media (max-width: 1100px) {
+   219|      .contact-sidebar { display: none; }
+   220|      /* 移动端底部固定WhatsApp按钮 */
+   221|      .mobile-wa-float { display: flex; }
+   222|    }
+   223|    @media (min-width: 1101px) {
+   224|      .mobile-wa-float { display: none !important; }
+   225|    }
+   226|    @media (max-width: 768px) {
+   227|      .container { padding: 0 16px; }
+   228|      h1 { font-size: 24px !important; line-height: 1.25 !important; }
+   229|      h2 { font-size: 20px !important; }
+   230|      h3 { font-size: 17px !important; }
+   231|      p, li { font-size: 15px !important; }
+   232|      .meta { flex-wrap: wrap; gap: 6px; font-size: 12px !important; }
+   233|      .img-full { border-radius: 12px; margin: 20px 0; }
+   234|      blockquote { margin: 24px 0; padding: 16px 20px; font-size: 16px !important; }
+   235|      .breadcrumb { font-size: 12px !important; margin: 20px 0 !important; }
+   236|      .comparison-table { font-size: 13px !important; display: block; overflow-x: auto; -webkit-overflow-scrolling: touch; }
+   237|      .comparison-table th, .comparison-table td { padding: 10px 12px !important; font-size: 13px !important; white-space: nowrap; }
+   238|      .signal-table { display: block; overflow-x: auto; -webkit-overflow-scrolling: touch; }
+   239|      .signal-table th, .signal-table td { padding: 10px 12px !important; font-size: 13px !important; white-space: nowrap; }
+   240|      .cta-box { padding: 24px 20px !important; border-radius: 20px !important; }
+   241|      .cta-box h3 { font-size: 18px !important; }
+   242|      .cta-box p { font-size: 15px !important; }
+   243|      .core-idea { padding: 24px 20px !important; }
+   244|      .red-flag { padding: 18px 20px !important; }
+   245|      .decision-filter { padding: 24px 20px !important; border-radius: 20px !important; }
+   246|      .tracklinear-judgment { padding: 28px 20px !important; border-radius: 20px !important; }
+   247|      .related a { padding: 14px 16px !important; }
+   248|      header { padding: 16px 0 !important; }
+   249|      .nav .logo { font-size: 17px !important; }
+   250|      footer { padding: 40px 0 !important; margin-top: 60px !important; }
+   251|      footer .container { flex-direction: column; text-align: center; gap: 12px; }
+   252|      .pillar-note { padding: 12px 16px !important; font-size: 13px !important; }
+   253|      .key-insight { padding: 16px 18px !important; }
+   254|    }
+   255|    @media (max-width: 480px) {
+   256|      h1 { font-size: 20px !important; }
+   257|      .container { padding: 0 12px; }
+   258|      .tag { font-size: 10px !important; padding: 3px 10px !important; }
+   259|      blockquote { padding: 12px 16px; font-size: 15px !important; }
+   260|    }
+   261|    /* 底部浮动的WhatsApp按钮（手机专用） */
+   262|    .mobile-wa-float {
+   263|      position: fixed;
+   264|      bottom: 24px;
+   265|      right: 24px;
+   266|      z-index: 1000;
+   267|      display: none;
+   268|      align-items: center;
+   269|      justify-content: center;
+   270|      width: 56px;
+   271|      height: 56px;
+   272|      border-radius: 50%;
+   273|      background: #25D366;
+   274|      box-shadow: 0 4px 20px rgba(37,211,102,0.35);
+   275|      text-decoration: none;
+   276|      transition: transform 0.2s, box-shadow 0.2s;
+   277|    }
+   278|    .mobile-wa-float:hover {
+   279|      transform: scale(1.08);
+   280|      box-shadow: 0 6px 28px rgba(37,211,102,0.45);
+   281|    }
+   282|    .mobile-wa-float svg {
+   283|      width: 28px;
+   284|      height: 28px;
+   285|      fill: white;
+   286|    }
+   287|
+   288|  
+   289|    /* === Responsive Design === */
+   290|    @media (max-width: 1100px) {
+   291|      .contact-sidebar { display: none; }
+   292|      /* 移动端底部固定WhatsApp按钮 */
+   293|      .mobile-wa-float { display: flex; }
+   294|    }
+   295|    @media (min-width: 1101px) {
+   296|      .mobile-wa-float { display: none !important; }
+   297|    }
+   298|    @media (max-width: 768px) {
+   299|      .container { padding: 0 16px; }
+   300|      h1 { font-size: 24px !important; line-height: 1.25 !important; }
+   301|      h2 { font-size: 20px !important; }
+   302|      h3 { font-size: 17px !important; }
+   303|      p, li { font-size: 15px !important; }
+   304|      .meta { flex-wrap: wrap; gap: 6px; font-size: 12px !important; }
+   305|      .img-full { border-radius: 12px; margin: 20px 0; }
+   306|      blockquote { margin: 24px 0; padding: 16px 20px; font-size: 16px !important; }
+   307|      .breadcrumb { font-size: 12px !important; margin: 20px 0 !important; }
+   308|      .comparison-table { font-size: 13px !important; display: block; overflow-x: auto; -webkit-overflow-scrolling: touch; }
+   309|      .comparison-table th, .comparison-table td { padding: 10px 12px !important; font-size: 13px !important; white-space: nowrap; }
+   310|      .signal-table { display: block; overflow-x: auto; -webkit-overflow-scrolling: touch; }
+   311|      .signal-table th, .signal-table td { padding: 10px 12px !important; font-size: 13px !important; white-space: nowrap; }
+   312|      .cta-box { padding: 24px 20px !important; border-radius: 20px !important; }
+   313|      .cta-box h3 { font-size: 18px !important; }
+   314|      .cta-box p { font-size: 15px !important; }
+   315|      .core-idea { padding: 24px 20px !important; }
+   316|      .red-flag { padding: 18px 20px !important; }
+   317|      .decision-filter { padding: 24px 20px !important; border-radius: 20px !important; }
+   318|      .tracklinear-judgment { padding: 28px 20px !important; border-radius: 20px !important; }
+   319|      .related a { padding: 14px 16px !important; }
+   320|      header { padding: 16px 0 !important; }
+   321|      .nav .logo { font-size: 17px !important; }
+   322|      footer { padding: 40px 0 !important; margin-top: 60px !important; }
+   323|      footer .container { flex-direction: column; text-align: center; gap: 12px; }
+   324|      .pillar-note { padding: 12px 16px !important; font-size: 13px !important; }
+   325|      .key-insight { padding: 16px 18px !important; }
+   326|    }
+   327|    @media (max-width: 480px) {
+   328|      h1 { font-size: 20px !important; }
+   329|      .container { padding: 0 12px; }
+   330|      .tag { font-size: 10px !important; padding: 3px 10px !important; }
+   331|      blockquote { padding: 12px 16px; font-size: 15px !important; }
+   332|    }
+   333|    /* 底部浮动的WhatsApp按钮（手机专用） */
+   334|    .mobile-wa-float {
+   335|      position: fixed;
+   336|      bottom: 24px;
+   337|      right: 24px;
+   338|      z-index: 1000;
+   339|      display: none;
+   340|      align-items: center;
+   341|      justify-content: center;
+   342|      width: 56px;
+   343|      height: 56px;
+   344|      border-radius: 50%;
+   345|      background: #25D366;
+   346|      box-shadow: 0 4px 20px rgba(37,211,102,0.35);
+   347|      text-decoration: none;
+   348|      transition: transform 0.2s, box-shadow 0.2s;
+   349|    }
+   350|    .mobile-wa-float:hover {
+   351|      transform: scale(1.08);
+   352|      box-shadow: 0 6px 28px rgba(37,211,102,0.45);
+   353|    }
+   354|    .mobile-wa-float svg {
+   355|      width: 28px;
+   356|      height: 28px;
+   357|      fill: white;
+   358|    }
+   359|
+   360|  
+   361|    @media (max-width: 768px) {
+   362|      .footer-grid { flex-direction: column; gap: 28px; }
+   363|      .footer-links { flex-direction: row; flex-wrap: wrap; gap: 14px; }
+   364|      .footer-contact { display: flex; flex-direction: column; gap: 4px; }
+   365|      .footer-sep { display: none; }
+   366|    }
+   367|
+   368|  </style>
+   369|</head>
+   370|<body>
+   371|
+   372|<header>
+   373|  <div class="container nav">
+   374|    <a href="index.html" class="logo">Tracklinear</a>
+   375|    <a href="blog/index.html" class="back-link">← Back to Blog</a>
+   376|  </div>
+   377|</header>
+   378|
+   379|<main class="container">
+   380|
+   381|  <div class="breadcrumb">
+   382|    <a href="index.html">Home</a> / <a href="blog/index.html">Blog</a> / 48V vs 24V
+   383|  </div>
+   384|
+   385|  <div class="tag">Technical Insight</div>
+   386|
+   387|  <h1>48V vs. 24V Magnetic Track Lighting: Which One Is Right for Your Project?</h1>
+   388|
+   389|  <div class="meta">
+   390|    <span>By Tiffany Woo</span>
+   391|    <span>•</span>
+   392|    <span>May 28, 2026</span>
+   393|    <span>•</span>
+   394|    <span>5 min read</span>
+   395|  </div>
+   396|
+   397|  <img src="images/blog_header_1.webp" alt="48V versus 24V magnetic track lighting system comparison for commercial projects" class="img-full" loading="lazy">
+   398|
+   399|  <p>Choosing between a 48V track system and a 24V track system is one of the first technical decisions a buyer faces when specifying magnetic track lighting for a commercial project. The wrong voltage choice leads to voltage drop issues, shorter track runs, and underperforming light output at the far end of the installation.</p>
+   400|
+   401|  <p>Here is a practical comparison for importers, lighting designers and contractors who need to specify a low voltage track system for hotels, retail spaces, galleries or office projects.</p>
+   402|
+   403|  <div class="quick-answer">
+   404|    <h3>Quick Answer</h3>
+   405|    <p><span class="label">48V track system</span> is the standard for commercial and architectural projects. It supports longer track runs (up to 20m), minimal voltage drop, and higher total load per driver. Choose 48V for hotels, retail stores, galleries and any project with track runs over 5m.</p>
+   406|    <p><span class="label">24V track system</span> is suitable for short residential runs under 5m and budget-conscious installations. Voltage drop becomes visible beyond 3-5m, limiting its use in larger commercial spaces.</p>
+   407|  </div>
+   408|
+   409|  <h2>48V Track vs 24V Track: Why Voltage Matters for Commercial Projects</h2>
+   410|
+   411|  <p>The core difference is simple physics: at the same power output, a 48V system carries half the current of a 24V system. Lower current means less energy lost as heat along the track, which directly affects how far you can run the track before the last module is noticeably dimmer than the first. This is called voltage drop — the single biggest practical concern when choosing between a 48V track vs 24V track for a real project.</p>
+   412|
+   413|  <h3>Max Track Length</h3>
+   414|  <p>A 48V magnetic track system supports runs of up to 20 metres with minimal voltage drop. A 24V system starts showing visible dimming beyond 3–5 metres. For any commercial-scale installation — a hotel corridor, a retail wall display, an open-plan office — 48V is the only practical choice.</p>
+   415|
+   416|  <h3>Load Capacity</h3>
+   417|  <p>Because 48V delivers more power at the same current, one 48V driver can typically power more modules than a 24V driver of the same amperage. This means fewer drivers per project, simpler wiring, and lower installation cost.</p>
+   418|
+   419|  <h3>Safety</h3>
+   420|  <p>Both 48V and 24V are classified as extra-low voltage and are touch-safe. There is no safety advantage to choosing 24V over 48V in a properly installed magnetic track system.</p>
+   421|
+   422|  <table>
+   423|    <thead>
+   424|      <tr>
+   425|        <th>Feature</th>
+   426|        <th>24V System</th>
+   427|        <th>48V System</th>
+   428|      </tr>
+   429|    </thead>
+   430|    <tbody>
+   431|      <tr><td>Max track run</td><td>3–5m</td><td>Up to 20m</td></tr>
+   432|      <tr><td>Voltage drop</td><td>Significant beyond 3m</td><td>Minimal</td></tr>
+   433|      <tr><td>Safety rating</td><td>Touch-safe (ELV)</td><td>Touch-safe (ELV)</td></tr>
+   434|      <tr><td>Typical application</td><td>Residential, short runs</td><td>Commercial, architectural</td></tr>
+   435|      <tr><td>Driver load capacity</td><td>Lower per driver</td><td>Higher per driver</td></tr>
+   436|    </tbody>
+   437|  </table>
+   438|
+   439|  <div class="faq">
+   440|    <h2>FAQ: 48V vs 24V Magnetic Track Lighting</h2>
+   441|
+   442|    <div class="faq-item">
+   443|      <div class="faq-q">Can I use 24V modules on a 48V magnetic track?</div>
+   444|      <div class="faq-a">No. The voltage must match the track driver output. A 24V module connected to a 48V track will be over-driven and fail. Always match the module voltage rating to the track driver voltage.</div>
+   445|    </div>
+   446|
+   447|    <div class="faq-item">
+   448|      <div class="faq-q">Does a 24V system have any advantage over 48V?</div>
+   449|      <div class="faq-a">The only advantage is component cost — 24V drivers and modules can be slightly cheaper to manufacture. However, for any project with runs over 5 metres, the savings are outweighed by the cost of additional drivers and wiring needed to compensate for voltage drop.</div>
+   450|    </div>
+   451|
+   452|    <div class="faq-item">
+   453|      <div class="faq-q">Is 48V magnetic track lighting safe for residential use?</div>
+   454|      <div class="faq-a">Yes. 48V DC is classified as extra-low voltage (ELV) and is touch-safe, making it suitable for both residential and commercial installations. The safety standard is the same as 24V.</div>
+   455|    </div>
+   456|  </div>
+   457|
+   458|  <div class="cta-box">
+   459|    <p>Need help choosing the right voltage for your project? Tell us your track length, ceiling type and module requirements — we can match the correct 48V system configuration for your project.</p>
+   460|    <a href="mailto:info@tracklinear.com" class="btn">Email Your Project Details →</a>
+   461|  </div>
+   462|
+   463|  <div class="related">
+   464|    <h3>Related Articles</h3>
+   465|    <a href="blog-post-4.html">
+   466|      Beyond the Lumen: Why Color Fidelity is the True Measure of Premium Lighting
+   467|      <span>Technical guide on CRI 90+, R9 values and light quality in magnetic track systems</span>
+   468|    </a>
+   469|    <a href="blog-post-2.html">
+   470|      Mastering Smart Lighting Control: DALI, 0-10V, and Wireless Protocols
+   471|      <span>Comparison of dimming and control protocols for magnetic track lighting projects</span>
+   472|    </a>
+   473|  </div>
+   474|
+   475|</main>
+<a href="#" class="back-to-top" aria-label="Back to top">↑</a>
 
-  
-    @media (max-width: 768px) {
-      .footer-grid { flex-direction: column; gap: 28px; }
-      .footer-links { flex-direction: row; flex-wrap: wrap; gap: 14px; }
-      .footer-contact { display: flex; flex-direction: column; gap: 4px; }
-      .footer-sep { display: none; }
-    }
-
-  </style>
-</head>
-<body>
-
-<header>
-  <div class="container nav">
-    <a href="index.html" class="logo">Tracklinear</a>
-    <a href="blog/index.html" class="back-link">← Back to Blog</a>
-  </div>
-</header>
-
-<main class="container">
-
-  <div class="breadcrumb">
-    <a href="index.html">Home</a> / <a href="blog/index.html">Blog</a> / 48V vs 24V
-  </div>
-
-  <div class="tag">Technical Insight</div>
-
-  <h1>48V vs. 24V Magnetic Track Lighting: Which One Is Right for Your Project?</h1>
-
-  <div class="meta">
-    <span>By Tiffany Woo</span>
-    <span>•</span>
-    <span>May 28, 2026</span>
-    <span>•</span>
-    <span>5 min read</span>
-  </div>
-
-  <img src="images/blog_header_1.webp" alt="48V versus 24V magnetic track lighting system comparison for commercial projects" class="img-full" loading="lazy">
-
-  <p>Choosing between a 48V track system and a 24V track system is one of the first technical decisions a buyer faces when specifying magnetic track lighting for a commercial project. The wrong voltage choice leads to voltage drop issues, shorter track runs, and underperforming light output at the far end of the installation.</p>
-
-  <p>Here is a practical comparison for importers, lighting designers and contractors who need to specify a low voltage track system for hotels, retail spaces, galleries or office projects.</p>
-
-  <div class="quick-answer">
-    <h3>Quick Answer</h3>
-    <p><span class="label">48V track system</span> is the standard for commercial and architectural projects. It supports longer track runs (up to 20m), minimal voltage drop, and higher total load per driver. Choose 48V for hotels, retail stores, galleries and any project with track runs over 5m.</p>
-    <p><span class="label">24V track system</span> is suitable for short residential runs under 5m and budget-conscious installations. Voltage drop becomes visible beyond 3-5m, limiting its use in larger commercial spaces.</p>
-  </div>
-
-  <h2>48V Track vs 24V Track: Why Voltage Matters for Commercial Projects</h2>
-
-  <p>The core difference is simple physics: at the same power output, a 48V system carries half the current of a 24V system. Lower current means less energy lost as heat along the track, which directly affects how far you can run the track before the last module is noticeably dimmer than the first. This is called voltage drop — the single biggest practical concern when choosing between a 48V track vs 24V track for a real project.</p>
-
-  <h3>Max Track Length</h3>
-  <p>A 48V magnetic track system supports runs of up to 20 metres with minimal voltage drop. A 24V system starts showing visible dimming beyond 3–5 metres. For any commercial-scale installation — a hotel corridor, a retail wall display, an open-plan office — 48V is the only practical choice.</p>
-
-  <h3>Load Capacity</h3>
-  <p>Because 48V delivers more power at the same current, one 48V driver can typically power more modules than a 24V driver of the same amperage. This means fewer drivers per project, simpler wiring, and lower installation cost.</p>
-
-  <h3>Safety</h3>
-  <p>Both 48V and 24V are classified as extra-low voltage and are touch-safe. There is no safety advantage to choosing 24V over 48V in a properly installed magnetic track system.</p>
-
-  <table>
-    <thead>
-      <tr>
-        <th>Feature</th>
-        <th>24V System</th>
-        <th>48V System</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr><td>Max track run</td><td>3–5m</td><td>Up to 20m</td></tr>
-      <tr><td>Voltage drop</td><td>Significant beyond 3m</td><td>Minimal</td></tr>
-      <tr><td>Safety rating</td><td>Touch-safe (ELV)</td><td>Touch-safe (ELV)</td></tr>
-      <tr><td>Typical application</td><td>Residential, short runs</td><td>Commercial, architectural</td></tr>
-      <tr><td>Driver load capacity</td><td>Lower per driver</td><td>Higher per driver</td></tr>
-    </tbody>
-  </table>
-
-  <div class="faq">
-    <h2>FAQ: 48V vs 24V Magnetic Track Lighting</h2>
-
-    <div class="faq-item">
-      <div class="faq-q">Can I use 24V modules on a 48V magnetic track?</div>
-      <div class="faq-a">No. The voltage must match the track driver output. A 24V module connected to a 48V track will be over-driven and fail. Always match the module voltage rating to the track driver voltage.</div>
-    </div>
-
-    <div class="faq-item">
-      <div class="faq-q">Does a 24V system have any advantage over 48V?</div>
-      <div class="faq-a">The only advantage is component cost — 24V drivers and modules can be slightly cheaper to manufacture. However, for any project with runs over 5 metres, the savings are outweighed by the cost of additional drivers and wiring needed to compensate for voltage drop.</div>
-    </div>
-
-    <div class="faq-item">
-      <div class="faq-q">Is 48V magnetic track lighting safe for residential use?</div>
-      <div class="faq-a">Yes. 48V DC is classified as extra-low voltage (ELV) and is touch-safe, making it suitable for both residential and commercial installations. The safety standard is the same as 24V.</div>
-    </div>
-  </div>
-
-  <div class="cta-box">
-    <p>Need help choosing the right voltage for your project? Tell us your track length, ceiling type and module requirements — we can match the correct 48V system configuration for your project.</p>
-    <a href="mailto:info@tracklinear.com" class="btn">Email Your Project Details →</a>
-  </div>
-
-  <div class="related">
-    <h3>Related Articles</h3>
-    <a href="blog-post-4.html">
-      Beyond the Lumen: Why Color Fidelity is the True Measure of Premium Lighting
-      <span>Technical guide on CRI 90+, R9 values and light quality in magnetic track systems</span>
-    </a>
-    <a href="blog-post-2.html">
-      Mastering Smart Lighting Control: DALI, 0-10V, and Wireless Protocols
-      <span>Comparison of dimming and control protocols for magnetic track lighting projects</span>
-    </a>
-  </div>
-
-</main>
-
-<div class="contact-sidebar">
-  <h4>📩 Send Your Inquiry</h4>
-  <p class="sub">We'll reply within 24 hours</p>
-  <form action="https://formsubmit.co/info@tracklinear.com" method="POST">
-    <input type="hidden" name="_subject" value="Blog Inquiry">
-    <input type="hidden" name="_captcha" value="false">
-    <input type="text" name="name" placeholder="Your Name *" required>
-    <input type="email" name="email" placeholder="Email Address *" required>
-    <input type="text" name="phone" placeholder="WhatsApp / Phone">
-    <textarea name="message" placeholder="Describe your project — ceiling type, quantity, requirements..."></textarea>
-    <button type="submit" class="btn-send">Send Inquiry →</button>
-  </form>
-  <div class="wa-row">
-    <span>Or chat with us</span>
-    <a href="https://wa.me/8613450802291" target="_blank" rel="noopener" aria-label="WhatsApp"><svg viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg></a>
-  </div>
-</div>
-    
-
-<footer>
-  <div class="container">
-    <div class="footer-grid">
-      <div class="footer-brand">
-        <div class="footer-logo">Tracklinear</div>
-        <p class="footer-tagline">One-stop magnetic track lighting system for B2B projects worldwide.</p>
-        <div class="footer-contact">
-          <a href="mailto:info@tracklinear.com">info@tracklinear.com</a>
-          <span class="footer-sep">|</span>
-          <a href="https://wa.me/8613450802291" target="_blank" rel="noopener">WhatsApp: +86 134 5080 2291</a>
-        </div>
-      </div>
-      <div class="footer-resources">
-        <span class="footer-label">Resources</span>
-        <div class="footer-links">
-          <a href="mailto:info@tracklinear.com?subject=Catalogue%20Request">Catalogue</a>
-          <a href="mailto:info@tracklinear.com?subject=Installation%20Guide%20Request">Installation Guide</a>
-          <a href="mailto:info@tracklinear.com?subject=Datasheet%20Request">Datasheet</a>
-          <a href="mailto:info@tracklinear.com?subject=Driver%20Matching%20Guide%20Request">Driver Matching Guide</a>
-          <a href="/blog/">Blog</a>
-          <a href="/buyers-handbook/">Buyer's Handbook</a>
-        </div>
-      </div>
-    </div>
-    <div class="footer-bottom">
-      <span>&copy; 2026 Tracklinear. All rights reserved.</span>
-    </div>
-  </div>
-</footer>
-
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@graph": [
-    {
-      "@type": "Article",
-      "headline": "48V vs. 24V Magnetic Track Lighting: Which One Is Right for Your Project?",
-      "description": "Compare 48V track vs 24V track for magnetic track lighting. Learn about voltage drop, max track length, safety and why 48V is the commercial standard.",
-      "image": "https://tracklinear.com/images/blog_header_1.webp",
-      "datePublished": "2026-05-28T08:00:00+08:00",
-      "dateModified": "2026-06-22T08:00:00+08:00",
-      "author": {
-        "@type": "Person",
-        "name": "Tiffany Woo",
-        "url": "https://tracklinear.com/"
-      },
-      "publisher": {
-        "@type": "Organization",
-        "name": "Tracklinear Lighting",
-        "logo": {
-          "@type": "ImageObject",
-          "url": "https://tracklinear.com/images/image_1.webp"
-        }
-      },
-      "mainEntityOfPage": {
-        "@type": "WebPage",
-        "@id": "https://tracklinear.com/blog-post-1.html"
-      }
-    },
-    {
-      "@type": "BreadcrumbList",
-      "itemListElement": [
-        { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://tracklinear.com/" },
-        { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://tracklinear.com/blog/" },
-        { "@type": "ListItem", "position": 3, "name": "48V vs 24V", "item": "https://tracklinear.com/blog-post-1.html" }
-      ]
-    },
-    {
-      "@type": "FAQPage",
-      "mainEntity": [
-        {
-          "@type": "Question",
-          "name": "Can I use 24V modules on a 48V magnetic track?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "No. The voltage must match the track driver output. A 24V module connected to a 48V track will be over-driven and fail. Always match the module voltage rating to the track driver voltage."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Does a 24V system have any advantage over 48V?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "The only advantage is component cost — 24V drivers and modules can be slightly cheaper to manufacture. However, for any project with runs over 5 metres, the savings are outweighed by the cost of additional drivers and wiring needed to compensate for voltage drop."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Is 48V magnetic track lighting safe for residential use?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Yes. 48V DC is classified as extra-low voltage (ELV) and is touch-safe, making it suitable for both residential and commercial installations. The safety standard is the same as 24V."
-          }
-        }
-      ]
-    }
-  ]
-}
-</script>
-
-
-  <!-- Mobile WhatsApp Float -->
-  <a href="https://wa.me/8613450802291" class="mobile-wa-float" target="_blank" rel="noopener" aria-label="Chat on WhatsApp"><svg viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg></a>
-</body>
-</html>
+   476|
+   477|<div class="contact-sidebar">
+   478|  <h4>📩 Send Your Inquiry</h4>
+   479|  <p class="sub">We'll reply within 24 hours</p>
+   480|  <form action="https://formsubmit.co/info@tracklinear.com" method="POST">
+   481|    <input type="hidden" name="_subject" value="Blog Inquiry">
+   482|    <input type="hidden" name="_captcha" value="false">
+   483|    <input type="text" name="name" placeholder="Your Name *" required>
+   484|    <input type="email" name="email" placeholder="Email Address *" required>
+   485|    <input type="text" name="phone" placeholder="WhatsApp / Phone">
+   486|    <textarea name="message" placeholder="Describe your project — ceiling type, quantity, requirements..."></textarea>
+   487|    <button type="submit" class="btn-send">Send Inquiry →</button>
+   488|  </form>
+   489|  <div class="wa-row">
+   490|    <span>Or chat with us</span>
+   491|    <a href="https://wa.me/8613450802291" target="_blank" rel="noopener" aria-label="WhatsApp"><svg viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg></a>
+   492|  </div>
+   493|</div>
+   494|    
+   495|
+   496|<footer>
+   497|  <div class="container">
+   498|    <div class="footer-grid">
+   499|      <div class="footer-brand">
+   500|        <div class="footer-logo">Tracklinear</div>
+   501|        <p class="footer-tagline">One-stop magnetic track lighting system for B2B projects worldwide.</p>
+   502|        <div class="footer-contact">
+   503|          <a href="mailto:info@tracklinear.com">info@tracklinear.com</a>
+   504|          <span class="footer-sep">|</span>
+   505|          <a href="https://wa.me/8613450802291" target="_blank" rel="noopener">WhatsApp: +86 134 5080 2291</a>
+   506|        </div>
+   507|      </div>
+   508|      <div class="footer-resources">
+   509|        <span class="footer-label">Resources</span>
+   510|        <div class="footer-links">
+   511|          <a href="mailto:info@tracklinear.com?subject=Catalogue%20Request">Catalogue</a>
+   512|          <a href="mailto:info@tracklinear.com?subject=Installation%20Guide%20Request">Installation Guide</a>
+   513|          <a href="mailto:info@tracklinear.com?subject=Datasheet%20Request">Datasheet</a>
+   514|          <a href="mailto:info@tracklinear.com?subject=Driver%20Matching%20Guide%20Request">Driver Matching Guide</a>
+   515|          <a href="/blog/">Blog</a>
+   516|          <a href="/buyers-handbook/">Buyer's Handbook</a>
+   517|        </div>
+   518|      </div>
+   519|    </div>
+   520|    <div class="footer-bottom">
+   521|      <span>&copy; 2026 Tracklinear. All rights reserved.</span>
+   522|    </div>
+   523|  </div>
+   524|</footer>
+   525|
+   526|<script type="application/ld+json">
+   527|{
+   528|  "@context": "https://schema.org",
+   529|  "@graph": [
+   530|    {
+   531|      "@type": "Article",
+   532|      "headline": "48V vs. 24V Magnetic Track Lighting: Which One Is Right for Your Project?",
+   533|      "description": "Compare 48V track vs 24V track for magnetic track lighting. Learn about voltage drop, max track length, safety and why 48V is the commercial standard.",
+   534|      "image": "https://tracklinear.com/images/blog_header_1.webp",
+   535|      "datePublished": "2026-05-28T08:00:00+08:00",
+   536|      "dateModified": "2026-06-22T08:00:00+08:00",
+   537|      "author": {
+   538|        "@type": "Person",
+   539|        "name": "Tiffany Woo",
+   540|        "url": "https://tracklinear.com/"
+   541|      },
+   542|      "publisher": {
+   543|        "@type": "Organization",
+   544|        "name": "Tracklinear Lighting",
+   545|        "logo": {
+   546|          "@type": "ImageObject",
+   547|          "url": "https://tracklinear.com/images/image_1.webp"
+   548|        }
+   549|      },
+   550|      "mainEntityOfPage": {
+   551|        "@type": "WebPage",
+   552|        "@id": "https://tracklinear.com/blog-post-1.html"
+   553|      }
+   554|    },
+   555|    {
+   556|      "@type": "BreadcrumbList",
+   557|      "itemListElement": [
+   558|        { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://tracklinear.com/" },
+   559|        { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://tracklinear.com/blog/" },
+   560|        { "@type": "ListItem", "position": 3, "name": "48V vs 24V", "item": "https://tracklinear.com/blog-post-1.html" }
+   561|      ]
+   562|    },
+   563|    {
+   564|      "@type": "FAQPage",
+   565|      "mainEntity": [
+   566|        {
+   567|          "@type": "Question",
+   568|          "name": "Can I use 24V modules on a 48V magnetic track?",
+   569|          "acceptedAnswer": {
+   570|            "@type": "Answer",
+   571|            "text": "No. The voltage must match the track driver output. A 24V module connected to a 48V track will be over-driven and fail. Always match the module voltage rating to the track driver voltage."
+   572|          }
+   573|        },
+   574|        {
+   575|          "@type": "Question",
+   576|          "name": "Does a 24V system have any advantage over 48V?",
+   577|          "acceptedAnswer": {
+   578|            "@type": "Answer",
+   579|            "text": "The only advantage is component cost — 24V drivers and modules can be slightly cheaper to manufacture. However, for any project with runs over 5 metres, the savings are outweighed by the cost of additional drivers and wiring needed to compensate for voltage drop."
+   580|          }
+   581|        },
+   582|        {
+   583|          "@type": "Question",
+   584|          "name": "Is 48V magnetic track lighting safe for residential use?",
+   585|          "acceptedAnswer": {
+   586|            "@type": "Answer",
+   587|            "text": "Yes. 48V DC is classified as extra-low voltage (ELV) and is touch-safe, making it suitable for both residential and commercial installations. The safety standard is the same as 24V."
+   588|          }
+   589|        }
+   590|      ]
+   591|    }
+   592|  ]
+   593|}
+   594|</script>
+   595|
+   596|
+   597|  <!-- Mobile WhatsApp Float -->
+   598|  <a href="https://wa.me/8613450802291" class="mobile-wa-float" target="_blank" rel="noopener" aria-label="Chat on WhatsApp"><svg viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg></a>
+   599|</body>
+   600|</html>
+   601|

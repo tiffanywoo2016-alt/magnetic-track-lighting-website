@@ -43,28 +43,32 @@
     ul { padding-left: 20px; margin: 16px 0; }
     ul li { font-size: 15px; line-height: 1.7; margin-bottom: 6px; }
 
-    /* Info Boxes — warm card with colored left accent */
+    /* Info Boxes — dark bg with gold accent (matching Chapter 2 red-flag style) */
     .red-flag-box, .warning-box, .safe-box {
-      background: #faf8f4;
-      border-radius: 14px;
-      padding: 22px 26px;
-      margin: 28px 0;
-      border: 1px solid #ece8e0;
+      background: var(--dark);
+      border-radius: 16px;
+      padding: 24px 28px;
+      margin: 24px 0;
       border-left: 4px solid var(--gold);
     }
     .red-flag-box h4, .warning-box h4, .safe-box h4 {
-      margin: 0 0 8px;
-      font-size: 15px;
-      font-weight: 700;
+      margin: 0 0 10px;
+      font-size: 13px;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
     }
-    .red-flag-box h4 { color: var(--flag); font-weight: 800; }
-    .warning-box h4 { color: #2a2a2a; font-weight: 800; }
-    .safe-box h4 { color: var(--gold); }
+    .red-flag-box h4 { color: var(--gold-light); }
+    .warning-box h4 { color: #e8cfa0; }
+    .safe-box h4 { color: var(--gold-light); }
     .red-flag-box p, .warning-box p, .safe-box p {
-      font-size: 14px;
+      font-size: 15px;
       line-height: 1.7;
-      color: #444;
+      color: rgba(255,255,255,0.8);
       margin: 0;
+    }
+    .red-flag-box p strong, .warning-box p strong, .safe-box p strong {
+      color: #e8cfa0;
     }
 
 
@@ -120,6 +124,22 @@
 
     
     }
+
+
+    html { scroll-behavior: smooth; }
+
+    /* Back to top */
+    .back-to-top {
+      position: fixed; bottom: 32px; right: 32px;
+      background: var(--dark); color: var(--gold-light);
+      width: 44px; height: 44px; border-radius: 50%;
+      display: flex; align-items: center; justify-content: center;
+      text-decoration: none; font-size: 20px;
+      box-shadow: 0 4px 16px rgba(0,0,0,.15);
+      transition: opacity .3s, transform .3s;
+      z-index: 100;
+    }
+    .back-to-top:hover { transform: translateY(-3px); opacity: .9; }
 
 
     /* === Responsive Design === */
