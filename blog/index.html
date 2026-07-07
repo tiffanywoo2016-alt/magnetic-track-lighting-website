@@ -1,177 +1,177 @@
-     1|<!DOCTYPE html>
-     2|<html lang="en">
-     3|<head>
-     4|  <meta charset="UTF-8">
-     5|  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     6|  <meta name="theme-color" content="#1a1a1a">
-     7|  <link rel="dns-prefetch" href="https://fonts.googleapis.com">
-     8|  <link rel="dns-prefetch" href="https://fonts.gstatic.com">
-     9|  <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
-    10|  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    11|
-    12|  <title>Blog — Tracklinear | Magnetic Track Lighting Knowledge</title>
-    13|  <meta name="description" content="Technical guides and design insights for magnetic track lighting professionals. Voltage, control, and architectural trends from Tracklinear.">
-    14|  <link rel="canonical" href="https://tracklinear.com/blog/">
-    15|  <meta property="og:title" content="Blog — Tracklinear | Magnetic Track Lighting Knowledge">
-    16|  <meta property="og:description" content="Technical guides and design insights for magnetic track lighting professionals. Voltage, control, and architectural trends from Tracklinear.">
-    17|  <meta property="og:url" content="https://tracklinear.com/blog/">
-    18|  <meta property="og:type" content="website">
-    19|  <meta property="og:image" content="https://tracklinear.com/images/image_1.webp">
-    20|  <meta property="og:site_name" content="Tracklinear Lighting">
-    21|  <meta name="twitter:card" content="summary_large_image">
-    22|  <meta name="twitter:title" content="Blog — Tracklinear | Magnetic Track Lighting Knowledge">
-    23|  <meta name="twitter:description" content="Technical guides and design insights for magnetic track lighting professionals. Voltage, control, and architectural trends from Tracklinear.">
-    24|  <meta name="twitter:image" content="https://tracklinear.com/images/image_1.webp">
-    25|  <link rel="stylesheet" href="../styles.css">
-    26|  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
-    27|  <style>
-    28|    :root {
-    29|      --bg: #f5f3ef;
-    30|      --dark: #151515;
-    31|      --text: #161616;
-    32|      --muted: #666;
-    33|      --gold: #b08a57;
-    34|      --gold-light: #e6c08c;
-    35|      --card: #ffffff;
-    36|      --soft: #efe8df;
-    37|    }
-    38|
-    39|    body {
-    40|      margin: 0;
-    41|      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-    42|      background: var(--bg);
-    43|      color: var(--text);
-    44|      -webkit-font-smoothing: antialiased;
-    45|    }
-    46|
-    47|    .container { max-width: 1200px; margin: 0 auto; padding: 0 28px; }
-    48|
-    49|    /* Page Header */
-    50|    .page-header {
-    51|      padding: 80px 0 60px;
-    52|      text-align: center;
-    53|    }
-    54|    .page-header .eyebrow {
-    55|      color: var(--gold);
-    56|      text-transform: uppercase;
-    57|      letter-spacing: 3px;
-    58|      font-weight: 800;
-    59|      font-size: 12px;
-    60|      margin-bottom: 16px;
-    61|    }
-    62|    .page-header h1 {
-    63|      font-size: clamp(36px, 5vw, 52px);
-    64|      font-weight: 900;
-    65|      letter-spacing: -1.5px;
-    66|      margin: 0 0 16px;
-    67|      line-height: 1.1;
-    68|    }
-    69|    .page-header p {
-    70|      font-size: 18px;
-    71|      color: var(--muted);
-    72|      max-width: 600px;
-    73|      margin: 0 auto;
-    74|      line-height: 1.6;
-    75|    }
-    76|
-    77|    /* Blog Grid */
-    78|    .blog-grid {
-    79|      display: grid;
-    80|      grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
-    81|      gap: 32px;
-    82|      padding-bottom: 100px;
-    83|    }
-    84|
-    85|    .blog-card {
-    86|      background: var(--card);
-    87|      border-radius: 24px;
-    88|      overflow: hidden;
-    89|      transition: all 0.3s ease;
-    90|      box-shadow: 0 4px 20px rgba(0,0,0,0.04);
-    91|      display: flex;
-    92|      flex-direction: column;
-    93|    }
-    94|    .blog-card:hover {
-    95|      transform: translateY(-4px);
-    96|      box-shadow: 0 16px 48px rgba(0,0,0,0.08);
-    97|    }
-    98|
-    99|    .blog-card-image {
-   100|      width: 100%;
-   101|      aspect-ratio: 16/9;
-   102|      object-fit: cover;
-   103|      display: block;
-   104|    }
-   105|
-   106|    .blog-card-body {
-   107|      padding: 28px;
-   108|      flex: 1;
-   109|      display: flex;
-   110|      flex-direction: column;
-   111|    }
-   112|
-   113|    .blog-card-tag {
-   114|      font-size: 11px;
-   115|      font-weight: 700;
-   116|      text-transform: uppercase;
-   117|      letter-spacing: 1.5px;
-   118|      color: var(--gold);
-   119|      margin-bottom: 8px;
-   120|    }
-   121|
-   122|    .blog-card-title {
-   123|      font-size: 20px;
-   124|      font-weight: 700;
-   125|      line-height: 1.3;
-   126|      margin: 0 0 12px;
-   127|      color: var(--dark);
-   128|    }
-   129|
-   130|    .blog-card-excerpt {
-   131|      font-size: 15px;
-   132|      color: var(--muted);
-   133|      line-height: 1.6;
-   134|      margin: 0 0 20px;
-   135|      flex: 1;
-   136|    }
-   137|
-   138|    .blog-card-link {
-   139|      font-size: 14px;
-   140|      font-weight: 600;
-   141|      color: var(--gold);
-   142|      text-decoration: none;
-   143|      display: inline-flex;
-   144|      align-items: center;
-   145|      gap: 6px;
-   146|      transition: gap 0.2s;
-   147|    }
-   148|    .blog-card-link:hover { gap: 10px; }
-   149|
-   150|    @media (max-width: 768px) {
-   151|      .blog-grid {
-   152|        grid-template-columns: 1fr;
-   153|        gap: 24px;
-   154|      }
-   155|      .page-header { padding: 50px 0 40px; }
-   156|    }
-   157|    .blog-card-date {
-   158|      font-size: 13px;
-   159|      color: #999;
-   160|      margin-top: 4px;
-   161|      font-weight: 500;
-   162|    }
-   163|  
-   164|    .mobile-wa-float {
-   165|      position: fixed; bottom: 24px; right: 24px; z-index: 1000;
-   166|      display: flex; align-items: center; justify-content: center;
-   167|      width: 56px; height: 56px; border-radius: 50%;
-   168|      background: #25D366; box-shadow: 0 4px 20px rgba(37,211,102,0.35);
-   169|      text-decoration: none; transition: transform 0.2s, box-shadow 0.2s;
-   170|    }
-   171|    .mobile-wa-float:hover { transform: scale(1.08); box-shadow: 0 6px 28px rgba(37,211,102,0.45); }
-   172|    .mobile-wa-float svg { width: 28px; height: 28px; fill: white; }
-   173|
-   174|  
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#1a1a1a">
+  <link rel="dns-prefetch" href="https://fonts.googleapis.com">
+  <link rel="dns-prefetch" href="https://fonts.gstatic.com">
+  <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <title>Blog — Tracklinear | Magnetic Track Lighting Knowledge</title>
+  <meta name="description" content="Technical guides and design insights for magnetic track lighting professionals. Voltage, control, and architectural trends from Tracklinear.">
+  <link rel="canonical" href="https://tracklinear.com/blog/">
+  <meta property="og:title" content="Blog — Tracklinear | Magnetic Track Lighting Knowledge">
+  <meta property="og:description" content="Technical guides and design insights for magnetic track lighting professionals. Voltage, control, and architectural trends from Tracklinear.">
+  <meta property="og:url" content="https://tracklinear.com/blog/">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://tracklinear.com/images/image_1.webp">
+  <meta property="og:site_name" content="Tracklinear Lighting">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Blog — Tracklinear | Magnetic Track Lighting Knowledge">
+  <meta name="twitter:description" content="Technical guides and design insights for magnetic track lighting professionals. Voltage, control, and architectural trends from Tracklinear.">
+  <meta name="twitter:image" content="https://tracklinear.com/images/image_1.webp">
+  <link rel="stylesheet" href="../styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #f5f3ef;
+      --dark: #151515;
+      --text: #161616;
+      --muted: #666;
+      --gold: #b08a57;
+      --gold-light: #e6c08c;
+      --card: #ffffff;
+      --soft: #efe8df;
+    }
+
+    body {
+      margin: 0;
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      -webkit-font-smoothing: antialiased;
+    }
+
+    .container { max-width: 1200px; margin: 0 auto; padding: 0 28px; }
+
+    /* Page Header */
+    .page-header {
+      padding: 80px 0 60px;
+      text-align: center;
+    }
+    .page-header .eyebrow {
+      color: var(--gold);
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      font-weight: 800;
+      font-size: 12px;
+      margin-bottom: 16px;
+    }
+    .page-header h1 {
+      font-size: clamp(36px, 5vw, 52px);
+      font-weight: 900;
+      letter-spacing: -1.5px;
+      margin: 0 0 16px;
+      line-height: 1.1;
+    }
+    .page-header p {
+      font-size: 18px;
+      color: var(--muted);
+      max-width: 600px;
+      margin: 0 auto;
+      line-height: 1.6;
+    }
+
+    /* Blog Grid */
+    .blog-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+      gap: 32px;
+      padding-bottom: 100px;
+    }
+
+    .blog-card {
+      background: var(--card);
+      border-radius: 24px;
+      overflow: hidden;
+      transition: all 0.3s ease;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.04);
+      display: flex;
+      flex-direction: column;
+    }
+    .blog-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 16px 48px rgba(0,0,0,0.08);
+    }
+
+    .blog-card-image {
+      width: 100%;
+      aspect-ratio: 16/9;
+      object-fit: cover;
+      display: block;
+    }
+
+    .blog-card-body {
+      padding: 28px;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .blog-card-tag {
+      font-size: 11px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      color: var(--gold);
+      margin-bottom: 8px;
+    }
+
+    .blog-card-title {
+      font-size: 20px;
+      font-weight: 700;
+      line-height: 1.3;
+      margin: 0 0 12px;
+      color: var(--dark);
+    }
+
+    .blog-card-excerpt {
+      font-size: 15px;
+      color: var(--muted);
+      line-height: 1.6;
+      margin: 0 0 20px;
+      flex: 1;
+    }
+
+    .blog-card-link {
+      font-size: 14px;
+      font-weight: 600;
+      color: var(--gold);
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      transition: gap 0.2s;
+    }
+    .blog-card-link:hover { gap: 10px; }
+
+    @media (max-width: 768px) {
+      .blog-grid {
+        grid-template-columns: 1fr;
+        gap: 24px;
+      }
+      .page-header { padding: 50px 0 40px; }
+    }
+    .blog-card-date {
+      font-size: 13px;
+      color: #999;
+      margin-top: 4px;
+      font-weight: 500;
+    }
+  
+    .mobile-wa-float {
+      position: fixed; bottom: 24px; right: 24px; z-index: 1000;
+      display: flex; align-items: center; justify-content: center;
+      width: 56px; height: 56px; border-radius: 50%;
+      background: #25D366; box-shadow: 0 4px 20px rgba(37,211,102,0.35);
+      text-decoration: none; transition: transform 0.2s, box-shadow 0.2s;
+    }
+    .mobile-wa-float:hover { transform: scale(1.08); box-shadow: 0 6px 28px rgba(37,211,102,0.45); }
+    .mobile-wa-float svg { width: 28px; height: 28px; fill: white; }
+
+  
     html { scroll-behavior: smooth; }
 
     /* Back to top */
@@ -188,531 +188,530 @@
     .back-to-top:hover { transform: translateY(-3px); opacity: .9; }
 
     </style>
-   175|<script type="application/ld+json">
-   176|{
-   177|  "@context": "https://schema.org",
-   178|  "@type": "Blog",
-   179|  "name": "Tracklinear Journal",
-   180|  "description": "Technical guides and design insights for magnetic track lighting professionals.",
-   181|  "url": "https://tracklinear.com/blog/",
-   182|  "blogPost": [
-   183|    {
-   184|      "@type": "BlogPosting",
-   185|      "headline": "Why That Cheap Magnetic Track Could Cost You More in the Long Run: 3 Hidden Quality Factors Every B2B Buyer Should Know",
-   186|      "image": "https://tracklinear.com/images/blog13_hero.webp",
-   187|      "datePublished": "2026-06-29T08:00:00+08:00",
-   188|      "dateModified": "2026-06-29T08:00:00+08:00",
-   189|      "author": {
-   190|        "@type": "Person",
-   191|        "name": "Tiffany Woo"
-   192|      },
-   193|      "url": "https://tracklinear.com/blog-post-13.html"
-   194|    },
-   195|    {
-   196|      "@type": "BlogPosting",
-   197|      "headline": "Where Should You Place the Driver for 48V Magnetic Track Lighting? Power Feed and Circuit Planning Guide",
-   198|      "image": "https://tracklinear.com/images/blog12_hero.webp",
-   199|      "datePublished": "2026-06-25T08:00:00+08:00",
-   200|      "dateModified": "2026-06-25T08:00:00+08:00",
-   201|      "author": {
-   202|        "@type": "Person",
-   203|        "name": "Tiffany Woo"
-   204|      },
-   205|      "url": "https://tracklinear.com/blog-post-12.html"
-   206|    },
-   207|    {
-   208|      "@type": "BlogPosting",
-   209|      "headline": "48V vs. 24V Magnetic Track Lighting: Which one is right for your project?",
-   210|      "image": "https://tracklinear.com/images/blog_header_1.webp",
-   211|      "datePublished": "2026-05-28T08:00:00+08:00",
-   212|      "dateModified": "2026-05-28T08:00:00+08:00",
-   213|      "author": {
-   214|        "@type": "Person",
-   215|        "name": "Tiffany Woo"
-   216|      },
-   217|      "url": "https://tracklinear.com/blog-post-1.html"
-   218|    },    {
-   219|      "@type": "BlogPosting",
-   220|      "headline": "Mastering Smart Lighting Control: DALI, 0-10V, and Wireless Protocols",
-   221|      "image": "https://tracklinear.com/images/blog_header_2.webp",
-   222|      "datePublished": "2026-05-30T08:00:00+08:00",
-   223|      "dateModified": "2026-05-30T08:00:00+08:00",
-   224|      "author": {
-   225|        "@type": "Person",
-   226|        "name": "Tiffany Woo"
-   227|      },
-   228|      "url": "https://tracklinear.com/blog-post-2.html"
-   229|    },    {
-   230|      "@type": "BlogPosting",
-   231|      "headline": "The Art of Invisible Lighting: Why Trimless is the New Standard",
-   232|      "image": "https://tracklinear.com/images/blog_header_3.webp",
-   233|      "datePublished": "2026-06-01T08:00:00+08:00",
-   234|      "dateModified": "2026-06-01T08:00:00+08:00",
-   235|      "author": {
-   236|        "@type": "Person",
-   237|        "name": "Tiffany Woo"
-   238|      },
-   239|      "url": "https://tracklinear.com/blog-post-3.html"
-   240|    },    {
-   241|      "@type": "BlogPosting",
-   242|      "headline": "Beyond the Lumen: Why Color Fidelity is the True Measure of Premium Lighting",
-   243|      "image": "https://tracklinear.com/images/blog_header_4.webp",
-   244|      "datePublished": "2026-06-03T08:00:00+08:00",
-   245|      "dateModified": "2026-06-03T08:00:00+08:00",
-   246|      "author": {
-   247|        "@type": "Person",
-   248|        "name": "Tiffany Woo"
-   249|      },
-   250|      "url": "https://tracklinear.com/blog-post-4.html"
-   251|    },    {
-   252|      "@type": "BlogPosting",
-   253|      "headline": "How to Specify Magnetic Track Lighting for 5 Commercial Project Types",
-   254|      "image": "https://tracklinear.com/images/blog_header_5.webp",
-   255|      "datePublished": "2026-06-05T08:00:00+08:00",
-   256|      "dateModified": "2026-06-05T08:00:00+08:00",
-   257|      "author": {
-   258|        "@type": "Person",
-   259|        "name": "Tiffany Woo"
-   260|      },
-   261|      "url": "https://tracklinear.com/blog-post-5.html"
-   262|    },    {
-   263|      "@type": "BlogPosting",
-   264|      "headline": "Case Study: How a Lisbon Boutique Hotel Used Magnetic Track Lighting to Unify Its Entire Guest Experience",
-   265|      "image": "https://tracklinear.com/images/blog_header_6.webp",
-   266|      "datePublished": "2026-06-07T08:00:00+08:00",
-   267|      "dateModified": "2026-06-07T08:00:00+08:00",
-   268|      "author": {
-   269|        "@type": "Person",
-   270|        "name": "Tiffany Woo"
-   271|      },
-   272|      "url": "https://tracklinear.com/blog-post-6.html"
-   273|    },    {
-   274|      "@type": "BlogPosting",
-   275|      "headline": "Why Does a Magnetic Track Light Still Need a Driver If the Track Already Has a 48V Power Supply?",
-   276|      "image": "https://tracklinear.com/images/blog_7_factory.webp",
-   277|      "datePublished": "2026-06-10T08:00:00+08:00",
-   278|      "dateModified": "2026-06-10T08:00:00+08:00",
-   279|      "author": {
-   280|        "@type": "Person",
-   281|        "name": "Tiffany Woo"
-   282|      },
-   283|      "url": "https://tracklinear.com/blog-post-7.html"
-   284|    },    {
-   285|      "@type": "BlogPosting",
-   286|      "headline": "Traditional Track Lighting vs 48V Magnetic Track Lighting: Which One Is Better for Your Project?",
-   287|      "image": "https://tracklinear.com/images/blog_header_8.webp",
-   288|      "datePublished": "2026-06-18T08:00:00+08:00",
-   289|      "dateModified": "2026-06-18T08:00:00+08:00",
-   290|      "author": {
-   291|        "@type": "Person",
-   292|        "name": "Tiffany Woo"
-   293|      },
-   294|      "url": "https://tracklinear.com/blog-post-8.html"
-   295|    },    {
-   296|      "@type": "BlogPosting",
-   297|      "headline": "Surface, Recessed, or Trimless? Choose the Right Installation Method for Your Magnetic Track Lighting Project",
-   298|      "image": "https://tracklinear.com/images/blog9_hero.webp",
-   299|      "datePublished": "2026-06-20T08:00:00+08:00",
-   300|      "dateModified": "2026-06-20T08:00:00+08:00",
-   301|      "author": {
-   302|        "@type": "Person",
-   303|        "name": "Tiffany Woo"
-   304|      },
-   305|      "url": "https://tracklinear.com/blog-post-9.html"
-   306|    },    {
-   307|      "@type": "BlogPosting",
-   308|      "headline": "Spot, Flood, Linear Flood, or Grille — A Practical Guide to Choosing the Right Beam Angle",
-   309|      "image": "https://tracklinear.com/images/blog10_hero.webp",
-   310|      "datePublished": "2026-06-22T08:00:00+08:00",
-   311|      "dateModified": "2026-06-22T08:00:00+08:00",
-   312|      "author": {
-   313|        "@type": "Person",
-   314|        "name": "Tiffany Woo"
-   315|      },
-   316|      "url": "https://tracklinear.com/blog-post-10.html"
-   317|    },
-   318|    {
-   319|      "@context": "https://schema.org",
-   320|      "@type": "BlogPosting",
-   321|      "headline": "48V Track Load Planning: How Many Fixtures Per Run and How to Avoid a Costly Re-Work",
-   322|      "image": "https://tracklinear.com/images/blog11_hero.webp",
-   323|      "datePublished": "2026-06-24T08:00:00+08:00",
-   324|      "dateModified": "2026-06-24T08:00:00+08:00",
-   325|      "author": {
-   326|        "@type": "Person",
-   327|        "name": "Tiffany Woo"
-   328|      },
-   329|      "url": "https://tracklinear.com/blog-post-11.html"
-   330|    },
-   331|    {
-   332|      "@context": "https://schema.org",
-   333|      "@type": "BlogPosting",
-   334|      "headline": "Stop Comparing Prices First: How Professional Buyers Evaluate Magnetic Track Lighting Suppliers",
-   335|      "image": "https://tracklinear.com/images/blog15_hero.webp",
-   336|      "datePublished": "2026-07-06T08:00:00+08:00",
-   337|      "dateModified": "2026-07-06T08:00:00+08:00",
-   338|      "author": { "@type": "Person", "name": "Tiffany Woo" },
-   339|      "url": "https://tracklinear.com/buyers-handbook/how-professional-buyers-evaluate-suppliers.html"
-   340|    },
-   341|    {
-   342|      "@context": "https://schema.org",
-   343|      "@type": "BlogPosting",
-   344|      "headline": "You're Probably Comparing Magnetic Track Lighting Systems Wrong — Here's What Actually Matters",
-   345|      "image": "https://tracklinear.com/images/blog14_hero.webp",
-   346|      "datePublished": "2026-07-03T08:00:00+08:00",
-   347|      "dateModified": "2026-07-03T08:00:00+08:00",
-   348|      "author": { "@type": "Person", "name": "Tiffany Woo" },
-   349|      "url": "https://tracklinear.com/magnetic-track-lighting-buyers-handbook-chapter-1.html"
-   350|    }
-   351|  ]
-   352|}
-   353|</script>
-   354|</head>
-   355|<body>
-   356|  <!-- Header (imported from main site) -->
-   357|  <header>
-   358|    <div class="container nav">
-   359|      <a href="../index.html" class="brand">
-   360|        <div class="logo">M</div>
-   361|        <div>
-   362|          <div class="brand-title">Tracklinear</div>
-   363|          <div class="brand-sub">Lighting System</div>
-   364|        </div>
-   365|      </a>
-   366|      <nav>
-   367|        <a href="../index.html#system">System</a>
-   368|        <div class="nav-dropdown">
-   369|          <a href="#" class="dropdown-trigger">Product ▾</a>
-   370|          <div class="dropdown-menu">
-   371|            <div class="dropdown-col">
-   372|              <div class="dropdown-label">Track Rails</div>
-   373|              <a href="../tracks/20mm.html">20mm Track</a>
-   374|              <a href="../tracks/23mm.html">23mm Track</a>
-   375|              <a href="../tracks/35mm.html">35mm Track</a>
-   376|            </div>
-   377|            <div class="dropdown-col">
-   378|              <div class="dropdown-label">Track Lights</div>
-   379|              <a href="../lights/flood.html">Flood Light</a>
-   380|              <a href="../lights/grid.html">Grille Light</a>
-   381|              <a href="../lights/folding-grid.html">Folding Grille Light</a>
-   382|              <a href="../lights/spot.html">Spot Light</a>
-   383|              <a href="../lights/pendant.html">Pendant Light</a>
-   384|            </div>
-   385|          </div>
-   386|        </div>
-   387|        <a href="../index.html#installation">Installation</a>
-   388|        <a href="../index.html#oem">OEM/ODM</a>
-   389|        <a href="index.html" class="active">Blog</a>
-   390|      </nav>
-   391|      <a class="btn btn-dark" href="../index.html#contact">Contact →</a>
-   392|      <button class="hamburger" onclick="toggleMobileMenu()">☰</button>
-   393|    </div>
-   394|    <!-- Mobile menu -->
-   395|    <div class="mobile-menu" id="mobileMenu">
-   396|      <a href="../index.html#system">System</a>
-   397|      <div class="mobile-group">
-   398|        <div class="mobile-group-label">Track Rails</div>
-   399|        <a href="../tracks/20mm.html">20mm Track</a>
-   400|        <a href="../tracks/23mm.html">23mm Track</a>
-   401|        <a href="../tracks/35mm.html">35mm Track</a>
-   402|      </div>
-   403|      <div class="mobile-group">
-   404|        <div class="mobile-group-label">Track Lights</div>
-   405|        <a href="../lights/flood.html">Flood Light</a>
-   406|        <a href="../lights/grid.html">Grille Light</a>
-   407|        <a href="../lights/folding-grid.html">Folding Grille Light</a>
-   408|        <a href="../lights/spot.html">Spot Light</a>
-   409|        <a href="../lights/pendant.html">Pendant Light</a>
-   410|      </div>
-   411|      <a href="../index.html#installation">Installation</a>
-   412|      <a href="../index.html#oem">OEM/ODM</a>
-   413|      <a href="index.html">Blog</a>
-   414|      <a href="../index.html#contact" class="btn btn-dark" style="margin-top:12px;">Contact →</a>
-   415|    </div>
-   416|  </header>
-   417|
-   418|  <main>
-   419|    <section class="page-header">
-   420|      <div class="container">
-   421|        <div class="eyebrow">Tracklinear Journal</div>
-   422|        <h1>Knowledge for <br>Lighting Professionals</h1>
-   423|        <p>Technical guides, design trends, and practical insights for architects, contractors, and lighting specifiers working with magnetic track systems.</p>
-   424|      </div>
-   425|    </section>
-   426|
-   427|    <div class="container">
-   428|      <div class="blog-grid">
-   429|
-   430|        <!-- Buyer's Handbook Chapter 2 — July 6, 2026 -->
-   431|        <article class="blog-card" itemscope itemtype="https://schema.org/BlogPosting">
-   432|          <meta itemprop="headline" content="Stop Comparing Prices First: How Professional Buyers Evaluate Magnetic Track Lighting Suppliers">
-   433|          <meta itemprop="datePublished" content="2026-07-06T08:00:00+08:00">
-   434|          <meta itemprop="author" content="Tiffany Woo">
-   435|          <img class="blog-card-image" src="../images/blog15_hero.webp" alt="Professional buyer comparing two magnetic track lighting quotations on a desk" loading="lazy" itemprop="image">
-   436|          <div class="blog-card-body">
-   437|            <div class="blog-card-tag">Buyer's Handbook — Chapter 2</div>
-   438|            <h2 class="blog-card-title" itemprop="name">Stop Comparing Prices First: How Professional Buyers Evaluate Magnetic Track Lighting Suppliers</h2>
-   439|            <div class="blog-card-date">July 6, 2026</div>
-   440|            <p class="blog-card-excerpt" itemprop="description">Chapter 2 of the Buyer's Handbook. A 5-point engineering elimination system for evaluating magnetic track lighting suppliers — PASS/FAIL checkpoints, signal triggers, and a decision filter that tells you when to eliminate before pricing.</p>
-   441|            <a href="../buyers-handbook/how-professional-buyers-evaluate-suppliers.html" class="blog-card-link" itemprop="url">Read Chapter 2 →</a>
-   442|          </div>
-   443|        </article>
-   444|
-   445|        <!-- Blog Post 14 — July 3, 2026 (Buyer's Handbook Chapter 1) -->
-   446|        <article class="blog-card" itemscope itemtype="https://schema.org/BlogPosting">
-   447|          <meta itemprop="headline" content="You're Probably Comparing Magnetic Track Lighting Systems Wrong — Here's What Actually Matters">
-   448|          <meta itemprop="datePublished" content="2026-07-03T08:00:00+08:00">
-   449|          <meta itemprop="author" content="Tiffany Woo">
-   450|          <img class="blog-card-image" src="../images/blog14_hero.webp" alt="Professional buyer inspecting magnetic track lighting quality details on a workbench" loading="lazy" itemprop="image">
-   451|          <div class="blog-card-body">
-   452|            <div class="blog-card-tag">Buyer's Handbook — Chapter 1</div>
-   453|            <h2 class="blog-card-title" itemprop="name">You're Probably Comparing Magnetic Track Lighting Systems Wrong — Here's What Actually Matters</h2>
-   454|            <div class="blog-card-date">July 3, 2026</div>
-   455|            <p class="blog-card-excerpt" itemprop="description">The Magnetic Track Lighting Buyer's Handbook Chapter 1. 10 engineering details that determine whether your project succeeds or becomes a costly lesson. Includes Red Flag thresholds, supplier comparison table, and practical checklist.</p>
-   456|            <a href="../magnetic-track-lighting-buyers-handbook-chapter-1.html" class="blog-card-link" itemprop="url">Read Chapter 1 →</a>
-   457|          </div>
-   458|        </article>
-   459|
-   460|        <!-- Blog Post 13 — June 29, 2026 -->
-   461|        <article class="blog-card" itemscope itemtype="https://schema.org/BlogPosting">
-   462|          <meta itemprop="headline" content="Why That Cheap Magnetic Track Could Cost You More in the Long Run: 3 Hidden Quality Factors Every B2B Buyer Should Know">
-   463|          <meta itemprop="datePublished" content="2026-06-29T08:00:00+08:00">
-   464|          <meta itemprop="author" content="Tiffany Woo">
-   465|          <img class="blog-card-image" src="../images/blog13_hero.webp" alt="Two magnetic track rails side by side looking similar but priced differently illustrating hidden quality differences" loading="lazy" itemprop="image">
-   466|          <div class="blog-card-body">
-   467|            <div class="blog-card-tag">Product Knowledge</div>
-   468|            <h2 class="blog-card-title" itemprop="name">Why That Cheap Magnetic Track Could Cost You More in the Long Run</h2>
-   469|            <div class="blog-card-date">June 29, 2026</div>
-   470|            <p class="blog-card-excerpt" itemprop="description">Three hidden factors — conductive strip material, aluminum weight per meter, and surface finish — determine whether a magnetic track will perform over time. Choose wisely.</p>
-   471|            <a href="../blog-post-13.html" class="blog-card-link" itemprop="url">Read Article →</a>
-   472|          </div>
-   473|        </article>
-   474|
-   475|        <!-- Blog Post 12 — June 25, 2026 -->
-   476|        <article class="blog-card" itemscope itemtype="https://schema.org/BlogPosting">
-   477|          <meta itemprop="headline" content="Where Should You Place the Driver for 48V Magnetic Track Lighting? Power Feed and Circuit Planning Guide">
-   478|          <meta itemprop="datePublished" content="2026-06-25T08:00:00+08:00">
-   479|          <meta itemprop="author" content="Tiffany Woo">
-   480|          <img class="blog-card-image" src="../images/blog12_hero.webp" alt="48V magnetic track lighting driver placement ceiling with access panel for maintenance" loading="lazy" itemprop="image">
-   481|          <div class="blog-card-body">
-   482|            <div class="blog-card-tag">Project Guide</div>
-   483|            <h2 class="blog-card-title" itemprop="name">Where Should You Place the Driver for 48V Magnetic Track Lighting?</h2>
-   484|            <div class="blog-card-date">June 25, 2026</div>
-   485|            <p class="blog-card-excerpt" itemprop="description">Plan driver position, power feed points, and circuit layout before ceiling work starts — avoid difficult maintenance access and expensive rework in commercial 48V track projects.</p>
-   486|            <a href="../blog-post-12.html" class="blog-card-link" itemprop="url">Read Article →</a>
-   487|          </div>
-   488|        </article>
-   489|
-   490|        <!-- Blog Post 11 — June 24, 2026 -->
-   491|        <article class="blog-card" itemscope itemtype="https://schema.org/BlogPosting">
-   492|          <meta itemprop="headline" content="48V Track Load Planning: How Many Fixtures Per Run and How to Avoid a Costly Re-Work">
-   493|          <meta itemprop="datePublished" content="2026-06-24T08:00:00+08:00">
-   494|          <meta itemprop="author" content="Tiffany Woo">
-   495|          <img class="blog-card-image" src="../images/blog11_hero.webp" alt="48V magnetic track lighting installation with multiple LED fixtures along a single track run showing power feed connection" loading="lazy" itemprop="image">
-   496|          <div class="blog-card-body">
-   497|            <div class="blog-card-tag">Technical Guide</div>
-   498|            <h2 class="blog-card-title" itemprop="name">48V Track Load Planning: How Many Fixtures Per Run and How to Avoid a Costly Re-Work</h2>
-   499|            <div class="blog-card-date">June 24, 2026</div>
-   500|            <p class="blog-card-excerpt" itemprop="description">Learn how to plan 48V magnetic track power load — voltage drop, feed position, driver headroom and real-world configuration examples for contractors and specifiers.</p>
-   501|            <a href="../blog-post-11.html" class="blog-card-link" itemprop="url">Read Article →</a>
-   502|          </div>
-   503|        </article>
-   504|
-   505|        <!-- Blog Post 10 — June 22, 2026 -->
-   506|        <article class="blog-card" itemscope itemtype="https://schema.org/BlogPosting">
-   507|          <meta itemprop="headline" content="Spot, Flood, Linear Flood, or Grille — A Practical Guide to Choosing the Right Beam Angle for Your Magnetic Track Lighting Project">
-   508|          <meta itemprop="datePublished" content="2026-06-22T08:00:00+08:00">
-   509|          <meta itemprop="author" content="Tiffany Woo">
-   510|          <img class="blog-card-image" src="../images/blog10_hero.webp" alt="Magnetic track lighting modules with different beam angles including spotlight flood linear flood and grille types in a commercial interior setting" loading="lazy" itemprop="image">
-   511|          <div class="blog-card-body">
-   512|            <div class="blog-card-tag">Module Selection</div>
-   513|            <h2 class="blog-card-title" itemprop="name">Spot, Flood, Linear Flood, or Grille — A Practical Guide to Choosing the Right Beam Angle for Your Magnetic Track Lighting Project</h2>
-   514|            <div class="blog-card-date">June 22, 2026</div>
-   515|            <p class="blog-card-excerpt" itemprop="description">Compare spotlight, flood, linear flood and grille modules for magnetic track lighting. Find the right beam angle for retail, hotel, office and gallery projects.</p>
-   516|            <a href="../blog-post-10.html" class="blog-card-link" itemprop="url">Read Article →</a>
-   517|          </div>
-   518|        </article>
-   519|
-   520|        <!-- Blog Post 9 — June 20, 2026 -->
-   521|        <article class="blog-card" itemscope itemtype="https://schema.org/BlogPosting">
-   522|          <meta itemprop="headline" content="Surface, Recessed, or Trimless? Choose the Right Installation Method for Your Magnetic Track Lighting Project">
-   523|          <meta itemprop="datePublished" content="2026-06-20T08:00:00+08:00">
-   524|          <meta itemprop="author" content="Tiffany Woo">
-   525|          <img class="blog-card-image" src="../images/blog9_hero.webp" alt="Surface-mounted recessed and trimless 48V magnetic track lighting installation comparison for commercial and residential projects" loading="lazy" itemprop="image">
-   526|          <div class="blog-card-body">
-   527|            <div class="blog-card-tag">Installation Guide</div>
-   528|            <h2 class="blog-card-title" itemprop="name">Surface, Recessed, or Trimless? Choose the Right Installation Method for Your Magnetic Track Lighting Project</h2>
-   529|            <div class="blog-card-date">June 20, 2026</div>
-   530|            <p class="blog-card-excerpt" itemprop="description">Compare surface-mounted, recessed and trimless installation for 48V magnetic track lighting. Find the right fit for concrete ceilings, drop ceilings and luxury interiors.</p>
-   531|            <a href="../blog-post-9.html" class="blog-card-link" itemprop="url">Read Article →</a>
-   532|          </div>
-   533|        </article>
-   534|
-   535|        <!-- Blog Post 8 — June 18, 2026 -->
-   536|        <article class="blog-card" itemscope itemtype="https://schema.org/BlogPosting">
-   537|          <meta itemprop="headline" content="Track Lighting vs Magnetic Track Lighting: Which One Fits Your Project?">
-   538|          <meta itemprop="datePublished" content="2026-06-18T08:00:00+08:00">
-   539|          <meta itemprop="author" content="Tiffany Woo">
-   540|          <img class="blog-card-image" src="../images/blog_header_8.webp" alt="Side-by-side comparison of traditional track lighting and modern 48V magnetic track lighting" loading="lazy" itemprop="image">
-   541|          <div class="blog-card-body">
-   542|            <div class="blog-card-tag">Application Guide</div>
-   543|            <h2 class="blog-card-title" itemprop="name">Track Lighting vs Magnetic Track Lighting: Which One Fits Your Project?</h2>
-   544|            <div class="blog-card-date">June 18, 2026</div>
-   545|            <p class="blog-card-excerpt" itemprop="description">A practical guide for mid-to-high-end interiors — when to choose traditional 240V track and when magnetic 48V track makes more sense. Includes real customer question from a Turkish wholesaler.</p>
-   546|            <a href="../blog-post-8.html" class="blog-card-link" itemprop="url">Read Article →</a>
-   547|          </div>
-   548|        </article>
-   549|
-   550|        <!-- Blog Post 7 — June 17, 2026 -->
-   551|        <article class="blog-card" itemscope itemtype="https://schema.org/BlogPosting">
-   552|          <meta itemprop="headline" content="If the Track Already Has a Power Supply, Why Does the Light Module Still Need a Driver?">
-   553|          <meta itemprop="datePublished" content="2026-06-17T08:00:00+08:00">
-   554|          <meta itemprop="author" content="Tiffany Woo">
-   555|          <img class="blog-card-image" src="../images/blog_header_7.webp" alt="Magnetic track module with built-in driver and 48V power supply system diagram" loading="lazy" itemprop="image">
-   556|          <div class="blog-card-body">
-   557|            <div class="blog-card-tag">Product Knowledge</div>
-   558|            <h2 class="blog-card-title" itemprop="name">If the Track Already Has a Power Supply, Why Does the Light Module Still Need a Driver?</h2>
-   559|            <div class="blog-card-date">June 17, 2026</div>
-   560|            <p class="blog-card-excerpt" itemprop="description">The magnetic track already has 48V power. So why does the light module need a built-in driver? A clear explanation for distributors and contractors on the difference between power supply and driver.</p>
-   561|            <a href="../blog-post-7.html" class="blog-card-link" itemprop="url">Read Article →</a>
-   562|          </div>
-   563|        </article>
-   564|
-   565|        <!-- Blog Post 6 — June 7, 2026 -->
-   566|        <article class="blog-card" itemscope itemtype="https://schema.org/BlogPosting">
-   567|          <meta itemprop="headline" content="Case Study: How a Lisbon Boutique Hotel Used Magnetic Track Lighting to Unify Its Entire Guest Experience">
-   568|          <meta itemprop="datePublished" content="2026-06-07T08:00:00+08:00">
-   569|          <meta itemprop="author" content="Tiffany Woo">
-   570|          <img class="blog-card-image" src="../images/blog_header_6.webp" alt="Boutique hotel lobby with warm magnetic track lighting highlighting textured walls and reception desk" loading="lazy" itemprop="image">
-   571|          <div class="blog-card-body">
-   572|            <div class="blog-card-tag">Project Case Study</div>
-   573|            <h2 class="blog-card-title" itemprop="name">Case Study: How a Lisbon Boutique Hotel Used Magnetic Track Lighting to Unify Its Entire Guest Experience</h2>
-   574|            <div class="blog-card-date">June 7, 2026</div>
-   575|            <p class="blog-card-excerpt" itemprop="description">Real project story: how a 42-room Lisbon hotel replaced fragmented lighting with one Tracklinear system — and improved guest ambiance scores from 3.8 to 4.7.</p>
-   576|            <a href="../blog-post-6.html" class="blog-card-link" itemprop="url">Read Article →</a>
-   577|          </div>
-   578|        </article>
-   579|
-   580|        <!-- Blog Post 5 — June 5, 2026 -->
-   581|        <article class="blog-card" itemscope itemtype="https://schema.org/BlogPosting">
-   582|          <meta itemprop="headline" content="How to Specify Magnetic Track Lighting for 5 Commercial Project Types">
-   583|          <meta itemprop="datePublished" content="2026-06-05T08:00:00+08:00">
-   584|          <meta itemprop="author" content="Tiffany Woo">
-   585|          <img class="blog-card-image" src="../images/blog_header_5.webp" alt="Commercial magnetic track lighting installation in hotel lobby retail store and art gallery" loading="lazy" itemprop="image">
-   586|          <div class="blog-card-body">
-   587|            <div class="blog-card-tag">Application Guide</div>
-   588|            <h2 class="blog-card-title" itemprop="name">How to Specify Magnetic Track Lighting for 5 Commercial Project Types</h2>
-   589|            <div class="blog-card-date">June 5, 2026</div>
-   590|            <p class="blog-card-excerpt" itemprop="description">Practical specification guide for architects and contractors: hotel, retail, gallery, office, and restaurant magnetic track lighting design with module recommendations.</p>
-   591|            <a href="../blog-post-5.html" class="blog-card-link" itemprop="url">Read Article →</a>
-   592|          </div>
-   593|        </article>
-   594|
-   595|        <!-- Blog Post 4 — June 3, 2026 -->
-   596|        <article class="blog-card" itemscope itemtype="https://schema.org/BlogPosting">
-   597|          <meta itemprop="headline" content="Beyond the Lumen: Why Color Fidelity is the True Measure of Premium Lighting">
-   598|          <meta itemprop="datePublished" content="2026-06-03T08:00:00+08:00">
-   599|          <meta itemprop="author" content="Tiffany Woo">
-   600|          <img class="blog-card-image" src="../images/blog_header_4.webp" alt="High CRI 90 plus magnetic track spotlight illuminating artwork in luxury gallery" loading="lazy" itemprop="image">
-   601|          <div class="blog-card-body">
-   602|            <div class="blog-card-tag">Technical Excellence</div>
-   603|            <h2 class="blog-card-title" itemprop="name">Beyond the Lumen: Why Color Fidelity is the True Measure of Premium Lighting</h2>
-   604|            <div class="blog-card-date">June 3, 2026</div>
-   605|            <p class="blog-card-excerpt" itemprop="description">Why CRI 90+ and R9 values matter in premium magnetic track lighting. A technical guide for architects on color fidelity standards.</p>
-   606|            <a href="../blog-post-4.html" class="blog-card-link" itemprop="url">Read Article →</a>
-   607|          </div>
-   608|        </article>
-   609|
-   610|        <!-- Blog Post 3 — June 1, 2026 -->
-   611|        <article class="blog-card" itemscope itemtype="https://schema.org/BlogPosting">
-   612|          <meta itemprop="headline" content="The Art of Invisible Lighting: Why Trimless is the New Standard">
-   613|          <meta itemprop="datePublished" content="2026-06-01T08:00:00+08:00">
-   614|          <meta itemprop="author" content="Tiffany Woo">
-   615|          <img class="blog-card-image" src="../images/blog_header_3.webp" alt="Trimless recessed magnetic track lighting integrated into luxury ceiling design" loading="lazy" itemprop="image">
-   616|          <div class="blog-card-body">
-   617|            <div class="blog-card-tag">Design Trends 2026</div>
-   618|            <h2 class="blog-card-title" itemprop="name">The Art of Invisible Lighting: Why Trimless is the New Standard</h2>
-   619|            <div class="blog-card-date">June 1, 2026</div>
-   620|            <p class="blog-card-excerpt" itemprop="description">Explore the architectural purity of trimless magnetic track lighting and why invisible design is becoming the defining trend for luxury interiors.</p>
-   621|            <a href="../blog-post-3.html" class="blog-card-link" itemprop="url">Read Article →</a>
-   622|          </div>
-   623|        </article>
-   624|
-   625|        <!-- Blog Post 2 — May 30, 2026 -->
-   626|        <article class="blog-card" itemscope itemtype="https://schema.org/BlogPosting">
-   627|          <meta itemprop="headline" content="Mastering Smart Lighting Control: DALI, 0-10V, and Wireless Protocols">
-   628|          <meta itemprop="datePublished" content="2026-05-30T08:00:00+08:00">
-   629|          <meta itemprop="author" content="Tiffany Woo">
-   630|          <img class="blog-card-image" src="../images/blog_header_2.webp" alt="Smart lighting control protocols DALI 0-10V Zigbee Casambi comparison diagram" loading="lazy" itemprop="image">
-   631|          <div class="blog-card-body">
-   632|            <div class="blog-card-tag">Smart Solutions</div>
-   633|            <h2 class="blog-card-title" itemprop="name">Mastering Smart Lighting Control: DALI, 0-10V, and Wireless Protocols</h2>
-   634|            <div class="blog-card-date">May 30, 2026</div>
-   635|            <p class="blog-card-excerpt" itemprop="description">A deep technical guide for architects and contractors on choosing the right control protocol — wired vs wireless, dimming precision, and project scalability.</p>
-   636|            <a href="../blog-post-2.html" class="blog-card-link" itemprop="url">Read Article →</a>
-   637|          </div>
-   638|        </article>
-   639|
-   640|        <!-- Blog Post 1 — May 28, 2026 -->
-   641|        <article class="blog-card" itemscope itemtype="https://schema.org/BlogPosting">
-   642|          <meta itemprop="headline" content="48V vs. 24V Magnetic Track Lighting: Which one is right for your project?">
-   643|          <meta itemprop="datePublished" content="2026-05-28T08:00:00+08:00">
-   644|          <meta itemprop="author" content="Tiffany Woo">
-   645|          <img class="blog-card-image" src="../images/blog_header_1.webp" alt="48V versus 24V magnetic track lighting system comparison for commercial projects" loading="lazy" itemprop="image">
-   646|          <div class="blog-card-body">
-   647|            <div class="blog-card-tag">Technical Insight</div>
-   648|            <h2 class="blog-card-title" itemprop="name">48V vs. 24V Magnetic Track Lighting: Which one is right for your project?</h2>
-   649|            <div class="blog-card-date">May 28, 2026</div>
-   650|            <p class="blog-card-excerpt" itemprop="description">A professional technical comparison of 48V and 24V systems covering voltage drop, efficiency, safety, and market standards for commercial and residential projects.</p>
-   651|            <a href="../blog-post-1.html" class="blog-card-link" itemprop="url">Read Article →</a>
-   652|          </div>
-   653|        </article>
-   654|
-   655|      </div>
-   656|    </div>
-   657|  </main>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Blog",
+  "name": "Tracklinear Journal",
+  "description": "Technical guides and design insights for magnetic track lighting professionals.",
+  "url": "https://tracklinear.com/blog/",
+  "blogPost": [
+    {
+      "@type": "BlogPosting",
+      "headline": "Why That Cheap Magnetic Track Could Cost You More in the Long Run: 3 Hidden Quality Factors Every B2B Buyer Should Know",
+      "image": "https://tracklinear.com/images/blog13_hero.webp",
+      "datePublished": "2026-06-29T08:00:00+08:00",
+      "dateModified": "2026-06-29T08:00:00+08:00",
+      "author": {
+        "@type": "Person",
+        "name": "Tiffany Woo"
+      },
+      "url": "https://tracklinear.com/blog-post-13.html"
+    },
+    {
+      "@type": "BlogPosting",
+      "headline": "Where Should You Place the Driver for 48V Magnetic Track Lighting? Power Feed and Circuit Planning Guide",
+      "image": "https://tracklinear.com/images/blog12_hero.webp",
+      "datePublished": "2026-06-25T08:00:00+08:00",
+      "dateModified": "2026-06-25T08:00:00+08:00",
+      "author": {
+        "@type": "Person",
+        "name": "Tiffany Woo"
+      },
+      "url": "https://tracklinear.com/blog-post-12.html"
+    },
+    {
+      "@type": "BlogPosting",
+      "headline": "48V vs. 24V Magnetic Track Lighting: Which one is right for your project?",
+      "image": "https://tracklinear.com/images/blog_header_1.webp",
+      "datePublished": "2026-05-28T08:00:00+08:00",
+      "dateModified": "2026-05-28T08:00:00+08:00",
+      "author": {
+        "@type": "Person",
+        "name": "Tiffany Woo"
+      },
+      "url": "https://tracklinear.com/blog-post-1.html"
+    },    {
+      "@type": "BlogPosting",
+      "headline": "Mastering Smart Lighting Control: DALI, 0-10V, and Wireless Protocols",
+      "image": "https://tracklinear.com/images/blog_header_2.webp",
+      "datePublished": "2026-05-30T08:00:00+08:00",
+      "dateModified": "2026-05-30T08:00:00+08:00",
+      "author": {
+        "@type": "Person",
+        "name": "Tiffany Woo"
+      },
+      "url": "https://tracklinear.com/blog-post-2.html"
+    },    {
+      "@type": "BlogPosting",
+      "headline": "The Art of Invisible Lighting: Why Trimless is the New Standard",
+      "image": "https://tracklinear.com/images/blog_header_3.webp",
+      "datePublished": "2026-06-01T08:00:00+08:00",
+      "dateModified": "2026-06-01T08:00:00+08:00",
+      "author": {
+        "@type": "Person",
+        "name": "Tiffany Woo"
+      },
+      "url": "https://tracklinear.com/blog-post-3.html"
+    },    {
+      "@type": "BlogPosting",
+      "headline": "Beyond the Lumen: Why Color Fidelity is the True Measure of Premium Lighting",
+      "image": "https://tracklinear.com/images/blog_header_4.webp",
+      "datePublished": "2026-06-03T08:00:00+08:00",
+      "dateModified": "2026-06-03T08:00:00+08:00",
+      "author": {
+        "@type": "Person",
+        "name": "Tiffany Woo"
+      },
+      "url": "https://tracklinear.com/blog-post-4.html"
+    },    {
+      "@type": "BlogPosting",
+      "headline": "How to Specify Magnetic Track Lighting for 5 Commercial Project Types",
+      "image": "https://tracklinear.com/images/blog_header_5.webp",
+      "datePublished": "2026-06-05T08:00:00+08:00",
+      "dateModified": "2026-06-05T08:00:00+08:00",
+      "author": {
+        "@type": "Person",
+        "name": "Tiffany Woo"
+      },
+      "url": "https://tracklinear.com/blog-post-5.html"
+    },    {
+      "@type": "BlogPosting",
+      "headline": "Case Study: How a Lisbon Boutique Hotel Used Magnetic Track Lighting to Unify Its Entire Guest Experience",
+      "image": "https://tracklinear.com/images/blog_header_6.webp",
+      "datePublished": "2026-06-07T08:00:00+08:00",
+      "dateModified": "2026-06-07T08:00:00+08:00",
+      "author": {
+        "@type": "Person",
+        "name": "Tiffany Woo"
+      },
+      "url": "https://tracklinear.com/blog-post-6.html"
+    },    {
+      "@type": "BlogPosting",
+      "headline": "Why Does a Magnetic Track Light Still Need a Driver If the Track Already Has a 48V Power Supply?",
+      "image": "https://tracklinear.com/images/blog_7_factory.webp",
+      "datePublished": "2026-06-10T08:00:00+08:00",
+      "dateModified": "2026-06-10T08:00:00+08:00",
+      "author": {
+        "@type": "Person",
+        "name": "Tiffany Woo"
+      },
+      "url": "https://tracklinear.com/blog-post-7.html"
+    },    {
+      "@type": "BlogPosting",
+      "headline": "Traditional Track Lighting vs 48V Magnetic Track Lighting: Which One Is Better for Your Project?",
+      "image": "https://tracklinear.com/images/blog_header_8.webp",
+      "datePublished": "2026-06-18T08:00:00+08:00",
+      "dateModified": "2026-06-18T08:00:00+08:00",
+      "author": {
+        "@type": "Person",
+        "name": "Tiffany Woo"
+      },
+      "url": "https://tracklinear.com/blog-post-8.html"
+    },    {
+      "@type": "BlogPosting",
+      "headline": "Surface, Recessed, or Trimless? Choose the Right Installation Method for Your Magnetic Track Lighting Project",
+      "image": "https://tracklinear.com/images/blog9_hero.webp",
+      "datePublished": "2026-06-20T08:00:00+08:00",
+      "dateModified": "2026-06-20T08:00:00+08:00",
+      "author": {
+        "@type": "Person",
+        "name": "Tiffany Woo"
+      },
+      "url": "https://tracklinear.com/blog-post-9.html"
+    },    {
+      "@type": "BlogPosting",
+      "headline": "Spot, Flood, Linear Flood, or Grille — A Practical Guide to Choosing the Right Beam Angle",
+      "image": "https://tracklinear.com/images/blog10_hero.webp",
+      "datePublished": "2026-06-22T08:00:00+08:00",
+      "dateModified": "2026-06-22T08:00:00+08:00",
+      "author": {
+        "@type": "Person",
+        "name": "Tiffany Woo"
+      },
+      "url": "https://tracklinear.com/blog-post-10.html"
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "BlogPosting",
+      "headline": "48V Track Load Planning: How Many Fixtures Per Run and How to Avoid a Costly Re-Work",
+      "image": "https://tracklinear.com/images/blog11_hero.webp",
+      "datePublished": "2026-06-24T08:00:00+08:00",
+      "dateModified": "2026-06-24T08:00:00+08:00",
+      "author": {
+        "@type": "Person",
+        "name": "Tiffany Woo"
+      },
+      "url": "https://tracklinear.com/blog-post-11.html"
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "BlogPosting",
+      "headline": "Stop Comparing Prices First: How Professional Buyers Evaluate Magnetic Track Lighting Suppliers",
+      "image": "https://tracklinear.com/images/blog15_hero.webp",
+      "datePublished": "2026-07-06T08:00:00+08:00",
+      "dateModified": "2026-07-06T08:00:00+08:00",
+      "author": { "@type": "Person", "name": "Tiffany Woo" },
+      "url": "https://tracklinear.com/buyers-handbook/how-professional-buyers-evaluate-suppliers.html"
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "BlogPosting",
+      "headline": "You're Probably Comparing Magnetic Track Lighting Systems Wrong — Here's What Actually Matters",
+      "image": "https://tracklinear.com/images/blog14_hero.webp",
+      "datePublished": "2026-07-03T08:00:00+08:00",
+      "dateModified": "2026-07-03T08:00:00+08:00",
+      "author": { "@type": "Person", "name": "Tiffany Woo" },
+      "url": "https://tracklinear.com/magnetic-track-lighting-buyers-handbook-chapter-1.html"
+    }
+  ]
+}
+</script>
+</head>
+<body>
+  <!-- Header (imported from main site) -->
+  <header>
+    <div class="container nav">
+      <a href="../index.html" class="brand">
+        <div class="logo">M</div>
+        <div>
+          <div class="brand-title">Tracklinear</div>
+          <div class="brand-sub">Lighting System</div>
+        </div>
+      </a>
+      <nav>
+        <a href="../index.html#system">System</a>
+        <div class="nav-dropdown">
+          <a href="#" class="dropdown-trigger">Product ▾</a>
+          <div class="dropdown-menu">
+            <div class="dropdown-col">
+              <div class="dropdown-label">Track Rails</div>
+              <a href="../tracks/20mm.html">20mm Track</a>
+              <a href="../tracks/23mm.html">23mm Track</a>
+              <a href="../tracks/35mm.html">35mm Track</a>
+            </div>
+            <div class="dropdown-col">
+              <div class="dropdown-label">Track Lights</div>
+              <a href="../lights/flood.html">Flood Light</a>
+              <a href="../lights/grid.html">Grille Light</a>
+              <a href="../lights/folding-grid.html">Folding Grille Light</a>
+              <a href="../lights/spot.html">Spot Light</a>
+              <a href="../lights/pendant.html">Pendant Light</a>
+            </div>
+          </div>
+        </div>
+        <a href="../index.html#installation">Installation</a>
+        <a href="../index.html#oem">OEM/ODM</a>
+        <a href="index.html" class="active">Blog</a>
+      </nav>
+      <a class="btn btn-dark" href="../index.html#contact">Contact →</a>
+      <button class="hamburger" onclick="toggleMobileMenu()">☰</button>
+    </div>
+    <!-- Mobile menu -->
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="../index.html#system">System</a>
+      <div class="mobile-group">
+        <div class="mobile-group-label">Track Rails</div>
+        <a href="../tracks/20mm.html">20mm Track</a>
+        <a href="../tracks/23mm.html">23mm Track</a>
+        <a href="../tracks/35mm.html">35mm Track</a>
+      </div>
+      <div class="mobile-group">
+        <div class="mobile-group-label">Track Lights</div>
+        <a href="../lights/flood.html">Flood Light</a>
+        <a href="../lights/grid.html">Grille Light</a>
+        <a href="../lights/folding-grid.html">Folding Grille Light</a>
+        <a href="../lights/spot.html">Spot Light</a>
+        <a href="../lights/pendant.html">Pendant Light</a>
+      </div>
+      <a href="../index.html#installation">Installation</a>
+      <a href="../index.html#oem">OEM/ODM</a>
+      <a href="index.html">Blog</a>
+      <a href="../index.html#contact" class="btn btn-dark" style="margin-top:12px;">Contact →</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-header">
+      <div class="container">
+        <div class="eyebrow">Tracklinear Journal</div>
+        <h1>Knowledge for <br>Lighting Professionals</h1>
+        <p>Technical guides, design trends, and practical insights for architects, contractors, and lighting specifiers working with magnetic track systems.</p>
+      </div>
+    </section>
+
+    <div class="container">
+      <div class="blog-grid">
+
+        <!-- Buyer's Handbook Chapter 2 — July 6, 2026 -->
+        <article class="blog-card" itemscope itemtype="https://schema.org/BlogPosting">
+          <meta itemprop="headline" content="Stop Comparing Prices First: How Professional Buyers Evaluate Magnetic Track Lighting Suppliers">
+          <meta itemprop="datePublished" content="2026-07-06T08:00:00+08:00">
+          <meta itemprop="author" content="Tiffany Woo">
+          <img class="blog-card-image" src="../images/blog15_hero.webp" alt="Professional buyer comparing two magnetic track lighting quotations on a desk" loading="lazy" itemprop="image">
+          <div class="blog-card-body">
+            <div class="blog-card-tag">Buyer's Handbook — Chapter 2</div>
+            <h2 class="blog-card-title" itemprop="name">Stop Comparing Prices First: How Professional Buyers Evaluate Magnetic Track Lighting Suppliers</h2>
+            <div class="blog-card-date">July 6, 2026</div>
+            <p class="blog-card-excerpt" itemprop="description">Chapter 2 of the Buyer's Handbook. A 5-point engineering elimination system for evaluating magnetic track lighting suppliers — PASS/FAIL checkpoints, signal triggers, and a decision filter that tells you when to eliminate before pricing.</p>
+            <a href="../buyers-handbook/how-professional-buyers-evaluate-suppliers.html" class="blog-card-link" itemprop="url">Read Chapter 2 →</a>
+          </div>
+        </article>
+
+        <!-- Blog Post 14 — July 3, 2026 (Buyer's Handbook Chapter 1) -->
+        <article class="blog-card" itemscope itemtype="https://schema.org/BlogPosting">
+          <meta itemprop="headline" content="You're Probably Comparing Magnetic Track Lighting Systems Wrong — Here's What Actually Matters">
+          <meta itemprop="datePublished" content="2026-07-03T08:00:00+08:00">
+          <meta itemprop="author" content="Tiffany Woo">
+          <img class="blog-card-image" src="../images/blog14_hero.webp" alt="Professional buyer inspecting magnetic track lighting quality details on a workbench" loading="lazy" itemprop="image">
+          <div class="blog-card-body">
+            <div class="blog-card-tag">Buyer's Handbook — Chapter 1</div>
+            <h2 class="blog-card-title" itemprop="name">You're Probably Comparing Magnetic Track Lighting Systems Wrong — Here's What Actually Matters</h2>
+            <div class="blog-card-date">July 3, 2026</div>
+            <p class="blog-card-excerpt" itemprop="description">The Magnetic Track Lighting Buyer's Handbook Chapter 1. 10 engineering details that determine whether your project succeeds or becomes a costly lesson. Includes Red Flag thresholds, supplier comparison table, and practical checklist.</p>
+            <a href="../magnetic-track-lighting-buyers-handbook-chapter-1.html" class="blog-card-link" itemprop="url">Read Chapter 1 →</a>
+          </div>
+        </article>
+
+        <!-- Blog Post 13 — June 29, 2026 -->
+        <article class="blog-card" itemscope itemtype="https://schema.org/BlogPosting">
+          <meta itemprop="headline" content="Why That Cheap Magnetic Track Could Cost You More in the Long Run: 3 Hidden Quality Factors Every B2B Buyer Should Know">
+          <meta itemprop="datePublished" content="2026-06-29T08:00:00+08:00">
+          <meta itemprop="author" content="Tiffany Woo">
+          <img class="blog-card-image" src="../images/blog13_hero.webp" alt="Two magnetic track rails side by side looking similar but priced differently illustrating hidden quality differences" loading="lazy" itemprop="image">
+          <div class="blog-card-body">
+            <div class="blog-card-tag">Product Knowledge</div>
+            <h2 class="blog-card-title" itemprop="name">Why That Cheap Magnetic Track Could Cost You More in the Long Run</h2>
+            <div class="blog-card-date">June 29, 2026</div>
+            <p class="blog-card-excerpt" itemprop="description">Three hidden factors — conductive strip material, aluminum weight per meter, and surface finish — determine whether a magnetic track will perform over time. Choose wisely.</p>
+            <a href="../blog-post-13.html" class="blog-card-link" itemprop="url">Read Article →</a>
+          </div>
+        </article>
+
+        <!-- Blog Post 12 — June 25, 2026 -->
+        <article class="blog-card" itemscope itemtype="https://schema.org/BlogPosting">
+          <meta itemprop="headline" content="Where Should You Place the Driver for 48V Magnetic Track Lighting? Power Feed and Circuit Planning Guide">
+          <meta itemprop="datePublished" content="2026-06-25T08:00:00+08:00">
+          <meta itemprop="author" content="Tiffany Woo">
+          <img class="blog-card-image" src="../images/blog12_hero.webp" alt="48V magnetic track lighting driver placement ceiling with access panel for maintenance" loading="lazy" itemprop="image">
+          <div class="blog-card-body">
+            <div class="blog-card-tag">Project Guide</div>
+            <h2 class="blog-card-title" itemprop="name">Where Should You Place the Driver for 48V Magnetic Track Lighting?</h2>
+            <div class="blog-card-date">June 25, 2026</div>
+            <p class="blog-card-excerpt" itemprop="description">Plan driver position, power feed points, and circuit layout before ceiling work starts — avoid difficult maintenance access and expensive rework in commercial 48V track projects.</p>
+            <a href="../blog-post-12.html" class="blog-card-link" itemprop="url">Read Article →</a>
+          </div>
+        </article>
+
+        <!-- Blog Post 11 — June 24, 2026 -->
+        <article class="blog-card" itemscope itemtype="https://schema.org/BlogPosting">
+          <meta itemprop="headline" content="48V Track Load Planning: How Many Fixtures Per Run and How to Avoid a Costly Re-Work">
+          <meta itemprop="datePublished" content="2026-06-24T08:00:00+08:00">
+          <meta itemprop="author" content="Tiffany Woo">
+          <img class="blog-card-image" src="../images/blog11_hero.webp" alt="48V magnetic track lighting installation with multiple LED fixtures along a single track run showing power feed connection" loading="lazy" itemprop="image">
+          <div class="blog-card-body">
+            <div class="blog-card-tag">Technical Guide</div>
+            <h2 class="blog-card-title" itemprop="name">48V Track Load Planning: How Many Fixtures Per Run and How to Avoid a Costly Re-Work</h2>
+            <div class="blog-card-date">June 24, 2026</div>
+            <p class="blog-card-excerpt" itemprop="description">Learn how to plan 48V magnetic track power load — voltage drop, feed position, driver headroom and real-world configuration examples for contractors and specifiers.</p>
+            <a href="../blog-post-11.html" class="blog-card-link" itemprop="url">Read Article →</a>
+          </div>
+        </article>
+
+        <!-- Blog Post 10 — June 22, 2026 -->
+        <article class="blog-card" itemscope itemtype="https://schema.org/BlogPosting">
+          <meta itemprop="headline" content="Spot, Flood, Linear Flood, or Grille — A Practical Guide to Choosing the Right Beam Angle for Your Magnetic Track Lighting Project">
+          <meta itemprop="datePublished" content="2026-06-22T08:00:00+08:00">
+          <meta itemprop="author" content="Tiffany Woo">
+          <img class="blog-card-image" src="../images/blog10_hero.webp" alt="Magnetic track lighting modules with different beam angles including spotlight flood linear flood and grille types in a commercial interior setting" loading="lazy" itemprop="image">
+          <div class="blog-card-body">
+            <div class="blog-card-tag">Module Selection</div>
+            <h2 class="blog-card-title" itemprop="name">Spot, Flood, Linear Flood, or Grille — A Practical Guide to Choosing the Right Beam Angle for Your Magnetic Track Lighting Project</h2>
+            <div class="blog-card-date">June 22, 2026</div>
+            <p class="blog-card-excerpt" itemprop="description">Compare spotlight, flood, linear flood and grille modules for magnetic track lighting. Find the right beam angle for retail, hotel, office and gallery projects.</p>
+            <a href="../blog-post-10.html" class="blog-card-link" itemprop="url">Read Article →</a>
+          </div>
+        </article>
+
+        <!-- Blog Post 9 — June 20, 2026 -->
+        <article class="blog-card" itemscope itemtype="https://schema.org/BlogPosting">
+          <meta itemprop="headline" content="Surface, Recessed, or Trimless? Choose the Right Installation Method for Your Magnetic Track Lighting Project">
+          <meta itemprop="datePublished" content="2026-06-20T08:00:00+08:00">
+          <meta itemprop="author" content="Tiffany Woo">
+          <img class="blog-card-image" src="../images/blog9_hero.webp" alt="Surface-mounted recessed and trimless 48V magnetic track lighting installation comparison for commercial and residential projects" loading="lazy" itemprop="image">
+          <div class="blog-card-body">
+            <div class="blog-card-tag">Installation Guide</div>
+            <h2 class="blog-card-title" itemprop="name">Surface, Recessed, or Trimless? Choose the Right Installation Method for Your Magnetic Track Lighting Project</h2>
+            <div class="blog-card-date">June 20, 2026</div>
+            <p class="blog-card-excerpt" itemprop="description">Compare surface-mounted, recessed and trimless installation for 48V magnetic track lighting. Find the right fit for concrete ceilings, drop ceilings and luxury interiors.</p>
+            <a href="../blog-post-9.html" class="blog-card-link" itemprop="url">Read Article →</a>
+          </div>
+        </article>
+
+        <!-- Blog Post 8 — June 18, 2026 -->
+        <article class="blog-card" itemscope itemtype="https://schema.org/BlogPosting">
+          <meta itemprop="headline" content="Track Lighting vs Magnetic Track Lighting: Which One Fits Your Project?">
+          <meta itemprop="datePublished" content="2026-06-18T08:00:00+08:00">
+          <meta itemprop="author" content="Tiffany Woo">
+          <img class="blog-card-image" src="../images/blog_header_8.webp" alt="Side-by-side comparison of traditional track lighting and modern 48V magnetic track lighting" loading="lazy" itemprop="image">
+          <div class="blog-card-body">
+            <div class="blog-card-tag">Application Guide</div>
+            <h2 class="blog-card-title" itemprop="name">Track Lighting vs Magnetic Track Lighting: Which One Fits Your Project?</h2>
+            <div class="blog-card-date">June 18, 2026</div>
+            <p class="blog-card-excerpt" itemprop="description">A practical guide for mid-to-high-end interiors — when to choose traditional 240V track and when magnetic 48V track makes more sense. Includes real customer question from a Turkish wholesaler.</p>
+            <a href="../blog-post-8.html" class="blog-card-link" itemprop="url">Read Article →</a>
+          </div>
+        </article>
+
+        <!-- Blog Post 7 — June 17, 2026 -->
+        <article class="blog-card" itemscope itemtype="https://schema.org/BlogPosting">
+          <meta itemprop="headline" content="If the Track Already Has a Power Supply, Why Does the Light Module Still Need a Driver?">
+          <meta itemprop="datePublished" content="2026-06-17T08:00:00+08:00">
+          <meta itemprop="author" content="Tiffany Woo">
+          <img class="blog-card-image" src="../images/blog_header_7.webp" alt="Magnetic track module with built-in driver and 48V power supply system diagram" loading="lazy" itemprop="image">
+          <div class="blog-card-body">
+            <div class="blog-card-tag">Product Knowledge</div>
+            <h2 class="blog-card-title" itemprop="name">If the Track Already Has a Power Supply, Why Does the Light Module Still Need a Driver?</h2>
+            <div class="blog-card-date">June 17, 2026</div>
+            <p class="blog-card-excerpt" itemprop="description">The magnetic track already has 48V power. So why does the light module need a built-in driver? A clear explanation for distributors and contractors on the difference between power supply and driver.</p>
+            <a href="../blog-post-7.html" class="blog-card-link" itemprop="url">Read Article →</a>
+          </div>
+        </article>
+
+        <!-- Blog Post 6 — June 7, 2026 -->
+        <article class="blog-card" itemscope itemtype="https://schema.org/BlogPosting">
+          <meta itemprop="headline" content="Case Study: How a Lisbon Boutique Hotel Used Magnetic Track Lighting to Unify Its Entire Guest Experience">
+          <meta itemprop="datePublished" content="2026-06-07T08:00:00+08:00">
+          <meta itemprop="author" content="Tiffany Woo">
+          <img class="blog-card-image" src="../images/blog_header_6.webp" alt="Boutique hotel lobby with warm magnetic track lighting highlighting textured walls and reception desk" loading="lazy" itemprop="image">
+          <div class="blog-card-body">
+            <div class="blog-card-tag">Project Case Study</div>
+            <h2 class="blog-card-title" itemprop="name">Case Study: How a Lisbon Boutique Hotel Used Magnetic Track Lighting to Unify Its Entire Guest Experience</h2>
+            <div class="blog-card-date">June 7, 2026</div>
+            <p class="blog-card-excerpt" itemprop="description">Real project story: how a 42-room Lisbon hotel replaced fragmented lighting with one Tracklinear system — and improved guest ambiance scores from 3.8 to 4.7.</p>
+            <a href="../blog-post-6.html" class="blog-card-link" itemprop="url">Read Article →</a>
+          </div>
+        </article>
+
+        <!-- Blog Post 5 — June 5, 2026 -->
+        <article class="blog-card" itemscope itemtype="https://schema.org/BlogPosting">
+          <meta itemprop="headline" content="How to Specify Magnetic Track Lighting for 5 Commercial Project Types">
+          <meta itemprop="datePublished" content="2026-06-05T08:00:00+08:00">
+          <meta itemprop="author" content="Tiffany Woo">
+          <img class="blog-card-image" src="../images/blog_header_5.webp" alt="Commercial magnetic track lighting installation in hotel lobby retail store and art gallery" loading="lazy" itemprop="image">
+          <div class="blog-card-body">
+            <div class="blog-card-tag">Application Guide</div>
+            <h2 class="blog-card-title" itemprop="name">How to Specify Magnetic Track Lighting for 5 Commercial Project Types</h2>
+            <div class="blog-card-date">June 5, 2026</div>
+            <p class="blog-card-excerpt" itemprop="description">Practical specification guide for architects and contractors: hotel, retail, gallery, office, and restaurant magnetic track lighting design with module recommendations.</p>
+            <a href="../blog-post-5.html" class="blog-card-link" itemprop="url">Read Article →</a>
+          </div>
+        </article>
+
+        <!-- Blog Post 4 — June 3, 2026 -->
+        <article class="blog-card" itemscope itemtype="https://schema.org/BlogPosting">
+          <meta itemprop="headline" content="Beyond the Lumen: Why Color Fidelity is the True Measure of Premium Lighting">
+          <meta itemprop="datePublished" content="2026-06-03T08:00:00+08:00">
+          <meta itemprop="author" content="Tiffany Woo">
+          <img class="blog-card-image" src="../images/blog_header_4.webp" alt="High CRI 90 plus magnetic track spotlight illuminating artwork in luxury gallery" loading="lazy" itemprop="image">
+          <div class="blog-card-body">
+            <div class="blog-card-tag">Technical Excellence</div>
+            <h2 class="blog-card-title" itemprop="name">Beyond the Lumen: Why Color Fidelity is the True Measure of Premium Lighting</h2>
+            <div class="blog-card-date">June 3, 2026</div>
+            <p class="blog-card-excerpt" itemprop="description">Why CRI 90+ and R9 values matter in premium magnetic track lighting. A technical guide for architects on color fidelity standards.</p>
+            <a href="../blog-post-4.html" class="blog-card-link" itemprop="url">Read Article →</a>
+          </div>
+        </article>
+
+        <!-- Blog Post 3 — June 1, 2026 -->
+        <article class="blog-card" itemscope itemtype="https://schema.org/BlogPosting">
+          <meta itemprop="headline" content="The Art of Invisible Lighting: Why Trimless is the New Standard">
+          <meta itemprop="datePublished" content="2026-06-01T08:00:00+08:00">
+          <meta itemprop="author" content="Tiffany Woo">
+          <img class="blog-card-image" src="../images/blog_header_3.webp" alt="Trimless recessed magnetic track lighting integrated into luxury ceiling design" loading="lazy" itemprop="image">
+          <div class="blog-card-body">
+            <div class="blog-card-tag">Design Trends 2026</div>
+            <h2 class="blog-card-title" itemprop="name">The Art of Invisible Lighting: Why Trimless is the New Standard</h2>
+            <div class="blog-card-date">June 1, 2026</div>
+            <p class="blog-card-excerpt" itemprop="description">Explore the architectural purity of trimless magnetic track lighting and why invisible design is becoming the defining trend for luxury interiors.</p>
+            <a href="../blog-post-3.html" class="blog-card-link" itemprop="url">Read Article →</a>
+          </div>
+        </article>
+
+        <!-- Blog Post 2 — May 30, 2026 -->
+        <article class="blog-card" itemscope itemtype="https://schema.org/BlogPosting">
+          <meta itemprop="headline" content="Mastering Smart Lighting Control: DALI, 0-10V, and Wireless Protocols">
+          <meta itemprop="datePublished" content="2026-05-30T08:00:00+08:00">
+          <meta itemprop="author" content="Tiffany Woo">
+          <img class="blog-card-image" src="../images/blog_header_2.webp" alt="Smart lighting control protocols DALI 0-10V Zigbee Casambi comparison diagram" loading="lazy" itemprop="image">
+          <div class="blog-card-body">
+            <div class="blog-card-tag">Smart Solutions</div>
+            <h2 class="blog-card-title" itemprop="name">Mastering Smart Lighting Control: DALI, 0-10V, and Wireless Protocols</h2>
+            <div class="blog-card-date">May 30, 2026</div>
+            <p class="blog-card-excerpt" itemprop="description">A deep technical guide for architects and contractors on choosing the right control protocol — wired vs wireless, dimming precision, and project scalability.</p>
+            <a href="../blog-post-2.html" class="blog-card-link" itemprop="url">Read Article →</a>
+          </div>
+        </article>
+
+        <!-- Blog Post 1 — May 28, 2026 -->
+        <article class="blog-card" itemscope itemtype="https://schema.org/BlogPosting">
+          <meta itemprop="headline" content="48V vs. 24V Magnetic Track Lighting: Which one is right for your project?">
+          <meta itemprop="datePublished" content="2026-05-28T08:00:00+08:00">
+          <meta itemprop="author" content="Tiffany Woo">
+          <img class="blog-card-image" src="../images/blog_header_1.webp" alt="48V versus 24V magnetic track lighting system comparison for commercial projects" loading="lazy" itemprop="image">
+          <div class="blog-card-body">
+            <div class="blog-card-tag">Technical Insight</div>
+            <h2 class="blog-card-title" itemprop="name">48V vs. 24V Magnetic Track Lighting: Which one is right for your project?</h2>
+            <div class="blog-card-date">May 28, 2026</div>
+            <p class="blog-card-excerpt" itemprop="description">A professional technical comparison of 48V and 24V systems covering voltage drop, efficiency, safety, and market standards for commercial and residential projects.</p>
+            <a href="../blog-post-1.html" class="blog-card-link" itemprop="url">Read Article →</a>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </main>
 <a href="#" class="back-to-top" aria-label="Back to top">↑</a>
 
-   658|
-   659|<footer>
-   660|  <div class="container">
-   661|    <div class="footer-grid">
-   662|      <div class="footer-brand">
-   663|        <div class="footer-logo">Tracklinear</div>
-   664|        <p class="footer-tagline">One-stop magnetic track lighting system for B2B projects worldwide.</p>
-   665|        <div class="footer-contact">
-   666|          <a href="mailto:info@tracklinear.com">info@tracklinear.com</a>
-   667|          <span class="footer-sep">|</span>
-   668|          <a href="https://wa.me/8613450802291" target="_blank" rel="noopener">WhatsApp: +86 134 5080 2291</a>
-   669|        </div>
-   670|      </div>
-   671|      <div class="footer-resources">
-   672|        <span class="footer-label">Resources</span>
-   673|        <div class="footer-links">
-   674|          <a href="mailto:info@tracklinear.com?subject=Catalogue%20Request">Catalogue</a>
-   675|          <a href="mailto:info@tracklinear.com?subject=Installation%20Guide%20Request">Installation Guide</a>
-   676|          <a href="mailto:info@tracklinear.com?subject=Datasheet%20Request">Datasheet</a>
-   677|          <a href="mailto:info@tracklinear.com?subject=Driver%20Matching%20Guide%20Request">Driver Matching Guide</a>
-   678|          <a href="/blog/">Blog</a>
-   679|          <a href="/buyers-handbook/">Buyer's Handbook</a>
-   680|        </div>
-   681|      </div>
-   682|    </div>
-   683|    <div class="footer-bottom">
-   684|      <span>&copy; 2026 Tracklinear. All rights reserved.</span>
-   685|    </div>
-   686|  </div>
-   687|</footer>
-   688|
-   689|  <script>
-   690|    function toggleMobileMenu() {
-   691|      document.getElementById('mobileMenu').classList.toggle('open');
-   692|    }
-   693|    document.querySelector('.hamburger')?.addEventListener('click', toggleMobileMenu);
-   694|  </script>
-   695|
-   696|  <!-- Mobile WhatsApp Float -->
-   697|  <a href="https://wa.me/8613450802291" class="mobile-wa-float" target="_blank" rel="noopener" aria-label="Chat on WhatsApp"><svg viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg" width="24" height="24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg></a>
-   698|</body>
-   699|</html>
-   700|
+
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="footer-logo">Tracklinear</div>
+        <p class="footer-tagline">One-stop magnetic track lighting system for B2B projects worldwide.</p>
+        <div class="footer-contact">
+          <a href="mailto:info@tracklinear.com">info@tracklinear.com</a>
+          <span class="footer-sep">|</span>
+          <a href="https://wa.me/8613450802291" target="_blank" rel="noopener">WhatsApp: +86 134 5080 2291</a>
+        </div>
+      </div>
+      <div class="footer-resources">
+        <span class="footer-label">Resources</span>
+        <div class="footer-links">
+          <a href="mailto:info@tracklinear.com?subject=Catalogue%20Request">Catalogue</a>
+          <a href="mailto:info@tracklinear.com?subject=Installation%20Guide%20Request">Installation Guide</a>
+          <a href="mailto:info@tracklinear.com?subject=Datasheet%20Request">Datasheet</a>
+          <a href="mailto:info@tracklinear.com?subject=Driver%20Matching%20Guide%20Request">Driver Matching Guide</a>
+          <a href="/blog/">Blog</a>
+          <a href="/buyers-handbook/">Buyer's Handbook</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; 2026 Tracklinear. All rights reserved.</span>
+    </div>
+  </div>
+</footer>
+
+  <script>
+    function toggleMobileMenu() {
+      document.getElementById('mobileMenu').classList.toggle('open');
+    }
+    document.querySelector('.hamburger')?.addEventListener('click', toggleMobileMenu);
+  </script>
+
+  <!-- Mobile WhatsApp Float -->
+  <a href="https://wa.me/8613450802291" class="mobile-wa-float" target="_blank" rel="noopener" aria-label="Chat on WhatsApp"><svg viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg" width="24" height="24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg></a>
+</body>
+</html>

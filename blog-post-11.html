@@ -1,208 +1,208 @@
-     1|<!DOCTYPE html>
-     2|<html lang="en">
-     3|<head>
-     4|  <meta charset="UTF-8">
-     5|  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     6|  <meta property="og:title" content="How Many Lights Can You Install on a 48V Magnetic Track Without Voltage Drop?">
-     7|  <meta property="og:description" content="Before installing a 48V magnetic track system, the wrong load or power feed position can cause dim fixtures, unstable lighting, and expensive ceiling rework. This guide explains how to plan fixture wattage, driver capacity, and feed points before installation.">
-     8|  <meta property="og:url" content="https://tracklinear.com/blog-post-11.html">
-     9|  <meta property="og:type" content="article">
-    10|  <meta property="og:image" content="https://tracklinear.com/images/blog11_hero.webp">
-    11|  <meta property="og:site_name" content="Tracklinear Lighting">
-    12|  <meta name="twitter:card" content="summary_large_image">
-    13|  <meta name="twitter:title" content="How Many Lights Can You Install on a 48V Magnetic Track Without Voltage Drop?">
-    14|  <meta name="twitter:description" content="Before installing a 48V magnetic track system, the wrong load or power feed position can cause dim fixtures, unstable lighting, and expensive ceiling rework. This guide explains how to plan fixture wattage, driver capacity, and feed points before installation.">
-    15|  <meta name="twitter:image" content="https://tracklinear.com/images/blog11_hero.webp">
-    16|
-    17|  <meta name="theme-color" content="#1a1a1a">
-    18|  <link rel="canonical" href="https://tracklinear.com/blog-post-11.html">
-    19|  <link rel="dns-prefetch" href="https://fonts.googleapis.com">
-    20|  <link rel="dns-prefetch" href="https://fonts.gstatic.com">
-    21|  <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
-    22|  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    23|
-    24|  <title>How Many Lights Can You Install on a 48V Magnetic Track Without Voltage Drop? | Tracklinear</title>
-    25|  <meta name="description" content="Before installing a 48V magnetic track system, the wrong load or power feed position can cause dim fixtures, unstable lighting, and expensive ceiling rework. This guide explains how to plan fixture wattage, driver capacity, and feed points before installation.">
-    26|  <style>
-    27|    :root {
-    28|      --bg: #f5f3ef;
-    29|      --dark: #151515;
-    30|      --text: #161616;
-    31|      --muted: #666;
-    32|      --gold: #b08a57;
-    33|      --gold-light: #e6c08c;
-    34|    }
-    35|    body {
-    36|      margin: 0;
-    37|      font-family: Inter, system-ui, sans-serif;
-    38|      background: var(--bg);
-    39|      color: var(--text);
-    40|      line-height: 1.6;
-    41|    }
-    42|    .container { max-width: 800px; margin: 0 auto; padding: 0 28px; }
-    43|    header {
-    44|      padding: 24px 0;
-    45|      border-bottom: 1px solid rgba(0,0,0,.06);
-    46|      background: white;
-    47|    }
-    48|    .nav { display: flex; align-items: center; justify-content: space-between; }
-    49|    .logo { font-weight: 800; font-size: 20px; text-decoration: none; color: var(--dark); }
-    50|    .back-link { font-size: 14px; font-weight: 600; color: var(--gold); text-decoration: none; }
-    51|
-    52|    .breadcrumb {
-    53|      font-size: 13px;
-    54|      color: var(--muted);
-    55|      margin: 28px 0;
-    56|    }
-    57|    .breadcrumb a { color: var(--gold); text-decoration: none; }
-    58|
-    59|    h1 { font-size: 36px; line-height: 1.2; margin: 8px 0 16px; font-weight: 800; }
-    60|    .meta {
-    61|      font-size: 14px;
-    62|      color: var(--muted);
-    63|      display: flex;
-    64|      gap: 12px;
-    65|      align-items: center;
-    66|      flex-wrap: wrap;
-    67|      margin-bottom: 32px;
-    68|    }
-    69|    .tag {
-    70|      display: inline-block;
-    71|      background: var(--gold);
-    72|      color: white;
-    73|      font-size: 11px;
-    74|      font-weight: 700;
-    75|      text-transform: uppercase;
-    76|      letter-spacing: 1px;
-    77|      padding: 4px 12px;
-    78|      border-radius: 4px;
-    79|    }
-    80|
-    81|    .img-full {
-    82|      width: 100%;
-    83|      border-radius: 16px;
-    84|      margin: 28px 0;
-    85|      box-shadow: 0 8px 30px rgba(0,0,0,0.08);
-    86|    }
-    87|    .img-caption {
-    88|      font-size: 13px;
-    89|      color: #999;
-    90|      text-align: center;
-    91|      margin: -20px 0 32px;
-    92|      font-style: italic;
-    93|    }
-    94|
-    95|    blockquote {
-    96|      border-left: 4px solid var(--gold);
-    97|      margin: 32px 0;
-    98|      padding: 20px 28px;
-    99|      background: white;
-   100|      border-radius: 0 16px 16px 0;
-   101|      font-size: 18px;
-   102|      font-weight: 500;
-   103|      box-shadow: 0 4px 20px rgba(0,0,0,.04);
-   104|      font-style: italic;
-   105|    }
-   106|
-   107|    h2 { font-size: 26px; margin: 48px 0 16px; font-weight: 700; }
-   108|    h3 { font-size: 20px; margin: 32px 0 12px; font-weight: 700; color: var(--dark); }
-   109|    p { font-size: 16px; line-height: 1.75; color: #2a2a2a; margin: 0 0 20px; }
-   110|    ul { padding-left: 20px; margin: 16px 0; }
-   111|    ul li { font-size: 15px; line-height: 1.7; margin-bottom: 6px; }
-   112|
-   113|    .quick-answer {
-   114|      background: var(--dark);
-   115|      color: white;
-   116|      padding: 32px;
-   117|      border-radius: 20px;
-   118|      margin: 28px 0;
-   119|    }
-   120|    .quick-answer h3 {
-   121|      color: var(--gold-light);
-   122|      margin: 0 0 16px;
-   123|      font-size: 20px;
-   124|    }
-   125|    .quick-answer p {
-   126|      color: rgba(255,255,255,0.85);
-   127|      font-size: 15px;
-   128|      line-height: 1.7;
-   129|      margin: 0 0 12px;
-   130|    }
-   131|    .quick-answer p:last-child { margin-bottom: 0; }
-   132|    .quick-answer .label { color: var(--gold-light); font-weight: 700; }
-   133|
-   134|    .spec-table {
-   135|      width: 100%; border-collapse: collapse; margin: 28px 0;
-   136|      background: white; border-radius: 16px; overflow: hidden; box-shadow: 0 4px 20px rgba(0,0,0,.05);
-   137|    }
-   138|    .spec-table th, .spec-table td { padding: 14px; text-align: left; border-bottom: 1px solid #eee; font-size: 14px; }
-   139|    .spec-table th { background: var(--dark); color: white; font-size: 13px; text-transform: uppercase; letter-spacing: .5px; }
-   140|    .spec-table tr:last-child td { border-bottom: none; }
-   141|
-   142|    .faq {
-   143|      margin: 40px 0;
-   144|      background: white;
-   145|      border-radius: 20px;
-   146|      padding: 32px;
-   147|      box-shadow: 0 4px 20px rgba(0,0,0,.04);
-   148|    }
-   149|    .faq h2 { margin-top: 0; font-size: 24px; }
-   150|    .faq-item {
-   151|      border-bottom: 1px solid #eee;
-   152|      padding: 20px 0;
-   153|    }
-   154|    .faq-item:last-child { border-bottom: none; }
-   155|    .faq-q {
-   156|      font-weight: 700;
-   157|      font-size: 16px;
-   158|      margin-bottom: 8px;
-   159|      color: var(--dark);
-   160|    }
-   161|    .faq-a {
-   162|      font-size: 14px;
-   163|      color: var(--muted);
-   164|      line-height: 1.7;
-   165|    }
-   166|
-   167|    .cta-box {
-   168|      background: var(--dark); color: white; padding: 40px; border-radius: 28px; margin-top: 40px;
-   169|    }
-   170|    .cta-box h3 { color: var(--gold-light); margin-top: 0; font-size: 22px; }
-   171|    .cta-box p { color: rgba(255,255,255,0.7); font-size: 16px; }
-   172|    .cta-box .btn {
-   173|      display: inline-block;
-   174|      background: var(--gold);
-   175|      color: white;
-   176|      padding: 14px 32px;
-   177|      border-radius: 8px;
-   178|      text-decoration: none;
-   179|      font-weight: 600;
-   180|      margin-top: 12px;
-   181|    }
-   182|
-   183|    .related { margin-top: 60px; }
-   184|    .related h3 { font-size: 20px; margin-bottom: 16px; }
-   185|    .related a {
-   186|      display: block;
-   187|      padding: 16px 20px;
-   188|      background: white;
-   189|      border-radius: 12px;
-   190|      text-decoration: none;
-   191|      color: var(--text);
-   192|      margin-bottom: 8px;
-   193|      font-weight: 500;
-   194|      box-shadow: 0 2px 12px rgba(0,0,0,.04);
-   195|      transition: box-shadow .2s;
-   196|    }
-   197|    .related a:hover { box-shadow: 0 4px 20px rgba(0,0,0,.08); }
-   198|    .related a span { color: var(--muted); font-weight: 400; font-size: 13px; display: block; margin-top: 2px; }
-   199|
-   200|    footer { background: #111; color: white; padding: 60px 0; margin-top: 80px; }
-   201|    footer .container { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 16px; }
-   202|    footer a { color: rgba(255,255,255,.5); text-decoration: none; font-size: 14px; }
-   203|    footer a:hover { color: white; }
-   204|  
-   205|        html { scroll-behavior: smooth; }
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta property="og:title" content="How Many Lights Can You Install on a 48V Magnetic Track Without Voltage Drop?">
+  <meta property="og:description" content="Before installing a 48V magnetic track system, the wrong load or power feed position can cause dim fixtures, unstable lighting, and expensive ceiling rework. This guide explains how to plan fixture wattage, driver capacity, and feed points before installation.">
+  <meta property="og:url" content="https://tracklinear.com/blog-post-11.html">
+  <meta property="og:type" content="article">
+  <meta property="og:image" content="https://tracklinear.com/images/blog11_hero.webp">
+  <meta property="og:site_name" content="Tracklinear Lighting">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="How Many Lights Can You Install on a 48V Magnetic Track Without Voltage Drop?">
+  <meta name="twitter:description" content="Before installing a 48V magnetic track system, the wrong load or power feed position can cause dim fixtures, unstable lighting, and expensive ceiling rework. This guide explains how to plan fixture wattage, driver capacity, and feed points before installation.">
+  <meta name="twitter:image" content="https://tracklinear.com/images/blog11_hero.webp">
+
+  <meta name="theme-color" content="#1a1a1a">
+  <link rel="canonical" href="https://tracklinear.com/blog-post-11.html">
+  <link rel="dns-prefetch" href="https://fonts.googleapis.com">
+  <link rel="dns-prefetch" href="https://fonts.gstatic.com">
+  <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <title>How Many Lights Can You Install on a 48V Magnetic Track Without Voltage Drop? | Tracklinear</title>
+  <meta name="description" content="Before installing a 48V magnetic track system, the wrong load or power feed position can cause dim fixtures, unstable lighting, and expensive ceiling rework. This guide explains how to plan fixture wattage, driver capacity, and feed points before installation.">
+  <style>
+    :root {
+      --bg: #f5f3ef;
+      --dark: #151515;
+      --text: #161616;
+      --muted: #666;
+      --gold: #b08a57;
+      --gold-light: #e6c08c;
+    }
+    body {
+      margin: 0;
+      font-family: Inter, system-ui, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+    .container { max-width: 800px; margin: 0 auto; padding: 0 28px; }
+    header {
+      padding: 24px 0;
+      border-bottom: 1px solid rgba(0,0,0,.06);
+      background: white;
+    }
+    .nav { display: flex; align-items: center; justify-content: space-between; }
+    .logo { font-weight: 800; font-size: 20px; text-decoration: none; color: var(--dark); }
+    .back-link { font-size: 14px; font-weight: 600; color: var(--gold); text-decoration: none; }
+
+    .breadcrumb {
+      font-size: 13px;
+      color: var(--muted);
+      margin: 28px 0;
+    }
+    .breadcrumb a { color: var(--gold); text-decoration: none; }
+
+    h1 { font-size: 36px; line-height: 1.2; margin: 8px 0 16px; font-weight: 800; }
+    .meta {
+      font-size: 14px;
+      color: var(--muted);
+      display: flex;
+      gap: 12px;
+      align-items: center;
+      flex-wrap: wrap;
+      margin-bottom: 32px;
+    }
+    .tag {
+      display: inline-block;
+      background: var(--gold);
+      color: white;
+      font-size: 11px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      padding: 4px 12px;
+      border-radius: 4px;
+    }
+
+    .img-full {
+      width: 100%;
+      border-radius: 16px;
+      margin: 28px 0;
+      box-shadow: 0 8px 30px rgba(0,0,0,0.08);
+    }
+    .img-caption {
+      font-size: 13px;
+      color: #999;
+      text-align: center;
+      margin: -20px 0 32px;
+      font-style: italic;
+    }
+
+    blockquote {
+      border-left: 4px solid var(--gold);
+      margin: 32px 0;
+      padding: 20px 28px;
+      background: white;
+      border-radius: 0 16px 16px 0;
+      font-size: 18px;
+      font-weight: 500;
+      box-shadow: 0 4px 20px rgba(0,0,0,.04);
+      font-style: italic;
+    }
+
+    h2 { font-size: 26px; margin: 48px 0 16px; font-weight: 700; }
+    h3 { font-size: 20px; margin: 32px 0 12px; font-weight: 700; color: var(--dark); }
+    p { font-size: 16px; line-height: 1.75; color: #2a2a2a; margin: 0 0 20px; }
+    ul { padding-left: 20px; margin: 16px 0; }
+    ul li { font-size: 15px; line-height: 1.7; margin-bottom: 6px; }
+
+    .quick-answer {
+      background: var(--dark);
+      color: white;
+      padding: 32px;
+      border-radius: 20px;
+      margin: 28px 0;
+    }
+    .quick-answer h3 {
+      color: var(--gold-light);
+      margin: 0 0 16px;
+      font-size: 20px;
+    }
+    .quick-answer p {
+      color: rgba(255,255,255,0.85);
+      font-size: 15px;
+      line-height: 1.7;
+      margin: 0 0 12px;
+    }
+    .quick-answer p:last-child { margin-bottom: 0; }
+    .quick-answer .label { color: var(--gold-light); font-weight: 700; }
+
+    .spec-table {
+      width: 100%; border-collapse: collapse; margin: 28px 0;
+      background: white; border-radius: 16px; overflow: hidden; box-shadow: 0 4px 20px rgba(0,0,0,.05);
+    }
+    .spec-table th, .spec-table td { padding: 14px; text-align: left; border-bottom: 1px solid #eee; font-size: 14px; }
+    .spec-table th { background: var(--dark); color: white; font-size: 13px; text-transform: uppercase; letter-spacing: .5px; }
+    .spec-table tr:last-child td { border-bottom: none; }
+
+    .faq {
+      margin: 40px 0;
+      background: white;
+      border-radius: 20px;
+      padding: 32px;
+      box-shadow: 0 4px 20px rgba(0,0,0,.04);
+    }
+    .faq h2 { margin-top: 0; font-size: 24px; }
+    .faq-item {
+      border-bottom: 1px solid #eee;
+      padding: 20px 0;
+    }
+    .faq-item:last-child { border-bottom: none; }
+    .faq-q {
+      font-weight: 700;
+      font-size: 16px;
+      margin-bottom: 8px;
+      color: var(--dark);
+    }
+    .faq-a {
+      font-size: 14px;
+      color: var(--muted);
+      line-height: 1.7;
+    }
+
+    .cta-box {
+      background: var(--dark); color: white; padding: 40px; border-radius: 28px; margin-top: 40px;
+    }
+    .cta-box h3 { color: var(--gold-light); margin-top: 0; font-size: 22px; }
+    .cta-box p { color: rgba(255,255,255,0.7); font-size: 16px; }
+    .cta-box .btn {
+      display: inline-block;
+      background: var(--gold);
+      color: white;
+      padding: 14px 32px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: 600;
+      margin-top: 12px;
+    }
+
+    .related { margin-top: 60px; }
+    .related h3 { font-size: 20px; margin-bottom: 16px; }
+    .related a {
+      display: block;
+      padding: 16px 20px;
+      background: white;
+      border-radius: 12px;
+      text-decoration: none;
+      color: var(--text);
+      margin-bottom: 8px;
+      font-weight: 500;
+      box-shadow: 0 2px 12px rgba(0,0,0,.04);
+      transition: box-shadow .2s;
+    }
+    .related a:hover { box-shadow: 0 4px 20px rgba(0,0,0,.08); }
+    .related a span { color: var(--muted); font-weight: 400; font-size: 13px; display: block; margin-top: 2px; }
+
+    footer { background: #111; color: white; padding: 60px 0; margin-top: 80px; }
+    footer .container { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 16px; }
+    footer a { color: rgba(255,255,255,.5); text-decoration: none; font-size: 14px; }
+    footer a:hover { color: white; }
+  
+        html { scroll-behavior: smooth; }
 
     /* Back to top */
     .back-to-top {
@@ -218,501 +218,500 @@
     .back-to-top:hover { transform: translateY(-3px); opacity: .9; }
 
     /* Floating contact sidebar — inquiry form */
-   206|    .contact-sidebar {
-   207|      position: fixed; left: calc(50% + 460px); top: 50%; transform: translateY(-50%);
-   208|      z-index: 99; width: 380px;
-   209|      background: white; border-radius: 20px;
-   210|      box-shadow: 0 12px 48px rgba(0,0,0,.14);
-   211|      padding: 28px 26px;
-   212|      border: 1px solid #e8e4dc;
-   213|    }
-   214|    .contact-sidebar h4 {
-   215|      margin: 0 0 2px; font-size: 19px; font-weight: 800; color: var(--dark);
-   216|    }
-   217|    .contact-sidebar .sub {
-   218|      margin: 0 0 18px; font-size: 13px; color: var(--muted);
-   219|    }
-   220|    .contact-sidebar input, .contact-sidebar textarea {
-   221|      width: 100%; box-sizing: border-box;
-   222|      border: 1px solid #e0dcd4; border-radius: 12px;
-   223|      padding: 13px 16px; font-size: 15px; font-family: inherit;
-   224|      margin-bottom: 12px; background: #faf8f4; color: var(--text);
-   225|      outline: none; transition: border .2s, box-shadow .2s;
-   226|    }
-   227|    .contact-sidebar input:focus, .contact-sidebar textarea:focus {
-   228|      border-color: var(--gold); box-shadow: 0 0 0 3px rgba(176,138,87,.12);
-   229|    }
-   230|    .contact-sidebar textarea { resize: none; height: 72px; }
-   231|    .contact-sidebar .btn-send {
-   232|      display: block; width: 100%; box-sizing: border-box;
-   233|      background: var(--dark); color: white; border: none;
-   234|      border-radius: 12px; padding: 14px; font-size: 15px; font-weight: 700;
-   235|      cursor: pointer; transition: background .2s;
-   236|    }
-   237|    .contact-sidebar .btn-send:hover { background: #2a2a2a; }
-   238|    .contact-sidebar .wa-row {
-   239|      display: flex; align-items: center; justify-content: center;
-   240|      margin-top: 16px; gap: 6px;
-   241|    }
-   242|    .contact-sidebar .wa-row span {
-   243|      font-size: 13px; color: var(--muted);
-   244|    }
-   245|    .contact-sidebar .wa-row a {
-   246|      display: inline-flex; align-items: center; justify-content: center;
-   247|      width: 48px; height: 48px; border-radius: 50%;
-   248|      background: #25D366; color: white; font-size: 22px;
-   249|      text-decoration: none; transition: transform .2s, box-shadow .2s;
-   250|    }
-   251|    .contact-sidebar .wa-row a:hover {
-   252|      transform: scale(1.12); box-shadow: 0 4px 18px rgba(37,211,102,.4);
-   253|    }
-   254|    @media (max-width: 1100px) {
-   255|      .contact-sidebar { display: none; }
-   256|    }
-   257|  
-   258|    /* === Responsive Design === */
-   259|    @media (max-width: 1100px) {
-   260|      .contact-sidebar { display: none; }
-   261|      /* 移动端底部固定WhatsApp按钮 */
-   262|      .mobile-wa-float { display: flex; }
-   263|    }
-   264|    @media (min-width: 1101px) {
-   265|      .mobile-wa-float { display: none !important; }
-   266|    }
-   267|    @media (max-width: 768px) {
-   268|      .container { padding: 0 16px; }
-   269|      h1 { font-size: 24px !important; line-height: 1.25 !important; }
-   270|      h2 { font-size: 20px !important; }
-   271|      h3 { font-size: 17px !important; }
-   272|      p, li { font-size: 15px !important; }
-   273|      .meta { flex-wrap: wrap; gap: 6px; font-size: 12px !important; }
-   274|      .img-full { border-radius: 12px; margin: 20px 0; }
-   275|      blockquote { margin: 24px 0; padding: 16px 20px; font-size: 16px !important; }
-   276|      .breadcrumb { font-size: 12px !important; margin: 20px 0 !important; }
-   277|      .comparison-table { font-size: 13px !important; display: block; overflow-x: auto; -webkit-overflow-scrolling: touch; }
-   278|      .comparison-table th, .comparison-table td { padding: 10px 12px !important; font-size: 13px !important; white-space: nowrap; }
-   279|      .signal-table { display: block; overflow-x: auto; -webkit-overflow-scrolling: touch; }
-   280|      .signal-table th, .signal-table td { padding: 10px 12px !important; font-size: 13px !important; white-space: nowrap; }
-   281|      .cta-box { padding: 24px 20px !important; border-radius: 20px !important; }
-   282|      .cta-box h3 { font-size: 18px !important; }
-   283|      .cta-box p { font-size: 15px !important; }
-   284|      .core-idea { padding: 24px 20px !important; }
-   285|      .red-flag { padding: 18px 20px !important; }
-   286|      .decision-filter { padding: 24px 20px !important; border-radius: 20px !important; }
-   287|      .tracklinear-judgment { padding: 28px 20px !important; border-radius: 20px !important; }
-   288|      .related a { padding: 14px 16px !important; }
-   289|      header { padding: 16px 0 !important; }
-   290|      .nav .logo { font-size: 17px !important; }
-   291|      footer { padding: 40px 0 !important; margin-top: 60px !important; }
-   292|      footer .container { flex-direction: column; text-align: center; gap: 12px; }
-   293|      .pillar-note { padding: 12px 16px !important; font-size: 13px !important; }
-   294|      .key-insight { padding: 16px 18px !important; }
-   295|    }
-   296|    @media (max-width: 480px) {
-   297|      h1 { font-size: 20px !important; }
-   298|      .container { padding: 0 12px; }
-   299|      .tag { font-size: 10px !important; padding: 3px 10px !important; }
-   300|      blockquote { padding: 12px 16px; font-size: 15px !important; }
-   301|    }
-   302|    /* 底部浮动的WhatsApp按钮（手机专用） */
-   303|    .mobile-wa-float {
-   304|      position: fixed;
-   305|      bottom: 24px;
-   306|      right: 24px;
-   307|      z-index: 1000;
-   308|      display: none;
-   309|      align-items: center;
-   310|      justify-content: center;
-   311|      width: 56px;
-   312|      height: 56px;
-   313|      border-radius: 50%;
-   314|      background: #25D366;
-   315|      box-shadow: 0 4px 20px rgba(37,211,102,0.35);
-   316|      text-decoration: none;
-   317|      transition: transform 0.2s, box-shadow 0.2s;
-   318|    }
-   319|    .mobile-wa-float:hover {
-   320|      transform: scale(1.08);
-   321|      box-shadow: 0 6px 28px rgba(37,211,102,0.45);
-   322|    }
-   323|    .mobile-wa-float svg {
-   324|      width: 28px;
-   325|      height: 28px;
-   326|      fill: white;
-   327|    }
-   328|
-   329|  
-   330|    /* === Responsive Design === */
-   331|    @media (max-width: 1100px) {
-   332|      .contact-sidebar { display: none; }
-   333|      /* 移动端底部固定WhatsApp按钮 */
-   334|      .mobile-wa-float { display: flex; }
-   335|    }
-   336|    @media (min-width: 1101px) {
-   337|      .mobile-wa-float { display: none !important; }
-   338|    }
-   339|    @media (max-width: 768px) {
-   340|      .container { padding: 0 16px; }
-   341|      h1 { font-size: 24px !important; line-height: 1.25 !important; }
-   342|      h2 { font-size: 20px !important; }
-   343|      h3 { font-size: 17px !important; }
-   344|      p, li { font-size: 15px !important; }
-   345|      .meta { flex-wrap: wrap; gap: 6px; font-size: 12px !important; }
-   346|      .img-full { border-radius: 12px; margin: 20px 0; }
-   347|      blockquote { margin: 24px 0; padding: 16px 20px; font-size: 16px !important; }
-   348|      .breadcrumb { font-size: 12px !important; margin: 20px 0 !important; }
-   349|      .comparison-table { font-size: 13px !important; display: block; overflow-x: auto; -webkit-overflow-scrolling: touch; }
-   350|      .comparison-table th, .comparison-table td { padding: 10px 12px !important; font-size: 13px !important; white-space: nowrap; }
-   351|      .signal-table { display: block; overflow-x: auto; -webkit-overflow-scrolling: touch; }
-   352|      .signal-table th, .signal-table td { padding: 10px 12px !important; font-size: 13px !important; white-space: nowrap; }
-   353|      .cta-box { padding: 24px 20px !important; border-radius: 20px !important; }
-   354|      .cta-box h3 { font-size: 18px !important; }
-   355|      .cta-box p { font-size: 15px !important; }
-   356|      .core-idea { padding: 24px 20px !important; }
-   357|      .red-flag { padding: 18px 20px !important; }
-   358|      .decision-filter { padding: 24px 20px !important; border-radius: 20px !important; }
-   359|      .tracklinear-judgment { padding: 28px 20px !important; border-radius: 20px !important; }
-   360|      .related a { padding: 14px 16px !important; }
-   361|      header { padding: 16px 0 !important; }
-   362|      .nav .logo { font-size: 17px !important; }
-   363|      footer { padding: 40px 0 !important; margin-top: 60px !important; }
-   364|      footer .container { flex-direction: column; text-align: center; gap: 12px; }
-   365|      .pillar-note { padding: 12px 16px !important; font-size: 13px !important; }
-   366|      .key-insight { padding: 16px 18px !important; }
-   367|    }
-   368|    @media (max-width: 480px) {
-   369|      h1 { font-size: 20px !important; }
-   370|      .container { padding: 0 12px; }
-   371|      .tag { font-size: 10px !important; padding: 3px 10px !important; }
-   372|      blockquote { padding: 12px 16px; font-size: 15px !important; }
-   373|    }
-   374|    /* 底部浮动的WhatsApp按钮（手机专用） */
-   375|    .mobile-wa-float {
-   376|      position: fixed;
-   377|      bottom: 24px;
-   378|      right: 24px;
-   379|      z-index: 1000;
-   380|      display: none;
-   381|      align-items: center;
-   382|      justify-content: center;
-   383|      width: 56px;
-   384|      height: 56px;
-   385|      border-radius: 50%;
-   386|      background: #25D366;
-   387|      box-shadow: 0 4px 20px rgba(37,211,102,0.35);
-   388|      text-decoration: none;
-   389|      transition: transform 0.2s, box-shadow 0.2s;
-   390|    }
-   391|    .mobile-wa-float:hover {
-   392|      transform: scale(1.08);
-   393|      box-shadow: 0 6px 28px rgba(37,211,102,0.45);
-   394|    }
-   395|    .mobile-wa-float svg {
-   396|      width: 28px;
-   397|      height: 28px;
-   398|      fill: white;
-   399|    }
-   400|
-   401|  
-   402|    @media (max-width: 768px) {
-   403|      .footer-grid { flex-direction: column; gap: 28px; }
-   404|      .footer-links { flex-direction: row; flex-wrap: wrap; gap: 14px; }
-   405|      .footer-contact { display: flex; flex-direction: column; gap: 4px; }
-   406|      .footer-sep { display: none; }
-   407|    }
-   408|
-   409|  </style>
-   410|<script type="application/ld+json">
-   411|{
-   412|  "@context": "https://schema.org",
-   413|  "@graph": [
-   414|    {
-   415|      "@type": "Article",
-   416|      "headline": "How Many Lights Can You Install on a 48V Magnetic Track Without Voltage Drop?",
-   417|      "description": "Before installing a 48V magnetic track system, the wrong load or power feed position can cause dim fixtures, unstable lighting, and expensive ceiling rework. This guide explains how to plan fixture wattage, driver capacity, and feed points before installation.",
-   418|      "image": "https://tracklinear.com/images/blog11_hero.webp",
-   419|      "datePublished": "2026-06-24T08:00:00+08:00",
-   420|      "dateModified": "2026-06-24T08:00:00+08:00",
-   421|      "author": {
-   422|        "@type": "Person",
-   423|        "name": "Tiffany Woo",
-   424|        "url": "https://tracklinear.com/"
-   425|      },
-   426|      "publisher": {
-   427|        "@type": "Organization",
-   428|        "name": "Tracklinear Lighting",
-   429|        "logo": {
-   430|          "@type": "ImageObject",
-   431|          "url": "https://tracklinear.com/images/image_1.webp"
-   432|        }
-   433|      },
-   434|      "mainEntityOfPage": {
-   435|        "@type": "WebPage",
-   436|        "@id": "https://tracklinear.com/blog-post-11.html"
-   437|      }
-   438|    },
-   439|    {
-   440|      "@type": "BreadcrumbList",
-   441|      "itemListElement": [
-   442|        { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://tracklinear.com/" },
-   443|        { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://tracklinear.com/blog/" },
-   444|        { "@type": "ListItem", "position": 3, "name": "How Many Lights Without Voltage Drop?" }
-   445|      ]
-   446|    },
-   447|    {
-   448|      "@type": "FAQPage",
-   449|      "mainEntity": [
-   450|        {
-   451|          "@type": "Question",
-   452|          "name": "Can I mix 48V track from different brands on the same load calculation?",
-   453|          "acceptedAnswer": {
-   454|            "@type": "Answer",
-   455|            "text": "No. Different brands use different copper conductor cross-sections and quality. Always calculate based on your specific track's rated current, not a generic number."
-   456|          }
-   457|        },
-   458|        {
-   459|          "@type": "Question",
-   460|          "name": "What if I need more power than one track can handle?",
-   461|          "acceptedAnswer": {
-   462|            "@type": "Answer",
-   463|            "text": "Split into separate zones. Each zone gets its own driver and feed. This is standard for commercial installations with long ceiling runs."
-   464|          }
-   465|        },
-   466|        {
-   467|          "@type": "Question",
-   468|          "name": "Does dimming affect 48V track load planning?",
-   469|          "acceptedAnswer": {
-   470|            "@type": "Answer",
-   471|            "text": "Yes. Dimmable drivers typically have lower maximum wattage than basic on/off drivers. If your project includes DALI or 0-10V dimming, adjust your load calculation downward by about 15-20%."
-   472|          }
-   473|        }
-   474|      ]
-   475|    }
-   476|  ]
-   477|}
-   478|</script>
-   479|</head>
-   480|<body>
-   481|  <header>
-   482|    <div class="container nav">
-   483|      <a href="index.html" class="logo">Tracklinear</a>
-   484|      <a href="blog/index.html" class="back-link">← Back to Blog</a>
-   485|    </div>
-   486|  </header>
-   487|
-   488|  <main class="container">
-   489|    <div class="breadcrumb">
-   490|      <a href="index.html">Home</a> / <a href="blog/index.html">Blog</a> / How Many Lights Without Voltage Drop?
-   491|    </div>
-   492|
-   493|    <div class="tag">Project Guide</div>
-   494|    <h1>How Many Lights Can You Install on a 48V Magnetic Track Without Voltage Drop?</h1>
-   495|    <div class="meta">
-   496|      <span>By Tiffany Woo</span>
-   497|      <span>•</span>
-   498|      <span>June 24, 2026</span>
-   499|      <span>•</span>
-   500|      <span>5 min read</span>
-   501|    </div>
-   502|
-   503|    <img src="images/blog11_hero.webp" alt="48V magnetic track lighting installation with multiple LED fixtures along a single track run showing power feed connection" class="img-full" loading="lazy">
-   504|
-   505|    <p>Before installing a 48V magnetic track system, the wrong load or power feed position can cause dim fixtures, unstable lighting, and expensive ceiling rework. This guide explains how to plan fixture wattage, driver capacity, and feed points before installation.</p>
-   506|
-   507|    <p>Now you need to either:</p>
-   508|
-   509|    <p><strong>(A)</strong> Add a second feed — cutting into the ceiling, extra labour, re-inspection.</p>
-   510|
-   511|    <p><strong>(B)</strong> Replace the driver — which may not fix the issue if the voltage drop is in the track conductor, not the power supply.</p>
-   512|
-   513|    <p><strong>(C)</strong> Explain to your client that the system was "designed for this effect."</p>
-   514|
-   515|    <p>None of these are good. Option A costs you time and reputation. And the fix was a 5-minute calculation at the quoting stage — before the ceiling was closed. This is why understanding <strong>48V track power planning</strong> is one of the most valuable skills a contractor or specifier can develop.</p>
-   516|
-   517|    <div class="quick-answer">
-   518|      <h3>Quick Answer</h3>
-   519|      <p>As a practical guideline, many 48V magnetic track runs are planned around <strong>120–150W per feed point</strong>, depending on track length, conductor quality, fixture wattage, and driver capacity.</p>
-   520|      <p><span class="label">Under 3m, under 100W</span> → End feed works fine. Simple installation, no special planning needed.</p>
-   521|      <p><span class="label">3–5m, 100–150W</span> → Use mid-point feed. Same track, same fixtures, but power connects at the center — halves the distance voltage needs to travel.</p>
-   522|      <p><span class="label">Over 5m or over 150W</span> → Plan for dual-end feed or separate power zones. This is standard for commercial track lighting layouts with long ceiling runs.</p>
-   523|    </div>
-   524|
-   525|    <h2>Why Voltage Drop Happens — and Why It Matters</h2>
-   526|
-   527|    <p>Imagine a garden hose with several spray nozzles along its length. Turn on only the first — water comes out strong. Turn on all of them — the last one trickles. The pressure dropped as it traveled past each nozzle.</p>
-   528|
-   529|    <p><strong>48V track works the same way.</strong> Each fixture draws a small amount of power from the same conductor inside the track. The longer the run and the more fixtures you add, the less voltage reaches the far end — this is <strong>48V track voltage drop</strong> in simple terms. The lights still turn on, but the last ones are dimmer, the colour shifts warmer, and if you have dimmers, you may get flicker. And by the time anyone notices, the ceiling is already closed. That is why <strong>magnetic track power planning</strong> matters before installation, not after.</p>
-   530|
-   531|    <h2>Three Things That Determine Your Load</h2>
-   532|
-   533|    <h3>1. Total Fixture Wattage</h3>
-   534|
-   535|    <p>Add up every fixture on one track run — this is the starting point for any <strong>track lighting load calculation</strong>. A 10W spotlight + 15W flood + 12W grille = 37W — no problem. The trouble starts when someone plans 15 fixtures at 15W each (225W) on a single feed. On a standard end feed, the last <strong>LED fixtures per track</strong> will be dim regardless of the driver size.</p>
-   536|
-   537|    <h3>2. Where the Power Enters (This Is the Biggest Lever)</h3>
-   538|
-   539|    <p>The <strong>48V track power feed</strong> position determines how far voltage has to travel. Move the feed point and you change everything.</p>
-   540|
-   541|    <ul>
-   542|      <li><strong>End feed</strong> — power at one end. Simple, but voltage drops across the full length. Fine under 3m.</li>
-   543|      <li><strong>Mid-point feed</strong> — power at the centre. Voltage drops in both directions, doubling your usable load. Costs almost nothing to add during installation, but 3–5× more if added after the ceiling is closed.</li>
-   544|      <li><strong>Dual-end feed</strong> — power at both ends. Best for runs over 4m.</li>
-   545|      <li><strong>Zone separation</strong> — multiple feeds on the same track, each powering its own section. Standard for large commercial layouts.</li>
-   546|    </ul>
-   547|
-   548|    <img src="images/blog11_feed.webp" alt="End feed mid-point feed and dual-end feed positions on a 48V magnetic track lighting layout showing voltage drop distribution" class="img-full" loading="lazy">
-   549|
-   550|    <h3>3. Driver Headroom</h3>
-   551|
-   552|    <p>A 120W load needs a 150W driver — not a 120W one. Drivers run best at 80–85% of rated capacity. A maxed-out driver runs hot, ages faster, and may trip during startup. Getting the <strong>magnetic track driver sizing</strong> right from the start saves you a replacement later.</p>
-   553|
-   554|    <h2>Quick Reference — Real Configurations</h2>
-   555|
-   556|    <table class="spec-table">
-   557|      <thead>
-   558|        <tr>
-   559|          <th>Setup</th>
-   560|          <th>Feed Type</th>
-   561|          <th>Result</th>
-   562|        </tr>
-   563|      </thead>
-   564|      <tbody>
-   565|        <tr>
-   566|          <td><strong>2m track, 6×10W fixtures</strong></td>
-   567|          <td>End feed</td>
-   568|          <td>✅ Perfect — no voltage drop issue</td>
-   569|        </tr>
-   570|        <tr>
-   571|          <td><strong>3m track, 8×12W fixtures (96W)</strong></td>
-   572|          <td>Mid-point feed</td>
-   573|          <td>✅ Even across all fixtures</td>
-   574|        </tr>
-   575|        <tr>
-   576|          <td><strong>4m track, 10×12W fixtures (120W)</strong></td>
-   577|          <td>Mid-point or dual-end</td>
-   578|          <td>✅ Both work — dual-end gives more headroom</td>
-   579|        </tr>
-   580|        <tr>
-   581|          <td><strong>5m track, 12×12W fixtures (144W)</strong></td>
-   582|          <td>End feed only</td>
-   583|          <td>❌ Last 3–4 fixtures will be visibly dim</td>
-   584|        </tr>
-   585|        <tr>
-   586|          <td><strong>5m track, 12×12W fixtures (144W)</strong></td>
-   587|          <td>Dual-end feed</td>
-   588|          <td>✅ Even distribution, full brightness</td>
-   589|        </tr>
-   590|      </tbody>
-   591|    </table>
-   592|
-   593|    <h2>How to Explain This to Your Customer</h2>
-   594|
-   595|    <blockquote>
-   596|      "Think of it like a garden hose — the water pressure at the end depends on how many nozzles are open and how long the hose is. Same with a magnetic track. The voltage enters at one point, and as it passes each fixture, a tiny bit is used. Plan the feed position before installation, and every light will look identical."
-   597|    </blockquote>
-   598|
-   599|    <h2>What to Send Your Supplier</h2>
-   600|
-   601|    <p>A supplier who asks for these 4 things before quoting is someone who has dealt with rework before:</p>
-   602|
-   603|    <ul>
-   604|      <li><strong>Track length</strong> per run</li>
-   605|      <li><strong>Fixture types + wattages</strong> on each run</li>
-   606|      <li><strong>Ceiling type</strong> — decides whether mid-point feed junction boxes are possible</li>
-   607|      <li><strong>Dimmers or smart controls</strong> — DALI, 0-10V and Triac all need different driver matching</li>
-   608|    </ul>
-   609|
-   610|    <div class="faq">
-   611|      <h2>FAQ: 48V Track Load Planning</h2>
-   612|
-   613|      <div class="faq-item">
-   614|        <div class="faq-q">Can I add more lights later if I leave empty track sections?</div>
-   615|        <div class="faq-a">Yes — but only if the remaining power capacity is enough. If you plan to expand later, oversize the driver from the start. It is far cheaper than upgrading later or running a second feed.</div>
-   616|      </div>
-   617|
-   618|      <div class="faq-item">
-   619|        <div class="faq-q">What happens if I exceed the track's maximum load?</div>
-   620|        <div class="faq-a">The driver may shut down from overload protection, or the last fixtures on the run will be visibly dim with a noticeable colour shift. Neither is acceptable for a completed commercial installation. Re-working a closed ceiling to add a second feed is expensive.</div>
-   621|      </div>
-   622|
-   623|      <div class="faq-item">
-   624|        <div class="faq-q">Is 48V or 24V better for longer track runs?</div>
-   625|        <div class="faq-a">48V is significantly better. Lower voltage means higher current for the same wattage, which means more voltage drop. For any run over 2m, 48V is the standard choice. This is one reason why 48V dominates the <strong>commercial track lighting layout</strong> market.</div>
-   626|      </div>
-   627|    </div>
-   628|
-   629|    <div class="cta-box">
-   630|      <h3>Not sure if your layout needs mid-point or dual-end feed?</h3>
-   631|      <p>Send us your run lengths, fixture list and ceiling type. We will check the load and recommend the right feed positions and <strong>magnetic track driver sizing</strong> — before you install, not after.</p>
-   632|      <a href="mailto:info@tracklinear.com" class="btn">Get Load Check →</a>
-   633|    </div>
-   634|
-   635|    <div class="related">
-   636|      <h3>Related Articles</h3>
-   637|      <a href="blog-post-10.html">
-   638|        Spot, Flood, Linear Flood, or Grille — Beam Angle Selection Guide
-   639|        <span>Practical beam angle guide for magnetic track lighting modules, organised by project scenario</span>
-   640|      </a>
-   641|      <a href="blog-post-7.html">
-   642|        Why Does a Magnetic Track Light Still Need a Driver If the Track Already Has 48V Power?
-   643|        <span>Understanding built-in drivers vs no-driver modules in magnetic track lighting systems</span>
-   644|      </a>
-   645|    </div>
-   646|</main>
+    .contact-sidebar {
+      position: fixed; left: calc(50% + 460px); top: 50%; transform: translateY(-50%);
+      z-index: 99; width: 380px;
+      background: white; border-radius: 20px;
+      box-shadow: 0 12px 48px rgba(0,0,0,.14);
+      padding: 28px 26px;
+      border: 1px solid #e8e4dc;
+    }
+    .contact-sidebar h4 {
+      margin: 0 0 2px; font-size: 19px; font-weight: 800; color: var(--dark);
+    }
+    .contact-sidebar .sub {
+      margin: 0 0 18px; font-size: 13px; color: var(--muted);
+    }
+    .contact-sidebar input, .contact-sidebar textarea {
+      width: 100%; box-sizing: border-box;
+      border: 1px solid #e0dcd4; border-radius: 12px;
+      padding: 13px 16px; font-size: 15px; font-family: inherit;
+      margin-bottom: 12px; background: #faf8f4; color: var(--text);
+      outline: none; transition: border .2s, box-shadow .2s;
+    }
+    .contact-sidebar input:focus, .contact-sidebar textarea:focus {
+      border-color: var(--gold); box-shadow: 0 0 0 3px rgba(176,138,87,.12);
+    }
+    .contact-sidebar textarea { resize: none; height: 72px; }
+    .contact-sidebar .btn-send {
+      display: block; width: 100%; box-sizing: border-box;
+      background: var(--dark); color: white; border: none;
+      border-radius: 12px; padding: 14px; font-size: 15px; font-weight: 700;
+      cursor: pointer; transition: background .2s;
+    }
+    .contact-sidebar .btn-send:hover { background: #2a2a2a; }
+    .contact-sidebar .wa-row {
+      display: flex; align-items: center; justify-content: center;
+      margin-top: 16px; gap: 6px;
+    }
+    .contact-sidebar .wa-row span {
+      font-size: 13px; color: var(--muted);
+    }
+    .contact-sidebar .wa-row a {
+      display: inline-flex; align-items: center; justify-content: center;
+      width: 48px; height: 48px; border-radius: 50%;
+      background: #25D366; color: white; font-size: 22px;
+      text-decoration: none; transition: transform .2s, box-shadow .2s;
+    }
+    .contact-sidebar .wa-row a:hover {
+      transform: scale(1.12); box-shadow: 0 4px 18px rgba(37,211,102,.4);
+    }
+    @media (max-width: 1100px) {
+      .contact-sidebar { display: none; }
+    }
+  
+    /* === Responsive Design === */
+    @media (max-width: 1100px) {
+      .contact-sidebar { display: none; }
+      /* 移动端底部固定WhatsApp按钮 */
+      .mobile-wa-float { display: flex; }
+    }
+    @media (min-width: 1101px) {
+      .mobile-wa-float { display: none !important; }
+    }
+    @media (max-width: 768px) {
+      .container { padding: 0 16px; }
+      h1 { font-size: 24px !important; line-height: 1.25 !important; }
+      h2 { font-size: 20px !important; }
+      h3 { font-size: 17px !important; }
+      p, li { font-size: 15px !important; }
+      .meta { flex-wrap: wrap; gap: 6px; font-size: 12px !important; }
+      .img-full { border-radius: 12px; margin: 20px 0; }
+      blockquote { margin: 24px 0; padding: 16px 20px; font-size: 16px !important; }
+      .breadcrumb { font-size: 12px !important; margin: 20px 0 !important; }
+      .comparison-table { font-size: 13px !important; display: block; overflow-x: auto; -webkit-overflow-scrolling: touch; }
+      .comparison-table th, .comparison-table td { padding: 10px 12px !important; font-size: 13px !important; white-space: nowrap; }
+      .signal-table { display: block; overflow-x: auto; -webkit-overflow-scrolling: touch; }
+      .signal-table th, .signal-table td { padding: 10px 12px !important; font-size: 13px !important; white-space: nowrap; }
+      .cta-box { padding: 24px 20px !important; border-radius: 20px !important; }
+      .cta-box h3 { font-size: 18px !important; }
+      .cta-box p { font-size: 15px !important; }
+      .core-idea { padding: 24px 20px !important; }
+      .red-flag { padding: 18px 20px !important; }
+      .decision-filter { padding: 24px 20px !important; border-radius: 20px !important; }
+      .tracklinear-judgment { padding: 28px 20px !important; border-radius: 20px !important; }
+      .related a { padding: 14px 16px !important; }
+      header { padding: 16px 0 !important; }
+      .nav .logo { font-size: 17px !important; }
+      footer { padding: 40px 0 !important; margin-top: 60px !important; }
+      footer .container { flex-direction: column; text-align: center; gap: 12px; }
+      .pillar-note { padding: 12px 16px !important; font-size: 13px !important; }
+      .key-insight { padding: 16px 18px !important; }
+    }
+    @media (max-width: 480px) {
+      h1 { font-size: 20px !important; }
+      .container { padding: 0 12px; }
+      .tag { font-size: 10px !important; padding: 3px 10px !important; }
+      blockquote { padding: 12px 16px; font-size: 15px !important; }
+    }
+    /* 底部浮动的WhatsApp按钮（手机专用） */
+    .mobile-wa-float {
+      position: fixed;
+      bottom: 24px;
+      right: 24px;
+      z-index: 1000;
+      display: none;
+      align-items: center;
+      justify-content: center;
+      width: 56px;
+      height: 56px;
+      border-radius: 50%;
+      background: #25D366;
+      box-shadow: 0 4px 20px rgba(37,211,102,0.35);
+      text-decoration: none;
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+    .mobile-wa-float:hover {
+      transform: scale(1.08);
+      box-shadow: 0 6px 28px rgba(37,211,102,0.45);
+    }
+    .mobile-wa-float svg {
+      width: 28px;
+      height: 28px;
+      fill: white;
+    }
+
+  
+    /* === Responsive Design === */
+    @media (max-width: 1100px) {
+      .contact-sidebar { display: none; }
+      /* 移动端底部固定WhatsApp按钮 */
+      .mobile-wa-float { display: flex; }
+    }
+    @media (min-width: 1101px) {
+      .mobile-wa-float { display: none !important; }
+    }
+    @media (max-width: 768px) {
+      .container { padding: 0 16px; }
+      h1 { font-size: 24px !important; line-height: 1.25 !important; }
+      h2 { font-size: 20px !important; }
+      h3 { font-size: 17px !important; }
+      p, li { font-size: 15px !important; }
+      .meta { flex-wrap: wrap; gap: 6px; font-size: 12px !important; }
+      .img-full { border-radius: 12px; margin: 20px 0; }
+      blockquote { margin: 24px 0; padding: 16px 20px; font-size: 16px !important; }
+      .breadcrumb { font-size: 12px !important; margin: 20px 0 !important; }
+      .comparison-table { font-size: 13px !important; display: block; overflow-x: auto; -webkit-overflow-scrolling: touch; }
+      .comparison-table th, .comparison-table td { padding: 10px 12px !important; font-size: 13px !important; white-space: nowrap; }
+      .signal-table { display: block; overflow-x: auto; -webkit-overflow-scrolling: touch; }
+      .signal-table th, .signal-table td { padding: 10px 12px !important; font-size: 13px !important; white-space: nowrap; }
+      .cta-box { padding: 24px 20px !important; border-radius: 20px !important; }
+      .cta-box h3 { font-size: 18px !important; }
+      .cta-box p { font-size: 15px !important; }
+      .core-idea { padding: 24px 20px !important; }
+      .red-flag { padding: 18px 20px !important; }
+      .decision-filter { padding: 24px 20px !important; border-radius: 20px !important; }
+      .tracklinear-judgment { padding: 28px 20px !important; border-radius: 20px !important; }
+      .related a { padding: 14px 16px !important; }
+      header { padding: 16px 0 !important; }
+      .nav .logo { font-size: 17px !important; }
+      footer { padding: 40px 0 !important; margin-top: 60px !important; }
+      footer .container { flex-direction: column; text-align: center; gap: 12px; }
+      .pillar-note { padding: 12px 16px !important; font-size: 13px !important; }
+      .key-insight { padding: 16px 18px !important; }
+    }
+    @media (max-width: 480px) {
+      h1 { font-size: 20px !important; }
+      .container { padding: 0 12px; }
+      .tag { font-size: 10px !important; padding: 3px 10px !important; }
+      blockquote { padding: 12px 16px; font-size: 15px !important; }
+    }
+    /* 底部浮动的WhatsApp按钮（手机专用） */
+    .mobile-wa-float {
+      position: fixed;
+      bottom: 24px;
+      right: 24px;
+      z-index: 1000;
+      display: none;
+      align-items: center;
+      justify-content: center;
+      width: 56px;
+      height: 56px;
+      border-radius: 50%;
+      background: #25D366;
+      box-shadow: 0 4px 20px rgba(37,211,102,0.35);
+      text-decoration: none;
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+    .mobile-wa-float:hover {
+      transform: scale(1.08);
+      box-shadow: 0 6px 28px rgba(37,211,102,0.45);
+    }
+    .mobile-wa-float svg {
+      width: 28px;
+      height: 28px;
+      fill: white;
+    }
+
+  
+    @media (max-width: 768px) {
+      .footer-grid { flex-direction: column; gap: 28px; }
+      .footer-links { flex-direction: row; flex-wrap: wrap; gap: 14px; }
+      .footer-contact { display: flex; flex-direction: column; gap: 4px; }
+      .footer-sep { display: none; }
+    }
+
+  </style>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Article",
+      "headline": "How Many Lights Can You Install on a 48V Magnetic Track Without Voltage Drop?",
+      "description": "Before installing a 48V magnetic track system, the wrong load or power feed position can cause dim fixtures, unstable lighting, and expensive ceiling rework. This guide explains how to plan fixture wattage, driver capacity, and feed points before installation.",
+      "image": "https://tracklinear.com/images/blog11_hero.webp",
+      "datePublished": "2026-06-24T08:00:00+08:00",
+      "dateModified": "2026-06-24T08:00:00+08:00",
+      "author": {
+        "@type": "Person",
+        "name": "Tiffany Woo",
+        "url": "https://tracklinear.com/"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Tracklinear Lighting",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://tracklinear.com/images/image_1.webp"
+        }
+      },
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://tracklinear.com/blog-post-11.html"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://tracklinear.com/" },
+        { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://tracklinear.com/blog/" },
+        { "@type": "ListItem", "position": 3, "name": "How Many Lights Without Voltage Drop?" }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Can I mix 48V track from different brands on the same load calculation?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. Different brands use different copper conductor cross-sections and quality. Always calculate based on your specific track's rated current, not a generic number."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What if I need more power than one track can handle?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Split into separate zones. Each zone gets its own driver and feed. This is standard for commercial installations with long ceiling runs."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does dimming affect 48V track load planning?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Dimmable drivers typically have lower maximum wattage than basic on/off drivers. If your project includes DALI or 0-10V dimming, adjust your load calculation downward by about 15-20%."
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
+</head>
+<body>
+  <header>
+    <div class="container nav">
+      <a href="index.html" class="logo">Tracklinear</a>
+      <a href="blog/index.html" class="back-link">← Back to Blog</a>
+    </div>
+  </header>
+
+  <main class="container">
+    <div class="breadcrumb">
+      <a href="index.html">Home</a> / <a href="blog/index.html">Blog</a> / How Many Lights Without Voltage Drop?
+    </div>
+
+    <div class="tag">Project Guide</div>
+    <h1>How Many Lights Can You Install on a 48V Magnetic Track Without Voltage Drop?</h1>
+    <div class="meta">
+      <span>By Tiffany Woo</span>
+      <span>•</span>
+      <span>June 24, 2026</span>
+      <span>•</span>
+      <span>5 min read</span>
+    </div>
+
+    <img src="images/blog11_hero.webp" alt="48V magnetic track lighting installation with multiple LED fixtures along a single track run showing power feed connection" class="img-full" loading="lazy">
+
+    <p>Before installing a 48V magnetic track system, the wrong load or power feed position can cause dim fixtures, unstable lighting, and expensive ceiling rework. This guide explains how to plan fixture wattage, driver capacity, and feed points before installation.</p>
+
+    <p>Now you need to either:</p>
+
+    <p><strong>(A)</strong> Add a second feed — cutting into the ceiling, extra labour, re-inspection.</p>
+
+    <p><strong>(B)</strong> Replace the driver — which may not fix the issue if the voltage drop is in the track conductor, not the power supply.</p>
+
+    <p><strong>(C)</strong> Explain to your client that the system was "designed for this effect."</p>
+
+    <p>None of these are good. Option A costs you time and reputation. And the fix was a 5-minute calculation at the quoting stage — before the ceiling was closed. This is why understanding <strong>48V track power planning</strong> is one of the most valuable skills a contractor or specifier can develop.</p>
+
+    <div class="quick-answer">
+      <h3>Quick Answer</h3>
+      <p>As a practical guideline, many 48V magnetic track runs are planned around <strong>120–150W per feed point</strong>, depending on track length, conductor quality, fixture wattage, and driver capacity.</p>
+      <p><span class="label">Under 3m, under 100W</span> → End feed works fine. Simple installation, no special planning needed.</p>
+      <p><span class="label">3–5m, 100–150W</span> → Use mid-point feed. Same track, same fixtures, but power connects at the center — halves the distance voltage needs to travel.</p>
+      <p><span class="label">Over 5m or over 150W</span> → Plan for dual-end feed or separate power zones. This is standard for commercial track lighting layouts with long ceiling runs.</p>
+    </div>
+
+    <h2>Why Voltage Drop Happens — and Why It Matters</h2>
+
+    <p>Imagine a garden hose with several spray nozzles along its length. Turn on only the first — water comes out strong. Turn on all of them — the last one trickles. The pressure dropped as it traveled past each nozzle.</p>
+
+    <p><strong>48V track works the same way.</strong> Each fixture draws a small amount of power from the same conductor inside the track. The longer the run and the more fixtures you add, the less voltage reaches the far end — this is <strong>48V track voltage drop</strong> in simple terms. The lights still turn on, but the last ones are dimmer, the colour shifts warmer, and if you have dimmers, you may get flicker. And by the time anyone notices, the ceiling is already closed. That is why <strong>magnetic track power planning</strong> matters before installation, not after.</p>
+
+    <h2>Three Things That Determine Your Load</h2>
+
+    <h3>1. Total Fixture Wattage</h3>
+
+    <p>Add up every fixture on one track run — this is the starting point for any <strong>track lighting load calculation</strong>. A 10W spotlight + 15W flood + 12W grille = 37W — no problem. The trouble starts when someone plans 15 fixtures at 15W each (225W) on a single feed. On a standard end feed, the last <strong>LED fixtures per track</strong> will be dim regardless of the driver size.</p>
+
+    <h3>2. Where the Power Enters (This Is the Biggest Lever)</h3>
+
+    <p>The <strong>48V track power feed</strong> position determines how far voltage has to travel. Move the feed point and you change everything.</p>
+
+    <ul>
+      <li><strong>End feed</strong> — power at one end. Simple, but voltage drops across the full length. Fine under 3m.</li>
+      <li><strong>Mid-point feed</strong> — power at the centre. Voltage drops in both directions, doubling your usable load. Costs almost nothing to add during installation, but 3–5× more if added after the ceiling is closed.</li>
+      <li><strong>Dual-end feed</strong> — power at both ends. Best for runs over 4m.</li>
+      <li><strong>Zone separation</strong> — multiple feeds on the same track, each powering its own section. Standard for large commercial layouts.</li>
+    </ul>
+
+    <img src="images/blog11_feed.webp" alt="End feed mid-point feed and dual-end feed positions on a 48V magnetic track lighting layout showing voltage drop distribution" class="img-full" loading="lazy">
+
+    <h3>3. Driver Headroom</h3>
+
+    <p>A 120W load needs a 150W driver — not a 120W one. Drivers run best at 80–85% of rated capacity. A maxed-out driver runs hot, ages faster, and may trip during startup. Getting the <strong>magnetic track driver sizing</strong> right from the start saves you a replacement later.</p>
+
+    <h2>Quick Reference — Real Configurations</h2>
+
+    <table class="spec-table">
+      <thead>
+        <tr>
+          <th>Setup</th>
+          <th>Feed Type</th>
+          <th>Result</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>2m track, 6×10W fixtures</strong></td>
+          <td>End feed</td>
+          <td>✅ Perfect — no voltage drop issue</td>
+        </tr>
+        <tr>
+          <td><strong>3m track, 8×12W fixtures (96W)</strong></td>
+          <td>Mid-point feed</td>
+          <td>✅ Even across all fixtures</td>
+        </tr>
+        <tr>
+          <td><strong>4m track, 10×12W fixtures (120W)</strong></td>
+          <td>Mid-point or dual-end</td>
+          <td>✅ Both work — dual-end gives more headroom</td>
+        </tr>
+        <tr>
+          <td><strong>5m track, 12×12W fixtures (144W)</strong></td>
+          <td>End feed only</td>
+          <td>❌ Last 3–4 fixtures will be visibly dim</td>
+        </tr>
+        <tr>
+          <td><strong>5m track, 12×12W fixtures (144W)</strong></td>
+          <td>Dual-end feed</td>
+          <td>✅ Even distribution, full brightness</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h2>How to Explain This to Your Customer</h2>
+
+    <blockquote>
+      "Think of it like a garden hose — the water pressure at the end depends on how many nozzles are open and how long the hose is. Same with a magnetic track. The voltage enters at one point, and as it passes each fixture, a tiny bit is used. Plan the feed position before installation, and every light will look identical."
+    </blockquote>
+
+    <h2>What to Send Your Supplier</h2>
+
+    <p>A supplier who asks for these 4 things before quoting is someone who has dealt with rework before:</p>
+
+    <ul>
+      <li><strong>Track length</strong> per run</li>
+      <li><strong>Fixture types + wattages</strong> on each run</li>
+      <li><strong>Ceiling type</strong> — decides whether mid-point feed junction boxes are possible</li>
+      <li><strong>Dimmers or smart controls</strong> — DALI, 0-10V and Triac all need different driver matching</li>
+    </ul>
+
+    <div class="faq">
+      <h2>FAQ: 48V Track Load Planning</h2>
+
+      <div class="faq-item">
+        <div class="faq-q">Can I add more lights later if I leave empty track sections?</div>
+        <div class="faq-a">Yes — but only if the remaining power capacity is enough. If you plan to expand later, oversize the driver from the start. It is far cheaper than upgrading later or running a second feed.</div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-q">What happens if I exceed the track's maximum load?</div>
+        <div class="faq-a">The driver may shut down from overload protection, or the last fixtures on the run will be visibly dim with a noticeable colour shift. Neither is acceptable for a completed commercial installation. Re-working a closed ceiling to add a second feed is expensive.</div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-q">Is 48V or 24V better for longer track runs?</div>
+        <div class="faq-a">48V is significantly better. Lower voltage means higher current for the same wattage, which means more voltage drop. For any run over 2m, 48V is the standard choice. This is one reason why 48V dominates the <strong>commercial track lighting layout</strong> market.</div>
+      </div>
+    </div>
+
+    <div class="cta-box">
+      <h3>Not sure if your layout needs mid-point or dual-end feed?</h3>
+      <p>Send us your run lengths, fixture list and ceiling type. We will check the load and recommend the right feed positions and <strong>magnetic track driver sizing</strong> — before you install, not after.</p>
+      <a href="mailto:info@tracklinear.com" class="btn">Get Load Check →</a>
+    </div>
+
+    <div class="related">
+      <h3>Related Articles</h3>
+      <a href="blog-post-10.html">
+        Spot, Flood, Linear Flood, or Grille — Beam Angle Selection Guide
+        <span>Practical beam angle guide for magnetic track lighting modules, organised by project scenario</span>
+      </a>
+      <a href="blog-post-7.html">
+        Why Does a Magnetic Track Light Still Need a Driver If the Track Already Has 48V Power?
+        <span>Understanding built-in drivers vs no-driver modules in magnetic track lighting systems</span>
+      </a>
+    </div>
+</main>
 <a href="#" class="back-to-top" aria-label="Back to top">↑</a>
 
-   647|
-   648|<div class="contact-sidebar">
-   649|  <h4>📩 Send Your Inquiry</h4>
-   650|  <p class="sub">We'll reply within 24 hours</p>
-   651|  <form action="https://formsubmit.co/info@tracklinear.com" method="POST">
-   652|    <input type="hidden" name="_subject" value="Blog Inquiry">
-   653|    <input type="hidden" name="_captcha" value="false">
-   654|    <input type="text" name="name" placeholder="Your Name *" required>
-   655|    <input type="email" name="email" placeholder="Email Address *" required>
-   656|    <input type="text" name="phone" placeholder="WhatsApp / Phone">
-   657|    <textarea name="message" placeholder="Describe your project — ceiling type, quantity, requirements..."></textarea>
-   658|    <button type="submit" class="btn-send">Send Inquiry →</button>
-   659|  </form>
-   660|  <div class="wa-row">
-   661|    <span>Or chat with us</span>
-   662|    <a href="https://wa.me/8613450802291" target="_blank" rel="noopener" aria-label="WhatsApp"><svg viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg></a>
-   663|  </div>
-   664|</div>
-   665|    
-   666|
-   667|<footer>
-   668|  <div class="container">
-   669|    <div class="footer-grid">
-   670|      <div class="footer-brand">
-   671|        <div class="footer-logo">Tracklinear</div>
-   672|        <p class="footer-tagline">One-stop magnetic track lighting system for B2B projects worldwide.</p>
-   673|        <div class="footer-contact">
-   674|          <a href="mailto:info@tracklinear.com">info@tracklinear.com</a>
-   675|          <span class="footer-sep">|</span>
-   676|          <a href="https://wa.me/8613450802291" target="_blank" rel="noopener">WhatsApp: +86 134 5080 2291</a>
-   677|        </div>
-   678|      </div>
-   679|      <div class="footer-resources">
-   680|        <span class="footer-label">Resources</span>
-   681|        <div class="footer-links">
-   682|          <a href="mailto:info@tracklinear.com?subject=Catalogue%20Request">Catalogue</a>
-   683|          <a href="mailto:info@tracklinear.com?subject=Installation%20Guide%20Request">Installation Guide</a>
-   684|          <a href="mailto:info@tracklinear.com?subject=Datasheet%20Request">Datasheet</a>
-   685|          <a href="mailto:info@tracklinear.com?subject=Driver%20Matching%20Guide%20Request">Driver Matching Guide</a>
-   686|          <a href="/blog/">Blog</a>
-   687|          <a href="/buyers-handbook/">Buyer's Handbook</a>
-   688|        </div>
-   689|      </div>
-   690|    </div>
-   691|    <div class="footer-bottom">
-   692|      <span>&copy; 2026 Tracklinear. All rights reserved.</span>
-   693|    </div>
-   694|  </div>
-   695|</footer>
-   696|
-   697|  <!-- Mobile WhatsApp Float -->
-   698|  <a href="https://wa.me/8613450802291" class="mobile-wa-float" target="_blank" rel="noopener" aria-label="Chat on WhatsApp"><svg viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg></a>
-   699|</body>
-   700|</html>
-   701|
+
+<div class="contact-sidebar">
+  <h4>📩 Send Your Inquiry</h4>
+  <p class="sub">We'll reply within 24 hours</p>
+  <form action="https://formsubmit.co/info@tracklinear.com" method="POST">
+    <input type="hidden" name="_subject" value="Blog Inquiry">
+    <input type="hidden" name="_captcha" value="false">
+    <input type="text" name="name" placeholder="Your Name *" required>
+    <input type="email" name="email" placeholder="Email Address *" required>
+    <input type="text" name="phone" placeholder="WhatsApp / Phone">
+    <textarea name="message" placeholder="Describe your project — ceiling type, quantity, requirements..."></textarea>
+    <button type="submit" class="btn-send">Send Inquiry →</button>
+  </form>
+  <div class="wa-row">
+    <span>Or chat with us</span>
+    <a href="https://wa.me/8613450802291" target="_blank" rel="noopener" aria-label="WhatsApp"><svg viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg></a>
+  </div>
+</div>
+    
+
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="footer-logo">Tracklinear</div>
+        <p class="footer-tagline">One-stop magnetic track lighting system for B2B projects worldwide.</p>
+        <div class="footer-contact">
+          <a href="mailto:info@tracklinear.com">info@tracklinear.com</a>
+          <span class="footer-sep">|</span>
+          <a href="https://wa.me/8613450802291" target="_blank" rel="noopener">WhatsApp: +86 134 5080 2291</a>
+        </div>
+      </div>
+      <div class="footer-resources">
+        <span class="footer-label">Resources</span>
+        <div class="footer-links">
+          <a href="mailto:info@tracklinear.com?subject=Catalogue%20Request">Catalogue</a>
+          <a href="mailto:info@tracklinear.com?subject=Installation%20Guide%20Request">Installation Guide</a>
+          <a href="mailto:info@tracklinear.com?subject=Datasheet%20Request">Datasheet</a>
+          <a href="mailto:info@tracklinear.com?subject=Driver%20Matching%20Guide%20Request">Driver Matching Guide</a>
+          <a href="/blog/">Blog</a>
+          <a href="/buyers-handbook/">Buyer's Handbook</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; 2026 Tracklinear. All rights reserved.</span>
+    </div>
+  </div>
+</footer>
+
+  <!-- Mobile WhatsApp Float -->
+  <a href="https://wa.me/8613450802291" class="mobile-wa-float" target="_blank" rel="noopener" aria-label="Chat on WhatsApp"><svg viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg></a>
+</body>
+</html>
