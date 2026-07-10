@@ -315,11 +315,63 @@
 </head>
 <body>
 <header>
-  <div class="container nav">
-    <a href="index.html" class="logo">Tracklinear</a>
-    <a href="blog/index.html" class="back-link">← Back to Blog</a>
-  </div>
-</header>
+    <div class="container nav">
+      <a href="index.html" class="brand">
+        <div class="logo">M</div>
+        <div>
+          <div class="brand-title">Tracklinear</div>
+          <div class="brand-sub">Lighting System</div>
+        </div>
+      </a>
+      <nav aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <div class="nav-dropdown">
+          <a href="tracks/index.html" class="dropdown-trigger">Product ▾</a>
+          <div class="dropdown-menu">
+            <div class="dropdown-col">
+              <div class="dropdown-label">Track Rails</div>
+              <a href="tracks/20mm.html">20mm Track</a>
+              <a href="tracks/23mm.html">23mm Track</a>
+              <a href="tracks/35mm.html">35mm Track</a>
+            </div>
+            <div class="dropdown-col">
+              <div class="dropdown-label">Track Lights</div>
+              <a href="lights/flood.html">Flood Light</a>
+              <a href="lights/grid.html">Grille Light</a>
+              <a href="lights/folding-grid.html">Folding Grille Light</a>
+              <a href="lights/spot.html">Spot Light</a>
+              <a href="lights/pendant.html">Pendant Light</a>
+            </div>
+          </div>
+        </div>
+        <a href="index.html#installation">Installation</a>
+        <a href="blog/index.html">Blog</a>
+      </nav>
+      <a class="btn btn-dark" href="contact.html">Contact →</a>
+      <button class="hamburger" onclick="toggleMobileMenu()">☰</button>
+    </div>
+    <!-- Mobile menu -->
+    <div class="mobile-menu" id="mobileMenu" role="dialog" aria-label="Mobile navigation">
+      <a href="index.html">Home</a>
+      <div class="mobile-group">
+        <div class="mobile-group-label">Track Rails</div>
+        <a href="tracks/20mm.html">20mm Track</a>
+        <a href="tracks/23mm.html">23mm Track</a>
+        <a href="tracks/35mm.html">35mm Track</a>
+      </div>
+      <div class="mobile-group">
+        <div class="mobile-group-label">Track Lights</div>
+        <a href="lights/flood.html">Flood Light</a>
+        <a href="lights/grid.html">Grille Light</a>
+        <a href="lights/folding-grid.html">Folding Grille Light</a>
+        <a href="lights/spot.html">Spot Light</a>
+        <a href="lights/pendant.html">Pendant Light</a>
+      </div>
+      <a href="index.html#installation">Installation</a>
+      <a href="blog/index.html">Blog</a>
+      <a href="contact.html" class="btn btn-dark" style="margin-top:12px;">Contact →</a>
+    </div>
+  </header>
 <main class="container">
   <div class="breadcrumb"><a href="index.html">Home</a> / <a href="blog/index.html">Blog</a> / Color Fidelity</div>
   <div class="tag">Technical Excellence</div>
