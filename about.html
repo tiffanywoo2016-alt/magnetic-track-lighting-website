@@ -569,23 +569,19 @@
     .strength-grid {
       display: grid;
       grid-template-columns: 1fr 1fr;
-      gap: 20px;
+      gap: 0;
       max-width: 960px;
       margin: 0 auto;
     }
     .strength-item {
-      background: #fff;
-      border-radius: 14px;
-      padding: 24px 28px;
-      border: 1px solid #ede8df;
-      border-left: 4px solid #b08a57;
-      transition: all .22s ease;
+      padding: 28px 24px;
+      border-bottom: 1px solid rgba(0,0,0,.06);
     }
-    .strength-item:hover {
-      transform: translateY(-2px);
-      box-shadow: 0 8px 24px rgba(0,0,0,.05);
-      border-color: rgba(176,138,87,.2);
-      border-left-color: #e6c08c;
+    .strength-item:nth-child(odd) {
+      border-right: 1px solid rgba(0,0,0,.06);
+    }
+    .strength-item:nth-last-child(-n+2) {
+      border-bottom: none;
     }
     .strength-item h3 {
       margin: 0 0 6px;
@@ -595,12 +591,15 @@
     }
     .strength-item p {
       margin: 0;
-      color: #5a5a5a;
+      color: #777;
       font-size: 14px;
-      line-height: 1.65;
+      line-height: 1.6;
     }
     @media (max-width: 768px) {
       .strength-grid { grid-template-columns: 1fr; }
+      .strength-item:nth-child(odd) { border-right: none; }
+      .strength-item:nth-last-child(-n+2) { border-bottom: 1px solid rgba(0,0,0,.06); }
+      .strength-item:last-child { border-bottom: none; }
     }
 
   </style>
