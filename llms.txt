@@ -1,0 +1,46 @@
+# Tracklinear Lighting — 48V Magnetic Track Lighting Systems
+##  llms.txt — AI 内容索引
+
+> 帮助 AI 搜索快速理解站点内容结构和核心信息。
+> Site: https://tracklinear.com
+> Last updated: 2026-07-10
+
+## Core Pages
+
+- [Homepage — 48V Magnetic Track Lighting OEM/ODM Supplier](https://tracklinear.com/)
+- [Track Rails Overview — 20/23/35mm Systems](https://tracklinear.com/tracks/)
+- [Track Light Modules — Flood, Grille, Spot, Pendant](https://tracklinear.com/lights/)
+- [Blog Index — Technical Guides & Design Insights](https://tracklinear.com/blog/)
+
+### Track Rails
+- [20mm Track — Compact Residential System](https://tracklinear.com/tracks/20mm.html)
+- [23mm Track — Standard Commercial System](https://tracklinear.com/tracks/23mm.html)
+- [35mm Track — Heavy-Duty Industrial System](https://tracklinear.com/tracks/35mm.html)
+
+### Light Modules
+- [Flood Light Module](https://tracklinear.com/lights/flood.html)
+- [Grille Light Module](https://tracklinear.com/lights/grid.html)
+- [Folding Grille Light Module](https://tracklinear.com/lights/folding-grid.html)
+- [Spot Light Module](https://tracklinear.com/lights/spot.html)
+- [Pendant Light Module](https://tracklinear.com/lights/pendant.html)
+
+## Featured Content
+
+- [48V vs 24V Magnetic Track Lighting: The Professional Guide](https://tracklinear.com/blog-post-1.html)
+- [How to Specify Magnetic Track Lighting for 5 Commercial Project Types](https://tracklinear.com/blog-post-5.html)
+- [How a Lisbon Boutique Hotel Unified Its Guest Experience with One Magnetic Track System](https://tracklinear.com/blog-post-6.html)
+- [The Magnetic Track Lighting Buyer's Handbook — Chapter 1](https://tracklinear.com/magnetic-track-lighting-buyers-handbook-chapter-1.html)
+- [How Professional Buyers Evaluate Magnetic Track Lighting Suppliers](https://tracklinear.com/buyers-handbook/how-professional-buyers-evaluate-suppliers.html)
+
+## Key Facts
+
+- Product: 48V magnetic track lighting systems
+- Track widths: 20mm (residential), 23mm (commercial), 35mm (heavy-duty)
+- Installation: surface mounted, recessed, trimless recessed, pendant
+- Light modules: flood, grille, folding grille, spot, pendant, linear, wall washer, sensor
+- Smart control: Tuya (Zigbee/Wi-Fi/Bluetooth), DALI 2.0, Casambi, 0-10V, Triac
+- Certifications: CE, RoHS
+- OEM/ODM: custom track length, RAL color finish, private label packaging, logo printing
+- MOQ: no MOQ for standard items; MOQ applies for OEM production
+- Lead time: standard 3-7 working days, OEM 20-30 days
+- Contact: info@tracklinear.com | WhatsApp: +86-134-5080-2291
