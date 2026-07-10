@@ -565,32 +565,35 @@
       .stats-row { grid-template-columns: 1fr 1fr; }
       .export-grid { grid-template-columns: 1fr 1fr; }
     }
-    /* Strength Grid — What Sets Tracklinear Apart (B2B scannable) */
+    /* Strength Grid — What Sets Tracklinear Apart (light cards) */
     .strength-grid {
       display: grid;
       grid-template-columns: 1fr 1fr;
-      gap: 32px 48px;
+      gap: 20px;
       max-width: 960px;
       margin: 0 auto;
     }
     .strength-item {
-      padding: 0;
-      border: none;
+      background: #fff;
+      border-radius: 10px;
+      padding: 28px 30px;
+      box-shadow: 0 1px 4px rgba(0,0,0,.06);
+      border-top: 3px solid var(--gold);
     }
     .strength-item h3 {
-      margin: 0 0 4px;
-      font-size: 15px;
+      margin: 0 0 6px;
+      font-size: 16px;
       font-weight: 700;
       color: #151515;
     }
     .strength-item p {
       margin: 0;
-      color: #777;
+      color: #666;
       font-size: 14px;
-      line-height: 1.5;
+      line-height: 1.6;
     }
     @media (max-width: 768px) {
-      .strength-grid { grid-template-columns: 1fr; gap: 24px; }
+      .strength-grid { grid-template-columns: 1fr; gap: 16px; }
     }
 
   </style>
