@@ -281,7 +281,6 @@
       min-height: 75vh;
       display: flex;
       align-items: center;
-      color: white;
       text-align: center;
     }
     .about-hero-video {
@@ -306,6 +305,14 @@
       z-index: 2;
       padding: 120px 28px 100px;
     }
+    .about-hero .hero-kicker {
+      color: var(--gold-light);
+      text-transform: uppercase;
+      letter-spacing: .22em;
+      font-weight: 800;
+      font-size: 13px;
+      margin-bottom: 18px;
+    }
     .about-hero h1 {
       margin: 0 auto;
       font-size: clamp(38px, 5.5vw, 58px);
@@ -313,12 +320,13 @@
       letter-spacing: -.03em;
       font-weight: 800;
       max-width: 800px;
+      color: #ffffff;
     }
     .about-hero p {
       max-width: 680px;
       font-size: 18px;
       line-height: 1.7;
-      color: rgba(255,255,255,.82);
+      color: rgba(255,255,255,.7);
       margin: 22px auto 0;
     }
     .about-hero .hero-pills {
@@ -337,9 +345,9 @@
       border-radius: 999px;
       font-size: 12.5px;
       font-weight: 700;
-      color: #fff;
-      background: rgba(255,255,255,.16);
-      border: 1px solid rgba(255,255,255,.42);
+      color: var(--gold-light);
+      background: rgba(255,255,255,.1);
+      border: 1px solid rgba(230,192,140,.4);
       backdrop-filter: blur(6px);
       -webkit-backdrop-filter: blur(6px);
     }
@@ -639,6 +647,7 @@
         <source src="images/factory-testing.mp4" type="video/mp4">
       </video>
       <div class="container">
+        <div class="hero-kicker">About Us</div>
         <h1>Your Partner in Magnetic Track Lighting</h1>
         <p>Tracklinear is a professional manufacturer of 48V magnetic track lighting systems — from track rails and LED modules to smart drivers and accessories. We serve contractors, distributors, interior designers, and lighting specifiers worldwide with reliable OEM/ODM solutions.</p>
         <div class="hero-pills">
