@@ -468,6 +468,34 @@
       line-height: 1.6;
     }
 
+    /* Stats Section Background Image */
+    .stats-bg {
+      position: relative;
+      overflow: hidden;
+      background: var(--dark);
+    }
+    .stats-bg > img {
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      z-index: 0;
+    }
+    .stats-bg::after {
+      content: '';
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(to top, rgba(0,0,0,.75) 0%, rgba(0,0,0,.4) 100%);
+      z-index: 1;
+    }
+    .stats-bg .container {
+      position: relative;
+      z-index: 2;
+    }
+
     /* Stats Row */
     .stats-row {
       display: grid;
@@ -568,7 +596,7 @@
     /* Strength Grid — What Sets Tracklinear Apart (light cards) */
     .strength-grid {
       display: grid;
-      grid-template-columns: 1fr 1fr;
+      grid-template-columns: repeat(3, 1fr);
       gap: 20px;
       max-width: 960px;
       margin: 0 auto;
@@ -708,7 +736,8 @@
     </section>
 
     <!-- Stats Section -->
-    <section class="dark-section" style="padding: 80px 0;">
+    <section class="stats-bg" style="padding: 80px 0;">
+      <img src="images/warehouse-stock.jpg" alt="Tracklinear warehouse and inventory — real factory stock" loading="lazy" decoding="async">
       <div class="container">
         <div class="stats-row">
           <div class="stat-item">
@@ -745,20 +774,8 @@
             <p>Complete lighting solutions delivered for international projects — from residential to commercial and hospitality.</p>
           </div>
           <div class="strength-item">
-            <h3>Industry Experience</h3>
-            <p>Years of hands-on experience in magnetic track lighting manufacturing and export, working with B2B buyers worldwide.</p>
-          </div>
-          <div class="strength-item">
             <h3>Full-Service Support</h3>
             <p>From initial concept to delivery — system matching, installation advice, and after-sales support throughout your project.</p>
-          </div>
-          <div class="strength-item">
-            <h3>Certified Quality</h3>
-            <p>CE, RoHS and CCC certified. Consistent quality checks throughout production, not just a final inspection.</p>
-          </div>
-          <div class="strength-item">
-            <h3>Global Export Reach</h3>
-            <p>Products shipped to 30+ markets, working with lighting contractors, distributors and specifiers across Europe, Asia and the Middle East.</p>
           </div>
           <div class="strength-item">
             <h3>Flexible Partnership</h3>
