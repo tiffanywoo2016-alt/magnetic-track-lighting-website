@@ -565,27 +565,21 @@
       .stats-row { grid-template-columns: 1fr 1fr; }
       .export-grid { grid-template-columns: 1fr 1fr; }
     }
-    /* Strength Grid — What Sets Tracklinear Apart */
+    /* Strength Grid — What Sets Tracklinear Apart (B2B scannable) */
     .strength-grid {
       display: grid;
       grid-template-columns: 1fr 1fr;
-      gap: 0;
+      gap: 32px 48px;
       max-width: 960px;
       margin: 0 auto;
     }
     .strength-item {
-      padding: 28px 24px;
-      border-bottom: 1px solid rgba(0,0,0,.06);
-    }
-    .strength-item:nth-child(odd) {
-      border-right: 1px solid rgba(0,0,0,.06);
-    }
-    .strength-item:nth-last-child(-n+2) {
-      border-bottom: none;
+      padding: 0;
+      border: none;
     }
     .strength-item h3 {
-      margin: 0 0 6px;
-      font-size: 16px;
+      margin: 0 0 4px;
+      font-size: 15px;
       font-weight: 700;
       color: #151515;
     }
@@ -593,13 +587,10 @@
       margin: 0;
       color: #777;
       font-size: 14px;
-      line-height: 1.6;
+      line-height: 1.5;
     }
     @media (max-width: 768px) {
-      .strength-grid { grid-template-columns: 1fr; }
-      .strength-item:nth-child(odd) { border-right: none; }
-      .strength-item:nth-last-child(-n+2) { border-bottom: 1px solid rgba(0,0,0,.06); }
-      .strength-item:last-child { border-bottom: none; }
+      .strength-grid { grid-template-columns: 1fr; gap: 24px; }
     }
 
   </style>
@@ -748,33 +739,27 @@
         <div class="strength-grid">
           <div class="strength-item">
             <h3>Design &amp; Project Experience</h3>
-              <p>Complete lighting solutions delivered for international projects — from residential to commercial and hospitality.</p>
-            </div>
+            <p>Complete lighting solutions delivered for international projects — from residential to commercial and hospitality.</p>
           </div>
           <div class="strength-item">
             <h3>Industry Experience</h3>
-              <p>Years of hands-on experience in magnetic track lighting manufacturing and export, working with B2B buyers worldwide.</p>
-            </div>
+            <p>Years of hands-on experience in magnetic track lighting manufacturing and export, working with B2B buyers worldwide.</p>
           </div>
           <div class="strength-item">
             <h3>Full-Service Support</h3>
-              <p>From initial concept to delivery — system matching, installation advice, and after-sales support throughout your project.</p>
-            </div>
+            <p>From initial concept to delivery — system matching, installation advice, and after-sales support throughout your project.</p>
           </div>
           <div class="strength-item">
             <h3>Certified Quality</h3>
-              <p>CE, RoHS and CCC certified. Consistent quality checks throughout production, not just a final inspection.</p>
-            </div>
+            <p>CE, RoHS and CCC certified. Consistent quality checks throughout production, not just a final inspection.</p>
           </div>
           <div class="strength-item">
             <h3>Global Export Reach</h3>
-              <p>Products shipped to 30+ markets, working with lighting contractors, distributors and specifiers across Europe, Asia and the Middle East.</p>
-            </div>
+            <p>Products shipped to 30+ markets, working with lighting contractors, distributors and specifiers across Europe, Asia and the Middle East.</p>
           </div>
           <div class="strength-item">
             <h3>Flexible Partnership</h3>
-              <p>Quick response, OEM/ODM support, and low-MOQ trial orders to start. We make it easy to begin a new supplier relationship.</p>
-            </div>
+            <p>Quick response, OEM/ODM support, and low-MOQ trial orders to start. We make it easy to begin a new supplier relationship.</p>
           </div>
         </div>
       </div>
