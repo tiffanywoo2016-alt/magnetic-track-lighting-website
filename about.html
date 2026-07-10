@@ -565,64 +565,55 @@
       .stats-row { grid-template-columns: 1fr 1fr; }
       .export-grid { grid-template-columns: 1fr 1fr; }
     }
-    /* Edge Cards — What Sets Tracklinear Apart */
-    .edge-grid {
-      display: flex;
-      flex-direction: column;
+    /* Strength Grid — What Sets Tracklinear Apart */
+    .strength-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
       gap: 20px;
       max-width: 960px;
       margin: 0 auto;
     }
-    .edge-card {
-      display: grid;
-      grid-template-columns: 52px 1fr;
-      gap: 20px;
+    .strength-item {
+      display: flex;
+      gap: 18px;
+      align-items: flex-start;
       background: #fff;
-      border-radius: 20px;
-      padding: 28px 32px;
+      border-radius: 16px;
+      padding: 24px 26px;
       border: 1px solid #ede8df;
       transition: all .22s ease;
     }
-    .edge-card:hover {
+    .strength-item:hover {
       transform: translateY(-2px);
-      box-shadow: 0 12px 32px rgba(0,0,0,.06);
-      border-color: rgba(176,138,87,.25);
+      box-shadow: 0 8px 24px rgba(0,0,0,.05);
+      border-color: rgba(176,138,87,.2);
     }
-    .edge-icon {
-      width: 52px;
-      height: 52px;
-      border-radius: 16px;
-      background: #1a1a1a;
-      color: var(--gold-light);
+    .strength-icon {
+      width: 44px;
+      height: 44px;
+      border-radius: 12px;
+      background: linear-gradient(135deg, #e6c08c 0%, #b08a57 100%);
+      color: #fff;
       display: grid;
       place-items: center;
-      font-size: 22px;
+      font-size: 20px;
       flex-shrink: 0;
       margin-top: 2px;
     }
-    .edge-body h3 {
-      margin: 0 0 8px;
-      font-size: 18px;
+    .strength-item h3 {
+      margin: 0 0 6px;
+      font-size: 16px;
       font-weight: 700;
-      color: var(--dark);
+      color: #151515;
     }
-    .edge-body p {
+    .strength-item p {
       margin: 0;
-      color: #4b4b4b;
-      font-size: 15px;
-      line-height: 1.7;
+      color: #5a5a5a;
+      font-size: 14px;
+      line-height: 1.65;
     }
-    .edge-tag {
-      margin-top: 12px;
-      font-size: 12px;
-      font-weight: 700;
-      color: #b08a57;
-      letter-spacing: .02em;
-      text-transform: uppercase;
-    }
-    @media (max-width: 640px) {
-      .edge-card { grid-template-columns: 1fr; }
-      .edge-icon { width: 44px; height: 44px; font-size: 18px; }
+    @media (max-width: 768px) {
+      .strength-grid { grid-template-columns: 1fr; }
     }
 
   </style>
@@ -766,39 +757,49 @@
         <div class="section-head">
           <div class="section-kicker">Why Choose Us</div>
           <h2>What Sets Tracklinear Apart</h2>
-          <p>Most magnetic track suppliers sell parts. We match the system — and we'll tell you if it's wrong before you order.</p>
+          <p>Not all magnetic track suppliers work the same way. Here's what you can expect when you work with us.</p>
         </div>
-        <div class="edge-grid">
-          <div class="edge-card">
-            <div class="edge-icon">⚡</div>
-            <div class="edge-body">
-              <h3>Pre-Shipment System Matching</h3>
-              <p>Most suppliers quote tracks and lights separately — and leave compatibility to you. Before we ship, we verify track width, module wattage, driver capacity, voltage drop, and control method as one system. If something doesn't match, we catch it before it reaches your job site.</p>
-              <div class="edge-tag">Prevents: incompatible components, installation delays, costly reorders</div>
+        <div class="strength-grid">
+          <div class="strength-item">
+            <div class="strength-icon">🎯</div>
+            <div>
+              <h3>Design &amp; Project Experience</h3>
+              <p>Complete lighting solutions delivered for international projects — from residential to commercial and hospitality.</p>
             </div>
           </div>
-          <div class="edge-card">
-            <div class="edge-icon">🔗</div>
-            <div class="edge-body">
-              <h3>Real Conductor Quality — Brass, Not CCA</h3>
-              <p>Many budget tracks use CCA (copper-clad aluminum) conductors to cut costs. Over time, CCA oxidises, increases resistance, and causes uneven brightness. We use brass or pure copper conductors as standard — better conductivity, lower heat build-up, and consistent light output across the full track run.</p>
-              <div class="edge-tag">Prevents: flickering, irregular brightness, safety risk from overheating</div>
+          <div class="strength-item">
+            <div class="strength-icon">⏳</div>
+            <div>
+              <h3>Industry Experience</h3>
+              <p>Years of hands-on experience in magnetic track lighting manufacturing and export, working with B2B buyers worldwide.</p>
             </div>
           </div>
-          <div class="edge-card">
-            <div class="edge-icon">📊</div>
-            <div class="edge-body">
-              <h3>Driver Load Planning with Headroom</h3>
-              <p>The most common complaint we hear: "My lights flicker" or "The track at the far end is dimmer." These are almost always driver under-spec problems. We size every driver with 20–30% headroom and check voltage drop per track length — so your system runs stable from day one.</p>
-              <div class="edge-tag">Prevents: flickering, tail-end dimming, driver overheating, premature failure</div>
+          <div class="strength-item">
+            <div class="strength-icon">🔄</div>
+            <div>
+              <h3>Full-Service Support</h3>
+              <p>From initial concept to delivery — system matching, installation advice, and after-sales support throughout your project.</p>
             </div>
           </div>
-          <div class="edge-card">
-            <div class="edge-icon">🎯</div>
-            <div class="edge-body">
-              <h3>Honest Specifying — We Say No When It's Wrong</h3>
-              <p>If a product isn't right for your ceiling type, your load requirement, or your project budget — we'll tell you before you order. This is why repeat buyers work with us: they trust that our recommendation is based on what actually works, not on what we want to sell.</p>
-              <div class="edge-tag">Prevents: wrong product selection, on-site surprises, wasted budget</div>
+          <div class="strength-item">
+            <div class="strength-icon">✅</div>
+            <div>
+              <h3>Certified Quality</h3>
+              <p>CE, RoHS and CCC certified. Consistent quality checks throughout production, not just a final inspection.</p>
+            </div>
+          </div>
+          <div class="strength-item">
+            <div class="strength-icon">🌍</div>
+            <div>
+              <h3>Global Export Reach</h3>
+              <p>Products shipped to 30+ markets, working with lighting contractors, distributors and specifiers across Europe, Asia and the Middle East.</p>
+            </div>
+          </div>
+          <div class="strength-item">
+            <div class="strength-icon">🤝</div>
+            <div>
+              <h3>Flexible Partnership</h3>
+              <p>Quick response, OEM/ODM support, and low-MOQ trial orders to start. We make it easy to begin a new supplier relationship.</p>
             </div>
           </div>
         </div>
