@@ -565,6 +565,66 @@
       .stats-row { grid-template-columns: 1fr 1fr; }
       .export-grid { grid-template-columns: 1fr 1fr; }
     }
+    /* Edge Cards — What Sets Tracklinear Apart */
+    .edge-grid {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      max-width: 960px;
+      margin: 0 auto;
+    }
+    .edge-card {
+      display: grid;
+      grid-template-columns: 52px 1fr;
+      gap: 20px;
+      background: #fff;
+      border-radius: 20px;
+      padding: 28px 32px;
+      border: 1px solid #ede8df;
+      transition: all .22s ease;
+    }
+    .edge-card:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 12px 32px rgba(0,0,0,.06);
+      border-color: rgba(176,138,87,.25);
+    }
+    .edge-icon {
+      width: 52px;
+      height: 52px;
+      border-radius: 16px;
+      background: #1a1a1a;
+      color: var(--gold-light);
+      display: grid;
+      place-items: center;
+      font-size: 22px;
+      flex-shrink: 0;
+      margin-top: 2px;
+    }
+    .edge-body h3 {
+      margin: 0 0 8px;
+      font-size: 18px;
+      font-weight: 700;
+      color: var(--dark);
+    }
+    .edge-body p {
+      margin: 0;
+      color: #4b4b4b;
+      font-size: 15px;
+      line-height: 1.7;
+    }
+    .edge-tag {
+      margin-top: 12px;
+      font-size: 12px;
+      font-weight: 700;
+      color: #b08a57;
+      letter-spacing: .02em;
+      text-transform: uppercase;
+    }
+    @media (max-width: 640px) {
+      .edge-card { grid-template-columns: 1fr; }
+      .edge-icon { width: 44px; height: 44px; font-size: 18px; }
+    }
+
   </style>
 </head>
 <body>
@@ -700,44 +760,46 @@
       </div>
     </section>
 
-    <!-- Why Choose Us -->
+    <!-- What Sets Tracklinear Apart -->
     <section>
       <div class="container">
         <div class="section-head">
           <div class="section-kicker">Why Choose Us</div>
           <h2>What Sets Tracklinear Apart</h2>
-          <p>We focus on one thing: delivering a matched, reliable magnetic track lighting system for every project. Here's how we earn the trust of B2B buyers worldwide.</p>
+          <p>Most magnetic track suppliers sell parts. We match the system — and we'll tell you if it's wrong before you order.</p>
         </div>
-        <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px;">
-          <div class="card" style="text-align: center; padding: 32px;">
-            <div class="icon" style="margin: 0 auto 18px;">⚙</div>
-            <h3>System Matching, Not Just Part Sales</h3>
-            <p>We check track width, module voltage, driver wattage, and control compatibility before quoting. No mismatched components, no last-minute surprises on site.</p>
+        <div class="edge-grid">
+          <div class="edge-card">
+            <div class="edge-icon">⚡</div>
+            <div class="edge-body">
+              <h3>Pre-Shipment System Matching</h3>
+              <p>Most suppliers quote tracks and lights separately — and leave compatibility to you. Before we ship, we verify track width, module wattage, driver capacity, voltage drop, and control method as one system. If something doesn't match, we catch it before it reaches your job site.</p>
+              <div class="edge-tag">Prevents: incompatible components, installation delays, costly reorders</div>
+            </div>
           </div>
-          <div class="card" style="text-align: center; padding: 32px;">
-            <div class="icon" style="margin: 0 auto 18px;">🏭</div>
-            <h3>Direct Factory Control</h3>
-            <p>We manufacture in our own facility in Foshan, China. Every extrusion, PCB assembly, and driver board is produced under our quality management system.</p>
+          <div class="edge-card">
+            <div class="edge-icon">🔗</div>
+            <div class="edge-body">
+              <h3>Real Conductor Quality — Brass, Not CCA</h3>
+              <p>Many budget tracks use CCA (copper-clad aluminum) conductors to cut costs. Over time, CCA oxidises, increases resistance, and causes uneven brightness. We use brass or pure copper conductors as standard — better conductivity, lower heat build-up, and consistent light output across the full track run.</p>
+              <div class="edge-tag">Prevents: flickering, irregular brightness, safety risk from overheating</div>
+            </div>
           </div>
-          <div class="card" style="text-align: center; padding: 32px;">
-            <div class="icon" style="margin: 0 auto 18px;">📋</div>
-            <h3>OEM &amp; Private Label Expertise</h3>
-            <p>Custom branding, packaging, logo printing, and project-specific documentation. We support distributors who need neutral or private-label products for their markets.</p>
+          <div class="edge-card">
+            <div class="edge-icon">📊</div>
+            <div class="edge-body">
+              <h3>Driver Load Planning with Headroom</h3>
+              <p>The most common complaint we hear: "My lights flicker" or "The track at the far end is dimmer." These are almost always driver under-spec problems. We size every driver with 20–30% headroom and check voltage drop per track length — so your system runs stable from day one.</p>
+              <div class="edge-tag">Prevents: flickering, tail-end dimming, driver overheating, premature failure</div>
+            </div>
           </div>
-          <div class="card" style="text-align: center; padding: 32px;">
-            <div class="icon" style="margin: 0 auto 18px;">🔬</div>
-            <h3>Quality Testing</h3>
-            <p>CE and RoHS compliant. Every batch undergoes photometric testing, burn-in, and voltage stability checks before shipment to ensure consistent performance.</p>
-          </div>
-          <div class="card" style="text-align: center; padding: 32px;">
-            <div class="icon" style="margin: 0 auto 18px;">🌍</div>
-            <h3>Global Shipping &amp; Logistics</h3>
-            <p>We ship by air, sea, or express courier to over 50 countries. Standard items leave the warehouse within 3–7 working days. OEM orders typically ship in 20–30 days.</p>
-          </div>
-          <div class="card" style="text-align: center; padding: 32px;">
-            <div class="icon" style="margin: 0 auto 18px;">💬</div>
-            <h3>English-First Communication</h3>
-            <p>Clear, timely communication in English — from initial inquiry to after-sales support. No language barriers, no miscommunication on technical specifications.</p>
+          <div class="edge-card">
+            <div class="edge-icon">🎯</div>
+            <div class="edge-body">
+              <h3>Honest Specifying — We Say No When It's Wrong</h3>
+              <p>If a product isn't right for your ceiling type, your load requirement, or your project budget — we'll tell you before you order. This is why repeat buyers work with us: they trust that our recommendation is based on what actually works, not on what we want to sell.</p>
+              <div class="edge-tag">Prevents: wrong product selection, on-site surprises, wasted budget</div>
+            </div>
           </div>
         </div>
       </div>
