@@ -422,28 +422,9 @@
     .recommend { color: var(--gold); font-weight: 800; font-size: 14px; margin: 16px 0 12px; }
     .app-body p { color: #666; line-height: 1.65; }
     .faq-section { background: var(--bg); padding: 96px 0; }
-    .faq-split {
-      display: grid;
-      grid-template-columns: 1fr 1.4fr;
-      gap: 48px;
-      align-items: start;
-    }
-    .faq-left {
-      position: sticky;
-      top: 100px;
-    }
-    .faq-left img {
-      width: 100%;
-      height: auto;
-      border-radius: 24px;
-      display: block;
-      box-shadow: 0 12px 40px rgba(0,0,0,.08);
-    }
-    .faq-grid { display: flex; flex-direction: column; gap: 12px; }
+    .faq-grid { display: flex; flex-direction: column; gap: 10px; max-width: 800px; margin: 0 auto; }
     @media (max-width: 920px) {
-      .faq-split { grid-template-columns: 1fr; }
-      .faq-left { position: static; }
-      .faq-left img { max-height: 200px; object-fit: cover; border-radius: 16px; }
+      .faq-left { display: none; }
     }
     .faq-item {
       background: white;
@@ -1069,26 +1050,24 @@
           <h2>Frequently Asked Questions</h2>
           <p>Get professional answers about magnetic track lighting system planning and technical details.</p>
         </div>
-        <div class="faq-split">
-          <div class="faq-left">
-            <img alt="Magnetic track lighting beam angle control and smart dimming technology" src="images/image_5.webp" width="1200" height="900" loading="lazy" decoding="async" />
-          </div>
-          <div class="faq-right">
-            <div class="faq-grid">
+        <div class="faq-grid">
+
           <div class="faq-item" onclick="this.classList.toggle('open')">
             <div class="faq-question">
               What certifications do your products have?
               <span class="faq-toggle">+</span>
             </div>
-            <div class="faq-answer">CE and RoHS certified, compliant with European safety and environmental standards.</div>
+            <div class="faq-answer">CE and RoHS certified. Test reports available on request.</div>
           </div>
+
           <div class="faq-item" onclick="this.classList.toggle('open')">
             <div class="faq-question">
               What is the minimum order quantity?
               <span class="faq-toggle">+</span>
             </div>
-            <div class="faq-answer">No MOQ for in-stock items. For OEM production, minimum quantities apply.</div>
+            <div class="faq-answer">No MOQ for in-stock items. Custom/OEM production: minimum quantities apply.</div>
           </div>
+
           <div class="faq-item" onclick="this.classList.toggle('open')">
             <div class="faq-question">
               Can I get samples before a bulk order?
@@ -1096,34 +1075,15 @@
             </div>
             <div class="faq-answer">Yes. Sample cost is refundable on bulk orders.</div>
           </div>
+
           <div class="faq-item" onclick="this.classList.toggle('open')">
             <div class="faq-question">
               What is the typical lead time?
               <span class="faq-toggle">+</span>
             </div>
-            <div class="faq-answer">Standard items ship within 3-7 working days. OEM orders take 20-30 days.</div>
+            <div class="faq-answer">Stock items: 3-7 working days. OEM orders: 20-30 days depending on quantity.</div>
           </div>
-          <div class="faq-item" onclick="this.classList.toggle('open')">
-            <div class="faq-question">
-              Do you offer custom track lengths and colors?
-              <span class="faq-toggle">+</span>
-            </div>
-            <div class="faq-answer">Yes. Custom lengths and RAL-matched finishes available. MOQ applies for custom finishes.</div>
-          </div>
-          <div class="faq-item" onclick="this.classList.toggle('open')">
-            <div class="faq-question">
-              What's the difference between 20mm, 23mm and 35mm?
-              <span class="faq-toggle">+</span>
-            </div>
-            <div class="faq-answer">Track width. 20mm for residential, 23mm most common, 35mm heavy-duty. All run on 48V.</div>
-          </div>
-          <div class="faq-item" onclick="this.classList.toggle('open')">
-            <div class="faq-question">
-              Is 48V magnetic track lighting safe?
-              <span class="faq-toggle">+</span>
-            </div>
-            <div class="faq-answer">Yes. 48V DC is Extra Low Voltage — no shock risk, no electrician needed for module changes.</div>
-          </div>
+
           <div class="faq-item" onclick="this.classList.toggle('open')">
             <div class="faq-question">
               Do you offer OEM / ODM services?
@@ -1131,9 +1091,8 @@
             </div>
             <div class="faq-answer">Yes. Custom branding, packaging, and private-label production for overseas buyers.</div>
           </div>
+
           </div>
-        </div>
-      </div>
     </section>
 
     <section id="oem" class="oem-section">
