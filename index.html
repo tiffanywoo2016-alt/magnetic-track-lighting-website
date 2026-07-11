@@ -421,8 +421,26 @@
     .app-body h3 { font-size: 22px; margin: 0; }
     .recommend { color: var(--gold); font-weight: 800; font-size: 14px; margin: 16px 0 12px; }
     .app-body p { color: #666; line-height: 1.65; }
-    .faq-section { background: var(--bg); padding: 96px 0; }
-    .faq-grid { display: flex; flex-direction: column; gap: 10px; max-width: 860px; margin: 0 auto; }
+    .faq-section { background: var(--bg); padding: 80px 0; }
+    .faq-split {
+      display: grid;
+      grid-template-columns: 1.1fr 1fr;
+      gap: 44px;
+      align-items: start;
+    }
+    .faq-left-img {
+      border-radius: 20px;
+      overflow: hidden;
+      position: sticky;
+      top: 100px;
+    }
+    .faq-left-img img {
+      width: 100%;
+      height: auto;
+      display: block;
+      border-radius: 20px;
+    }
+    .faq-grid { display: flex; flex-direction: column; gap: 10px; }
     .faq-item {
       background: white;
       border-radius: 14px;
@@ -629,6 +647,8 @@
       nav { display: none; }
       .stats-grid, .grid-system, .installation-grid, .module-grid, .optics-grid, .applications, .oem-grid, .contact-grid { grid-template-columns: 1fr; }
       .why-split { grid-template-columns: 1fr; gap: 32px; }
+      .faq-split { grid-template-columns: 1fr; gap: 28px; }
+      .faq-left-img { position: static; }
       .card-grid, .specs, .check-grid { grid-template-columns: 1fr; }
       .form-row { grid-template-columns: 1fr; }
       .hero { min-height: 620px; }
@@ -1068,7 +1088,12 @@
           <h2>5 questions B2B buyers ask before ordering</h2>
           <p>Real technical and commercial answers about magnetic track lighting system selection, voltage drop, sampling, customisation and lead times.</p>
         </div>
-        <div class="faq-grid">
+        <div class="faq-split">
+          <div class="faq-left-img">
+            <img alt="Magnetic track lighting project consultation — track samples, colour temperature swatches and technical planning tools" src="images/faq-consultation.webp" width="1000" height="700" loading="lazy" decoding="async" />
+          </div>
+          <div>
+            <div class="faq-grid">
 
           <div class="faq-item" onclick="this.classList.toggle('open')">
             <div class="faq-q-row">
@@ -1082,7 +1107,7 @@
           <div class="faq-item" onclick="this.classList.toggle('open')">
             <div class="faq-q-row">
               <span class="faq-num">02</span>
-              <span class="faq-q-text">How many meters of track can one 48V driver support before voltage drop affects performance?</span>
+              <span class="faq-q-text">How many metres of track can one 48V driver support before voltage drop affects performance?</span>
               <span class="faq-toggle">+</span>
             </div>
             <div class="faq-answer">A single 48V driver typically supports 10–15 metres of track depending on total wattage load. For longer runs or higher power, we recommend multiple power feeds or additional drivers. We calculate voltage drop per layout during quotation to ensure consistent brightness across all modules.</div>
@@ -1116,6 +1141,8 @@
           </div>
 
           </div>
+        </div>
+      </div>
     </section>
 
     <section id="oem" class="oem-section">
