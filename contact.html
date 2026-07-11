@@ -66,8 +66,9 @@
     "description": "Professional supplier of magnetic track lighting systems — track rails, LED modules, drivers and accessories for B2B lighting projects.",
     "address": {
       "@type": "PostalAddress",
-      "streetAddress": "Guangdong Province, China",
+      "streetAddress": "Danzao Town, Nanhai District",
       "addressLocality": "Foshan",
+      "addressRegion": "Guangdong",
       "addressCountry": "CN"
     },
     "contactPoint": [
@@ -190,7 +191,7 @@
     /* Contact Grid */
     .contact-page-grid {
       display: grid;
-      grid-template-columns: 1.3fr 0.7fr;
+      grid-template-columns: 1.5fr 0.5fr;
       gap: 48px;
       align-items: start;
     }
@@ -386,6 +387,19 @@
       border: 0;
     }
 
+    /* Map in sidebar */
+    .contact-map {
+      margin-top: 16px;
+      border-radius: 14px;
+      overflow: hidden;
+      height: 170px;
+    }
+    .contact-map iframe {
+      width: 100%;
+      height: 100%;
+      border: 0;
+    }
+
     @media (max-width: 920px) {
       nav { display: none; }
       .contact-page-grid { grid-template-columns: 1fr; }
@@ -515,62 +529,37 @@
           <div class="contact-sidebar">
 
             <div class="contact-card">
+              <div class="contact-icon">📍</div>
+              <h3>Our Location</h3>
+              <div class="contact-meta">
+                <span><strong>Tracklinear Lighting</strong></span>
+                <span>Danzao Town, Nanhai District</span>
+                <span>Foshan City, Guangdong, China</span>
+              </div>
+              <div class="contact-map">
+                <iframe
+                  src="https://www.google.com/maps/embed?q=Danzao+Nanhai+Foshan+China"
+                  allowfullscreen=""
+                  loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"
+                  title="Tracklinear Lighting location in Danzao, Nanhai, Foshan"
+                ></iframe>
+              </div>
+            </div>
+
+            <div class="contact-card">
               <div class="contact-icon">✉</div>
-              <h3>Email</h3>
+              <h3>Email &amp; Phone</h3>
               <a href="mailto:info@tracklinear.com">info@tracklinear.com</a>
-              <p>For general inquiries, quotations, and technical support.</p>
+              <p style="margin-top:6px;"><a href="tel:+8613450802291">+86-134-5080-2291</a></p>
+              <p style="margin-top:4px; font-size:13px; color:#999;">Reply within 24 hours on business days.</p>
             </div>
 
             <div class="contact-card">
               <div class="contact-icon">💬</div>
-              <h3>WhatsApp / WeChat</h3>
-              <a href="https://wa.me/8613450802291" target="_blank" rel="noopener">+86 134 5080 2291</a>
-              <p style="margin-top:8px;">WeChat ID: Same number above</p>
+              <h3>WhatsApp</h3>
+              <p>Chat with our sales team directly:</p>
               <a class="btn btn-dark" href="https://wa.me/8613450802291" target="_blank" rel="noopener">Chat on WhatsApp →</a>
-            </div>
-
-            <div class="contact-card">
-              <div class="contact-icon">📞</div>
-              <h3>Phone</h3>
-              <a href="tel:+8613450802291">+86-134-5080-2291</a>
-              <p>Call us during business hours for immediate assistance.</p>
-            </div>
-
-            <div class="contact-card">
-              <div class="contact-icon">📍</div>
-              <h3>Company Address</h3>
-              <div class="contact-meta">
-                <span><strong>Tracklinear Lighting</strong></span>
-                <span>Guangdong Province, China</span>
-                <span>Foshan City, China</span>
-              </div>
-            </div>
-
-            <div class="contact-card">
-              <div class="contact-icon">🕐</div>
-              <h3>Business Hours</h3>
-              <div class="hours-grid">
-                <div class="hours-row">
-                  <span>Monday – Friday</span>
-                  <strong>9:00 AM – 6:00 PM</strong>
-                </div>
-                <div class="hours-row">
-                  <span>Saturday</span>
-                  <strong>9:00 AM – 12:00 PM</strong>
-                </div>
-                <div class="hours-row">
-                  <span>Sunday</span>
-                  <strong>Closed</strong>
-                </div>
-              </div>
-              <p style="margin-top:12px; font-size:13px; color:#999;">All times China Standard Time (UTC+8). Emails received outside business hours are replied to the next working day.</p>
-            </div>
-
-            <div class="contact-card">
-              <div class="contact-icon">📄</div>
-              <h3>Catalogue &amp; Datasheets</h3>
-              <p>Request our product catalogue, installation guide or driver matching sheet.</p>
-              <a class="btn btn-gold" href="mailto:info@tracklinear.com?subject=Please%20send%20catalogue%20-%20Tracklinear">Request Catalogue ↓</a>
             </div>
 
           </div>
@@ -578,25 +567,7 @@
       </div>
     </section>
 
-    <!-- Map / Location Section -->
-    <section style="padding: 0 0 96px;">
-      <div class="container">
-        <div class="section-head">
-          <div class="section-kicker">Our Location</div>
-          <h2>Based in Foshan, China</h2>
-          <p>We welcome factory visits and on-site project consultations by appointment.</p>
-        </div>
-        <div class="map-placeholder">
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d235624.58187375995!2d112.95357105916383!3d23.0215248851461!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3402f8d0b7a1c1a5%3A0x3b5e5b5f5e5d5c5b!2sFoshan%2C%20Guangdong%2C%20China!5e0!3m2!1sen!2s!4v1710000000000"
-            allowfullscreen=""
-            loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"
-            title="Tracklinear Lighting location in Foshan, Guangdong, China"
-          ></iframe>
-        </div>
-      </div>
-    </section>
+
 
   </main>
 
