@@ -422,43 +422,60 @@
     .recommend { color: var(--gold); font-weight: 800; font-size: 14px; margin: 16px 0 12px; }
     .app-body p { color: #666; line-height: 1.65; }
     .faq-section { background: var(--bg); padding: 96px 0; }
-    .faq-grid { display: flex; flex-direction: column; gap: 10px; max-width: 800px; margin: 0 auto; }
-    @media (max-width: 920px) {
-      .faq-left { display: none; }
-    }
+    .faq-grid { display: flex; flex-direction: column; gap: 10px; max-width: 860px; margin: 0 auto; }
     .faq-item {
       background: white;
-      border-radius: 12px;
-      padding: 18px 20px;
-      border: 1px solid #ede8e0;
+      border-radius: 14px;
+      padding: 20px 24px;
+      border: 1px solid #e2d9cc;
       cursor: pointer;
       transition: all .22s ease;
     }
     .faq-item:hover {
-      transform: translateY(-2px);
-      box-shadow: 0 6px 16px rgba(0,0,0,.04);
+      border-color: #c9b99f;
+      box-shadow: 0 6px 20px rgba(0,0,0,.05);
     }
-    .faq-question {
+    .faq-q-row {
       display: flex;
-      justify-content: space-between;
       align-items: center;
-      gap: 12px;
-      margin: 0;
-      font-size: 15px;
-      font-weight: 600;
+      gap: 16px;
+    }
+    .faq-num {
+      flex-shrink: 0;
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      background: var(--dark);
+      color: var(--gold-light);
+      display: grid;
+      place-items: center;
+      font-size: 13px;
+      font-weight: 800;
+      line-height: 1;
+    }
+    .faq-q-text {
+      flex: 1;
+      font-size: 16px;
+      font-weight: 700;
       color: var(--dark);
       line-height: 1.4;
-      font-weight: 700;
     }
     .faq-toggle {
       flex-shrink: 0;
-      font-size: 18px;
-      color: var(--gold);
+      width: 28px;
+      height: 28px;
+      border-radius: 50%;
+      background: #f1e5d6;
+      color: #8a633c;
+      display: grid;
+      place-items: center;
+      font-size: 16px;
       font-weight: 700;
-      line-height: 1;
-      transition: transform .2s ease;
+      transition: all .25s ease;
     }
     .faq-item.open .faq-toggle {
+      background: var(--dark);
+      color: var(--gold-light);
       transform: rotate(45deg);
     }
     .faq-answer {
@@ -466,13 +483,14 @@
       overflow: hidden;
       transition: max-height .3s ease, padding .3s ease;
       margin: 0;
-      line-height: 1.6;
+      line-height: 1.7;
       color: #555;
-      font-size: 14px;
+      font-size: 14.5px;
+      padding-left: 48px;
     }
     .faq-item.open .faq-answer {
-      max-height: 300px;
-      padding-top: 14px;
+      max-height: 500px;
+      padding-top: 16px;
     }
     
     .blog-preview-grid { display:grid; grid-template-columns:repeat(3, 1fr); gap:24px; }
@@ -1047,49 +1065,54 @@
       <div class="container">
         <div class="section-head">
           <div class="section-kicker">Knowledge Base</div>
-          <h2>Frequently Asked Questions</h2>
-          <p>Get professional answers about magnetic track lighting system planning and technical details.</p>
+          <h2>5 questions B2B buyers ask before ordering</h2>
+          <p>Real technical and commercial answers about magnetic track lighting system selection, voltage drop, sampling, customisation and lead times.</p>
         </div>
         <div class="faq-grid">
 
           <div class="faq-item" onclick="this.classList.toggle('open')">
-            <div class="faq-question">
-              What certifications do your products have?
+            <div class="faq-q-row">
+              <span class="faq-num">01</span>
+              <span class="faq-q-text">How do I select the right track width, module type and driver combination for my project?</span>
               <span class="faq-toggle">+</span>
             </div>
-            <div class="faq-answer">CE and RoHS certified. Test reports available on request.</div>
+            <div class="faq-answer">Track width (20/23/35mm) depends on your module requirements and ceiling layout. We check total wattage, track length and dimming preference before recommending a driver. A project drawing or layout sketch helps us match the system precisely to avoid on-site compatibility issues.</div>
           </div>
 
           <div class="faq-item" onclick="this.classList.toggle('open')">
-            <div class="faq-question">
-              What is the minimum order quantity?
+            <div class="faq-q-row">
+              <span class="faq-num">02</span>
+              <span class="faq-q-text">How many meters of track can one 48V driver support before voltage drop affects performance?</span>
               <span class="faq-toggle">+</span>
             </div>
-            <div class="faq-answer">No MOQ for in-stock items. Custom/OEM production: minimum quantities apply.</div>
+            <div class="faq-answer">A single 48V driver typically supports 10–15 metres of track depending on total wattage load. For longer runs or higher power, we recommend multiple power feeds or additional drivers. We calculate voltage drop per layout during quotation to ensure consistent brightness across all modules.</div>
           </div>
 
           <div class="faq-item" onclick="this.classList.toggle('open')">
-            <div class="faq-question">
-              Can I get samples before a bulk order?
+            <div class="faq-q-row">
+              <span class="faq-num">03</span>
+              <span class="faq-q-text">Can I test samples before placing a bulk order, and how does the process work for international buyers?</span>
               <span class="faq-toggle">+</span>
             </div>
-            <div class="faq-answer">Yes. Sample cost is refundable on bulk orders.</div>
+            <div class="faq-answer">Yes. We offer sample orders for standard modules and track sections. Sample cost is deductible from your first bulk order. We ship via DHL or FedEx (3–5 working days) with full tracking. If adjustments are needed after sample review, we modify before production.</div>
           </div>
 
           <div class="faq-item" onclick="this.classList.toggle('open')">
-            <div class="faq-question">
-              What is the typical lead time?
+            <div class="faq-q-row">
+              <span class="faq-num">04</span>
+              <span class="faq-q-text">What customization options do you offer for distributors — track length, colour finish, logo and packaging?</span>
               <span class="faq-toggle">+</span>
             </div>
-            <div class="faq-answer">Stock items: 3-7 working days. OEM orders: 20-30 days depending on quantity.</div>
+            <div class="faq-answer">Custom track lengths cut to specification, RAL-matched colour finishes, laser-engraved or printed logo on modules and track, plus private-label packaging with your brand. MOQ varies by customisation type. We also support neutral products for distributors entering new markets.</div>
           </div>
 
           <div class="faq-item" onclick="this.classList.toggle('open')">
-            <div class="faq-question">
-              Do you offer OEM / ODM services?
+            <div class="faq-q-row">
+              <span class="faq-num">05</span>
+              <span class="faq-q-text">What are realistic lead times for standard and custom orders shipped internationally?</span>
               <span class="faq-toggle">+</span>
             </div>
-            <div class="faq-answer">Yes. Custom branding, packaging, and private-label production for overseas buyers.</div>
+            <div class="faq-answer">Stock items ship within 3–7 working days. Custom or OEM production takes 20–30 days depending on quantity. Sea freight to Europe takes 25–35 days, air freight 5–8 days. We provide shipping options and estimated delivery dates before order confirmation.</div>
           </div>
 
           </div>
