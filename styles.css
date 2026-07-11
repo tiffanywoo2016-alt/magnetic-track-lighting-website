@@ -27,8 +27,8 @@ header {
   backdrop-filter: blur(16px);
   border-bottom: 1px solid rgba(0,0,0,.06);
 }
-.nav { height: 74px; display: flex; align-items: center; justify-content: space-between; gap: 24px; }
-.brand { display: flex; align-items: center; gap: 12px; }
+.nav {position: relative;  height: 74px; display: flex; align-items: center; justify-content: center; gap: 24px; }
+.brand {position: absolute; left: 0; top: 50%; transform: translateY(-50%);  display: flex; align-items: center; gap: 12px; }
 .logo {
   width: 42px; height: 42px; border-radius: 16px;
   background: var(--dark); color: var(--gold-light);
@@ -77,7 +77,7 @@ nav > a.active { color: var(--dark); border-bottom: 2px solid var(--gold); paddi
 .dropdown-menu a:hover { background: rgba(176,138,87,.08); color: var(--gold); }
 
 /* Hamburger */
-.hamburger {
+.hamburger {position: absolute; right: 0; top: 50%; transform: translateY(-50%); 
   display: none; background: none; border: none; font-size: 28px;
   cursor: pointer; color: var(--dark); padding: 4px 8px;
 }
@@ -282,7 +282,7 @@ footer { background: #111; color: white; padding: 46px 0; }
 /* Responsive */
 @media (max-width: 920px) {
   nav { display: none; }
-  .hamburger { display: block; }
+  .hamburger {position: absolute; right: 0; top: 50%; transform: translateY(-50%);  display: block; }
   .track-features, .accessory-grid, .light-type-intro { grid-template-columns: 1fr; }
   .contact-grid { grid-template-columns: 1fr; }
   .form-row { grid-template-columns: 1fr; }

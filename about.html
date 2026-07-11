@@ -148,8 +148,8 @@
       backdrop-filter: blur(16px);
       border-bottom: 1px solid rgba(0,0,0,.06);
     }
-    .nav { height: 74px; display: flex; align-items: center; justify-content: space-between; gap: 24px; }
-    .brand { display: flex; align-items: center; gap: 12px; }
+    .nav {position: relative;  height: 74px; display: flex; align-items: center; justify-content: center; gap: 24px; }
+    .brand {position: absolute; left: 0; top: 50%; transform: translateY(-50%);  display: flex; align-items: center; gap: 12px; }
     .logo {
       width: 42px; height: 42px; border-radius: 16px;
       background: var(--dark); color: var(--gold-light);
@@ -194,7 +194,7 @@
     .dropdown-menu a:hover { background: rgba(176,138,87,.08); color: var(--gold); }
 
     /* Hamburger */
-    .hamburger {
+    .hamburger {position: absolute; right: 0; top: 50%; transform: translateY(-50%); 
       display: none; background: none; border: none; font-size: 28px;
       cursor: pointer; color: var(--dark); padding: 4px 8px;
     }
@@ -709,7 +709,7 @@
 
     @media (max-width: 920px) {
       nav { display: none; }
-      .hamburger { display: inline-block; }
+      .hamburger {position: absolute; right: 0; top: 50%; transform: translateY(-50%);  display: inline-block; }
       .about-split { grid-template-columns: 1fr; }
       .values-grid { grid-template-columns: 1fr; }
       .stats-row { grid-template-columns: repeat(2, 1fr); gap: 16px; }
