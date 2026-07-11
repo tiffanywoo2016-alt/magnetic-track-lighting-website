@@ -521,17 +521,21 @@
 
     /* Export Markets / Global Map */
     .global-map-wrap {
-      background: white;
+      position: relative;
       border-radius: 24px;
-      border: 1px solid #ede8df;
-      padding: 20px;
-      margin-bottom: 20px;
-      box-shadow: 0 4px 20px rgba(0,0,0,.04);
+      overflow: hidden;
+      margin-bottom: 10px;
     }
-    .global-map-svg {
+    .global-map-img {
       width: 100%;
       height: auto;
       display: block;
+    }
+    .global-map-overlay {
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%;
+      height: 100%;
     }
     .glow-dot {
       fill: var(--gold);
@@ -540,14 +544,14 @@
       fill: none;
       stroke: var(--gold);
       stroke-width: 1.5;
-      opacity: .3;
+      opacity: .35;
     }
     .arc-line {
       fill: none;
       stroke: var(--gold);
       stroke-width: 1.8;
       stroke-dasharray: 8 6;
-      opacity: .5;
+      opacity: .55;
     }
     .arc-line-solid {
       fill: none;
@@ -559,19 +563,23 @@
       fill: var(--gold);
     }
     .map-label {
-      fill: #333;
+      fill: #222;
       font-size: 13px;
       font-weight: 700;
       font-family: inherit;
       letter-spacing: .03em;
     }
     .map-label-sub {
-      fill: #888;
+      fill: #555;
       font-size: 10px;
       font-family: inherit;
     }
     @media (max-width: 768px) {
-      .global-map-wrap { padding: 12px; }
+      .map-label { font-size: 10px; }
+      .map-label-sub { display: none; }
+    }
+    @media (max-width: 480px) {
+      .map-label { font-size: 8px; }
     }
 
     /* CTA Section */
@@ -872,83 +880,63 @@
         </div>
 
         <div class="global-map-wrap">
-          <svg viewBox="0 0 1100 500" class="global-map-svg" xmlns="http://www.w3.org/2000/svg">
-            <defs>
-              <filter id="glow-filter" x="-50%" y="-50%" width="200%" height="200%">
-                <feGaussianBlur stdDeviation="4" result="blur"/>
-                <feMerge>
-                  <feMergeNode in="blur"/>
-                  <feMergeNode in="SourceGraphic"/>
-                </feMerge>
-              </filter>
-            </defs>
+          <img src="images/world-map.jpg" alt="Tracklinear global export markets world map" class="global-map-img" loading="lazy" decoding="async">
+          <svg viewBox="0 0 1672 941" class="global-map-overlay" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice">
 
-            <!-- Horizontal grid lines -->
-            <line x1="60" y1="100" x2="1040" y2="100" stroke="rgba(255,255,255,.06)" stroke-width="1"/>
-            <line x1="60" y1="200" x2="1040" y2="200" stroke="rgba(255,255,255,.06)" stroke-width="1"/>
-            <line x1="60" y1="300" x2="1040" y2="300" stroke="rgba(255,255,255,.06)" stroke-width="1"/>
-            <line x1="60" y1="400" x2="1040" y2="400" stroke="rgba(255,255,255,.06)" stroke-width="1"/>
-
-            <!-- Vertical grid lines -->
-            <line x1="200" y1="60" x2="200" y2="470" stroke="rgba(255,255,255,.06)" stroke-width="1"/>
-            <line x1="420" y1="60" x2="420" y2="470" stroke="rgba(255,255,255,.06)" stroke-width="1"/>
-            <line x1="640" y1="60" x2="640" y2="470" stroke="rgba(255,255,255,.06)" stroke-width="1"/>
-            <line x1="860" y1="60" x2="860" y2="470" stroke="rgba(255,255,255,.06)" stroke-width="1"/>
-
-            <!-- Solid under-arcs (subtle glow path) -->
-            <path class="arc-line-solid" d="M 850 270 Q 550 70 200 190"/>
-            <path class="arc-line-solid" d="M 850 270 Q 600 130 450 170"/>
-            <path class="arc-line-solid" d="M 850 270 Q 750 220 650 250"/>
-            <path class="arc-line-solid" d="M 850 270 Q 820 340 790 360"/>
-            <path class="arc-line-solid" d="M 850 270 Q 860 400 910 430"/>
+            <!-- Solid under-arcs -->
+            <path class="arc-line-solid" d="M 1292 508 Q 836 132 304 358"/>
+            <path class="arc-line-solid" d="M 1292 508 Q 912 245 684 320"/>
+            <path class="arc-line-solid" d="M 1292 508 Q 1140 414 988 471"/>
+            <path class="arc-line-solid" d="M 1292 508 Q 1247 640 1201 678"/>
+            <path class="arc-line-solid" d="M 1292 508 Q 1308 753 1383 809"/>
 
             <!-- Dashed arc lines -->
-            <path class="arc-line" d="M 850 270 Q 550 70 200 190">
+            <path class="arc-line" d="M 1292 508 Q 836 132 304 358">
               <animate attributeName="stroke-dashoffset" from="0" to="100" dur="3s" repeatCount="indefinite"/>
             </path>
-            <path class="arc-line" d="M 850 270 Q 600 130 450 170">
+            <path class="arc-line" d="M 1292 508 Q 912 245 684 320">
               <animate attributeName="stroke-dashoffset" from="0" to="80" dur="2.5s" repeatCount="indefinite"/>
             </path>
-            <path class="arc-line" d="M 850 270 Q 750 220 650 250">
+            <path class="arc-line" d="M 1292 508 Q 1140 414 988 471">
               <animate attributeName="stroke-dashoffset" from="0" to="60" dur="2s" repeatCount="indefinite"/>
             </path>
-            <path class="arc-line" d="M 850 270 Q 820 340 790 360">
+            <path class="arc-line" d="M 1292 508 Q 1247 640 1201 678">
               <animate attributeName="stroke-dashoffset" from="0" to="50" dur="1.8s" repeatCount="indefinite"/>
             </path>
-            <path class="arc-line" d="M 850 270 Q 860 400 910 430">
+            <path class="arc-line" d="M 1292 508 Q 1308 753 1383 809">
               <animate attributeName="stroke-dashoffset" from="0" to="60" dur="2.2s" repeatCount="indefinite"/>
             </path>
 
-            <!-- Foshan – Origin Dot -->
-            <circle cx="850" cy="270" r="14" class="glow-dot-ring"/>
-            <circle cx="850" cy="270" r="8" class="glow-dot"/>
-            <text x="850" y="295" class="map-label" text-anchor="middle">Foshan, China</text>
-            <text x="850" y="308" class="map-label-sub" text-anchor="middle">Tracklinear HQ</text>
+            <!-- Foshan – Origin -->
+            <circle cx="1292" cy="508" r="16" class="glow-dot-ring"/>
+            <circle cx="1292" cy="508" r="9" class="glow-dot"/>
+            <text x="1292" y="544" class="map-label" text-anchor="middle">Foshan, China</text>
+            <text x="1292" y="560" class="map-label-sub" text-anchor="middle">Tracklinear HQ</text>
 
             <!-- North America -->
-            <circle cx="200" cy="190" r="5" class="dest-dot"/>
-            <text x="200" y="175" class="map-label" text-anchor="middle">North America</text>
-            <text x="200" y="188" class="map-label-sub" text-anchor="middle">US · Canada · Mexico</text>
+            <circle cx="304" cy="358" r="6" class="dest-dot"/>
+            <text x="304" y="340" class="map-label" text-anchor="middle">North America</text>
+            <text x="304" y="354" class="map-label-sub" text-anchor="middle">US · Canada · Mexico</text>
 
             <!-- Europe -->
-            <circle cx="450" cy="170" r="5" class="dest-dot"/>
-            <text x="450" y="155" class="map-label" text-anchor="middle">Europe</text>
-            <text x="450" y="168" class="map-label-sub" text-anchor="middle">Germany · France · UK · Italy · Spain</text>
+            <circle cx="684" cy="320" r="6" class="dest-dot"/>
+            <text x="684" y="300" class="map-label" text-anchor="middle">Europe</text>
+            <text x="684" y="314" class="map-label-sub" text-anchor="middle">Germany · France · UK · Italy · Spain</text>
 
             <!-- Middle East & Africa -->
-            <circle cx="650" cy="250" r="5" class="dest-dot"/>
-            <text x="650" y="235" class="map-label" text-anchor="middle">Middle East &amp; Africa</text>
-            <text x="650" y="248" class="map-label-sub" text-anchor="middle">UAE · Saudi · Qatar · Israel · S. Africa</text>
+            <circle cx="988" cy="471" r="6" class="dest-dot"/>
+            <text x="988" y="452" class="map-label" text-anchor="middle">Middle East &amp; Africa</text>
+            <text x="988" y="466" class="map-label-sub" text-anchor="middle">UAE · Saudi · Qatar · Israel · S. Africa</text>
 
             <!-- Southeast Asia -->
-            <circle cx="790" cy="360" r="5" class="dest-dot"/>
-            <text x="790" y="380" class="map-label" text-anchor="middle">Southeast Asia</text>
-            <text x="790" y="393" class="map-label-sub" text-anchor="middle">Singapore · Malaysia · Philippines · Thailand</text>
+            <circle cx="1201" cy="678" r="6" class="dest-dot"/>
+            <text x="1201" y="704" class="map-label" text-anchor="middle">Southeast Asia</text>
+            <text x="1201" y="718" class="map-label-sub" text-anchor="middle">Singapore · Malaysia · Philippines · Thailand</text>
 
             <!-- Australia / Oceania -->
-            <circle cx="910" cy="430" r="5" class="dest-dot"/>
-            <text x="910" y="415" class="map-label" text-anchor="middle">Australia &amp; Oceania</text>
-            <text x="910" y="428" class="map-label-sub" text-anchor="middle">Australia · New Zealand</text>
+            <circle cx="1383" cy="809" r="6" class="dest-dot"/>
+            <text x="1383" y="790" class="map-label" text-anchor="middle">Australia &amp; Oceania</text>
+            <text x="1383" y="804" class="map-label-sub" text-anchor="middle">Australia · New Zealand</text>
           </svg>
         </div>
 
