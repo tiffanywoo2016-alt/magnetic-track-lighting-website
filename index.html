@@ -431,18 +431,13 @@
     .faq-left-img {
       border-radius: 20px;
       overflow: hidden;
-      position: sticky;
-      top: 100px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
+      align-self: center;
     }
     .faq-left-img img {
       width: 100%;
       height: auto;
       display: block;
       border-radius: 20px;
-      object-fit: cover;
     }
     .faq-grid { display: flex; flex-direction: column; gap: 10px; }
     .faq-item {
@@ -652,7 +647,6 @@
       .stats-grid, .grid-system, .installation-grid, .module-grid, .optics-grid, .applications, .oem-grid, .contact-grid { grid-template-columns: 1fr; }
       .why-split { grid-template-columns: 1fr; gap: 32px; }
       .faq-split { grid-template-columns: 1fr; gap: 28px; }
-      .faq-left-img { position: static; }
       .card-grid, .specs, .check-grid { grid-template-columns: 1fr; }
       .form-row { grid-template-columns: 1fr; }
       .hero { min-height: 620px; }
