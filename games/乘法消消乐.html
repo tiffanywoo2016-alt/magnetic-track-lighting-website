@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>九九乘法消消乐 🎮</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: 'PingFang SC', 'Microsoft YaHei', sans-serif;
+    background: linear-gradient(135deg, #fce4ec 0%, #e8f5e9 50%, #e3f2fd 100%);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+  }
+  .game-container {
+    background: white;
+    border-radius: 32px;
+    padding: 28px 24px 32px;
+    max-width: 520px;
+    width: 100%;
+    box-shadow: 0 20px 60px rgba(0,0,0,.12);
+    position: relative;
+  }
+
+  /* Header */
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 16px;
+  }
+  .title {
+    font-size: 22px;
+    font-weight: 800;
+    background: linear-gradient(135deg, #f57c00, #e91e63);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+  .title span { font-size: 24px; }
+  .stats {
+    display: flex;
+    gap: 14px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #555;
+  }
+  .stats span { background: #f5f5f5; padding: 6px 14px; border-radius: 20px; }
+
+  /* Progress bar */
+  .progress-wrap {
+    height: 6px;
+    background: #f0f0f0;
+    border-radius: 3px;
+    margin-bottom: 20px;
+    overflow: hidden;
+  }
+  .progress-bar {
+    height: 100%;
+    background: linear-gradient(90deg, #66bb6a, #42a5f5);
+    border-radius: 3px;
+    transition: width .4s ease;
+    width: 0%;
+  }
+
+  /* Grid */
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    margin-bottom: 18px;
+  }
+
+  /* Tile */
+  .tile {
+    aspect-ratio: 1;
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+    font-weight: 800;
+    cursor: pointer;
+    transition: all .15s ease;
+    user-select: none;
+    -webkit-tap-highlight-color: transparent;
+    position: relative;
+    border: 2.5px solid transparent;
+  }
+  .tile.expression {
+    background: #fff3e0;
+    color: #e65100;
+    border-color: #ffe0b2;
+  }
+  .tile.answer {
+    background: #e8f5e9;
+    color: #2e7d32;
+    border-color: #c8e6c9;
+  }
+  .tile:hover:not(.matched):not(.disabled) {
+    transform: scale(1.04);
+  }
+  .tile:active:not(.matched):not(.disabled) {
+    transform: scale(.96);
+  }
+  .tile.selected {
+    border-color: #7c4dff !important;
+    box-shadow: 0 0 0 3px rgba(124,77,255,.25);
+    transform: scale(1.05);
+  }
+  .tile.matched {
+    animation: pop .35s ease forwards;
+    pointer-events: none;
+  }
+  .tile.wrong {
+    animation: shake .4s ease;
+  }
+  .tile.disabled { pointer-events: none; }
+
+  @keyframes pop {
+    0% { transform: scale(1); opacity: 1; }
+    40% { transform: scale(1.2); opacity: .8; }
+    100% { transform: scale(0); opacity: 0; }
+  }
+  @keyframes shake {
+    0%,100% { transform: translateX(0); }
+    20% { transform: translateX(-6px); }
+    40% { transform: translateX(6px); }
+    60% { transform: translateX(-4px); }
+    80% { transform: translateX(4px); }
+  }
+
+  /* Button */
+  .btn-row {
+    display: flex;
+    gap: 10px;
+  }
+  .btn {
+    flex: 1;
+    padding: 14px;
+    border: none;
+    border-radius: 16px;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all .2s;
+    font-family: inherit;
+  }
+  .btn:active { transform: scale(.96); }
+  .btn-primary {
+    background: linear-gradient(135deg, #7c4dff, #536dfe);
+    color: white;
+  }
+  .btn-primary:hover { box-shadow: 0 6px 20px rgba(124,77,255,.3); }
+  .btn-secondary {
+    background: #f5f5f5;
+    color: #333;
+  }
+  .btn-secondary:hover { background: #eee; }
+
+  /* Victory overlay */
+  .victory-overlay {
+    display: none;
+    position: absolute;
+    inset: 0;
+    border-radius: 32px;
+    background: rgba(255,255,255,.88);
+    backdrop-filter: blur(8px);
+    z-index: 10;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 40px;
+  }
+  .victory-overlay.show { display: flex; }
+  .victory-emoji { font-size: 64px; margin-bottom: 8px; }
+  .victory-title {
+    font-size: 26px;
+    font-weight: 800;
+    background: linear-gradient(135deg, #f57c00, #e91e63);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+  .victory-sub {
+    color: #666;
+    margin: 8px 0 24px;
+    font-size: 15px;
+  }
+
+  /* Confetti */
+  .confetti-container {
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    overflow: hidden;
+    z-index: 20;
+  }
+  .confetti-piece {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-radius: 2px;
+    animation: confetti-fall linear forwards;
+  }
+  @keyframes confetti-fall {
+    0% { transform: translateY(-10vh) rotate(0deg); opacity: 1; }
+    100% { transform: translateY(110vh) rotate(720deg); opacity: 0.3; }
+  }
+
+  /* Responsive */
+  @media (max-width: 400px) {
+    .game-container { padding: 18px 14px 24px; }
+    .title { font-size: 18px; }
+    .tile { font-size: 18px; border-radius: 12px; }
+    .grid { gap: 8px; }
+    .stats span { font-size: 12px; padding: 4px 10px; }
+  }
+</style>
+</head>
+<body>
+
+<div class="game-container" id="app">
+  <!-- Header -->
+  <div class="header">
+    <div class="title"><span>✖</span> 乘法消消乐</div>
+    <div class="stats">
+      <span>🏆 <span id="roundNum">1</span>/6</span>
+      <span>⏳ <span id="remainCount">8</span></span>
+    </div>
+  </div>
+
+  <!-- Progress -->
+  <div class="progress-wrap">
+    <div class="progress-bar" id="progressBar"></div>
+  </div>
+
+  <!-- Grid -->
+  <div class="grid" id="grid"></div>
+
+  <!-- Buttons -->
+  <div class="btn-row">
+    <button class="btn btn-secondary" onclick="resetGame()">🔄 重来</button>
+    <button class="btn btn-primary" id="nextBtn" onclick="nextRound()" style="display:none">下一关 ➜</button>
+  </div>
+
+  <!-- Victory -->
+  <div class="victory-overlay" id="victoryOverlay">
+    <div class="victory-emoji">🎉</div>
+    <div class="victory-title">全部通关！</div>
+    <div class="victory-sub">你真棒！👍 九九乘法都记住啦！<br>再玩一次复习吧～</div>
+    <button class="btn btn-primary" onclick="resetGame()" style="padding:14px 40px;flex:unset">再玩一次 🎮</button>
+  </div>
+</div>
+
+<script>
+// ========== 九九乘法表数据 (45组) ==========
+const ALL_FACTS = [];
+for (let a = 1; a <= 9; a++) {
+  for (let b = 1; b <= a; b++) {
+    ALL_FACTS.push({ a, b, product: a * b });
+  }
+}
+
+// 随机打乱
+function shuffle(arr) {
+  for (let i = arr.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [arr[i], arr[j]] = [arr[j], arr[i]];
+  }
+  return arr;
+}
+
+const PAIRS_PER_ROUND = 8;
+const TOTAL_ROUNDS = Math.ceil(ALL_FACTS.length / PAIRS_PER_ROUND); // 6
+let usedIndices = new Set();
+let selectedTile = null;
+let isProcessing = false;
+let currentRound = 1;
+
+const gridEl = document.getElementById('grid');
+const remainEl = document.getElementById('remainCount');
+const roundEl = document.getElementById('roundNum');
+const progressBar = document.getElementById('progressBar');
+const nextBtn = document.getElementById('nextBtn');
+const victoryOverlay = document.getElementById('victoryOverlay');
+
+function getRoundFacts() {
+  const remaining = ALL_FACTS.filter((_, i) => !usedIndices.has(i));
+  shuffle(remaining);
+  return remaining.slice(0, PAIRS_PER_ROUND);
+}
+
+function renderRound() {
+  selectedTile = null;
+  isProcessing = false;
+  nextBtn.style.display = 'none';
+
+  const facts = getRoundFacts();
+  if (facts.length === 0) {
+    showVictory();
+    return;
+  }
+
+  // 标记已使用的索引
+  facts.forEach(f => {
+    const idx = ALL_FACTS.findIndex(x => x.a === f.a && x.b === f.b);
+    if (idx >= 0) usedIndices.add(idx);
+  });
+
+  // 构建tiles：每个fact生成 expression + answer 各一张
+  const tiles = [];
+  facts.forEach((f, i) => {
+    tiles.push({ id: i, type: 'expr', text: `${f.a} × ${f.b}`, pairId: i, a: f.a, b: f.b });
+    tiles.push({ id: i, type: 'ans', text: String(f.product), pairId: i, product: f.product });
+  });
+  shuffle(tiles);
+
+  // 渲染
+  gridEl.innerHTML = '';
+  tiles.forEach((tile) => {
+    const div = document.createElement('div');
+    div.className = `tile ${tile.type === 'expr' ? 'expression' : 'answer'}`;
+    div.textContent = tile.text;
+    div.dataset.pairId = tile.pairId;
+    div.dataset.type = tile.type;
+    div.addEventListener('click', () => onTileClick(div, tile));
+    gridEl.appendChild(div);
+  });
+
+  updateStats(facts.length);
+}
+
+function onTileClick(el, tile) {
+  if (isProcessing) return;
+  if (el.classList.contains('matched')) return;
+  if (el.classList.contains('selected')) return;
+
+  // 如果没有选中任何tile
+  if (!selectedTile) {
+    el.classList.add('selected');
+    selectedTile = el;
+    return;
+  }
+
+  // 点击同一个tile → 取消选中
+  if (selectedTile === el) {
+    el.classList.remove('selected');
+    selectedTile = null;
+    return;
+  }
+
+  // 选中第二个tile
+  el.classList.add('selected');
+  isProcessing = true;
+
+  const first = selectedTile;
+  const second = el;
+  const pairId1 = first.dataset.pairId;
+  const pairId2 = second.dataset.pairId;
+  const type1 = first.dataset.type;
+  const type2 = second.dataset.type;
+
+  // 匹配条件：同一对 + 不同类型 (expr + ans)
+  const isMatch = pairId1 === pairId2 && type1 !== type2;
+
+  setTimeout(() => {
+    if (isMatch) {
+      first.classList.remove('selected');
+      second.classList.remove('selected');
+      first.classList.add('matched');
+      second.classList.add('matched');
+      updateRemaining();
+    } else {
+      first.classList.add('wrong');
+      second.classList.add('wrong');
+      setTimeout(() => {
+        first.classList.remove('selected', 'wrong');
+        second.classList.remove('selected', 'wrong');
+        isProcessing = false;
+      }, 400);
+      // Don't reset isProcessing here — the setTimeout above handles it
+      selectedTile = null;
+      return;
+    }
+
+    selectedTile = null;
+    isProcessing = false;
+
+    // 检查是否全部消除
+    const matched = document.querySelectorAll('.tile.matched').length;
+    const total = document.querySelectorAll('.tile').length;
+    if (matched === total) {
+      if (usedIndices.size >= ALL_FACTS.length) {
+        showVictory();
+      } else {
+        nextBtn.style.display = 'block';
+        nextBtn.textContent = `➜ 第${currentRound + 1}关`;
+      }
+    }
+  }, 300);
+
+  // In the match case, we already set selectedTile=null above via the else-if path
+  // Actually the code flow is confusing. Let me restructure:
+  // In the setTimeout, for match case: set selectedTile = null
+  // For no-match case: set selectedTile = null inside the second setTimeout
+}
+
+function updateRemaining() {
+  const matched = document.querySelectorAll('.tile.matched').length;
+  const total = document.querySelectorAll('.tile').length;
+  const remaining = (total - matched) / 2;
+  remainEl.textContent = remaining;
+  const pct = (matched / total) * 100;
+  progressBar.style.width = pct + '%';
+}
+
+function updateStats(totalPairs) {
+  remainEl.textContent = totalPairs;
+  roundEl.textContent = Math.min(currentRound, TOTAL_ROUNDS);
+  progressBar.style.width = '0%';
+}
+
+function nextRound() {
+  currentRound++;
+  renderRound();
+  roundEl.textContent = currentRound;
+}
+
+function showVictory() {
+  victoryOverlay.classList.add('show');
+  launchConfetti();
+}
+
+function resetGame() {
+  usedIndices = new Set();
+  selectedTile = null;
+  isProcessing = false;
+  currentRound = 1;
+  victoryOverlay.classList.remove('show');
+  renderRound();
+  roundEl.textContent = 1;
+  document.querySelectorAll('.confetti-piece').forEach(el => el.remove());
+}
+
+function launchConfetti() {
+  const container = document.createElement('div');
+  container.className = 'confetti-container';
+  document.body.appendChild(container);
+  const colors = ['#f44336','#e91e63','#9c27b0','#3f51b5','#2196f3','#009688','#4caf50','#ffeb3b','#ff9800','#ff5722'];
+  for (let i = 0; i < 80; i++) {
+    const piece = document.createElement('div');
+    piece.className = 'confetti-piece';
+    piece.style.left = Math.random() * 100 + '%';
+    piece.style.background = colors[Math.floor(Math.random() * colors.length)];
+    piece.style.width = (6 + Math.random() * 8) + 'px';
+    piece.style.height = (6 + Math.random() * 8) + 'px';
+    piece.style.borderRadius = Math.random() > 0.5 ? '50%' : '2px';
+    piece.style.animationDuration = (2 + Math.random() * 2) + 's';
+    piece.style.animationDelay = Math.random() * 0.5 + 's';
+    container.appendChild(piece);
+  }
+  setTimeout(() => container.remove(), 5000);
+}
+
+// 启动
+renderRound();
+</script>
+</body>
+</html>
