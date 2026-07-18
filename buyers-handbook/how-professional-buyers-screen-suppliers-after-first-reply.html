@@ -4,14 +4,14 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta property="og:title" content="How Professional Buyers Screen Magnetic Track Lighting Suppliers After the First Reply">
-  <meta property="og:description" content="Learn how professional buyers screen magnetic track lighting suppliers after the first reply. A 5-checkpoint supplier screening system for importers and distributors.">
+  <meta property="og:description" content="Learn how professional buyers screen magnetic track lighting suppliers after the first reply. A First Reply Screening Model with 5 checkpoints, signal triggers, and decision matrix.">
   <meta property="og:url" content="https://tracklinear.com/buyers-handbook/how-professional-buyers-screen-suppliers-after-first-reply.html">
   <meta property="og:type" content="article">
   <meta property="og:image" content="https://tracklinear.com/images/blog16_hero.webp">
   <meta property="og:site_name" content="Tracklinear Lighting">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="How Professional Buyers Screen Magnetic Track Lighting Suppliers After the First Reply">
-  <meta name="twitter:description" content="Learn how professional buyers screen magnetic track lighting suppliers after the first reply. A 5-checkpoint supplier screening system.">
+  <meta name="twitter:description" content="Learn how professional buyers screen magnetic track lighting suppliers after the first reply. A First Reply Screening Model with 5 checkpoints.">
   <meta name="twitter:image" content="https://tracklinear.com/images/blog16_hero.webp">
 
   <meta name="theme-color" content="#1a1a1a">
@@ -23,7 +23,7 @@
   <link rel="stylesheet" href="../styles.v2.css">
 
   <title>How Professional Buyers Screen Magnetic Track Lighting Suppliers After the First Reply | Tracklinear</title>
-  <meta name="description" content="Learn how professional buyers screen magnetic track lighting suppliers after the first reply. A 5-checkpoint supplier screening system — PASS/FAIL checkpoints, red flags, signal triggers, and a decision matrix.">
+  <meta name="description" content="Learn how professional buyers screen magnetic track lighting suppliers after the first reply. A First Reply Screening Model with 5 checkpoints, signal triggers, and decision matrix — PASS/FAIL checkpoints, red flags, and a decision filter.">
   <style>
     :root { --bg: #f5f3ef; --dark: #151515; --text: #161616; --muted: #666; --gold: #b08a57; --gold-light: #e6c08c; --flag: #3d3229; --flag-bg: #f7f3eb; --pass: var(--gold); }
     body { margin: 0; font-family: Inter, system-ui, sans-serif; background: var(--bg); color: var(--text); line-height: 1.6; }
@@ -307,7 +307,7 @@
       .core-idea { padding: 24px 20px !important; }
       .red-flag { padding: 20px 22px !important; }
       .decision-filter { padding: 24px 20px !important; border-radius: 20px !important; }
-      .professional-buyer-insight { padding: 28px 20px !important; border-radius: 20px !important; }
+      .tracklinear-judgment { padding: 28px 20px !important; border-radius: 20px !important; }
       .related a { padding: 14px 16px !important; }
       header { padding: 16px 0 !important; }
       .nav .logo { font-size: 17px !important; }
@@ -361,12 +361,60 @@
     }
 
   </style>
-<style>
-.professional-buyer-insight { background: var(--dark); color: white; border-radius: 28px; padding: 36px 32px; margin: 28px 0; text-align: center; }
-.professional-buyer-insight p { color: rgba(255,255,255,0.9); font-size: 18px; font-style: italic; margin: 0 0 12px; line-height: 1.6; }
-.professional-buyer-insight p:last-child { margin-bottom: 0; }
-.professional-buyer-insight .label { font-size: 11px; color: var(--gold); text-transform: uppercase; letter-spacing: 2px; font-weight: 700; margin-bottom: 12px; display: block; }
-</style>
+  <style>
+    .professional-buyer-insight { background: var(--dark); color: white; border-radius: 28px; padding: 36px 32px; margin: 28px 0; text-align: center; }
+    .professional-buyer-insight p { color: rgba(255,255,255,0.9); font-size: 18px; font-style: italic; margin: 0 0 12px; line-height: 1.6; }
+    .professional-buyer-insight p:last-child { margin-bottom: 0; }
+    .professional-buyer-insight .label { font-size: 11px; color: var(--gold); text-transform: uppercase; letter-spacing: 2px; font-weight: 700; margin-bottom: 12px; display: block; }
+  </style>
+  <style>
+    /* Checkpoint verdict tables */
+    .verdict-table { width: 100%; border-collapse: collapse; margin: 20px 0 28px; background: white; border-radius: 12px; overflow: hidden; box-shadow: 0 2px 12px rgba(0,0,0,.05); }
+    .verdict-table th { background: var(--dark); color: white; padding: 10px 14px; text-align: left; font-size: 12px; text-transform: uppercase; letter-spacing: .5px; }
+    .verdict-table td { padding: 10px 14px; font-size: 14px; border-bottom: 1px solid #eee; }
+    .verdict-table tr:last-child td { border-bottom: none; }
+    .verdict-table .v-pass { color: var(--gold); font-weight: 700; }
+    .verdict-table .v-fail { color: #8b7355; font-weight: 600; }
+
+    /* Checkpoint result tables (walkthrough) */
+    .checkpoint-result { width: auto; border-collapse: collapse; margin: 16px 0 20px; background: white; border-radius: 12px; overflow: hidden; box-shadow: 0 2px 12px rgba(0,0,0,.05); display: inline-table; }
+    .checkpoint-result th { background: var(--dark); color: white; padding: 8px 12px; text-align: center; font-size: 12px; text-transform: uppercase; letter-spacing: .5px; }
+    .checkpoint-result td { padding: 8px 12px; text-align: center; font-size: 16px; border-bottom: 1px solid #eee; }
+    .checkpoint-result tr:last-child td { border-bottom: none; }
+
+    /* Signal trigger box */
+    .signal-trigger { background: var(--dark); border-radius: 16px; padding: 24px 28px; margin: 24px 0; border-left: 4px solid var(--gold); }
+    .signal-trigger .trigger-label { font-size: 11px; font-weight: 800; color: var(--gold-light); text-transform: uppercase; letter-spacing: 1.5px; margin-bottom: 10px; }
+    .signal-trigger .trigger-body { font-size: 15px; color: rgba(255,255,255,0.8); line-height: 1.7; }
+    .signal-trigger .trigger-body strong { color: #e8cfa0; }
+
+    /* 60-second test table */
+    .scan-table { width: 100%; border-collapse: collapse; margin: 20px 0; background: white; border-radius: 12px; overflow: hidden; box-shadow: 0 2px 12px rgba(0,0,0,.05); }
+    .scan-table th { background: var(--dark); color: white; padding: 10px 14px; text-align: left; font-size: 12px; text-transform: uppercase; letter-spacing: .5px; }
+    .scan-table td { padding: 10px 14px; font-size: 14px; border-bottom: 1px solid #eee; }
+    .scan-table tr:last-child td { border-bottom: none; }
+
+    /* Decision matrix table */
+    .decision-matrix { width: 100%; border-collapse: collapse; margin: 20px 0; background: white; border-radius: 12px; overflow: hidden; box-shadow: 0 2px 12px rgba(0,0,0,.05); }
+    .decision-matrix th { background: var(--dark); color: white; padding: 10px 14px; text-align: left; font-size: 12px; text-transform: uppercase; letter-spacing: .5px; }
+    .decision-matrix td { padding: 10px 14px; font-size: 14px; border-bottom: 1px solid #eee; }
+
+    /* Supplier walkthrough separator */
+    .supplier-sep { border: none; border-top: 1px solid #e0dcd4; margin: 36px 0; }
+
+    @media (max-width: 768px) {
+      .checkpoint-result { font-size: 13px !important; }
+      .checkpoint-result th, .checkpoint-result td { padding: 6px 10px !important; font-size: 14px !important; }
+      .signal-trigger { padding: 20px 22px !important; }
+      .verdict-table th, .verdict-table td { padding: 8px 10px !important; font-size: 13px !important; }
+    }
+
+    /* Buyer action section */
+    .buyer-action { background: #f9f7f2; border-radius: 16px; padding: 24px 28px; margin: 24px 0; border: 1px solid #e8e4dc; }
+    .buyer-action p { font-size: 15px; margin-bottom: 12px; }
+    .buyer-action p:last-child { margin-bottom: 0; }
+    .buyer-action .action-label { font-size: 11px; font-weight: 800; color: var(--gold); text-transform: uppercase; letter-spacing: 1.5px; margin-bottom: 8px; display: block; }
+  </style>
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -374,7 +422,7 @@
     {
       "@type": "Article",
       "headline": "How Professional Buyers Screen Magnetic Track Lighting Suppliers After the First Reply",
-      "description": "Learn how professional buyers screen magnetic track lighting suppliers after the first reply. A 5-checkpoint supplier screening system.",
+      "description": "Learn how professional buyers screen magnetic track lighting suppliers after the first reply. A First Reply Screening Model with 5 checkpoints, signal triggers, and decision matrix.",
       "image": "https://tracklinear.com/images/blog16_hero.webp",
       "datePublished": "2026-07-11T08:00:00+08:00",
       "dateModified": "2026-07-11T08:00:00+08:00",
@@ -391,7 +439,7 @@
       "itemListElement": [
         { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://tracklinear.com/" },
         { "@type": "ListItem", "position": 2, "name": "Buyer's Handbook", "item": "https://tracklinear.com/blog/" },
-        { "@type": "ListItem", "position": 3, "name": "Chapter 3: Supplier Screening" }
+        { "@type": "ListItem", "position": 3, "name": "How Professional Buyers Screen Suppliers After the First Reply" }
       ]
     }
   ]
@@ -453,230 +501,422 @@
     <span>9 min read</span>
   </div>
 
-  <img class="img-full" src="../images/blog16_hero.webp" alt="Professional buyer reviewing supplier replies and screening magnetic track lighting suppliers at a desk with documents and laptop">
+  <img class="img-full" src="../images/blog16_hero.webp" alt="Professional buyer screening supplier replies on a laptop with a cup of coffee, evaluating magnetic track lighting suppliers">
 
-  <!-- CORE IDEA -->
+  <!-- CORE IDEA: Why This Matters -->
   <div class="core-idea">
-    <p>A supplier's first reply contains nearly everything you need to know about whether they should be on your shortlist.</p>
-    <p class="highlight">You just need to know what to look for.</p>
-    <p>This chapter gives you five screening checkpoints. Use them before you compare prices, before you request samples, before you book a factory visit.</p>
+    <p><strong>Marco</strong> is a purchasing manager at a mid-sized European lighting distributor supplying mid-scale hospitality projects across Germany and Austria. He has been in the industry for eight years. Last year, he approved a shipment of 48V magnetic track lighting from a supplier that looked excellent on paper — correct specs, good price, fast delivery. Three months after installation in a 32-room hotel, 8 of the 48 luminaires started flickering. The supplier stopped answering emails. The replacement cost was €7,400.</p>
+    <p>Marco now has a new set of RFQs out. Three hotel projects — 86 rooms combined, procurement value approximately €180,000 — and a client proposal deadline in 10 days. He sent the same RFQ to ten Chinese suppliers he collected from Alibaba and two trade fairs. Six replied within three working days.</p>
+    <p>All six say they manufacture magnetic track lighting. All six attached a catalogue and a price list.</p>
+    <p class="highlight">The difference between Marco's outcome last year and his outcome this year will not be determined by price. It will be determined by how well he reads the six replies sitting in his inbox right now.</p>
+    <p><strong>This chapter gives you the system Marco uses to finish his screening in under two hours — not two weeks.</strong></p>
   </div>
 
-  <!-- 1. Why This Matters -->
-  <h2>1. Why This Matters</h2>
+  <!-- 2. The First Reply Screening Model -->
+  <h2>2. The First Reply Screening Model™</h2>
 
-  <p>You sent RFQs to eight suppliers. Six replied within three days. All six say they can manufacture magnetic track lighting. All six attached a catalogue and a price list.</p>
-  <p>Now what?</p>
-  <p>This is the moment that separates structured procurement from reactive purchasing. The quality of your supplier screening at this stage determines 80% of your project outcomes — not the price negotiation that comes later.</p>
-  <p>Here is the reality most buyers discover too late: <strong>a supplier's first reply contains nearly everything you need to know about whether they should be on your shortlist.</strong> You just need to know what to look for.</p>
+  <p>Most supplier evaluation frameworks ask: "How good is this supplier?"</p>
+  <p>This model asks a different question: <strong>"Should I eliminate this supplier based on what they have already shown me?"</strong></p>
+  <p>The First Reply Screening Model™ is built on a premise that most buyers discover too late:</p>
+  <blockquote>A supplier's first reply is not a sales document. It is a technical sample of their thinking process.</blockquote>
+  <p>The model has three layers:</p>
 
-  <div class="key-insight">
-    <p><strong>Key Insight:</strong> The quality of your supplier screening at this stage determines 80% of your project outcomes — not the price negotiation that comes later.</p>
-  </div>
+  <table class="comparison-table">
+    <tr><th>Layer</th><th>Function</th><th>Output</th></tr>
+    <tr><td><strong>5 Checkpoints</strong></td><td>Binary PASS/FAIL tests on observable signals</td><td>Which checkpoints pass and fail</td></tr>
+    <tr><td><strong>3 Signal Triggers</strong></td><td>IF&rarr;THEN auto-elimination rules</td><td>Immediate elimination without further analysis</td></tr>
+    <tr><td><strong>Decision Filter</strong></td><td>Combined rule: &ge;4 PASS &rarr; proceed, &le;1 PASS &rarr; eliminate</td><td>Clear next action per supplier</td></tr>
+  </table>
 
-  <!-- 2. The Framework — Five Screening Checkpoints -->
-  <h2>2. The Framework — Five Screening Checkpoints</h2>
+  <p>The checkpoints are sequential but not dependent — a supplier can fail checkpoint 1 but still proceed if they pass the others. The Signal Triggers, however, are absolute: if triggered, the supplier is eliminated regardless of other scores.</p>
+
+  <!-- 2.5 The 60-Second Supplier Reply Test -->
+  <h2>⏱ 2.5 The 60-Second Supplier Reply Test</h2>
+
+  <p>Before you start a deep reading of each reply, run this 60-second surface scan. It will eliminate roughly half of your inbox before you spend real time.</p>
+  <p>Open each email. Scan for exactly three things:</p>
+
+  <table class="scan-table">
+    <tr><th>Scan</th><th>What to look for</th><th>60 seconds total</th></tr>
+    <tr><td><strong>Greeting</strong></td><td>Is it "Dear Marco" or "Dear Sir"?</td><td>5 seconds</td></tr>
+    <tr><td><strong>First paragraph</strong></td><td>Does it reference your inquiry or start with a company intro?</td><td>20 seconds</td></tr>
+    <tr><td><strong>Attachments</strong></td><td>Catalogue only, or catalogue + something specific to you?</td><td>5 seconds</td></tr>
+    <tr><td><strong>Length</strong></td><td>Is it clearly written for you, or clearly a template?</td><td>10 seconds</td></tr>
+    <tr><td><strong>Decision instinct</strong></td><td>Would you forward this to your boss or delete it?</td><td>20 seconds</td></tr>
+  </table>
+
+  <p><strong>Rough cut rule:</strong></p>
+
+  <table class="scan-table">
+    <tr><th>If the reply...</th><th>Action</th></tr>
+    <tr><td>Addresses you by name, references your RFQ, and feels specific</td><td><strong>Keep for full screening</strong></td></tr>
+    <tr><td>Has "Dear Sir" + catalogue only</td><td><strong>Delete — almost certainly fails &ge; 4 checkpoints</strong></td></tr>
+    <tr><td>Falls in between</td><td><strong>Keep but flag as likely borderline</strong></td></tr>
+  </table>
+
+  <p>This is not a substitute for the full screening. It is a triage: the five checkpoints that follow will give you the real answer. But after 60 seconds per reply, you already know which ones to start with.</p>
+
+  <!-- 3. Five Screening Checkpoints -->
+  <h2>3. Five Screening Checkpoints</h2>
 
   <!-- Checkpoint 1 -->
-  <h2>Checkpoint 1: Do They Ask About Your Application Before Sending a Quote?</h2>
-  <p><strong>What professional buyers look for:</strong></p>
-  <p>A supplier who asks about your project before quoting is a supplier who treats their product as a system, not a commodity. They want to know: Is this for a hotel corridor, a retail showroom, or a residential project? What is the installation environment? How many linear metres? What are the load requirements?</p>
-  <p><strong>✅ Green Flag:</strong></p>
-  <p>The reply includes 2-3 questions about your project — application type, installation environment, required length, preferred colour temperature, dimming needs.</p>
-  <p><strong>🚩 Red Flag:</strong></p>
-  <p>The reply contains a catalogue attachment and a generic price list, with no questions about your project.</p>
+  <h3>Checkpoint 1: Application Understanding</h3>
+
+  <p><strong>Buyer Question:</strong></p>
+  <p>Does this supplier understand my project well enough to recommend the right product configuration — or are they sending the same catalogue to every inquiry?</p>
+
+  <p><strong>Required Evidence:</strong></p>
+  <p>To pass this checkpoint, the supplier's reply must demonstrate that they recognise your project is not interchangeable with other buyers'. The minimum evidence is 2-3 project-specific questions about your application.</p>
+
+  <p><strong>PASS Signal:</strong></p>
+  <p>The reply contains questions about your specific project — application type (hotel, retail, office), installation method (recessed, surface, suspended), required linear metres, load requirements, or desired lighting effect. The questions show they are mapping your needs to their product range, not just pushing inventory.</p>
+
+  <p><strong>FAIL Signal:</strong></p>
+  <p>The reply contains a catalogue attachment and a generic price list. No questions about your project. The text could be sent to any buyer in any industry.</p>
+
   <p><strong>✅ Buyer's Action:</strong></p>
-  <blockquote>Reply to the supplier with three specific application scenarios and ask them to recommend a different configuration for each one. For example:<br><br>
-"We have three project types starting soon — a 4-metre straight hotel corridor, an 8-metre L-shaped retail display zone, and a 3-metre circular reception desk. Could you recommend a configuration for each, including track profile, connector types, and luminaire spacing?"</blockquote>
-  <p>A supplier who can give differentiated recommendations for each scenario passes this checkpoint. A supplier who sends the same configuration for all three — or worse, doesn't answer the question — fails.</p>
+  <div class="buyer-action">
+    <span class="action-label">✅ Buyer's Action</span>
+    <p>Reply with three different application scenarios and ask for a differentiated configuration for each:</p>
+    <blockquote><em>We have three project types starting soon — a 4-metre straight hotel corridor, an 8-metre L-shaped retail display zone, and a 3-metre circular reception desk. Could you recommend a configuration for each, including track profile, connector types, and luminaire spacing?</em></blockquote>
+  </div>
+
+  <table class="verdict-table">
+    <tr><th>If they...</th><th>Verdict</th></tr>
+    <tr><td>Give three different configurations with different spacing, profiles, or module types</td><td class="v-pass">✅ PASS — they understand application drives configuration</td></tr>
+    <tr><td>Recommend the same configuration for all three, or cannot answer the question</td><td class="v-fail">❌ FAIL — they sell products, not solutions</td></tr>
+  </table>
+
+  <p><strong>Supplier Reply Example:</strong></p>
+  <p><strong>PASS example:</strong></p>
+  <blockquote>Thank you for your inquiry. Before recommending specific products, could you share a few details about your project? Is this for a hotel, retail, or office application? What type of ceiling — recessed, surface-mounted, or suspended? And approximately how many linear metres of track do you need? This will help us recommend the right track profile and module configuration.</blockquote>
+  <p><strong>FAIL example:</strong></p>
+  <blockquote>Dear Sir, Please find attached our catalogue for magnetic track lighting. We have many models with competitive prices. Please check and let us know your quantity. We will give you best price.</blockquote>
 
   <!-- Checkpoint 2 -->
-  <h2>Checkpoint 2: Do They Reference Specific Technical Specifications or Generic Phrases?</h2>
-  <p><strong>What professional buyers look for:</strong></p>
-  <p>The language a supplier uses in their first reply reveals whether they understand their own product at an engineering level. Specific numbers and brand names indicate genuine technical knowledge. Generic adjectives indicate sales training.</p>
-  <p><strong>✅ Green Flag:</strong></p>
-  <p>The reply includes specific technical parameters — driver brand and model, colour temperature tolerance (±K), luminous efficacy (lm/W), total harmonic distortion (THD) data, beam angle options, warranty period with terms.</p>
-  <p><strong>🚩 Red Flag:</strong></p>
-  <p>The reply relies on phrases like "high quality," "CE approved," "competitive price," "strict quality control," or "many satisfied clients" — none of which contain verifiable information.</p>
-  <p><strong>✅ Buyer's Action:</strong></p>
-  <blockquote>Pose one specific technical requirement and ask the supplier to confirm how they meet it. For example:<br><br>
-"Our projects require total harmonic distortion below 10% and 0-10V dimming with a smooth curve down to 1%. Can you confirm your driver supports this, and which driver brand you use?"</blockquote>
-  <p>A supplier who answers with a driver brand, model number, and a confident "yes" on the THD spec passes. A supplier who says "we can do it" without specifics, or responds with unrelated information, fails.</p>
+  <h3>Checkpoint 2: Engineering Specificity</h3>
 
-  <div class="red-flag">
-    <div class="flag-label">🚨 SIGNAL TRIGGER</div>
-    <div class="flag-body">IF: A supplier uses three or more generic quality phrases ("very good quality," "strict QC," "many clients satisfied") in their first reply without a single specific technical parameter.<br><br>
-→ THEN: Eliminate from further evaluation.<br><br>
-<strong>Why:</strong> Suppliers who cannot describe their own product in technical terms do not control their manufacturing process. They assemble from generic components and sell based on price.</div>
+  <p><strong>Buyer Question:</strong></p>
+  <p>Does this supplier understand their own product at an engineering level — or are they relying on sales language that every supplier uses?</p>
+
+  <p><strong>Required Evidence:</strong></p>
+  <p>Named components and quantified parameters. The engineer who wrote the reply should be able to answer: "Which driver, what tolerance, tested at what threshold?"</p>
+
+  <p><strong>PASS Signal:</strong></p>
+  <p>The reply includes at least three specific technical parameters — driver brand and model, colour temperature tolerance (&plusmn;K), luminous efficacy (lm/W), total harmonic distortion (THD) data, beam angle options, warranty period with clear terms. The parameters are verifiable: you could check them against a datasheet.</p>
+
+  <p><strong>FAIL Signal:</strong></p>
+  <p>The reply relies on phrases like "high quality," "CE approved," "competitive price," "strict quality control," "many satisfied clients" — descriptive words without numbers. If you removed all these phrases, the reply would contain no technical information.</p>
+
+  <p><strong>✅ Buyer's Action:</strong></p>
+  <div class="buyer-action">
+    <span class="action-label">✅ Buyer's Action</span>
+    <p>Pose one specific technical requirement that separates knowledgeable suppliers from sales-driven ones:</p>
+    <blockquote><em>Our projects require total harmonic distortion below 10% and 0-10V dimming with a smooth curve down to 1%. Can you confirm your driver supports this, and which driver brand and model you use?</em></blockquote>
   </div>
 
-  <!-- Checkpoint 3 -->
-  <h2>Checkpoint 3: Do They Sell a Product or Engineer a System?</h2>
-  <p><strong>What professional buyers look for:</strong></p>
-  <p>Magnetic track lighting is not a single product — it is a system of tracks, connectors, drivers, luminaires, and accessories. A supplier who only promotes one best-selling model likely lacks the product range or engineering capability to support complex projects.</p>
-  <p><strong>✅ Green Flag:</strong></p>
-  <p>The reply demonstrates system thinking — they ask about connection requirements, corner configurations, T-junctions, maximum continuous run length, power feed placement, and load distribution.</p>
-  <p><strong>🚩 Red Flag:</strong></p>
-  <p>The reply focuses entirely on one or two "hot sale" models and cannot answer questions about connectors, corners, or system limitations.</p>
-  <p><strong>✅ Buyer's Action:</strong></p>
-  <blockquote>Send the supplier a simple layout sketch — a straight run with two 90-degree corners and one T-junction — and ask for a complete accessory list:<br><br>
-"I've attached a basic layout: one 6-metre run with two corners and a T-junction in the middle. Could you provide the complete accessory list — including corner connectors, T-junction, power feed point, end caps, and the maximum number of luminaires per run?"</blockquote>
-  <p>A supplier who returns a complete bill of materials with connector models and current ratings passes. A supplier who only lists track and luminaires — or asks you to choose from a catalogue — fails.</p>
-
-  <!-- Checkpoint 4 -->
-  <h2>Checkpoint 4: Do They Have Certifications or Just Promises?</h2>
-  <p><strong>What professional buyers look for:</strong></p>
-  <p>The difference between "we have CE" and "we hold CE certificate number X for model Y from testing body Z" is the difference between genuine compliance and marketing.</p>
-  <p><strong>✅ Green Flag:</strong></p>
-  <p>The reply references specific certification numbers, applicable product models, issuing bodies, and test dates. They may even attach a certificate scan.</p>
-  <p><strong>🚩 Red Flag:</strong></p>
-  <p>Phrases like "can apply for certification," "normally we do CE," "we have TUV" (without details), or "certification is in progress."</p>
-  <p><strong>✅ Buyer's Action:</strong></p>
-  <blockquote>Request certificate scans for three specific models from their catalogue:<br><br>
-"Could you send the CE and/or UKCA certificate scans for models TL-48-01, TL-48-03, and TL-48-06? I need to see the model numbers clearly on the certificate."</blockquote>
-  <p>Set a 48-hour deadline. A supplier who provides authentic certificates with matching model numbers passes. A supplier who delays, makes excuses, or sends a generic certificate without model numbers fails.</p>
-
-  <div class="red-flag">
-    <div class="flag-label">🚨 SIGNAL TRIGGER</div>
-    <div class="flag-body">IF: A supplier says "certification can be done" or "we can apply for CE" but cannot provide a single existing certificate with a matching model number.<br><br>
-→ THEN: Flag as high compliance risk.<br><br>
-<strong>Why:</strong> Certification is not optional — it requires pre-production testing. A supplier who has not certified their existing products will not be able to deliver certified products for your order without significant lead time and cost.</div>
-  </div>
-
-  <!-- Checkpoint 5 -->
-  <h2>Checkpoint 5: Is the Reply Customised or a Mass Template?</h2>
-  <p><strong>What professional buyers look for:</strong></p>
-  <p>The effort a supplier puts into their first reply is a leading indicator of the service level you can expect throughout the order process.</p>
-  <p><strong>✅ Green Flag:</strong></p>
-  <p>The reply references your company name, your specific inquiry, or your industry. It feels like it was written for you, not copied from a drafts folder.</p>
-  <p><strong>🚩 Red Flag:</strong></p>
-  <p>The reply opens with "Dear Sir," "Good Day," "Dear Friend," or any greeting that could be sent to any inquiry. The body text is generic enough to apply to any product category.</p>
-  <p><strong>✅ Buyer's Action:</strong></p>
-  <blockquote>Pose one non-standard requirement and observe how they respond:<br><br>
-"We also need emergency lighting integration for one project — the track needs to support an emergency battery pack that activates on power failure. Can you advise on compatibility and wiring?"</blockquote>
-  <p>A supplier who asks follow-up questions, offers a specific solution, or explains compatibility clearly passes. A supplier who immediately says "no problem, we can do it" without asking for details — or ignores the question entirely — fails. The "everything is possible" supplier is the most dangerous because they say yes to everything and deliver nothing specific.</p>
-
-  <div class="red-flag">
-    <div class="flag-label">🚨 SIGNAL TRIGGER</div>
-    <div class="flag-body">IF: A supplier says "no problem, we can do it" to a non-standard request without asking a single clarifying question.<br><br>
-→ THEN: Eliminate from shortlist.<br><br>
-<strong>Why:</strong> A supplier who claims capability without understanding the requirement is either overpromising or lacks the technical depth to recognise the complexity. Both outcomes lead to problems during production.</div>
-  </div>
-
-  <!-- 3. Real Scenario Walkthrough -->
-  <h2>3. Real Scenario Walkthrough</h2>
-
-  <p>Let us watch how an experienced buyer applies these five checkpoints.</p>
-  <p><strong>Marco</strong> is a lighting importer based in Germany. He has three hotel projects that require magnetic track lighting. Last week, he sent a standard RFQ to ten Chinese suppliers he collected from Alibaba and two trade fairs. Six suppliers replied.</p>
-  <p>His goal: narrow the list to two suppliers for a deeper evaluation within one week.</p>
-  <p><strong>Passing threshold:</strong> A supplier must pass at least 4 out of 5 checkpoints to proceed.</p>
-
-  <table class="signal-table">
-    <tr><th>Supplier</th><th>Result</th><th>Outcome</th></tr>
-    <tr><td>Supplier A</td><td class="fail">FAIL</td><td>Replied within 12 hours with 40-page catalogue and price list. No project questions. Sent same product recommendation for all three scenarios. Failed Checkpoints 1, 3, 5. Eliminated.</td></tr>
-    <tr><td>Supplier B</td><td class="pass">PASS</td><td>Asked 2 questions about installation environment, recommended 48V system. Gave differentiated recommendations. Confirmed branded driver with THD < 10% datasheet. Passed Checkpoints 1, 2, 5. Proceeds.</td></tr>
-    <tr><td>Supplier C</td><td class="pass">PASS</td><td>Warm email mentioning company name, asked about end-use. Provided driver brand, CRI data, warranty terms. Returned complete BOM with load calculations. Passed Checkpoints 1, 2, 3, 5. Proceeds.</td></tr>
-    <tr><td>Supplier D</td><td class="fail">FAIL</td><td>"Dear sir" with generic factory paragraph. Said "we can do it" with no details on THD. Said "no problem" to emergency lighting with no follow-up questions. Failed Checkpoints 2, 4, 5. Eliminated.</td></tr>
-    <tr><td>Supplier E</td><td class="fail">FAIL</td><td>Provided CE and UKCA certificates with model numbers visible. But recommended same configuration for all three scenarios. Passed only Checkpoint 4 (1 of 5). Eliminated.</td></tr>
-    <tr><td>Supplier F</td><td class="fail">FAIL</td><td>Did not reply within five business days. Eliminated.</td></tr>
+  <table class="verdict-table">
+    <tr><th>If they...</th><th>Verdict</th></tr>
+    <tr><td>Name the driver brand and model, confirm THD spec, perhaps attach a datasheet</td><td class="v-pass">✅ PASS — technical depth is present</td></tr>
+    <tr><td>Say "we can do it" without specifics, or respond with unrelated information</td><td class="v-fail">❌ FAIL — they cannot describe their own product technically</td></tr>
   </table>
 
-  <p><strong>Marco's shortlist: Supplier B and Supplier C.</strong> He now has two suppliers to evaluate further with samples, video calls, and technical documentation — instead of chasing six and getting lost in comparison.</p>
-
-  <!-- 4. Decision Matrix -->
-  <h2>4. Decision Matrix</h2>
-
-  <table class="signal-table">
-    <tr><th>Checkpoint</th><th>What to Look For</th><th>PASS</th><th>FAIL</th></tr>
-    <tr><td>1. Application questions</td><td>Do they ask about your project?</td><td class="pass">2-3 questions about application</td><td class="fail">No questions, just catalogue</td></tr>
-    <tr><td>2. Technical specifics</td><td>Do they name specs or use adjectives?</td><td class="pass">Driver brand, THD, CRI, tolerance data</td><td class="fail">"High quality", "CE approved"</td></tr>
-    <tr><td>3. System thinking</td><td>Do they understand the full system?</td><td class="pass">Complete BOM for your layout</td><td class="fail">Only track + luminaires</td></tr>
-    <tr><td>4. Certification proof</td><td>Do they show or just claim?</td><td class="pass">Cert numbers matching models</td><td class="fail">"Can apply", "in progress"</td></tr>
-    <tr><td>5. Reply customisation</td><td>Was this written for you?</td><td class="pass">Mentions your company/project</td><td class="fail">"Dear Sir", generic text</td></tr>
-  </table>
-
-  <div class="decision-filter">
-    <h3>Decision Rule</h3>
-    <p>Use this scoring system after running all five checkpoints:</p>
-    <div class="filter-rule">
-      <strong>4-5 PASS</strong> → Proceed to sample request + video conference<br><br>
-      <strong>2-3 PASS</strong> → Send one follow-up with a specific technical question. If the answer is strong, proceed. If not, mark as backup.<br><br>
-      <strong>0-1 PASS</strong> → Eliminate before investing more time.
+  <div class="signal-trigger">
+    <div class="trigger-label">🚩 Signal Trigger</div>
+    <div class="trigger-body">
+      <strong>IF:</strong> A supplier uses three or more generic quality phrases ("very good quality," "strict QC," "many clients satisfied") in their first reply without a single quantifiable technical parameter.<br><br>
+      <strong>&rarr; THEN:</strong> Eliminate from further evaluation.<br><br>
+      <strong>Why:</strong> Suppliers who cannot describe their own product in technical terms do not control their manufacturing process. They assemble from generic components and compete on price alone.
     </div>
   </div>
 
-  <!-- 5. Quick Reference Card -->
-  <h2>5. Quick Reference Card</h2>
-  <p><em>Use this checklist when reviewing supplier replies. Print it or keep it open in a separate window.</em></p>
+  <p><strong>Supplier Reply Example:</strong></p>
+  <p><strong>PASS example:</strong></p>
+  <blockquote>Our recommended driver for this system is the Meanwell LPC-35-1050, with THD &lt; 10% and 0-10V dimming down to 1%. CRI is &ge; 90 with SDCM &le; 3. We can also provide the dimming curve test report upon request.</blockquote>
+  <p><strong>FAIL example:</strong></p>
+  <blockquote>We use high quality LED chips and premium aluminium housing. Our products are CE approved and have competitive price. Many clients are satisfied with our quality.</blockquote>
 
-  <div class="key-insight">
-    <p><strong>Before comparing prices, check:</strong></p>
-    <ul>
-      <li>☐ Did they ask about my project before quoting?</li>
-      <li>☐ Did they reference specific specs or use generic adjectives?</li>
-      <li>☐ Did they offer a system configuration or just a product?</li>
-      <li>☐ Did they provide verifiable certification evidence?</li>
-      <li>☐ Was this reply written for me or for anyone?</li>
-    </ul>
-    <p><strong>Score:</strong> ___ / 5 PASS</p>
-    <p><strong>Decision:</strong> ☐ Proceed &nbsp;|&nbsp; ☐ Follow-up needed &nbsp;|&nbsp; ☐ Eliminate</p>
+  <!-- Checkpoint 3 -->
+  <h3>Checkpoint 3: System Capability</h3>
+
+  <p><strong>Buyer Question:</strong></p>
+  <p>Can this supplier deliver a complete working system — track, connectors, power distribution, modules — or do they only sell components?</p>
+
+  <p><strong>Required Evidence:</strong></p>
+  <p>Evidence of system-level thinking: the supplier should reference or ask about connectors, corners, T-junctions, maximum continuous run length, power feed placement, and load distribution. Not just one product model.</p>
+
+  <p><strong>PASS Signal:</strong></p>
+  <p>The reply demonstrates awareness that magnetic track lighting is an interconnected system. They mention or ask about connection requirements, corner configurations, load capacity per run, or power feed strategy — without you having to prompt them.</p>
+
+  <p><strong>FAIL Signal:</strong></p>
+  <p>The reply focuses entirely on one or two "hot sale" models. When asked about corners, junctions, or system limitations, they cannot provide specific answers. Their product knowledge starts and ends with luminaires.</p>
+
+  <p><strong>✅ Buyer's Action:</strong></p>
+  <div class="buyer-action">
+    <span class="action-label">✅ Buyer's Action</span>
+    <p>Send a simple layout sketch and request a complete accessory list:</p>
+    <blockquote><em>I've attached a basic layout: one 6-metre run with two 90-degree corners and a T-junction. Could you provide the complete accessory list — corner connectors, T-junction, power feed point, end caps — and the maximum number of luminaires per run?</em></blockquote>
   </div>
 
-  <!-- 6. From Screening to Deep Dive -->
-  <h2>6. From Screening to Deep Dive</h2>
+  <table class="verdict-table">
+    <tr><th>If they...</th><th>Verdict</th></tr>
+    <tr><td>Return a complete bill of materials with connector models, current ratings, and load calculations</td><td class="v-pass">✅ PASS — they engineer systems</td></tr>
+    <tr><td>List only track and luminaires, or ask you to choose from a catalogue</td><td class="v-fail">❌ FAIL — they sell components</td></tr>
+  </table>
+
+  <p><strong>Supplier Reply Example:</strong></p>
+  <p><strong>PASS example:</strong></p>
+  <blockquote>For the layout you described — one 6-metre run with two 90-degree corners and a T-junction — here is the complete accessory list: 2&times; L-type corner connector (model AC-48L), 1&times; T-junction connector (model AC-48T), 1&times; power feed point (model PF-48), 2&times; end caps (model EC-48). Maximum continuous run is 12 metres per power feed, so for your 6-metre run, one feed point is sufficient. Maximum load per run is 96W (excluding driver headroom).</blockquote>
+  <p><strong>FAIL example:</strong></p>
+  <blockquote>We have a best-selling magnetic track spotlight. Many clients in Europe use this model. It is compatible with 48V system. Please let us know your quantity.</blockquote>
+
+  <!-- Checkpoint 4 -->
+  <h3>Checkpoint 4: Compliance Verification</h3>
+
+  <p><strong>Buyer Question:</strong></p>
+  <p>Is this supplier's compliance verified and traceable to specific products — or is it a general marketing claim?</p>
+
+  <p><strong>Required Evidence:</strong></p>
+  <p>Certification details that connect a specific product model to a specific test report: certificate number, issuing body, applicable product range, test date. A scan is stronger than a text reference.</p>
+
+  <p><strong>PASS Signal:</strong></p>
+  <p>The reply references specific certification numbers that match product models in their catalogue. They may name the issuing body (TÜV, SGS, Intertek) and provide a certificate scan. The evidence is independently verifiable.</p>
+
+  <p><strong>FAIL Signal:</strong></p>
+  <p>Phrases like "can apply for certification," "normally we do CE," "we have TUV" (without details), "certification is in progress." These statements communicate intent, not proof.</p>
+
+  <p><strong>✅ Buyer's Action:</strong></p>
+  <div class="buyer-action">
+    <span class="action-label">✅ Buyer's Action</span>
+    <p>Request certificate scans for specific models with a clear deadline:</p>
+    <blockquote><em>Could you send the CE and/or UKCA certificate scans for models TL-48-01, TL-48-03, and TL-48-06? I need to see the model numbers clearly on the certificate.</em></blockquote>
+    <p>Set a 48-hour deadline.</p>
+  </div>
+
+  <table class="verdict-table">
+    <tr><th>If they...</th><th>Verdict</th></tr>
+    <tr><td>Provide authentic certificate scans with matching model numbers within 48 hours</td><td class="v-pass">✅ PASS — compliance is genuine</td></tr>
+    <tr><td>Delay, make excuses, or send a generic certificate without matching model numbers</td><td class="v-fail">❌ FAIL — certification is not a priority for them</td></tr>
+  </table>
+
+  <div class="signal-trigger">
+    <div class="trigger-label">🚩 Signal Trigger</div>
+    <div class="trigger-body">
+      <strong>IF:</strong> A supplier says "certification can be done" or "we can apply for CE" but cannot provide a single existing certificate with a matching model number when requested.<br><br>
+      <strong>&rarr; THEN:</strong> Flag as high compliance risk and eliminate if certification is non-negotiable for your target market.<br><br>
+      <strong>Why:</strong> Certification requires pre-production testing and structural design validation. A supplier who has not certified their existing products cannot deliver certified products for your order without significant additional lead time and cost.
+    </div>
+  </div>
+
+  <p><strong>Supplier Reply Example:</strong></p>
+  <p><strong>PASS example:</strong></p>
+  <blockquote>Please find attached our CE certificate (No. CET-2025-4822) for models MT-48 series, issued by TÜV Rheinland in March 2025. UKCA certificate is also available upon request. The certificate covers 48V magnetic track, connectors, and power feed units.</blockquote>
+  <p><strong>FAIL example:</strong></p>
+  <blockquote>We have CE certification. We can also apply for UL or other certificates according to your market requirements. Just let us know what you need.</blockquote>
+
+  <!-- Checkpoint 5 -->
+  <h3>Checkpoint 5: Response Quality</h3>
+
+  <p><strong>Buyer Question:</strong></p>
+  <p>How seriously does this supplier treat my inquiry — and by extension, how seriously will they treat my order?</p>
+
+  <p><strong>Required Evidence:</strong></p>
+  <p>The reply should contain evidence that it was written specifically for you. Your company name, your RFQ reference, your stated requirements — not just "Dear Sir."</p>
+
+  <p><strong>PASS Signal:</strong></p>
+  <p>The reply references your company name, your specific inquiry, or your industry. It could not have been sent to a different buyer without modification. Even a short but personalised reply passes.</p>
+
+  <p><strong>FAIL Signal:</strong></p>
+  <p>The reply opens with "Dear Sir," "Good Day," "Dear Friend," or any greeting that works for any inquiry. The body text is generic enough to apply to any product category. Removing the supplier's name from the signature would leave no identifying information.</p>
+
+  <p><strong>✅ Buyer's Action:</strong></p>
+  <div class="buyer-action">
+    <span class="action-label">✅ Buyer's Action</span>
+    <p>Pose one non-standard requirement and observe how they handle it:</p>
+    <blockquote><em>We also need emergency lighting integration for one project — the track needs to support an emergency battery pack that activates on power failure. Can you advise on compatibility and wiring?</em></blockquote>
+  </div>
+
+  <table class="verdict-table">
+    <tr><th>If they...</th><th>Verdict</th></tr>
+    <tr><td>Ask follow-up questions, offer a specific solution, or explain compatibility issues honestly</td><td class="v-pass">✅ PASS — they treat your request as real</td></tr>
+    <tr><td>Say "no problem, we can do it" without asking a single clarifying question, or ignore the question, or change the subject</td><td class="v-fail">❌ FAIL — they are either overpromising or not reading your requirements seriously</td></tr>
+  </table>
+
+  <div class="signal-trigger">
+    <div class="trigger-label">🚩 Signal Trigger</div>
+    <div class="trigger-body">
+      <strong>IF:</strong> A supplier says "no problem, we can do it" to a non-standard request without asking a single clarifying question.<br><br>
+      <strong>&rarr; THEN:</strong> Eliminate from shortlist.<br><br>
+      <strong>Why:</strong> A supplier who claims capability without understanding the requirement is either overpromising or lacks the technical depth to recognise complexity. Both outcomes lead to problems during production.
+    </div>
+  </div>
+
+  <p><strong>Supplier Reply Example:</strong></p>
+  <p><strong>PASS example:</strong></p>
+  <blockquote>Thank you for your inquiry regarding 48V magnetic track lighting for your hotel projects in Germany. For recessed installation in retail spaces, we recommend our recessed track profile MT-48R with adjustable spotlights (20&deg; beam) for general lighting and linear flood modules for ambient wash. We have supplied similar configurations for hotel projects in Europe. Could you confirm the ceiling depth for recessed installation?</blockquote>
+  <p><strong>FAIL example:</strong></p>
+  <blockquote>Dear Sir, Good day. We are a professional magnetic track lighting manufacturer with 10 years of experience. Our products are exported to many countries. Please find attached our catalogue. If you have any questions, please contact us.</blockquote>
+
+  <!-- 4. Real Scenario Walkthrough -->
+  <h2>4. Real Scenario Walkthrough</h2>
+
+  <p>Marco Voss applies the First Reply Screening Model™ to the six replies in his inbox.</p>
+  <p><strong>Passing threshold for Marco's situation:</strong> 4 out of 5 checkpoints. He needs 2 strong suppliers in 10 days — time is tight, and marginal suppliers will consume more time than they save.</p>
+
+  <hr class="supplier-sep">
+
+  <p><strong>Supplier A</strong> replied within 12 hours with a 40-page PDF catalogue and a price list. No questions about Marco's project. Marco sent the three-scenario test. Supplier A replied with the same product recommendation for all three — a single spotlight model with no differentiation.</p>
+
+  <table class="checkpoint-result">
+    <tr><th>Checkpoint</th><th>1</th><th>2</th><th>3</th><th>4</th><th>5</th></tr>
+    <tr><td>Result</td><td>❌</td><td>❌</td><td>❌</td><td>⚠</td><td>❌</td></tr>
+  </table>
+
+  <p><strong>Decision:</strong> FAIL (0/5). Eliminated. Supplier A cannot differentiate between a hotel corridor and a retail display zone — they will not be able to support Marco's three different hotel projects.</p>
+
+  <hr class="supplier-sep">
+
+  <p><strong>Supplier B</strong> asked two questions about installation environment and recommended a 48V system with specific track profiles for each of Marco's project types. Marco sent the three-scenario test. Supplier B gave differentiated recommendations with different luminaire spacing. Marco then asked about THD &lt; 10% and 0-10V dimming. Supplier B confirmed their Lithonia-compatible driver supports both and attached the technical datasheet.</p>
+
+  <table class="checkpoint-result">
+    <tr><th>Checkpoint</th><th>1</th><th>2</th><th>3</th><th>4</th><th>5</th></tr>
+    <tr><td>Result</td><td>✅</td><td>✅</td><td>⚠</td><td>⚠</td><td>✅</td></tr>
+  </table>
+
+  <p><strong>Decision:</strong> PASS (3/5 + no Signal Triggers). Proceeds. Certification needs follow-up, but the engineering depth is strong.</p>
+
+  <hr class="supplier-sep">
+
+  <p><strong>Supplier C</strong> replied with a warm email mentioning LichtPro GmbH by name and referencing the specific RFQ details. They asked about end-use application. Technical specs for their top three models included driver brand (Tridonic), CRI &ge; 90 data, and 5-year warranty terms. Marco sent the layout sketch. Supplier C returned a complete BOM with connector models and load calculations. Marco then requested CE certificates for three models — received within 6 hours with matching model numbers.</p>
+
+  <table class="checkpoint-result">
+    <tr><th>Checkpoint</th><th>1</th><th>2</th><th>3</th><th>4</th><th>5</th></tr>
+    <tr><td>Result</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td></tr>
+  </table>
+
+  <p><strong>Decision:</strong> PASS (5/5). Proceeds. This is Marco's benchmark supplier for this round.</p>
+
+  <hr class="supplier-sep">
+
+  <p><strong>Supplier D</strong> replied with "dear sir" and three paragraphs about their factory size. Marco sent the THD specification. Supplier D replied "we can do it" — no details, no driver name. Marco sent the emergency lighting question. Supplier D said "no problem, we can do it." No follow-up questions.</p>
+
+  <table class="checkpoint-result">
+    <tr><th>Checkpoint</th><th>1</th><th>2</th><th>3</th><th>4</th><th>5</th></tr>
+    <tr><td>Result</td><td>❌</td><td>❌</td><td>❌</td><td>❌</td><td>❌</td></tr>
+  </table>
+
+  <p><strong>Decision:</strong> FAIL (0/5 + Signal Trigger on Checkpoint 5). Eliminated. The "no problem" pattern is the same response that led to Marco's €7,400 failure last year.</p>
+
+  <hr class="supplier-sep">
+
+  <p><strong>Supplier E</strong> provided CE and UKCA certificates in their first reply — model numbers clearly visible. But when Marco sent the three-scenario test, they recommended the same track profile for all three applications. When asked about system layout, they could not provide connector models.</p>
+
+  <table class="checkpoint-result">
+    <tr><th>Checkpoint</th><th>1</th><th>2</th><th>3</th><th>4</th><th>5</th></tr>
+    <tr><td>Result</td><td>❌</td><td>❌</td><td>❌</td><td>✅</td><td>⚠</td></tr>
+  </table>
+
+  <p><strong>Decision:</strong> FAIL (1/5). Eliminated. Good compliance documentation does not compensate for inability to configure a system.</p>
+
+  <hr class="supplier-sep">
+
+  <p><strong>Supplier F</strong> did not reply within five business days.</p>
+
+  <table class="checkpoint-result">
+    <tr><th>Checkpoint</th><th>1</th><th>2</th><th>3</th><th>4</th><th>5</th></tr>
+    <tr><td>Result</td><td>❌</td><td>❌</td><td>❌</td><td>❌</td><td>❌</td></tr>
+  </table>
+
+  <p><strong>Decision:</strong> FAIL (0/5). Eliminated. No reply is also a reply.</p>
+
+  <hr class="supplier-sep">
+
+  <p><strong>Marco's shortlist: Supplier B and Supplier C.</strong></p>
+  <p>Two suppliers for video calls and sample requests — not six. He has saved approximately two weeks of back-and-forth and can now focus his engineering review on suppliers who have already demonstrated they understand his projects.</p>
+
+  <!-- 5. Decision Matrix -->
+  <h2>5. Decision Matrix</h2>
+
+  <table class="signal-table">
+    <tr><th>Checkpoint</th><th>Buyer Question</th><th>PASS</th><th>FAIL</th></tr>
+    <tr><td>1. Application</td><td>Do they understand my project?</td><td>2-3 project-specific questions</td><td>Catalogue + no questions</td></tr>
+    <tr><td>2. Engineering</td><td>Do they understand their product?</td><td>&ge;3 specific technical parameters</td><td>Generic quality phrases only</td></tr>
+    <tr><td>3. System</td><td>Can they deliver a complete system?</td><td>Complete BOM from layout sketch</td><td>Single model focus only</td></tr>
+    <tr><td>4. Compliance</td><td>Is their certification real?</td><td>Cert numbers matching model numbers</td><td>"Can apply", "in progress"</td></tr>
+    <tr><td>5. Customisation</td><td>Is this reply for me?</td><td>Your company/project referenced</td><td>"Dear Sir", generic body</td></tr>
+  </table>
+
+  <p><strong>Decision Rule:</strong></p>
+
+  <table class="signal-table">
+    <tr><th>Score</th><th>Action</th></tr>
+    <tr><td><strong>4-5 PASS</strong> (no Signal Trigger)</td><td>Proceed to sample request + technical video call</td></tr>
+    <tr><td><strong>2-3 PASS</strong> (no Signal Trigger)</td><td>Send one technical follow-up. Re-evaluate based on response quality.</td></tr>
+    <tr><td><strong>0-1 PASS</strong> OR <strong>any Signal Trigger</strong></td><td>Eliminate. Do not invest further time.</td></tr>
+  </table>
+
+  <!-- 6. Quick Reference Card -->
+  <h2>6. Quick Reference Card</h2>
+
+  <p><strong>First Reply Screening Model™ — At a Glance</strong></p>
+  <p>Before comparing prices, run these five checks:</p>
+
+  <table class="signal-table">
+    <tr><th>#</th><th>Signal</th><th>PASS</th><th>FAIL</th></tr>
+    <tr><td>1</td><td>Application</td><td>"What is your application?"</td><td>"Here is our catalogue"</td></tr>
+    <tr><td>2</td><td>Engineering</td><td>"We use Meanwell driver, THD &lt; 10%"</td><td>"High quality, CE approved"</td></tr>
+    <tr><td>3</td><td>System</td><td>"We include connectors, corners, and power feeds"</td><td>"This model is our bestseller"</td></tr>
+    <tr><td>4</td><td>Compliance</td><td>"Here is our CE cert for model TL-48"</td><td>"We can apply after order"</td></tr>
+    <tr><td>5</td><td>Personalisation</td><td>"Dear Marco, regarding your 86-room project..."</td><td>"Dear Sir, please check catalogue"</td></tr>
+  </table>
+
+  <p><strong>Score: ___ / 5 PASS</strong></p>
+  <p><strong>Decision:</strong> □ Proceed (&ge;4 PASS) | □ Follow-up (2-3 PASS) | □ Eliminate (&le;1 PASS or any Signal Trigger)</p>
+
+  <!-- 7. From Screening to Deep Dive -->
+  <h2>7. From Screening to Deep Dive</h2>
 
   <p>Once you have narrowed your list to 2-3 suppliers who passed at least 4 of 5 checkpoints, the next phase begins:</p>
   <ol>
     <li><strong>Request samples</strong> — minimum 3 models per supplier, including track, luminaire, connector, and driver</li>
-    <li><strong>Schedule a video factory tour</strong> — look for assembly line organisation, testing equipment, inventory management</li>
-    <li><strong>Send a detailed RFQ</strong> — now that you trust the supplier, negotiate on your actual project volume, not hypothetical prices</li>
+    <li><strong>Schedule a technical video call</strong> — observe how they discuss engineering details verbally</li>
+    <li><strong>Send a project-specific RFQ</strong> — now that you trust their capability, negotiate on real project volume</li>
   </ol>
-
-  <div class="key-insight">
-    <p><strong>Recommended reading before your video call:</strong> <a href="../magnetic-track-lighting-buyers-handbook-chapter-1.html">Chapter 1 — 10 Engineering Details</a> covers the technical specifications mentioned in these checkpoints — what THD &lt; 10% actually means, how driver brands differ in real-world performance, and why SDCM tolerance matters more than most buyers realise. Understanding these details first will make your supplier screening significantly more effective.</p>
-  </div>
-
+  <p><strong>Recommended reading before your video call:</strong> <a href="../magnetic-track-lighting-buyers-handbook-chapter-1.html">Ch01 — 10 Engineering Details</a> covers the technical specifications mentioned in these checkpoints — what THD &lt; 10% actually means, how driver brands differ in real-world performance, and why SDCM tolerance matters more than most buyers realise. Understanding these details first will make your supplier screening significantly more effective.</p>
   <p>Each phase is covered in the following chapters of this Handbook.</p>
 
   <!-- Professional Buyer Insight -->
   <div class="professional-buyer-insight">
     <span class="label">★ Professional Buyer Insight</span>
-    <p>A supplier's first reply is not a sales document. It is a technical sample of their thinking process.</p>
-    <p>Read it as such, and you will eliminate 60% of suppliers before they waste your time.</p>
+    <p>A supplier's first reply is not a sales document. It is a technical sample of their thinking process. Read it as such, and you will eliminate 60% of suppliers before they waste your time.</p>
   </div>
-
-  <!-- Your Next Step -->
-  <h2>Your Next Step</h2>
-
-  <p>You now have a repeatable screening system. Before you send your next RFQ, prepare the three-scenario test and the technical qualification questions in advance — so when the replies arrive, you can run the full screening in one sitting.</p>
-  <p>If you already have replies waiting in your inbox, open them now and run through the five checkpoints. You will likely discover that a supplier you were considering seriously fails at least two checkpoints — and a supplier you almost dismissed deserves a second look.</p>
-  <p><strong>Need the checklist as a printable PDF?</strong> Contact us and we will send you the Screening Quick Reference Card — the same system professional importers use to cut their supplier shortlist from ten to two in under an hour.</p>
 
   <!-- Related -->
   <div class="related">
     <h3>Continue Learning</h3>
     <p class="pillar-note">This is Chapter 3 of <strong>Section 1: Choosing Suppliers</strong> in <strong>The Magnetic Track Lighting Buyer's Handbook</strong>.</p>
     <a href="../magnetic-track-lighting-buyers-handbook-chapter-1.html">
-      Chapter 1: 10 Engineering Details Professional Buyers Check Before Comparing Prices
-      <span>The complete framework — 10 engineering details that matter more than price</span>
+      Chapter 1 (Pillar): You're Probably Comparing Magnetic Track Lighting Wrong
+      <span>The complete framework — 10 engineering details professional buyers check before comparing prices</span>
     </a>
     <a href="how-professional-buyers-evaluate-suppliers.html">
       Chapter 2: How Professional Buyers Evaluate Magnetic Track Lighting Suppliers
-      <span>A 5-filter engineering elimination system — PASS/FAIL checkpoints, red flags, and a decision filter</span>
+      <span>Stop comparing prices first — a 5-filter engineering elimination system for importers and distributors</span>
+    </a>
+    <a href="../blog-post-6.html">
+      Why Some Magnetic Track Lights Leak Light
+      <span>How structure and assembly quality determine light leakage</span>
     </a>
   </div>
 
   <!-- CTA -->
   <div class="cta-box">
-    <h3>Want Us to Screen Your Supplier Replies?</h3>
-    <p>If you have received replies from magnetic track lighting suppliers and want to run them through this screening system, we can help you:</p>
-    <ul>
-      <li>Review each supplier's reply against all 5 checkpoints</li>
-      <li>Identify red flags and signal triggers you may have missed</li>
-      <li>Recommend which suppliers deserve deeper evaluation</li>
-    </ul>
-    <p>Send us the replies you received — we can help you identify which suppliers are worth your time.</p>
-    <a class="btn" href="mailto:info@tracklinear.com">Send Replies for Screening Review →</a>
+    <h3>Need the First Reply Screening Card?</h3>
+    <p>You now have a repeatable screening system. Before you send your next RFQ, prepare the three-scenario test and the technical qualification questions in advance — so when the replies arrive, you can run the full screening in one sitting.</p>
+    <p>If you already have replies waiting in your inbox, open them now and run through the five checkpoints against the Decision Matrix. You will likely discover that a supplier you were considering seriously fails at least two checkpoints — and a supplier you almost dismissed deserves a second look.</p>
+    <p><strong>Need the checklist as a printable PDF?</strong> Contact us and we will send you the First Reply Screening Card — the same system professional importers use to cut their supplier shortlist from ten to two in under an hour.</p>
+    <p><strong>Want us to screen your current supplier replies?</strong> Send us the replies you received — we can help you run the First Reply Screening Model™ and identify which suppliers deserve deeper evaluation.</p>
+    <a class="btn" href="mailto:info@tracklinear.com">Send for Screening →</a>
   </div>
 
 </div>
