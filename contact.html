@@ -549,7 +549,7 @@
 
           <!-- Form -->
           <div>
-            <form class="contact-form" action="https://api.web3forms.com/submit" method="POST" aria-label="Contact inquiry form">
+            <form class="contact-form" action="https://api.web3forms.com/submit" method="POST" enctype="multipart/form-data" aria-label="Contact inquiry form">
               <input type="hidden" name="access_key" value="d4f062b2-2834-47cc-aa4f-d9f6619d2faf" />
               <div class="form-row">
                 <input type="text" name="name" placeholder="Your Name *" required />
@@ -571,8 +571,14 @@
                 </select>
                 <input type="text" name="quantity" placeholder="Estimated Quantity" />
               </div>
-              <textarea name="message" rows="6" placeholder="Describe your project — ceiling type, installation method, control preference, target quantity..." required></textarea>
-              <button type="submit" class="btn btn-dark submit-btn">Send Inquiry →</button>
+              <textarea name="message" rows="6" placeholder="Please include: track length, installation method, light quantity, control requirement and destination country." required></textarea>
+              <div style="margin-bottom:16px;">
+                <label for="file-upload" style="display:flex; align-items:center; gap:8px; padding:10px 16px; border:1px dashed #ccc; border-radius:12px; cursor:pointer; font-size:13px; color:#888;">
+                  <span style="font-size:18px;">📎</span> Upload Drawing or Reference Image
+                  <input id="file-upload" type="file" name="attachment" accept=".pdf,.jpg,.jpeg,.png,.dwg,.dxf" style="display:none;" />
+                </label>
+              </div>
+              <button type="submit" class="btn btn-dark submit-btn">Request a Complete System Quotation →</button>
               <div id="form-success">
                 ✓ Thank you! Your inquiry has been sent. We'll reply within 24 hours.
               </div>
@@ -673,7 +679,7 @@
       } catch(e) {
         alert('Network error. Please email us at info@tracklinear.com');
       }
-      btn.textContent = 'Send Inquiry →';
+      btn.textContent = 'Request a Complete System Quotation →';
       btn.disabled = false;
     });
   </script>
