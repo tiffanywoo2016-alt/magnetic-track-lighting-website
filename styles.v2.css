@@ -546,3 +546,31 @@ footer { background: #111; color: white; padding: 46px 0; }
   }
 }
 /* force rebuild */
+
+/* ==================== */
+/* Dropdown Nav (About Us submenu) */
+/* ==================== */
+.nav-dropdown { position: relative; }
+.nav-dropdown::after {
+  content: ''; position: absolute;
+  top: 100%; left: 0; right: 0; height: 18px;
+}
+.dropdown-trigger {
+  cursor: pointer; padding: 6px 0; transition: color .2s;
+  color: #4e4e4e; font-size: 17px; font-weight: 600; display: inline-block;
+}
+.dropdown-trigger.active { color: var(--dark); border-bottom: 2px solid var(--gold); padding-bottom: 4px; }
+.nav-dropdown:hover .dropdown-trigger { color: var(--dark); }
+.dropdown-menu {
+  display: none;
+  position: absolute; top: 100%; left: 50%; transform: translateX(-50%); margin-top: 12px;
+  background: white; border-radius: 20px; box-shadow: 0 20px 60px rgba(0,0,0,.15);
+  padding: 14px 0; min-width: 220px;
+  z-index: 100;
+}
+.nav-dropdown:hover .dropdown-menu { display: block; }
+.dropdown-menu a {
+  display: block; padding: 10px 20px; white-space: nowrap;
+  color: var(--text); font-weight: 500; font-size: 15px; transition: all .15s;
+}
+.dropdown-menu a:hover { background: rgba(176,138,87,.08); color: var(--gold); }
