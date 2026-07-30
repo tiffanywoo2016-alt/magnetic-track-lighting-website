@@ -120,34 +120,43 @@
     .system-showcase img { width: 100%; height: auto; display: block; }
 
     /* Process Steps */
+    .process-section { background: var(--dark); }
+    .process-section .section-head h2 { color: white; }
+    .process-section .section-head p { color: rgba(255,255,255,.7); }
     .process-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; }
-    .process-step { background: white; border-radius: 16px; padding: 28px 24px; border: 1px solid #ede8df; }
-    .process-step .num { font-size: 28px; font-weight: 800; color: var(--gold); margin-bottom: 8px; line-height: 1; }
-    .process-step h3 { margin: 0 0 8px; font-size: 16px; }
+    .process-step { background: white; border-radius: 16px; padding: 28px 24px; }
+    .process-step .num { font-size: 32px; font-weight: 800; color: var(--gold); margin-bottom: 10px; line-height: 1; }
+    .process-step h3 { margin: 0 0 8px; font-size: 16px; color: var(--text); }
     .process-step p { margin: 0; color: #666; font-size: 13px; line-height: 1.6; }
 
-    /* Quality Table */
-    .qtable { width: 100%; border-collapse: collapse; font-size: 14px; border-radius: 12px; overflow: hidden; }
-    .qtable th { text-align: left; padding: 16px; font-weight: 700; font-size: 12px; text-transform: uppercase; letter-spacing: .08em; }
-    .qtable th:first-child { background: var(--dark); color: white; }
-    .qtable th:nth-child(2) { background: #f5f0e8; color: var(--text); }
-    .qtable th:nth-child(3) { background: white; color: var(--text); }
-    .qtable th:nth-child(4) { background: var(--dark); color: var(--gold-light); }
-    .qtable td { padding: 12px 16px; border-bottom: 1px solid #e8e4dc; }
-    .qtable td:first-child { font-weight: 600; background: #faf8f4; }
-    .qtable tr:last-child td { border-bottom: none; }
+    /* Quality Cards */
+    .quality-grid { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 0; border-radius: 12px; overflow: hidden; }
+    .quality-col { padding: 28px 24px; }
+    .quality-col h4 { margin: 0 0 16px; font-size: 15px; text-transform: uppercase; letter-spacing: .06em; font-weight: 800; }
+    .quality-col ul { margin: 0; padding: 0; list-style: none; }
+    .quality-col li { padding: 8px 0; font-size: 14px; border-bottom: 1px solid rgba(0,0,0,.06); display: flex; gap: 8px; color: #555; }
+    .quality-col li:last-child { border: none; }
+    .quality-col li .ck { color: var(--gold); font-weight: 800; flex-shrink: 0; }
+    .quality-col.value { background: #faf8f4; }
+    .quality-col.commercial { background: white; }
+    .quality-col.project { background: #f5f0e8; }
+    .quality-col.value h4 { color: #999; }
+    .quality-col.commercial h4 { color: var(--gold); }
+    .quality-col.project h4 { color: var(--dark); }
+    .quality-col .tag { font-size: 12px; font-weight: 600; color: var(--muted); margin-top: 12px; }
 
     /* OEM List */
-    .oem-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+    .oem-wrap { background: #f5f3ef; border-radius: 16px; padding: 32px; border: 1px solid #ede8df; }
+    .oem-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
     .oem-item { display: flex; align-items: center; gap: 10px; padding: 10px 14px; background: white; border-radius: 10px; border: 1px solid #ede8df; font-size: 14px; }
     .oem-item .ck { color: var(--gold); font-weight: 800; }
 
     /* QC Images */
     .qc-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
-    .qc-card { background: white; border-radius: 16px; overflow: hidden; border: 1px solid #ede8df; }
-    .qc-card img { width: 100%; height: 240px; object-fit: cover; display: block; }
-    .qc-card .cap { padding: 12px 16px; font-size: 13px; color: #555; font-weight: 600; }
-    .qc-card .cap span { color: var(--gold); }
+    .qc-card { background: white; border-radius: 16px; overflow: hidden; box-shadow: 0 4px 20px rgba(0,0,0,.06); }
+    .qc-card img { width: 100%; height: 300px; object-fit: cover; display: block; }
+    .qc-card .cap { padding: 14px 18px; font-size: 14px; color: #444; font-weight: 600; }
+    .qc-card .cap span { color: var(--gold); font-size: 10px; margin-right: 4px; }
 
     /* Quotation List */
     .req-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px 24px; max-width: 800px; margin: 0 auto; }
@@ -168,10 +177,11 @@
       nav { display: none; }
       .process-grid { grid-template-columns: 1fr 1fr; }
       .qc-grid { grid-template-columns: 1fr; }
+      .quality-grid { grid-template-columns: 1fr; }
       .oem-grid { grid-template-columns: 1fr; }
       .req-grid { grid-template-columns: 1fr; }
-      .qtable { font-size: 12px; }
-      .qtable th, .qtable td { padding: 10px 8px; }
+      .oem-wrap { padding: 20px; }
+      .qc-card img { height: 220px; }
       .footer-inner { flex-direction: column; align-items: flex-start; }
     }
   </style>
@@ -251,10 +261,10 @@
 </section>
 
 <!-- Process -->
-<section style="background:white;">
+<section class="process-section">
   <div class="container">
     <div class="section-head">
-      <div class="section-kicker">How We Work</div>
+      <div class="section-kicker" style="color:var(--gold-light);">How We Work</div>
       <h2>From Project Requirement to Approved System</h2>
       <p>Every order follows the same four-stage process. No shortcuts, no assumptions.</p>
     </div>
@@ -291,61 +301,37 @@
       <h2>Choose the Right Quality Level for Your Market</h2>
       <p>Three tiers so you can match product quality to project budget and market positioning.</p>
     </div>
-    <div style="overflow-x:auto;">
-      <table class="qtable">
-        <thead>
-          <tr>
-            <th></th>
-            <th>Value Series</th>
-            <th>Commercial Series</th>
-            <th>Project Series</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>Best For</td>
-            <td>Price-sensitive distribution</td>
-            <td>Retail, office and hotel projects</td>
-            <td>Premium hospitality and design projects</td>
-          </tr>
-          <tr>
-            <td>Key Focus</td>
-            <td>Cost control</td>
-            <td>Balanced performance</td>
-            <td>Higher visual and electrical requirements</td>
-          </tr>
-          <tr>
-            <td>Light Source</td>
-            <td>Standard LED chips</td>
-            <td>High-efficiency SMD (Bridgelux / Epistar)</td>
-            <td>Premium chips (Osram / Lumileds / CREE)</td>
-          </tr>
-          <tr>
-            <td>Driver</td>
-            <td>ON/OFF or Triac</td>
-            <td>DALI / 0–10V / Tuya-compatible</td>
-            <td>Programmable DALI-2 / Casambi</td>
-          </tr>
-          <tr>
-            <td>Finish</td>
-            <td>Standard aluminium</td>
-            <td>Reinforced body, better heat dissipation</td>
-            <td>Thick-wall extrusion, powder-coated</td>
-          </tr>
-          <tr>
-            <td>Warranty</td>
-            <td>3 years</td>
-            <td>5 years</td>
-            <td>5 years</td>
-          </tr>
-          <tr>
-            <td>Typical Projects</td>
-            <td>Budget residential, basic retail</td>
-            <td>Hotels, offices, retail chains</td>
-            <td>Luxury hospitality, designer showrooms</td>
-          </tr>
-        </tbody>
-      </table>
+    <div class="quality-grid">
+      <div class="quality-col value">
+        <h4>Value Series</h4>
+        <ul>
+          <li><span class="ck">✓</span> Standard LED chips</li>
+          <li><span class="ck">✓</span> ON/OFF or Triac driver</li>
+          <li><span class="ck">✓</span> Standard aluminium finish</li>
+          <li><span class="ck">✓</span> 3-year warranty</li>
+        </ul>
+        <div class="tag">Best for: Price-sensitive distribution</div>
+      </div>
+      <div class="quality-col commercial">
+        <h4>Commercial Series</h4>
+        <ul>
+          <li><span class="ck">✓</span> High-efficiency SMD (Bridgelux / Epistar)</li>
+          <li><span class="ck">✓</span> DALI / 0–10V / Tuya-compatible</li>
+          <li><span class="ck">✓</span> Reinforced body, better heat dissipation</li>
+          <li><span class="ck">✓</span> 5-year warranty</li>
+        </ul>
+        <div class="tag">Best for: Retail, office &amp; hotel projects</div>
+      </div>
+      <div class="quality-col project">
+        <h4>Project Series</h4>
+        <ul>
+          <li><span class="ck">✓</span> Premium chips (Osram / Lumileds / CREE)</li>
+          <li><span class="ck">✓</span> Programmable DALI-2 / Casambi</li>
+          <li><span class="ck">✓</span> Thick-wall extrusion, powder-coated</li>
+          <li><span class="ck">✓</span> 5-year warranty</li>
+        </ul>
+        <div class="tag">Best for: Luxury hospitality &amp; design projects</div>
+      </div>
     </div>
   </div>
 </section>
@@ -356,17 +342,18 @@
     <div class="section-head">
       <div class="section-kicker">OEM &amp; Private Label</div>
       <h2>OEM &amp; Private Label for Distributors</h2>
-      <p>Customisation options for lighting brands and project buyers who need their own specification.</p>
     </div>
-    <div class="oem-grid">
-      <div class="oem-item"><span class="ck">✓</span> Logo on products or labels</div>
-      <div class="oem-item"><span class="ck">✓</span> Neutral or private-label packaging</div>
-      <div class="oem-item"><span class="ck">✓</span> Custom track length and finish</div>
-      <div class="oem-item"><span class="ck">✓</span> CCT, CRI and beam-angle options</div>
-      <div class="oem-item"><span class="ck">✓</span> Driver and control configuration</div>
-      <div class="oem-item"><span class="ck">✓</span> Barcode, datasheet and packing-list support</div>
+    <div class="oem-wrap">
+      <p style="margin:0 0 16px;font-size:14px;color:var(--muted);">Customisation options for lighting brands and project buyers who need their own specification. Available options and MOQ depend on the selected system and level of customisation.</p>
+      <div class="oem-grid">
+        <div class="oem-item"><span class="ck">✓</span> Logo on products or labels</div>
+        <div class="oem-item"><span class="ck">✓</span> Neutral or private-label packaging</div>
+        <div class="oem-item"><span class="ck">✓</span> Custom track length and finish</div>
+        <div class="oem-item"><span class="ck">✓</span> CCT, CRI and beam-angle options</div>
+        <div class="oem-item"><span class="ck">✓</span> Driver and control configuration</div>
+        <div class="oem-item"><span class="ck">✓</span> Barcode, datasheet and packing-list support</div>
+      </div>
     </div>
-    <p style="text-align:center;color:var(--muted);font-size:14px;margin-top:20px;">Available options and MOQ depend on the selected system and level of customisation.</p>
   </div>
 </section>
 
