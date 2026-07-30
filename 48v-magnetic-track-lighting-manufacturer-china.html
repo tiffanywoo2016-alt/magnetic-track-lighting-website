@@ -160,18 +160,19 @@
     .qc-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
     .qc-card { background: white; border-radius: 16px; overflow: hidden; box-shadow: 0 4px 20px rgba(0,0,0,.06); }
     .qc-card img { width: 100%; height: 300px; object-fit: cover; display: block; }
-    .qc-card .cap { padding: 14px 18px; font-size: 14px; color: #444; font-weight: 600; }
+    .qc-card .cap { padding: 14px 18px 4px; font-size: 14px; color: #444; font-weight: 600; }
     .qc-card .cap span { color: var(--gold); font-size: 10px; margin-right: 4px; }
+    .qc-card .cd { padding: 0 18px 16px; font-size: 13px; color: #777; line-height: 1.5; }
 
     /* Quotation List */
     .req-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px 24px; max-width: 800px; margin: 0 auto; }
     .req-item { display: flex; align-items: center; gap: 10px; font-size: 14px; }
     .req-item .ck { color: var(--gold); font-weight: 800; }
 
-    /* CTA Block */
-    .cta-block { background: var(--dark); color: white; text-align: center; padding: 80px 0; }
-    .cta-block h2 { font-size: clamp(28px, 3.6vw, 40px); margin: 0 0 12px; }
-    .cta-block p { color: rgba(255,255,255,.7); max-width: 600px; margin: 0 auto 28px; font-size: 16px; }
+    /* CTA Section */
+    .dark-section { background: var(--dark); color: white; text-align: center; padding: 80px 0; }
+    .dark-section h2 { font-size: clamp(28px, 3.6vw, 40px); margin: 0 0 12px; }
+    .dark-section p { color: rgba(255,255,255,.7); max-width: 600px; margin: 0 auto 28px; font-size: 16px; }
     .cta-actions { display: flex; gap: 14px; justify-content: center; flex-wrap: wrap; }
 
     footer { background: #111; color: white; padding: 46px 0; }
@@ -255,12 +256,7 @@
     <div class="section-head">
       <div class="section-kicker">Complete System</div>
       <h2>Complete 48V Magnetic Track Lighting System</h2>
-      <p>Tracklinear supplies complete 48V magnetic track lighting systems, including track rails, light modules, drivers, power feeds and connectors. Before production, we match these components as one system based on the required track platform, project load, installation method and control requirement.</p>
-    </div>
-    <div style="display:flex;gap:12px;justify-content:center;flex-wrap:wrap;">
-      <a href="tracks/index.html" class="btn btn-dark">View Track Platforms →</a>
-      <a href="lights/index.html" class="btn btn-dark">View Light Modules →</a>
-      <a href="blog/smart-lighting-control-dali-casambi.html" class="btn btn-dark">Explore Control Options →</a>
+      <p>Tracklinear supplies complete 48V magnetic track lighting systems, including track rails, light modules, drivers, power feeds and connectors. Before production, we match these components as one system based on the required track platform, project load, installation method and control requirement. <a href="tracks/index.html" style="color:var(--gold);text-decoration:underline;">View track platforms</a>, <a href="lights/index.html" style="color:var(--gold);text-decoration:underline;">light modules</a> and <a href="blog/smart-lighting-control-dali-casambi.html" style="color:var(--gold);text-decoration:underline;">control options</a>.</p>
     </div>
   </div>
 </section>
@@ -305,9 +301,6 @@
       <div class="section-kicker">Quality Levels</div>
       <h2>Choose the Right Quality Level for Your Market</h2>
       <p>Three tiers so you can match product quality to project budget and market positioning.</p>
-    </div>
-    <div style="margin: 0 0 32px; border-radius: 12px; overflow: hidden;">
-      <img src="images/quality-tiers-comparison.jpg" alt="Tracklinear quality tiers comparison — Value, Commercial and Project series" style="width:100%;height:auto;display:block;" loading="lazy" />
     </div>
     <div class="quality-grid">
       <div class="quality-col value">
@@ -383,25 +376,29 @@
       <div class="qc-card">
         <img src="images/qc-compatibility-check.jpg" alt="Track and module compatibility check" loading="lazy" />
         <div class="cap"><span>◉</span> Track &amp; Module Compatibility Check</div>
+        <div class="cd">Modules are fitted to the specified track and powered on before packing.</div>
       </div>
       <div class="qc-card">
         <img src="images/qc-assembly-check.jpg" alt="Module assembly and component check" loading="lazy" />
         <div class="cap"><span>◉</span> Module Assembly &amp; Component Check</div>
+        <div class="cd">Appearance, contact parts and assembly condition are checked by batch.</div>
       </div>
       <div class="qc-card">
         <img src="images/qc-laser-marking.jpg" alt="Laser marking and product identification" loading="lazy" />
         <div class="cap"><span>◉</span> Laser Marking / Product Identification</div>
+        <div class="cd">Custom logo, labels and identification marks are verified before assembly.</div>
       </div>
       <div class="qc-card">
         <img src="images/qc-packing.jpg" alt="Packing and order preparation" loading="lazy" />
         <div class="cap"><span>◉</span> Packing &amp; Order Preparation</div>
+        <div class="cd">Packing method, labels and order quantity are checked before shipment.</div>
       </div>
     </div>
   </div>
 </section>
 
 <!-- What to Send -->
-<section class="dark-block" id="quotation">
+<section class="dark-section" id="quotation">
   <div class="container">
     <div class="section-head">
       <div class="section-kicker" style="color:var(--gold-light);">Get a Quotation</div>
