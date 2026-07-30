@@ -130,36 +130,25 @@
     .process-step p { margin: 0; color: #666; font-size: 13px; line-height: 1.6; }
 
     /* Quality Cards */
-    .quality-grid { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 0; border-radius: 12px; overflow: hidden; }
-    .quality-col { padding: 0; }
-    .quality-col .qh {
-      padding: 14px 24px; text-transform: uppercase; letter-spacing: .08em;
-      font-size: 12px; font-weight: 800; text-align: center;
-    }
-    .quality-col .qb { padding: 20px 24px 24px; }
+    .quality-grid { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 16px; }
+    .quality-col { background: white; border-radius: 16px; overflow: hidden; border: 1px solid #ede8df; }
+    .quality-col .qt { padding: 20px 24px 12px; font-size: 15px; font-weight: 800; text-transform: uppercase; letter-spacing: .06em; display: flex; align-items: center; gap: 10px; }
+    .quality-col .qt .dot { width: 8px; height: 8px; border-radius: 50%; flex-shrink: 0; }
+    .quality-col .qb { padding: 0 24px 20px; }
     .quality-col ul { margin: 0; padding: 0; list-style: none; }
-    .quality-col li { padding: 7px 0; font-size: 14px; border-bottom: 1px solid rgba(0,0,0,.06); display: flex; gap: 8px; }
+    .quality-col li { padding: 6px 0; font-size: 14px; border-bottom: 1px solid #f0ece4; display: flex; gap: 8px; color: #555; }
     .quality-col li:last-child { border: none; }
-    .quality-col li .ck { font-weight: 800; flex-shrink: 0; }
-    .quality-col .tag { font-size: 12px; font-weight: 600; margin-top: 14px; padding-top: 14px; border-top: 1px solid rgba(0,0,0,.08); }
+    .quality-col li .ck { color: var(--gold); font-weight: 800; flex-shrink: 0; }
+    .quality-col .tag { font-size: 12px; font-weight: 600; color: var(--muted); margin-top: 10px; padding-top: 10px; border-top: 1px solid #f0ece4; }
     /* Value */
-    .quality-col.value { background: #f0ede8; }
-    .quality-col.value .qh { background: #d8d4cc; color: #5a5a5a; }
-    .quality-col.value li { color: #555; }
-    .quality-col.value .ck { color: #8a8a8a; }
-    .quality-col.value .tag { color: #777; }
+    .quality-col.value .qt { color: #888; }
+    .quality-col.value .dot { background: #ccc; }
     /* Commercial */
-    .quality-col.commercial { background: white; }
-    .quality-col.commercial .qh { background: var(--gold); color: white; }
-    .quality-col.commercial li { color: #444; }
-    .quality-col.commercial .ck { color: var(--gold); }
-    .quality-col.commercial .tag { color: var(--muted); }
+    .quality-col.commercial .qt { color: var(--gold); }
+    .quality-col.commercial .dot { background: var(--gold); }
     /* Project */
-    .quality-col.project { background: #f3eadc; }
-    .quality-col.project .qh { background: #c4a87a; color: white; }
-    .quality-col.project li { color: #4a3f32; }
-    .quality-col.project .ck { color: #a08050; }
-    .quality-col.project .tag { color: #7a6b52; }
+    .quality-col.project .qt { color: var(--dark); }
+    .quality-col.project .dot { background: var(--dark); }
 
     /* OEM List */
     .oem-wrap { background: #f5f3ef; border-radius: 16px; padding: 32px; border: 1px solid #ede8df; }
@@ -319,31 +308,31 @@
     </div>
     <div class="quality-grid">
       <div class="quality-col value">
-        <div class="qh">Value Series</div>
+        <div class="qt"><span class="dot"></span> Value Series</div>
         <div class="qb">
           <ul>
             <li><span class="ck">✓</span> Standard LED chips</li>
             <li><span class="ck">✓</span> ON/OFF or Triac driver</li>
             <li><span class="ck">✓</span> Standard aluminium finish</li>
-            <li><span class="ck">✓</span> 3-year warranty</li>
+            <li><span class="ck">✓</span> 2-year warranty</li>
           </ul>
-          <div class="tag">Best for: Price-sensitive distribution</div>
+          <div class="tag">Price-sensitive distribution</div>
         </div>
       </div>
       <div class="quality-col commercial">
-        <div class="qh">Commercial Series</div>
+        <div class="qt"><span class="dot"></span> Commercial Series</div>
         <div class="qb">
           <ul>
             <li><span class="ck">✓</span> High-efficiency SMD (Bridgelux / Epistar)</li>
             <li><span class="ck">✓</span> DALI / 0–10V / Tuya-compatible</li>
             <li><span class="ck">✓</span> Reinforced body, better heat dissipation</li>
-            <li><span class="ck">✓</span> 5-year warranty</li>
+            <li><span class="ck">✓</span> 3-year warranty</li>
           </ul>
-          <div class="tag">Best for: Retail, office &amp; hotel projects</div>
+          <div class="tag">Retail, office &amp; hotel projects</div>
         </div>
       </div>
       <div class="quality-col project">
-        <div class="qh">Project Series</div>
+        <div class="qt"><span class="dot"></span> Project Series</div>
         <div class="qb">
           <ul>
             <li><span class="ck">✓</span> Premium chips (Osram / Lumileds / CREE)</li>
@@ -351,7 +340,7 @@
             <li><span class="ck">✓</span> Thick-wall extrusion, powder-coated</li>
             <li><span class="ck">✓</span> 5-year warranty</li>
           </ul>
-          <div class="tag">Best for: Luxury hospitality &amp; design projects</div>
+          <div class="tag">Luxury hospitality &amp; design projects</div>
         </div>
       </div>
     </div>
