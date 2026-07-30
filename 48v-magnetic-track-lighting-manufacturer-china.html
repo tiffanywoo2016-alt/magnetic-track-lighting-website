@@ -13,7 +13,7 @@
   <meta property="og:description" content="Complete 48V magnetic track lighting systems — 20/23/35mm tracks, LED modules, drivers, accessories. OEM/ODM." />
   <meta property="og:url" content="https://tracklinear.com/48v-magnetic-track-lighting-manufacturer-china.html" />
   <meta property="og:site_name" content="Tracklinear" />
-  <meta property="og:image" content="https://tracklinear.com/images/20series-system.webp" />
+  <meta property="og:image" content="https://tracklinear.com/images/manufacturer-system-showcase.jpg" />
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="48V Magnetic Track Lighting Manufacturer in China | Tracklinear" />
   <meta name="twitter:description" content="Complete 48V magnetic track lighting systems from one manufacturer." />
@@ -28,19 +28,16 @@
     gtag('config', 'G-WXHSW5Y7V8');
   </script>
 
-  <!-- Structured Data: Product -->
+  <!-- Structured Data -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "Product",
-    "name": "48V Magnetic Track Lighting System",
-    "description": "Complete 48V magnetic track lighting system — 20/23/35mm tracks, LED modules, drivers and accessories. OEM/ODM available.",
+    "@type": "Organization",
+    "name": "Tracklinear",
+    "url": "https://tracklinear.com/",
+    "description": "48V magnetic track lighting manufacturer. Complete systems — tracks, LED modules, drivers and accessories. OEM/ODM available.",
     "brand": { "@type": "Brand", "name": "Tracklinear" },
-    "manufacturer": {
-      "@type": "Organization",
-      "name": "Tracklinear",
-      "url": "https://tracklinear.com/"
-    }
+    "address": { "@type": "PostalAddress", "addressLocality": "Foshan", "addressCountry": "CN" }
   }
   </script>
 
@@ -113,83 +110,52 @@
       margin: 0 auto; font-size: clamp(36px, 5vw, 52px); line-height: 1.12; letter-spacing: -.03em;
       max-width: 800px; font-weight: 800;
     }
-    .mfr-hero p {
+    .mfr-hero .sub {
       max-width: 680px; margin: 20px auto 32px;
       font-size: 18px; line-height: 1.7; color: rgba(255,255,255,.7);
-    }
-    .mfr-hero .pills {
-      display: flex; justify-content: center; gap: 10px; flex-wrap: wrap; margin-top: 10px;
-    }
-    .mfr-hero .pill {
-      display: inline-flex; align-items: center;
-      padding: 6px 14px; border-radius: 999px; font-size: 12px; font-weight: 700;
-      color: var(--gold-light); background: rgba(255,255,255,.1);
-      border: 1px solid rgba(230,192,140,.3);
     }
 
     /* System Image Full Width */
     .system-showcase { background: white; padding: 0; }
     .system-showcase img { width: 100%; height: auto; display: block; }
 
-    /* Quick Specs Grid */
-    .specs-grid {
-      display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px;
-    }
-    .spec-card {
-      background: white; border-radius: 16px; padding: 28px;
-      border: 1px solid #ede8df;
-    }
-    .spec-card h3 { margin: 0 0 6px; font-size: 17px; }
-    .spec-card p { margin: 0; color: #666; font-size: 14px; line-height: 1.6; }
+    /* Process Steps */
+    .process-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; }
+    .process-step { background: white; border-radius: 16px; padding: 28px 24px; border: 1px solid #ede8df; }
+    .process-step .num { font-size: 28px; font-weight: 800; color: var(--gold); margin-bottom: 8px; line-height: 1; }
+    .process-step h3 { margin: 0 0 8px; font-size: 16px; }
+    .process-step p { margin: 0; color: #666; font-size: 13px; line-height: 1.6; }
 
-    /* Comparison Table */
-    .comp-table { width: 100%; border-collapse: collapse; font-size: 14px; }
-    .comp-table th {
-      text-align: left; padding: 14px 16px; background: var(--dark); color: white;
-      font-weight: 700; font-size: 13px; text-transform: uppercase; letter-spacing: .06em;
-    }
-    .comp-table td {
-      padding: 12px 16px; border-bottom: 1px solid #e8e4dc;
-    }
-    .comp-table tr:nth-child(even) td { background: #faf8f4; }
-    .comp-table tr:hover td { background: #f5f0e8; }
+    /* Quality Table */
+    .qtable { width: 100%; border-collapse: collapse; font-size: 14px; border-radius: 12px; overflow: hidden; }
+    .qtable th { text-align: left; padding: 16px; font-weight: 700; font-size: 12px; text-transform: uppercase; letter-spacing: .08em; }
+    .qtable th:first-child { background: var(--dark); color: white; }
+    .qtable th:nth-child(2) { background: #f5f0e8; color: var(--text); }
+    .qtable th:nth-child(3) { background: white; color: var(--text); }
+    .qtable th:nth-child(4) { background: var(--dark); color: var(--gold-light); }
+    .qtable td { padding: 12px 16px; border-bottom: 1px solid #e8e4dc; }
+    .qtable td:first-child { font-weight: 600; background: #faf8f4; }
+    .qtable tr:last-child td { border-bottom: none; }
 
-    /* Two Column Layout */
-    .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; align-items: center; }
-    .two-col img { width: 100%; height: auto; border-radius: 16px; display: block; }
-    .dark-block {
-      background: var(--dark); color: white; padding: 60px 0;
-    }
-    .dark-block h2 { color: white; }
-    .dark-block .section-head p { color: rgba(255,255,255,.7); }
-
-    .check-list { display: grid; gap: 8px; margin: 20px 0; }
-    .check-item { display: flex; gap: 10px; align-items: flex-start; font-size: 14px; color: #4a4a4a; }
-    .check-item .ck { color: var(--gold); font-weight: 800; flex-shrink: 0; }
-
-    .quality-grid { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 0; border: 1px solid #e0dcd4; border-radius: 12px; overflow: hidden; }
-    .quality-col { padding: 20px; }
-    .quality-col h4 { margin: 0 0 12px; font-size: 14px; text-transform: uppercase; letter-spacing: .06em; }
-    .quality-col ul { margin: 0; padding: 0; list-style: none; }
-    .quality-col li { padding: 6px 0; font-size: 13px; color: #555; border-bottom: 1px solid #f0ece4; display: flex; gap: 6px; }
-    .quality-col li:last-child { border: none; }
-    .quality-col.entry { background: #faf8f4; }
-    .quality-col.standard { background: white; }
-    .quality-col.premium { background: #f5f0e8; }
-    .quality-col.entry h4 { color: #888; }
-    .quality-col.standard h4 { color: var(--gold); }
-    .quality-col.premium h4 { color: var(--dark); }
-
-    .oem-row { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+    /* OEM List */
+    .oem-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
     .oem-item { display: flex; align-items: center; gap: 10px; padding: 10px 14px; background: white; border-radius: 10px; border: 1px solid #ede8df; font-size: 14px; }
     .oem-item .ck { color: var(--gold); font-weight: 800; }
 
-    .factory-imgs { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
-    .factory-imgs img { width: 100%; height: 240px; object-fit: cover; border-radius: 12px; display: block; }
+    /* QC Images */
+    .qc-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+    .qc-card { background: white; border-radius: 16px; overflow: hidden; border: 1px solid #ede8df; }
+    .qc-card img { width: 100%; height: 240px; object-fit: cover; display: block; }
+    .qc-card .cap { padding: 12px 16px; font-size: 13px; color: #555; font-weight: 600; }
+    .qc-card .cap span { color: var(--gold); }
 
-    .cta-block {
-      background: var(--dark); color: white; text-align: center; padding: 80px 0;
-    }
+    /* Quotation List */
+    .req-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px 24px; max-width: 800px; margin: 0 auto; }
+    .req-item { display: flex; align-items: center; gap: 10px; font-size: 14px; }
+    .req-item .ck { color: var(--gold); font-weight: 800; }
+
+    /* CTA Block */
+    .cta-block { background: var(--dark); color: white; text-align: center; padding: 80px 0; }
     .cta-block h2 { font-size: clamp(28px, 3.6vw, 40px); margin: 0 0 12px; }
     .cta-block p { color: rgba(255,255,255,.7); max-width: 600px; margin: 0 auto 28px; font-size: 16px; }
     .cta-actions { display: flex; gap: 14px; justify-content: center; flex-wrap: wrap; }
@@ -200,10 +166,12 @@
 
     @media (max-width: 768px) {
       nav { display: none; }
-      .two-col { grid-template-columns: 1fr; }
-      .specs-grid, .quality-grid { grid-template-columns: 1fr; }
-      .oem-row { grid-template-columns: 1fr; }
-      .factory-imgs { grid-template-columns: 1fr; }
+      .process-grid { grid-template-columns: 1fr 1fr; }
+      .qc-grid { grid-template-columns: 1fr; }
+      .oem-grid { grid-template-columns: 1fr; }
+      .req-grid { grid-template-columns: 1fr; }
+      .qtable { font-size: 12px; }
+      .qtable th, .qtable td { padding: 10px 8px; }
       .footer-inner { flex-direction: column; align-items: flex-start; }
     }
   </style>
@@ -221,7 +189,7 @@
         </div>
       </a>
     </div>
-          <nav aria-label="Main navigation">
+            <nav aria-label="Main navigation">
         <a href="index.html">Home</a>
         <div class="nav-dropdown">
             <span class="dropdown-trigger">Product</span>
@@ -242,14 +210,9 @@
               </div>
             </div>
           </div>
-        <div class="nav-dropdown">
-            <span class="dropdown-trigger active">About Us</span>
-            <div class="dropdown-menu" style="grid-template-columns:1fr;min-width:200px;">
-              <a href="about.html">Overview</a>
-              <a href="48v-magnetic-track-lighting-manufacturer-china.html">Production</a>
-            </div>
-          </div>
-        <a href="blog/index.html">Blog</a>
+        <a href="48v-magnetic-track-lighting-manufacturer-china.html" class="active">Manufacturer &amp; OEM</a>
+        <a href="blog/index.html">Resources</a>
+        <a href="about.html">About Us</a>
       <a href="contact.html">Contact</a>
       </nav>
   </div>
@@ -261,15 +224,8 @@
 <section class="mfr-hero">
   <div class="container">
     <h1>48V Magnetic Track Lighting Manufacturer in China</h1>
-    <p>Complete tracks, LED light modules, 48V drivers and accessories — matched as one system. OEM/ODM, samples and project support available.</p>
+    <p class="sub">For distributors and project buyers who need a complete, compatible system — not a list of separate parts.</p>
     <a href="#quotation" class="btn btn-gold">Request a Factory Quotation →</a>
-    <div class="pills">
-      <span class="pill">20 / 23 / 35mm Systems</span>
-      <span class="pill">Surface / Recessed / Trimless</span>
-      <span class="pill">DALI / Tuya / Casambi</span>
-      <span class="pill">OEM &amp; Private Label</span>
-      <span class="pill">Sample Support</span>
-    </div>
   </div>
 </section>
 
@@ -278,97 +234,115 @@
   <img src="images/manufacturer-system-showcase.jpg" alt="Tracklinear complete 48V magnetic track lighting system — tracks, light modules, drivers and connectors" loading="eager" />
 </section>
 
-<!-- Quick Specs -->
+<!-- What We Manufacture -->
 <section>
   <div class="container">
     <div class="section-head">
       <div class="section-kicker">Complete System</div>
-      <h2>Tracks, Modules, Drivers &amp; Accessories, One Source</h2>
-      <p>We supply every component in a 48V magnetic track system. No loose parts, no compatibility guessing.</p>
+      <h2>Complete 48V Magnetic Track Lighting System</h2>
+      <p>Tracklinear supplies complete 48V magnetic track lighting systems, including track rails, light modules, drivers, power feeds and connectors. Before production, we match these components as one system based on the required track platform, project load, installation method and control requirement.</p>
     </div>
-    <div class="specs-grid">
-      <div class="spec-card">
-        <h3>Track Rails</h3>
-        <p>20mm, 23mm and 35mm systems. Surface, recessed, trimless and pendant profiles. White, black, silver. Custom lengths available.</p>
+    <div style="display:flex;gap:12px;justify-content:center;flex-wrap:wrap;">
+      <a href="tracks/index.html" class="btn btn-dark">View Track Platforms →</a>
+      <a href="lights/index.html" class="btn btn-dark">View Light Modules →</a>
+      <a href="blog/smart-lighting-control-dali-casambi.html" class="btn btn-dark">Explore Control Options →</a>
+    </div>
+  </div>
+</section>
+
+<!-- Process -->
+<section style="background:white;">
+  <div class="container">
+    <div class="section-head">
+      <div class="section-kicker">How We Work</div>
+      <h2>From Project Requirement to Approved System</h2>
+      <p>Every order follows the same four-stage process. No shortcuts, no assumptions.</p>
+    </div>
+    <div class="process-grid">
+      <div class="process-step">
+        <div class="num">01</div>
+        <h3>System Review</h3>
+        <p>We review your track platform, module selection, total load and control requirement before quoting.</p>
       </div>
-      <div class="spec-card">
-        <h3>Light Modules</h3>
-        <p>Spotlight, flood, grille, folding grille, linear, pendant, wall washer. 5W–35W, 3000K–6000K, CRI 80 / 90 / 95+.</p>
+      <div class="process-step">
+        <div class="num">02</div>
+        <h3>Complete BOM</h3>
+        <p>We confirm drivers, power feeds, connectors and accessories in the bill of materials before quotation.</p>
       </div>
-      <div class="spec-card">
-        <h3>Drivers &amp; Control</h3>
-        <p>48V constant-voltage drivers. ON/OFF, DALI 2.0, 0–10V, Triac, Tuya Zigbee, Casambi. Matched by total load.</p>
+      <div class="process-step">
+        <div class="num">03</div>
+        <h3>Sample Approval</h3>
+        <p>Standard or customised samples are checked against the specification before bulk production begins.</p>
       </div>
-      <div class="spec-card">
-        <h3>Connectors</h3>
-        <p>Straight, L-shape, T-shape, cross, flexible. Mechanical and conductive. End caps and mounting brackets included.</p>
-      </div>
-      <div class="spec-card">
-        <h3>Power Feeds</h3>
-        <p>End feed, middle feed, joiner feed. Positioned per layout to minimise voltage drop over long runs.</p>
-      </div>
-      <div class="spec-card">
-        <h3>Accessories</h3>
-        <p>Mounting clips, suspension cables, push-in connectors, dimmers, controllers, emergency backup options.</p>
+      <div class="process-step">
+        <div class="num">04</div>
+        <h3>Inspect &amp; Pack</h3>
+        <p>Approved specifications are verified again before final packing and shipment.</p>
       </div>
     </div>
   </div>
 </section>
 
-<!-- 20 / 23 / 35mm Comparison -->
-<section style="background: white;">
+<!-- Quality Levels -->
+<section>
   <div class="container">
     <div class="section-head">
-      <div class="section-kicker">System Comparison</div>
-      <h2>20mm, 23mm &amp; 35mm — Choose the Right Platform</h2>
-      <p>Three track widths for different project scales. Modules are not interchangeable between systems — select the platform that fits your application.</p>
+      <div class="section-kicker">Quality Levels</div>
+      <h2>Choose the Right Quality Level for Your Market</h2>
+      <p>Three tiers so you can match product quality to project budget and market positioning.</p>
     </div>
-    <div style="overflow-x: auto;">
-      <table class="comp-table">
+    <div style="overflow-x:auto;">
+      <table class="qtable">
         <thead>
           <tr>
             <th></th>
-            <th>20mm System</th>
-            <th>23mm System</th>
-            <th>35mm System</th>
+            <th>Value Series</th>
+            <th>Commercial Series</th>
+            <th>Project Series</th>
           </tr>
         </thead>
         <tbody>
           <tr>
-            <td><strong>Best For</strong></td>
-            <td>Residential, small commercial</td>
-            <td>General commercial, retail, office</td>
-            <td>Large commercial, high-ceiling spaces</td>
+            <td>Best For</td>
+            <td>Price-sensitive distribution</td>
+            <td>Retail, office and hotel projects</td>
+            <td>Premium hospitality and design projects</td>
           </tr>
           <tr>
-            <td><strong>Track Width</strong></td>
-            <td>20.5mm</td>
-            <td>23.5mm</td>
-            <td>35.0mm</td>
+            <td>Key Focus</td>
+            <td>Cost control</td>
+            <td>Balanced performance</td>
+            <td>Higher visual and electrical requirements</td>
           </tr>
           <tr>
-            <td><strong>Installation</strong></td>
-            <td>Surface, recessed, trimless</td>
-            <td>Surface, recessed, trimless</td>
-            <td>Surface, recessed, pendant</td>
+            <td>Light Source</td>
+            <td>Standard LED chips</td>
+            <td>High-efficiency SMD (Bridgelux / Epistar)</td>
+            <td>Premium chips (Osram / Lumileds / CREE)</td>
           </tr>
           <tr>
-            <td><strong>Max Module Power</strong></td>
-            <td>Up to 25W</td>
-            <td>Up to 35W</td>
-            <td>Up to 50W</td>
+            <td>Driver</td>
+            <td>ON/OFF or Triac</td>
+            <td>DALI / 0–10V / Tuya-compatible</td>
+            <td>Programmable DALI-2 / Casambi</td>
           </tr>
           <tr>
-            <td><strong>Max Track Run</strong></td>
-            <td>~12m per feed</td>
-            <td>~12m per feed</td>
-            <td>~15m per feed</td>
+            <td>Finish</td>
+            <td>Standard aluminium</td>
+            <td>Reinforced body, better heat dissipation</td>
+            <td>Thick-wall extrusion, powder-coated</td>
           </tr>
           <tr>
-            <td><strong>Typical Projects</strong></td>
-            <td>Villas, apartments, boutiques</td>
-            <td>Offices, hotels, retail stores</td>
-            <td>Malls, showrooms, supermarkets</td>
+            <td>Warranty</td>
+            <td>3 years</td>
+            <td>5 years</td>
+            <td>5 years</td>
+          </tr>
+          <tr>
+            <td>Typical Projects</td>
+            <td>Budget residential, basic retail</td>
+            <td>Hotels, offices, retail chains</td>
+            <td>Luxury hospitality, designer showrooms</td>
           </tr>
         </tbody>
       </table>
@@ -376,122 +350,74 @@
   </div>
 </section>
 
-<!-- Compatibility & Driver Matching -->
-<section>
-  <div class="container two-col">
-    <div>
-      <div class="section-kicker">Compatibility</div>
-      <h2 style="font-size: clamp(24px, 3vw, 36px); line-height: 1.12; letter-spacing: -.04em; margin: 0 0 16px;">Driver Matching &amp; System Compatibility</h2>
-      <p style="color: #5a5a5a; line-height: 1.7; margin: 0 0 16px;">Not all 48V components are compatible. We confirm the entire system before quotation — track width, total wattage, driver capacity, power-feed position and control method.</p>
-      <div class="check-list">
-        <div class="check-item"><span class="ck">✓</span> Total module wattage calculated against driver capacity with safety margin</div>
-        <div class="check-item"><span class="ck">✓</span> Power-feed position planned to avoid visible voltage drop</div>
-        <div class="check-item"><span class="ck">✓</span> Connector type and quantity confirmed for the layout</div>
-        <div class="check-item"><span class="ck">✓</span> Control protocol matched with driver and controller</div>
-        <div class="check-item"><span class="ck">✓</span> Installation method confirmed before track profile selection</div>
-      </div>
-    </div>
-    <div>
-      <img src="images/blog16_system.webp" alt="48V magnetic track lighting system compatibility diagram — track, module, driver matching" loading="lazy" />
-    </div>
-  </div>
-</section>
-
-<!-- Quality Levels -->
-<section style="background: white;">
+<!-- OEM Support -->
+<section style="background:white;">
   <div class="container">
     <div class="section-head">
-      <div class="section-kicker">Quality Levels</div>
-      <h2>Standard vs Premium — Know What You're Paying For</h2>
-      <p>We offer two quality tiers for selected product series. The difference is structural, not cosmetic.</p>
+      <div class="section-kicker">OEM &amp; Private Label</div>
+      <h2>OEM &amp; Private Label for Distributors</h2>
+      <p>Customisation options for lighting brands and project buyers who need their own specification.</p>
     </div>
-    <div class="quality-grid">
-      <div class="quality-col entry">
-        <h4>Standard</h4>
-        <ul>
-          <li><span>✓</span> Copper-clad aluminium conductor</li>
-          <li><span>✓</span> Standard LED chips</li>
-          <li><span>✓</span> CRI ≥ 80</li>
-          <li><span>✓</span> Basic anti-glare (none / minimal)</li>
-          <li><span>✓</span> Standard aluminium housing</li>
-          <li><span>✓</span> Basic driver (non-dimmable or Triac)</li>
-          <li><span>✓</span> Suitable: budget projects, residential</li>
-        </ul>
-      </div>
-      <div class="quality-col standard">
-        <h4>Commercial</h4>
-        <ul>
-          <li><span>✓</span> Brass conductor pins &amp; copper strip</li>
-          <li><span>✓</span> SMD high-efficiency chips (Bridgelux / Epistar)</li>
-          <li><span>✓</span> CRI ≥ 90, R9 &gt; 50</li>
-          <li><span>✓</span> Deep anti-glare (UGR &lt; 19)</li>
-          <li><span>✓</span> Reinforced aluminium body, better heat dissipation</li>
-          <li><span>✓</span> DALI / 0–10V / Tuya-compatible driver</li>
-          <li><span>✓</span> Suitable: hotels, retail, offices</li>
-        </ul>
-      </div>
-      <div class="quality-col premium">
-        <h4>Project-Grade</h4>
-        <ul>
-          <li><span>✓</span> Full brass contacts + tinned copper strip</li>
-          <li><span>✓</span> Premium chips (Osram / Lumileds / CREE)</li>
-          <li><span>✓</span> CRI ≥ 95, full R1–R15 spectrum</li>
-          <li><span>✓</span> Precision optics + micro anti-glare</li>
-          <li><span>✓</span> Thick-wall extrusion, powder-coated finish</li>
-          <li><span>✓</span> Programmable driver (DALI-2 / Casambi)</li>
-          <li><span>✓</span> Suitable: luxury hospitality, designer projects</li>
-        </ul>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- OEM Capability -->
-<section>
-  <div class="container">
-    <div class="section-head">
-      <div class="section-kicker">OEM / ODM</div>
-      <h2>OEM &amp; Private Label Support</h2>
-      <p>For distributors, lighting brands and project buyers who need customisation.</p>
-    </div>
-    <div class="oem-row">
-      <div class="oem-item"><span class="ck">✓</span> Logo printing on track and modules</div>
-      <div class="oem-item"><span class="ck">✓</span> Private-label packaging and barcodes</div>
-      <div class="oem-item"><span class="ck">✓</span> Custom track length cut to specification</div>
-      <div class="oem-item"><span class="ck">✓</span> RAL-matched colour finish (MOQ applies)</div>
-      <div class="oem-item"><span class="ck">✓</span> CCT / CRI / beam angle selection</div>
+    <div class="oem-grid">
+      <div class="oem-item"><span class="ck">✓</span> Logo on products or labels</div>
+      <div class="oem-item"><span class="ck">✓</span> Neutral or private-label packaging</div>
+      <div class="oem-item"><span class="ck">✓</span> Custom track length and finish</div>
+      <div class="oem-item"><span class="ck">✓</span> CCT, CRI and beam-angle options</div>
       <div class="oem-item"><span class="ck">✓</span> Driver and control configuration</div>
-      <div class="oem-item"><span class="ck">✓</span> Project-specific documentation and packing lists</div>
-      <div class="oem-item"><span class="ck">✓</span> Sample support before bulk production</div>
+      <div class="oem-item"><span class="ck">✓</span> Barcode, datasheet and packing-list support</div>
     </div>
+    <p style="text-align:center;color:var(--muted);font-size:14px;margin-top:20px;">Available options and MOQ depend on the selected system and level of customisation.</p>
   </div>
 </section>
 
-<!-- Factory Evidence -->
-<section class="dark-block">
+<!-- QC Evidence -->
+<section>
   <div class="container">
     <div class="section-head">
-      <div class="section-kicker" style="color: var(--gold-light);">Our Facility</div>
-      <h2>Manufacturing &amp; Quality Control</h2>
-      <p style="color: rgba(255,255,255,.7);">Production, assembly and inspection in our Foshan facility.</p>
+      <div class="section-kicker">Quality Control</div>
+      <h2>Real Production &amp; Quality Checks</h2>
+      <p>Before shipment, every order is checked against the confirmed specification — track platform, module appearance, electrical connection, driver configuration and packing details.</p>
     </div>
-    <div class="factory-imgs">
-      <img src="images/factory-production-line.webp" alt="Tracklinear LED lighting production line" loading="lazy" />
-      <img src="images/factory-clean.webp" alt="Tracklinear factory and quality control area" loading="lazy" />
+    <div class="qc-grid">
+      <div class="qc-card">
+        <img src="images/qc-photo-1.png" alt="Track and module compatibility check" loading="lazy" />
+        <div class="cap"><span>◉</span> Track &amp; Module Compatibility Check</div>
+      </div>
+      <div class="qc-card">
+        <img src="images/factory-production-line.webp" alt="Module assembly and component check" loading="lazy" />
+        <div class="cap"><span>◉</span> Module Assembly &amp; Component Check</div>
+      </div>
+      <div class="qc-card">
+        <img src="images/factory-clean.webp" alt="Factory production equipment" loading="lazy" />
+        <div class="cap"><span>◉</span> Production Equipment &amp; Workstation</div>
+      </div>
+      <div class="qc-card">
+        <img src="images/warehouse-stock.jpg" alt="Packing and order preparation" loading="lazy" />
+        <div class="cap"><span>◉</span> Packing &amp; Order Preparation</div>
+      </div>
     </div>
   </div>
 </section>
 
-<!-- CTA -->
-<section class="cta-block" id="quotation">
+<!-- What to Send -->
+<section class="dark-block" id="quotation">
   <div class="container">
-    <h2>Ready to Start Your Project?</h2>
-    <p>Send us your project type, track length, module quantities and control requirements. We'll prepare a complete system quotation within 24 hours.</p>
-    <div class="cta-actions">
-      <a href="contact.html" class="btn btn-gold">Request a Factory Quotation →</a>
-      <a href="mailto:info@tracklinear.com" class="btn btn-ghost" style="background:rgba(255,255,255,.1);border-color:rgba(255,255,255,.32);color:white;">Email Directly</a>
+    <div class="section-head">
+      <div class="section-kicker" style="color:var(--gold-light);">Get a Quotation</div>
+      <h2>What to Send for a Complete System Quotation</h2>
+      <p style="color:rgba(255,255,255,.7);">Provide as much of the following as you can, and we'll prepare a matched system quotation within 24 hours.</p>
     </div>
-    <p style="color: rgba(255,255,255,.5); font-size: 14px; margin-top: 24px;">Or WhatsApp: <a href="https://wa.me/8613450802291" style="color: var(--gold-light); text-decoration: underline;">+86 134 5080 2291</a></p>
+    <div class="req-grid">
+      <div class="req-item"><span class="ck">✓</span> Track series or dimensions</div>
+      <div class="req-item"><span class="ck">✓</span> Installation type</div>
+      <div class="req-item"><span class="ck">✓</span> Required light modules</div>
+      <div class="req-item"><span class="ck">✓</span> Wattage and colour temperature</div>
+      <div class="req-item"><span class="ck">✓</span> Control method</div>
+      <div class="req-item"><span class="ck">✓</span> Quantity and destination market</div>
+    </div>
+    <div style="text-align:center;margin-top:36px;">
+      <a href="contact.html" class="btn btn-gold">Send Your Project Requirements →</a>
+    </div>
   </div>
 </section>
 
