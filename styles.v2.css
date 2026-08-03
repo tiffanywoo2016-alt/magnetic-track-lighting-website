@@ -574,3 +574,19 @@ footer { background: #111; color: white; padding: 46px 0; }
   color: var(--text); font-weight: 500; font-size: 15px; transition: all .15s;
 }
 .dropdown-menu a:hover { background: rgba(176,138,87,.08); color: var(--gold); }
+
+/* ==================== */
+/* Visually Hidden (SEO text layer) */
+/* ==================== */
+.visually-hidden {
+  position: absolute !important;
+  width: 1px !important;
+  height: 1px !important;
+  margin: -1px !important;
+  padding: 0 !important;
+  border: 0 !important;
+  clip: rect(0 0 0 0) !important;
+  clip-path: inset(50%) !important;
+  overflow: hidden !important;
+  white-space: nowrap !important;
+}
