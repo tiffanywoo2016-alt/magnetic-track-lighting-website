@@ -28,7 +28,7 @@ header {
   border-bottom: 1px solid rgba(0,0,0,.06);
 }
 .nav {position: relative;  height: 74px; display: flex; align-items: center; }
-.brand { display: flex; align-items: center; gap: 12px; }
+.brand { display: flex; align-items: center; gap: 12px; flex-shrink: 0; margin-right: 24px; }
 .logo {
   width: 42px; height: 42px; border-radius: 16px;
   background: var(--dark); color: var(--gold-light);
@@ -38,7 +38,7 @@ header {
 .brand-sub { font-size: 11px; color: #777; letter-spacing: .18em; text-transform: uppercase; }
 
 /* Desktop Navigation */
-nav { position: absolute; left: 50%; transform: translateX(-50%); display: flex; gap: 36px; color: #4e4e4e; font-size: 17px; font-weight: 600; align-items: center; white-space: nowrap; }
+nav { display: flex; gap: 36px; color: #4e4e4e; font-size: 17px; font-weight: 600; align-items: center; white-space: nowrap; margin: 0 auto; flex-shrink: 0; }
 nav > a { transition: color .2s; padding: 6px 0; }
 nav > a:hover { color: var(--dark); }
 nav > a.active { color: var(--dark); border-bottom: 2px solid var(--gold); padding-bottom: 4px; }
@@ -280,7 +280,7 @@ footer { background: #111; color: white; padding: 46px 0; }
 .comparison-table tbody tr:hover { background: rgba(176,138,87,.04); }
 
 /* Responsive */
-@media (max-width: 920px) {
+@media (max-width: 1024px) {
   nav { display: none; }
   .hamburger {position: absolute; right: 0; top: 50%; transform: translateY(-50%);  display: block; }
   .track-features, .accessory-grid, .light-type-intro { grid-template-columns: 1fr; }
