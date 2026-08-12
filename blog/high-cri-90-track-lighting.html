@@ -20,7 +20,7 @@
   <link rel="dns-prefetch" href="https://fonts.gstatic.com">
   <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="styles.v2.css">
+  <link rel="stylesheet" href="../styles.v2.css">
 
   <title>High CRI 90 Track Lighting: Why Color Fidelity Matters | Tracklinear</title>
   <meta name="description" content="Learn why high CRI 90 track lighting, R9 value and color rendering matter in magnetic track systems.">
@@ -40,7 +40,7 @@
       color: var(--text);
       line-height: 1.6;
     }
-    .container { max-width: 800px; margin: 0 auto; padding: 0 28px; }
+    main.container { max-width: 800px; margin: 0 auto; padding: 0 28px; }
     header .container { max-width: 1200px; }
     header {
       padding: 24px 0;
@@ -88,11 +88,6 @@
     .related a { display: block; padding: 16px 20px; background: white; border-radius: 12px; text-decoration: none; color: var(--text); margin-bottom: 8px; font-weight: 500; box-shadow: 0 2px 12px rgba(0,0,0,.04); transition: box-shadow .2s; }
     .related a:hover { box-shadow: 0 4px 20px rgba(0,0,0,.08); }
     .related a span { color: var(--muted); font-weight: 400; font-size: 13px; display: block; margin-top: 2px; }
-
-    footer { background: #111; color: white; padding: 60px 0; margin-top: 80px; }
-    footer .container { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 16px; }
-    footer a { color: rgba(255,255,255,.5); text-decoration: none; font-size: 14px; }
-    footer a:hover { color: white; }
   
         html { scroll-behavior: smooth; }
 
@@ -172,7 +167,7 @@
       .mobile-wa-float { display: none !important; }
     }
     @media (max-width: 768px) {
-      .container { padding: 0 16px; }
+      main.container { padding: 0 16px; }
       h1 { font-size: 24px !important; line-height: 1.25 !important; }
       h2 { font-size: 20px !important; }
       h3 { font-size: 17px !important; }
@@ -195,14 +190,12 @@
       .related a { padding: 14px 16px !important; }
       header { padding: 16px 0 !important; }
       .nav .logo { font-size: 17px !important; }
-      footer { padding: 40px 0 !important; margin-top: 60px !important; }
-      footer .container { flex-direction: column; text-align: center; gap: 12px; }
       .pillar-note { padding: 12px 16px !important; font-size: 13px !important; }
       .key-insight { padding: 16px 18px !important; }
     }
     @media (max-width: 480px) {
       h1 { font-size: 20px !important; }
-      .container { padding: 0 12px; }
+      main.container { padding: 0 12px; }
       .tag { font-size: 10px !important; padding: 3px 10px !important; }
       blockquote { padding: 12px 16px; font-size: 15px !important; }
     }
@@ -244,7 +237,7 @@
       .mobile-wa-float { display: none !important; }
     }
     @media (max-width: 768px) {
-      .container { padding: 0 16px; }
+      main.container { padding: 0 16px; }
       h1 { font-size: 24px !important; line-height: 1.25 !important; }
       h2 { font-size: 20px !important; }
       h3 { font-size: 17px !important; }
@@ -267,14 +260,12 @@
       .related a { padding: 14px 16px !important; }
       header { padding: 16px 0 !important; }
       .nav .logo { font-size: 17px !important; }
-      footer { padding: 40px 0 !important; margin-top: 60px !important; }
-      footer .container { flex-direction: column; text-align: center; gap: 12px; }
       .pillar-note { padding: 12px 16px !important; font-size: 13px !important; }
       .key-insight { padding: 16px 18px !important; }
     }
     @media (max-width: 480px) {
       h1 { font-size: 20px !important; }
-      .container { padding: 0 12px; }
+      main.container { padding: 0 12px; }
       .tag { font-size: 10px !important; padding: 3px 10px !important; }
       blockquote { padding: 12px 16px; font-size: 15px !important; }
     }
@@ -307,10 +298,6 @@
 
   
     @media (max-width: 768px) {
-      .footer-grid { flex-direction: column; gap: 28px; }
-      .footer-links { flex-direction: row; flex-wrap: wrap; gap: 14px; }
-      .footer-contact { display: flex; flex-direction: column; gap: 4px; }
-      .footer-sep { display: none; }
     }
 
   </style>

@@ -194,10 +194,25 @@ section { padding: 80px 0; }
 .contact-card span { color: #666; font-size: 14px; }
 .contact-card .btn { margin-top: 12px; display: inline-flex; }
 
-/* Footer */
+/* Footer — Unified (footer-grid) */
 footer { background: #111; color: white; padding: 46px 0; }
+footer .container { max-width: 1200px !important; margin: 0 auto !important; padding: 0 28px !important; }
 .footer-inner { display: flex; justify-content: space-between; gap: 26px; align-items: center; }
 .footer-links { display: flex; flex-wrap: wrap; gap: 18px; color: rgba(255,255,255,.6); font-size: 14px; }
+.footer-grid { display: flex; justify-content: space-between; align-items: flex-start; gap: 48px; }
+.footer-brand { max-width: 380px; }
+.footer-logo { font-weight: 800; font-size: 19px; letter-spacing: -.02em; }
+.footer-tagline { color: rgba(255,255,255,.55); font-size: 14px; line-height: 1.6; margin: 10px 0 16px; }
+.footer-contact { display: flex; align-items: center; flex-wrap: wrap; gap: 8px; font-size: 14px; color: rgba(255,255,255,.6); }
+.footer-contact a { color: rgba(255,255,255,.6); text-decoration: none; }
+.footer-contact a:hover { color: white; }
+.footer-sep { color: rgba(255,255,255,.25); }
+.footer-resources { min-width: 200px; }
+.footer-label { font-size: 12px; text-transform: uppercase; letter-spacing: 1.5px; color: rgba(255,255,255,.45); font-weight: 700; display: block; margin-bottom: 14px; }
+.footer-resources .footer-links { flex-direction: column; align-items: flex-start; gap: 10px; }
+.footer-resources .footer-links a { color: rgba(255,255,255,.6); text-decoration: none; }
+.footer-resources .footer-links a:hover { color: white; }
+.footer-bottom { border-top: 1px solid rgba(255,255,255,.08); margin-top: 32px; padding-top: 20px; font-size: 13px; color: rgba(255,255,255,.4); }
 
 /* === SPEC PAGE SPECIFICS === */
 
@@ -544,6 +559,10 @@ footer { background: #111; color: white; padding: 46px 0; }
   .system-item {
     padding: 14px 0;
   }
+  .footer-grid { flex-direction: column; gap: 28px; }
+  .footer-contact { flex-direction: column; align-items: flex-start; gap: 4px; }
+  .footer-sep { display: none; }
+  .footer-bottom { text-align: center; }
 }
 /* force rebuild */
 
