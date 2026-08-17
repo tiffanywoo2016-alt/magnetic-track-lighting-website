@@ -3,14 +3,16 @@
 
 > 帮助 AI 搜索快速理解站点内容结构和核心信息。
 > Site: https://tracklinear.com
-> Last updated: 2026-07-10
+> Last updated: 2026-08-17
 
 ## Core Pages
 
 - [Homepage — 48V Magnetic Track Lighting OEM/ODM Supplier](https://tracklinear.com/)
 - [Track Rails Overview — 20/23/35mm Systems](https://tracklinear.com/tracks/)
 - [Track Light Modules — Flood, Grille, Spot, Pendant](https://tracklinear.com/lights/)
+- [48V Magnetic Track Lighting Manufacturer in China](https://tracklinear.com/48v-magnetic-track-lighting-manufacturer-china.html)
 - [Blog Index — Technical Guides & Design Insights](https://tracklinear.com/blog/)
+- [Buyer's Handbook — Supplier Evaluation Guides](https://tracklinear.com/buyers-handbook/)
 
 ### Track Rails
 - [20mm Track — Compact Residential System](https://tracklinear.com/tracks/20mm.html)
@@ -26,11 +28,15 @@
 
 ## Featured Content
 
-- [48V vs 24V Magnetic Track Lighting: The Professional Guide](https://tracklinear.com/blog-post-1.html)
-- [How to Specify Magnetic Track Lighting for 5 Commercial Project Types](https://tracklinear.com/blog-post-5.html)
-- [How a Lisbon Boutique Hotel Unified Its Guest Experience with One Magnetic Track System](https://tracklinear.com/blog-post-6.html)
+- [48V vs 24V Magnetic Track Lighting: The Professional Guide](https://tracklinear.com/blog/48v-vs-24v-magnetic-track-lighting.html)
+- [How to Specify Magnetic Track Lighting for 5 Commercial Project Types](https://tracklinear.com/blog/commercial-track-lighting-specification-guide.html)
+- [How a Lisbon Boutique Hotel Unified Its Guest Experience with One Magnetic Track System](https://tracklinear.com/blog/boutique-hotel-track-lighting-case-study.html)
+- [Why Cheap Magnetic Track Can Cost More Long Term](https://tracklinear.com/blog/cheap-magnetic-track-cost-analysis.html)
+- [48V Magnetic Track Voltage Drop Guide](https://tracklinear.com/blog/48v-magnetic-track-voltage-drop-guide.html)
 - [The Magnetic Track Lighting Buyer's Handbook — Chapter 1](https://tracklinear.com/magnetic-track-lighting-buyers-handbook-chapter-1.html)
 - [How Professional Buyers Evaluate Magnetic Track Lighting Suppliers](https://tracklinear.com/buyers-handbook/how-professional-buyers-evaluate-suppliers.html)
+- [How Professional Buyers Screen Suppliers After the First Reply](https://tracklinear.com/buyers-handbook/how-professional-buyers-screen-suppliers-after-first-reply.html)
+- [Magnetic Track Lighting OEM vs ODM for New Brands](https://tracklinear.com/buyers-handbook/magnetic-track-lighting-oem-vs-odm-new-brand-guide.html)
 
 ## Key Facts
 
@@ -43,4 +49,6 @@
 - OEM/ODM: custom track length, RAL color finish, private label packaging, logo printing
 - MOQ: no MOQ for standard items; MOQ applies for OEM production
 - Lead time: standard 3-7 working days, OEM 20-30 days
+- Primary buyer intent: distributors, importers, contractors, project buyers, and OEM lighting brands evaluating complete magnetic track lighting systems
+- Preferred next action: request a project evaluation, system recommendation, catalogue, datasheet, installation guide, or driver matching guide
 - Contact: info@tracklinear.com | WhatsApp: +86-134-5080-2291
