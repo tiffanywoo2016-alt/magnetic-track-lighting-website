@@ -190,7 +190,7 @@ Low:   Contact us
 - 托管：GitHub Pages + Fastly CDN；域名 tracklinear.com（非 www，www 301）
 - **本地修改 ≠ 已上线**：`git push` 才算完成
 - 共享 `styles.v2.css` + 页面内联 `<style>` 覆盖（改 header 必须同时检查两者）
-- **Deployment rules are maintained in `tracklinear-site-structure` skill**（GnuTLS 处理、curl 验证、CSS 居中规范、图片脚本等细节均在该 skill 与 `.hermes-skills/` 备份，不在本文展开）
+- **Deployment rules are maintained in `brand-html-styling` skill**（GnuTLS 处理、curl 验证、CSS 居中规范、图片脚本、footer 全站同步等细节均在该 skill 的 references/ 与 scripts/，不在本文展开；原 tracklinear-site-structure 已并入该 skill）
 
 ## 10. Visual Rules
 
