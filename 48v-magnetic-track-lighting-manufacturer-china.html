@@ -168,6 +168,12 @@
     .req-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px 24px; max-width: 800px; margin: 0 auto; }
     .req-item { display: flex; align-items: center; gap: 10px; font-size: 14px; }
     .req-item .ck { color: var(--gold); font-weight: 800; }
+    .quotation-form-wrap { max-width: 760px; margin: 32px auto 0; text-align: left; }
+    .quotation-form-wrap .conversion-proof-item { background: rgba(255,255,255,.08); border-color: rgba(255,255,255,.16); }
+    .quotation-form-wrap .conversion-proof-item strong { color: white; }
+    .quotation-form-wrap .conversion-proof-item span { color: rgba(255,255,255,.72); }
+    .quotation-form-wrap .contact-form { background: white; border-radius: 18px; padding: 24px; }
+    .quotation-form-wrap .form-success-actions { justify-content: flex-start; }
 
     /* CTA Section */
     .dark-section { background: var(--dark); color: white; text-align: center; padding: 80px 0; }
@@ -186,6 +192,7 @@
       .qc-card img { height: 220px; }
     }
   </style>
+  <script src="scripts/conversion-tracking.js" defer></script>
 </head>
 <body>
 
@@ -305,7 +312,7 @@
             <li><span class="ck">✓</span> Standard LED chips</li>
             <li><span class="ck">✓</span> ON/OFF or Triac driver</li>
             <li><span class="ck">✓</span> Standard aluminium finish</li>
-            <li><span class="ck">✓</span> 2-year warranty</li>
+            <li><span class="ck">✓</span> Warranty confirmed by BOM and application</li>
           </ul>
           <div class="tag">Price-sensitive distribution</div>
         </div>
@@ -317,7 +324,7 @@
             <li><span class="ck">✓</span> High-efficiency SMD chips</li>
             <li><span class="ck">✓</span> DALI / 0–10V / Tuya-compatible</li>
             <li><span class="ck">✓</span> Reinforced body, better heat dissipation</li>
-            <li><span class="ck">✓</span> 3-year warranty</li>
+            <li><span class="ck">✓</span> Warranty confirmed by BOM and application</li>
           </ul>
           <div class="tag">Retail, office &amp; hotel projects</div>
         </div>
@@ -329,7 +336,7 @@
             <li><span class="ck">✓</span> Premium-grade LED chips</li>
             <li><span class="ck">✓</span> Programmable DALI-2 / Casambi</li>
             <li><span class="ck">✓</span> Thick-wall extrusion, powder-coated</li>
-            <li><span class="ck">✓</span> 5-year warranty</li>
+            <li><span class="ck">✓</span> Warranty confirmed by BOM and application</li>
           </ul>
           <div class="tag">Luxury hospitality &amp; design projects</div>
         </div>
@@ -411,7 +418,7 @@
     <div class="section-head">
       <div class="section-kicker" style="color:var(--gold-light);">Get a Quotation</div>
       <h2>What to Send for a Complete System Quotation</h2>
-      <p style="color:rgba(255,255,255,.7);">Provide as much of the following as you can, and we'll prepare a matched system quotation within 24 hours.</p>
+      <p style="color:rgba(255,255,255,.7);">Provide as much of the following as you can, and we'll prepare a matched system quotation after checking the track platform, load and control requirement.</p>
     </div>
     <div class="req-grid">
       <div class="req-item"><span class="ck">✓</span> Track series or dimensions</div>
@@ -421,8 +428,49 @@
       <div class="req-item"><span class="ck">✓</span> Control method</div>
       <div class="req-item"><span class="ck">✓</span> Quantity and destination market</div>
     </div>
-    <div style="text-align:center;margin-top:36px;">
-      <a href="contact.html" class="btn btn-gold">Send Your Project Requirements →</a>
+    <div class="quotation-form-wrap">
+      <div class="conversion-proof">
+        <div class="conversion-proof-item">
+          <strong>Foshan manufacturer</strong>
+          <span>Track rails, modules, drivers and accessories checked as one system.</span>
+        </div>
+        <div class="conversion-proof-item">
+          <strong>Real QC evidence</strong>
+          <span>Aging records, inspection photos and test videos can be matched to your order.</span>
+        </div>
+        <div class="conversion-proof-item">
+          <strong>Sample-first support</strong>
+          <span>Samples are available for compatibility checks before bulk production.</span>
+        </div>
+      </div>
+      <form class="contact-form" action="https://api.web3forms.com/submit" method="POST" data-ajax="true" aria-label="Manufacturer quotation form">
+        <input type="hidden" name="access_key" value="d4f062b2-2834-47cc-aa4f-d9f6619d2faf" />
+        <input type="hidden" name="subject" value="Manufacturer quotation request from Tracklinear" />
+        <div class="form-row">
+          <input type="text" name="name" placeholder="Your Name *" required />
+          <input type="email" name="email" placeholder="Email Address *" required />
+        </div>
+        <div class="form-row">
+          <input type="text" name="phone" placeholder="WhatsApp / Phone" />
+          <select name="inquiry_type">
+            <option value="">Project Type</option>
+            <option value="distributor">Distributor / Importer</option>
+            <option value="project">Contractor / Project Buyer</option>
+            <option value="oem">OEM / Private Label</option>
+            <option value="sample">Sample Check</option>
+          </select>
+        </div>
+        <textarea name="message" rows="5" placeholder="Please include: track length, installation method, light quantity, control requirement, quantity and destination country." required></textarea>
+        <button type="submit" class="btn btn-dark submit-btn">Request a Complete System Quotation →</button>
+        <div data-form-success hidden style="margin-top:18px;padding:18px;background:#e8f5e9;border-radius:14px;color:#1b5e20;font-weight:700;">
+          Thank you. Your project requirement has been sent.
+          <div class="form-success-actions">
+            <a href="https://wa.me/8613450802291" target="_blank" rel="noopener">Add WhatsApp</a>
+            <a href="mailto:info@tracklinear.com?subject=Catalogue%20Request">Request catalogue</a>
+            <a href="mailto:info@tracklinear.com?subject=Driver%20Matching%20Guide%20Request">Driver matching guide</a>
+          </div>
+        </div>
+      </form>
     </div>
     <p style="text-align:center;color:rgba(255,255,255,.6);font-size:14px;margin-top:28px;">New to factory quotations? Read our <a href="48v-magnetic-track-lighting-price-guide.html" style="color:var(--gold-light);text-decoration:underline;">48V magnetic track lighting system price guide</a> first — what a complete quotation should include, and how to compare suppliers on the same BOM.</p>
   </div>

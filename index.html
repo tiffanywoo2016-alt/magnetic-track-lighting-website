@@ -726,6 +726,7 @@
       .system-item { padding: 14px 0; }
     }
   </style>
+  <script src="scripts/conversion-tracking.js" defer></script>
 </head>
 <body>
   <header>
@@ -1198,6 +1199,21 @@
           <p>Tell us your project type, quantity and requirements — we'll reply within 24 hours.</p>
         </div>
         <div class="contact-grid">
+          <div>
+            <div class="conversion-proof">
+              <div class="conversion-proof-item">
+                <strong>System matching first</strong>
+                <span>We check track, module, driver and control compatibility before quoting.</span>
+              </div>
+              <div class="conversion-proof-item">
+                <strong>Real order evidence</strong>
+                <span>QC photos, aging records or test videos can be provided for confirmed orders.</span>
+              </div>
+              <div class="conversion-proof-item">
+                <strong>OEM-ready supply</strong>
+                <span>Neutral packing, private label and project documents are available by requirement.</span>
+              </div>
+            </div>
           <form class="contact-form" action="https://api.web3forms.com/submit" method="POST" enctype="multipart/form-data" aria-label="Contact inquiry form">
           <input type="hidden" name="access_key" value="d4f062b2-2834-47cc-aa4f-d9f6619d2faf" />
           <div class="form-row">
@@ -1205,7 +1221,6 @@
             <input type="email" name="email" placeholder="Email Address *" required />
           </div>
           <div class="form-row">
-            <input type="text" name="company" placeholder="Company Name" />
             <input type="text" name="phone" placeholder="WhatsApp / Phone" />
           </div>
           <div class="form-row">
@@ -1217,20 +1232,19 @@
               <option value="catalogue">Catalogue Request</option>
               <option value="other">Other</option>
             </select>
-            <input type="text" name="quantity" placeholder="Estimated Quantity" />
           </div>
-          <textarea name="message" rows="5" placeholder="Please include: track length, installation method, light quantity, control requirement and destination country." required></textarea>
-          <div style="margin-bottom:16px;">
-            <label for="file-upload" style="display:flex; align-items:center; gap:8px; padding:10px 16px; border:1px dashed #ccc; border-radius:12px; cursor:pointer; font-size:13px; color:#888;">
-              <span style="font-size:18px;">📎</span> Upload Drawing or Reference Image
-              <input id="file-upload" type="file" name="attachment" accept=".pdf,.jpg,.jpeg,.png,.dwg,.dxf" style="display:none;" />
-            </label>
-          </div>
+          <textarea name="message" rows="5" placeholder="Please include: company name, estimated quantity, track length, installation method, light quantity, control requirement and destination country." required></textarea>
           <button type="submit" class="btn btn-dark submit-btn">Request a Complete System Quotation →</button>
           <div id="form-success" style="display:none; margin-top:20px; padding:20px; background:#e8f5e9; border-radius:18px; text-align:center; font-weight:700; color:#2e7d32;">
-            ✓ Thank you! Your inquiry has been sent. We'll reply within 24 hours.
+            ✓ Thank you! Your inquiry has been sent.
+            <div class="form-success-actions">
+              <a href="https://wa.me/8613450802291" target="_blank" rel="noopener">Add WhatsApp</a>
+              <a href="mailto:info@tracklinear.com?subject=Catalogue%20Request">Request catalogue</a>
+              <a href="mailto:info@tracklinear.com?subject=Driver%20Matching%20Guide%20Request">Driver matching guide</a>
+            </div>
           </div>
         </form>
+        </div>
         <div class="contact-info">
           <div class="contact-card">
             <div class="contact-icon">✉</div>

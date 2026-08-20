@@ -137,8 +137,7 @@
     ]
   }
   </script>
-
-
+  <script src="../scripts/conversion-tracking.js" defer></script>
 </head>
 <body>
 
@@ -739,7 +738,6 @@
             <input type="email" name="email" placeholder="Email Address *" required />
           </div>
           <div class="form-row">
-            <input type="text" name="company" placeholder="Company Name" />
             <input type="text" name="phone" placeholder="WhatsApp / Phone" />
           </div>
           <div class="form-row">
@@ -751,12 +749,17 @@
               <option value="catalogue">Catalogue Request</option>
               <option value="other">Other</option>
             </select>
-            <input type="text" name="quantity" placeholder="Estimated Quantity" />
           </div>
-          <textarea name="message" rows="5" placeholder="Please include: track length, installation method, light quantity, control requirement and destination country." required></textarea>
+          <textarea name="message" rows="5" placeholder="Please include: company name, estimated quantity, track length, installation method, light quantity, control requirement and destination country." required></textarea>
           <button type="submit" class="btn btn-dark submit-btn">Request a Complete System Quotation →</button>
           <div id="form-success" style="display:none; margin-top:20px; padding:20px; background:#e8f5e9; border-radius:18px; text-align:center; font-weight:700; color:#2e7d32;">
-            ✓ Thank you! Your inquiry has been sent. We'll reply within 24 hours.
+            ✓ Thank you! Your inquiry has been sent.
+
+            <div class="form-success-actions">
+              <a href="https://wa.me/8613450802291" target="_blank" rel="noopener">Add WhatsApp</a>
+              <a href="mailto:info@tracklinear.com?subject=Catalogue%20Request">Request catalogue</a>
+              <a href="mailto:info@tracklinear.com?subject=Driver%20Matching%20Guide%20Request">Driver matching guide</a>
+            </div>
           </div>
         </form>
         <div class="contact-info">

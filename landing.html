@@ -517,6 +517,7 @@
     .back-to-top:hover { transform: translateY(-3px); opacity: .9; }
 
     </style>
+  <script src="scripts/conversion-tracking.js" defer></script>
 </head>
 <body>
 
@@ -740,7 +741,6 @@
         </div>
         <div class="form-row">
           <input type="tel" name="phone" placeholder="Phone / WhatsApp" />
-          <input type="text" name="company" placeholder="Company Name" />
         </div>
         <div class="form-row">
           <select name="interest">
@@ -752,20 +752,19 @@
             <option>OEM / Private Label</option>
             <option>Sample Order</option>
           </select>
-          <select name="quantity">
-            <option value="">Estimated Quantity</option>
-            <option>Sample (1–10 pcs)</option>
-            <option>Trial (10–100 pcs)</option>
-            <option>Small Bulk (100–500 pcs)</option>
-            <option>Large Bulk (500+ pcs)</option>
-            <option>Not sure yet</option>
-          </select>
         </div>
-        <textarea name="message" placeholder="Tell us about your project — application, target market, any special requirements..."></textarea>
+        <textarea name="message" placeholder="Tell us about your company, estimated quantity, application, target market and any special requirements."></textarea>
         <button type="submit" class="btn btn-gold submit-btn">Get My Quote →</button>
       </form>
       <div class="form-note">Your information is confidential. We'll never share it with third parties.</div>
-      <div id="thanks" style="scroll-margin-top:100px;"></div>
+      <div id="thanks" style="scroll-margin-top:100px;margin-top:18px;padding:18px;border-radius:16px;background:#e8f5e9;color:#1b5e20;font-weight:700;">
+        Thank you. Your quotation request has been sent.
+        <div class="form-success-actions">
+          <a href="https://wa.me/8613450802291" target="_blank" rel="noopener">Add WhatsApp</a>
+          <a href="mailto:info@tracklinear.com?subject=Catalogue%20Request">Request catalogue</a>
+          <a href="mailto:info@tracklinear.com?subject=Driver%20Matching%20Guide%20Request">Driver matching guide</a>
+        </div>
+      </div>
     </div>
   </div>
 </section>
