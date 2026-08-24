@@ -1,5 +1,6 @@
 (function () {
   var GA_ID = "G-WXHSW5Y7V8";
+  var CLARITY_ID = "y78d9q40xm";
   var UTM_KEYS = ["utm_source", "utm_medium", "utm_campaign", "utm_term", "utm_content"];
   var storageKey = "tracklinear_utm";
 
@@ -14,6 +15,20 @@
     script.async = true;
     script.src = "https://www.googletagmanager.com/gtag/js?id=" + GA_ID;
     document.head.appendChild(script);
+  }
+
+  function loadClarity() {
+    if (window.clarity) return;
+    window.clarity = function () {
+      (window.clarity.q = window.clarity.q || []).push(arguments);
+    };
+
+    var script = document.createElement("script");
+    script.async = true;
+    script.src = "https://www.clarity.ms/tag/" + CLARITY_ID;
+
+    var firstScript = document.getElementsByTagName("script")[0];
+    firstScript.parentNode.insertBefore(script, firstScript);
   }
 
   function track(name, params) {
@@ -143,6 +158,7 @@
   }
 
   loadGA();
+  loadClarity();
   ready(function () {
     var utm = readUtm();
     enrichForms(utm);
