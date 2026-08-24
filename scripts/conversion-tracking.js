@@ -60,12 +60,21 @@
   }
 
   function addHidden(form, name, value) {
-    if (!value || form.querySelector('[name="' + name + '"]')) return;
+    if (value === undefined || value === null || form.querySelector('[name="' + name + '"]')) return;
     var input = document.createElement("input");
     input.type = "hidden";
     input.name = name;
     input.value = value;
     form.appendChild(input);
+  }
+
+  function getFormSubject(form) {
+    var legacySubject = form.querySelector('[name="_subject"]');
+    if (legacySubject && legacySubject.value) return legacySubject.value;
+
+    if (form.closest(".contact-sidebar")) return "Sidebar inquiry from Tracklinear";
+    if (form.getAttribute("aria-label")) return form.getAttribute("aria-label");
+    return "Tracklinear inquiry - " + document.title;
   }
 
   function enrichForms(utm) {
@@ -74,6 +83,13 @@
       addHidden(form, "page_title", document.title);
       addHidden(form, "referrer", document.referrer);
       addHidden(form, "submitted_at", new Date().toISOString());
+      addHidden(form, "from_name", "Tracklinear Website");
+
+      if ((form.getAttribute("action") || "").indexOf("api.web3forms.com/submit") !== -1) {
+        addHidden(form, "access_key", "d4f062b2-2834-47cc-aa4f-d9f6619d2faf");
+        addHidden(form, "subject", getFormSubject(form));
+      }
+
       UTM_KEYS.forEach(function (key) {
         if (utm[key]) addHidden(form, key, utm[key]);
       });
@@ -89,31 +105,67 @@
 
         if (form.dataset.ajax === "true") {
           event.preventDefault();
+          event.stopImmediatePropagation();
           submitAjaxForm(form);
         }
       }, { capture: true });
     });
   }
 
+  function parseResponse(response) {
+    return response.text().then(function (text) {
+      var data = {};
+      try {
+        data = text ? JSON.parse(text) : {};
+      } catch (e) {
+        data = { message: text };
+      }
+
+      if (!response.ok || data.success === false) {
+        throw new Error(data.message || "Submission failed");
+      }
+
+      return data;
+    });
+  }
+
+  function showSuccess(form, success) {
+    form.reset();
+
+    if (success) {
+      success.hidden = false;
+      success.style.display = "block";
+      success.setAttribute("aria-live", "polite");
+      return;
+    }
+
+    alert("Thank you. Your inquiry has been sent.");
+  }
+
   function submitAjaxForm(form) {
     var button = form.querySelector('[type="submit"]');
     var originalText = button ? button.textContent : "";
-    var success = form.querySelector("[data-form-success]") || document.getElementById(form.dataset.successTarget || "");
+    var success = form.querySelector("[data-form-success]")
+      || document.getElementById(form.dataset.successTarget || "form-success")
+      || (form.parentElement ? form.parentElement.querySelector("#thanks") : null);
 
     if (button) {
       button.textContent = "Sending...";
       button.disabled = true;
     }
 
-    fetch(form.action, { method: "POST", body: new FormData(form) })
-      .then(function (response) {
-        if (!response.ok) throw new Error("Submission failed");
-        form.reset();
-        if (success) success.hidden = false;
+    fetch(form.action, {
+      method: "POST",
+      body: new FormData(form),
+      headers: { Accept: "application/json" }
+    })
+      .then(parseResponse)
+      .then(function () {
+        showSuccess(form, success);
         track("lead_submit_success", { form_action: form.getAttribute("action") || "" });
       })
-      .catch(function () {
-        window.location.href = "mailto:info@tracklinear.com?subject=Tracklinear%20Project%20Inquiry";
+      .catch(function (error) {
+        alert((error && error.message ? error.message + "\n\n" : "") + "Please email us directly at info@tracklinear.com.");
       })
       .finally(function () {
         if (button) {
