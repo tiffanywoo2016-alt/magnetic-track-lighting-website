@@ -79,15 +79,22 @@
 
   function enrichForms(utm) {
     document.querySelectorAll("form").forEach(function (form) {
+      var action = form.getAttribute("action") || "";
       addHidden(form, "page_url", window.location.href);
       addHidden(form, "page_title", document.title);
       addHidden(form, "referrer", document.referrer);
       addHidden(form, "submitted_at", new Date().toISOString());
       addHidden(form, "from_name", "Tracklinear Website");
 
-      if ((form.getAttribute("action") || "").indexOf("api.web3forms.com/submit") !== -1) {
+      if (action.indexOf("api.web3forms.com/submit") !== -1) {
         addHidden(form, "access_key", "d4f062b2-2834-47cc-aa4f-d9f6619d2faf");
         addHidden(form, "subject", getFormSubject(form));
+      }
+
+      if (action.indexOf("formsubmit.co/info@tracklinear.com") !== -1) {
+        addHidden(form, "_subject", getFormSubject(form));
+        addHidden(form, "_captcha", "false");
+        addHidden(form, "_template", "table");
       }
 
       UTM_KEYS.forEach(function (key) {
@@ -102,6 +109,13 @@
           form_action: form.getAttribute("action") || "",
           inquiry_type: (form.querySelector('[name="inquiry_type"]') || {}).value || ""
         });
+
+        if ((form.getAttribute("action") || "").indexOf("formsubmit.co/info@tracklinear.com") !== -1) {
+          event.preventDefault();
+          event.stopImmediatePropagation();
+          HTMLFormElement.prototype.submit.call(form);
+          return;
+        }
 
         if (form.dataset.ajax === "true") {
           event.preventDefault();
