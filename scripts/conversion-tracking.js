@@ -86,11 +86,6 @@
       addHidden(form, "submitted_at", new Date().toISOString());
       addHidden(form, "from_name", "Tracklinear Website");
 
-      if (action.indexOf("api.web3forms.com/submit") !== -1) {
-        addHidden(form, "access_key", "d4f062b2-2834-47cc-aa4f-d9f6619d2faf");
-        addHidden(form, "subject", getFormSubject(form));
-      }
-
       if (action.indexOf("formsubmit.co/info@tracklinear.com") !== -1) {
         addHidden(form, "_subject", getFormSubject(form));
         addHidden(form, "_captcha", "false");
