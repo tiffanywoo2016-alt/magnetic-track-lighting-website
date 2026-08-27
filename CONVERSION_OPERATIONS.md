@@ -4,7 +4,7 @@
 
 最新证据状态见 `CONVERSION_CLOSURE_REPORT.md`。
 
-截至 2026-08-25，网站侧追踪代码、Web3Forms 表单路由、sitemap 可访问性、IndexNow key 可访问性、IndexNow 提交已经完成。GA4 Key Events、Clarity 后台收数、Bing Webmaster 验证、业务邮箱收件仍需要在对应账号后台确认。
+截至 2026-08-27，网站侧追踪代码、Web3Forms 表单路由、业务邮箱收件、sitemap 可访问性、IndexNow key 可访问性、IndexNow 提交已经完成。GA4 Key Events、Clarity 后台收数、Bing Webmaster 验证仍需要在对应账号后台确认。
 
 ## 发布后检查
 

@@ -12,6 +12,7 @@
 - `https://tracklinear.com/index.html` 已引用 `scripts/conversion-tracking.js?v=20260825-web3forms`。
 - `https://tracklinear.com/contact.html` 已使用 Web3Forms，并引用 `scripts/conversion-tracking.js?v=20260825-web3forms`。
 - IndexNow 已成功提交：共提交 34 个 URL，返回状态 200。
+- Web3Forms 表单已确认可以投递到 Tracklinear 业务邮箱。确认日期：2026-08-27。
 
 ## 本地覆盖检查
 
@@ -42,7 +43,6 @@
 - GA4 已将主要事件标记为 Key Events。
 - Clarity 后台显示安装成功，并开始接收访问会话。
 - Bing Webmaster Tools 显示网站验证成功，且 sitemap 状态为已接受或待处理但无 URL 错误。
-- Tracklinear 业务邮箱收到 Web3Forms 的真实测试询盘邮件。
 
 ## 自动化测试说明
 
@@ -53,13 +53,11 @@
 
 1. 打开 `https://tracklinear.com/contact.html?utm_source=codex&utm_medium=manual&utm_campaign=conversion_closure`。
 2. 提交一条测试询盘，内容写：`GA4/Web3Forms test only, please ignore.`
-3. 确认 Tracklinear 邮箱收到这条询盘。
-4. 在 GA4 Realtime 或 DebugView 中确认 `generate_lead` 和 `lead_submit_success`。
-5. 在 GA4 Admin 中把主要事件标记为 Key Events：
+3. 在 GA4 Realtime 或 DebugView 中确认 `generate_lead` 和 `lead_submit_success`。
+4. 在 GA4 Admin 中把主要事件标记为 Key Events：
    - `generate_lead`
    - `lead_submit_success`
    - `whatsapp_click`
    - `email_click`
-6. 在 Clarity 中确认安装状态为 active，并等待会话数据出现。
-7. 在 Bing Webmaster Tools 中验证 Tracklinear，并提交 `https://tracklinear.com/sitemap.xml`。
-
+5. 在 Clarity 中确认安装状态为 active，并等待会话数据出现。
+6. 在 Bing Webmaster Tools 中验证 Tracklinear，并提交 `https://tracklinear.com/sitemap.xml`。
