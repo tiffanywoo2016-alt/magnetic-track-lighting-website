@@ -1,160 +1,169 @@
-# Tracklinear Conversion Operations
+# Tracklinear 转化运营清单
 
-## After Publish
+## 当前闭环状态
 
-1. Verify these URLs return 200:
+最新证据状态见 `CONVERSION_CLOSURE_REPORT.md`。
+
+截至 2026-08-25，网站侧追踪代码、Web3Forms 表单路由、sitemap 可访问性、IndexNow key 可访问性、IndexNow 提交已经完成。GA4 Key Events、Clarity 后台收数、Bing Webmaster 验证、业务邮箱收件仍需要在对应账号后台确认。
+
+## 发布后检查
+
+1. 确认以下 URL 返回 200：
    - `https://tracklinear.com/scripts/conversion-tracking.js`
    - `https://tracklinear.com/c6d1ad5644698b77560ad8b4ec9c8216.txt`
    - `https://tracklinear.com/sitemap.xml`
 
-2. Submit IndexNow after the key file is live:
-   - Run `node scripts/submit-indexnow.mjs`
-   - A 200 response means submitted successfully.
-   - A 202 response means received and key validation is pending.
+2. IndexNow key 文件上线后提交 IndexNow：
+   - 运行 `node scripts/submit-indexnow.mjs`
+   - 返回 200 表示提交成功。
+   - 返回 202 表示已接收，key 验证仍在等待。
 
-3. Add missing account-based tools:
-   - Bing Webmaster Tools site verification meta tag.
-   - Microsoft Clarity tracking script.
-   - GA4 conversion marking for `generate_lead`, `whatsapp_click`, `email_click`, `resource_request_click` and `cta_click`.
+3. 补齐必须依赖账号后台的工具：
+   - Bing Webmaster Tools 网站验证 meta tag。
+   - Microsoft Clarity 后台安装状态确认。
+   - GA4 将 `generate_lead`、`lead_submit_success`、`whatsapp_click`、`email_click`、`resource_request_click`、`cta_click` 等事件按优先级标记。
 
-## Account Setup Checklist
+## 账号设置检查清单
 
-Use this section before asking Codex to add account-specific verification code. Do not guess these values; copy them from the live account screens.
+以下信息必须从真实账号后台复制，不要猜测，也不要编造。
 
 ### 1. Bing Webmaster Tools
 
-Goal: verify `https://tracklinear.com`, submit sitemap, and keep Bing/IndexNow data visible.
+目标：验证 `https://tracklinear.com`，提交 sitemap，并让 Bing / IndexNow 数据可见。
 
-What Tiffany needs to get from Bing:
+Tiffany 需要从 Bing 后台获取：
 
-- Verification method: HTML meta tag.
-- Full meta tag, usually shaped like:
+- 验证方式：HTML meta tag。
+- 完整 meta tag，通常格式类似：
   `<meta name="msvalidate.01" content="PASTE_BING_CODE_HERE" />`
 
-Implementation checklist:
+执行清单：
 
-- Add the exact Bing meta tag inside the `<head>` of `index.html`.
-- Keep the tag live after verification.
-- In Bing Webmaster Tools, submit:
+- 把完整 Bing meta tag 加到 `index.html` 的 `<head>` 内。
+- 验证成功后仍保留该 tag。
+- 在 Bing Webmaster Tools 中提交：
   `https://tracklinear.com/sitemap.xml`
-- Confirm Bing sees the site as verified.
-- Confirm sitemap status is accepted or pending without URL errors.
-- Confirm IndexNow key file is live:
+- 确认 Bing 显示 Tracklinear 已验证。
+- 确认 sitemap 状态为已接受，或处于待处理但没有 URL 错误。
+- 确认 IndexNow key 文件在线：
   `https://tracklinear.com/c6d1ad5644698b77560ad8b4ec9c8216.txt`
 
-Success check:
+成功标准：
 
-- `index.html` contains the exact `msvalidate.01` meta tag.
-- Bing Webmaster Tools shows Tracklinear as verified.
-- Sitemap appears in Bing Webmaster Tools.
+- `index.html` 包含准确的 `msvalidate.01` meta tag。
+- Bing Webmaster Tools 显示 Tracklinear 已验证。
+- sitemap 已出现在 Bing Webmaster Tools 中。
 
 ### 2. Microsoft Clarity
 
-Goal: record heatmaps and session replays so form friction and CTA drop-off can be diagnosed.
+目标：记录热图和访问录屏，用于诊断表单摩擦、CTA 点击和页面流失。
 
-What Tiffany needs to get from Clarity:
+Tiffany 需要从 Clarity 后台确认：
 
-- Project tracking code from Clarity.
-- The tracking script includes a project ID. Do not rewrite or shorten it.
+- 项目追踪代码或项目 ID。
+- 后台安装状态是否显示 active / installed。
 
-Implementation checklist:
+执行清单：
 
-- Add the exact Clarity tracking script inside the `<head>` of all indexable pages, or inside `scripts/conversion-tracking.js` only if the full official snippet is preserved.
-- Do not add Clarity to `loading.html`, templates, redirect pages, or diagnostic pages.
-- After publish, open Clarity and confirm installation status.
-- Wait a few hours before judging session data; Clarity data is not always visible immediately.
+- 当前网站已通过 `scripts/conversion-tracking.js` 加载 Clarity。
+- 不要把 Clarity 加到 `loading.html`、模板页、跳转页或诊断报告页。
+- 发布后进入 Clarity 后台确认安装状态。
+- 等待数小时后再判断会话数据；Clarity 数据并不一定立刻出现。
 
-First review checklist in Clarity:
+第一次查看 Clarity 时优先看：
 
-- Home page: scroll depth to contact section.
-- Manufacturer page: clicks on quotation form and WhatsApp.
-- Product pages: form starts vs form submissions.
-- Landing page: whether users reach the quote form.
-- Rage clicks near form fields or CTA buttons.
-- Mobile sessions with form abandonment.
+- 首页：用户是否滚动到联系区域。
+- Manufacturer 页面：报价表单和 WhatsApp 点击情况。
+- 产品页：表单开始填写与最终提交之间是否流失。
+- Landing page：用户是否到达报价表单。
+- 表单字段或 CTA 附近是否有重复点击、误点或卡顿。
+- 移动端会话是否存在表单放弃。
 
 ### 3. GA4 Key Events
 
-Goal: mark business actions as key events so weekly reports focus on inquiry intent instead of page views.
+目标：把真正代表询盘意图的行为标记为 Key Events，让周报关注询盘质量，而不是只看访问量。
 
-Events already sent by `scripts/conversion-tracking.js`:
+`scripts/conversion-tracking.js` 已发送的事件：
 
-- `generate_lead`: any form submit attempt.
-- `lead_submit_success`: successful AJAX form submission.
-- `whatsapp_click`: WhatsApp link click.
-- `email_click`: email link click.
-- `phone_click`: phone link click.
-- `resource_request_click`: catalogue, datasheet, installation guide, or driver guide request click.
-- `cta_click`: quotation, inquiry, project, contact, or anchor CTA click.
+- `generate_lead`：任意表单提交尝试。
+- `lead_submit_success`：Ajax 表单成功提交。
+- `whatsapp_click`：WhatsApp 链接点击。
+- `email_click`：邮箱链接点击。
+- `phone_click`：电话链接点击。
+- `resource_request_click`：catalogue、datasheet、installation guide、driver guide 等资源请求点击。
+- `cta_click`：quotation、inquiry、project、contact 或锚点 CTA 点击。
 
-Recommended GA4 key events:
+推荐 GA4 Key Events：
 
-- Primary:
-  - `generate_lead`
-  - `lead_submit_success`
-  - `whatsapp_click`
-  - `email_click`
-- Secondary:
-  - `resource_request_click`
-  - `cta_click`
-  - `phone_click`
+主要事件：
 
-GA4 setup checklist:
+- `generate_lead`
+- `lead_submit_success`
+- `whatsapp_click`
+- `email_click`
 
-- Open GA4 Admin for the Tracklinear property.
-- Go to Events and confirm the events above appear after test activity.
-- Mark the primary events as key events.
-- Mark secondary events as key events only if reports become too sparse without them.
-- In DebugView or Realtime, test:
-  - submit a form
-  - click WhatsApp
-  - click email
-  - click catalogue / driver matching guide
-  - click a quotation CTA
-- Build a simple weekly view with:
+次要事件：
+
+- `resource_request_click`
+- `cta_click`
+- `phone_click`
+
+GA4 设置清单：
+
+- 打开 Tracklinear 的 GA4 Admin。
+- 进入 Events，在测试行为后确认上述事件出现。
+- 把主要事件标记为 Key Events。
+- 次要事件先观察；如果报告数据太少，再标记为 Key Events。
+- 在 DebugView 或 Realtime 中测试：
+  - 提交表单
+  - 点击 WhatsApp
+  - 点击邮箱
+  - 点击 catalogue / driver matching guide
+  - 点击报价 CTA
+- 建立简单周报视图，至少包含：
   - event name
   - page path
   - source / medium
   - campaign
   - country
 
-Reporting rule:
+报告判断规则：
 
-- Qualified inquiry count matters more than total event count.
-- `generate_lead` is a strong signal, but real business quality must still be checked in email / WhatsApp follow-up.
-- Use UTM source and page path to decide where to optimize next.
+- 合格询盘数量比总事件数量更重要。
+- `generate_lead` 是强意图信号，但真实商业质量仍要结合邮件 / WhatsApp 跟进判断。
+- 后续优化要用 UTM source 和 page path 判断，不要只凭页面浏览量下结论。
 
-### 4. Values to Send Codex
+### 4. 发给 Codex 的账号信息
 
-When ready, send only these account values:
+准备好后，只发送以下账号配置值：
 
-- Bing verification meta tag:
+- Bing 验证 meta tag：
   `<meta name="msvalidate.01" content="..." />`
-- Microsoft Clarity full tracking script.
-- Whether to mark secondary GA4 events as key events now or wait for one week of data.
+- 如果 Clarity 项目 ID 发生变化，发送新的 Clarity 项目 ID 或完整官方追踪代码。
+- 是否现在把次要 GA4 事件也标记为 Key Events，还是先观察一周数据。
 
-Do not send passwords, account recovery codes, API secrets, or private customer data.
+不要发送密码、账号恢复码、API secret、客户隐私资料或任何不需要进入代码的敏感信息。
 
-## UTM Rules
+## UTM 规则
 
-Use UTM links for every outbound channel that sends visitors to the site.
+所有给网站导流的外部渠道都必须使用 UTM 链接。
 
-Examples:
+示例：
 
-- Alibaba profile: `https://tracklinear.com/?utm_source=alibaba&utm_medium=profile&utm_campaign=baseline`
-- Email signature: `https://tracklinear.com/48v-magnetic-track-lighting-manufacturer-china.html?utm_source=email&utm_medium=signature&utm_campaign=sales`
-- WhatsApp follow-up: `https://tracklinear.com/contact.html?utm_source=whatsapp&utm_medium=message&utm_campaign=quote_followup`
-- PDF catalogue QR: `https://tracklinear.com/?utm_source=catalog_pdf&utm_medium=qr&utm_campaign=catalog`
+- Alibaba profile：`https://tracklinear.com/?utm_source=alibaba&utm_medium=profile&utm_campaign=baseline`
+- 邮件签名：`https://tracklinear.com/48v-magnetic-track-lighting-manufacturer-china.html?utm_source=email&utm_medium=signature&utm_campaign=sales`
+- WhatsApp 跟进：`https://tracklinear.com/contact.html?utm_source=whatsapp&utm_medium=message&utm_campaign=quote_followup`
+- PDF catalogue 二维码：`https://tracklinear.com/?utm_source=catalog_pdf&utm_medium=qr&utm_campaign=catalog`
 
-## Response SOP
+## 询盘回复 SOP
 
-Internal rule: new form submissions should trigger a phone notification and receive the first human reply as soon as possible during working hours.
+内部规则：新表单询盘应触发手机提醒，并且在工作时间内尽快由人工回复。
 
-First reply should ask only for the missing decision inputs:
+第一封回复只问缺失的关键决策信息：
 
-- track platform or dimensions
-- installation method
-- light module type and quantity
-- driver/control requirement
-- destination country
-- OEM/private label requirement
+- 轨道平台或尺寸
+- 安装方式
+- 灯具模块类型和数量
+- 驱动 / 控制需求
+- 目的国家
+- OEM / private label 需求
