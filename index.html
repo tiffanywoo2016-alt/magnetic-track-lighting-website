@@ -5,13 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="alternate" hreflang="x-default" href="https://tracklinear.com/" />
   <title>Magnetic Track Lighting System | One-Stop OEM/ODM Lighting Solution</title>
-  <meta name="description" content="Professional supplier of magnetic track lighting systems. Complete B2B solutions including recessed/surface rails, LED modules, DALI/Tuya drivers for contractors and lighting projects." />
+  <meta name="description" content="Professional magnetic track lighting systems for distributors, fit-out contractors and OEM lighting brands. Complete 48V rails, modules, drivers and accessories matched by market and project requirement." />
   <meta name="keywords" content="magnetic track lighting, magnetic track rail, LED track light modules, 48V magnetic track system, DALI track lighting, OEM lighting manufacturer" />
   
   <!-- Open Graph / Social Sharing -->
   <meta property="og:type" content="website" />
   <meta property="og:title" content="Magnetic Track Lighting System | One-Stop OEM/ODM Lighting Solution" />
-  <meta property="og:description" content="Professional supplier of magnetic track lighting systems. Complete B2B solutions including recessed/surface rails, LED modules, DALI/Tuya drivers for contractors and lighting projects." />
+  <meta property="og:description" content="Professional magnetic track lighting systems for distributors, fit-out contractors and OEM lighting brands. Complete 48V rails, modules, drivers and accessories matched by market and project requirement." />
   <meta property="og:url" content="https://tracklinear.com/" />
   <meta property="og:site_name" content="Tracklinear" />
   <meta property="og:image" content="https://tracklinear.com/images/image_1.webp" />
@@ -39,7 +39,7 @@
     "@type": "WebSite",
     "name": "Tracklinear",
     "url": "https://tracklinear.com/",
-    "description": "Professional magnetic track lighting systems — track rails, LED modules, drivers and accessories for B2B lighting projects. OEM/ODM available.",
+    "description": "Professional magnetic track lighting systems for distributors, fit-out contractors and OEM lighting brands. Complete 48V rails, modules, drivers and accessories matched by market and project requirement.",
     "publisher": {
       "@type": "Organization",
       "name": "Tracklinear",
@@ -78,7 +78,7 @@
         "name": "What certifications do your products have?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Our magnetic track lighting products are certified with CE and RoHS, compliant with European safety and environmental standards."
+          "text": "Certification status is confirmed by SKU, configuration and destination market. CE and RoHS documentation is available where applicable, and additional requirements should be reviewed before final quotation."
         }
       },
       {
@@ -270,6 +270,49 @@
     }
     .card h3 { margin: 0; font-size: 19px; }
     .card p { color: #555; line-height: 1.7; font-size: 15px; }
+    .market-section { background: #f5f3ef; padding: 76px 0; }
+    .market-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
+    .market-card {
+      background: white;
+      border: 1px solid #e8dfd2;
+      border-radius: 16px;
+      padding: 26px;
+      box-shadow: 0 4px 16px rgba(0,0,0,.04);
+    }
+    .market-label {
+      color: var(--gold);
+      font-size: 12px;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: .12em;
+      margin-bottom: 10px;
+    }
+    .market-card h3 { margin: 0 0 12px; font-size: 22px; line-height: 1.25; color: var(--dark); }
+    .market-card p { margin: 0 0 16px; color: #555; line-height: 1.65; font-size: 15px; }
+    .market-card ul { margin: 0; padding: 0; list-style: none; display: grid; gap: 8px; color: #4f4f4f; font-size: 14px; line-height: 1.45; }
+    .market-card li { padding-left: 18px; position: relative; }
+    .market-card li::before { content: ""; width: 6px; height: 6px; border-radius: 50%; background: var(--gold); position: absolute; left: 0; top: .65em; }
+    .market-note {
+      margin-top: 18px;
+      color: #6a5a45;
+      background: #fffaf1;
+      border-left: 4px solid var(--gold);
+      padding: 14px 16px;
+      border-radius: 10px;
+      font-size: 14px;
+      line-height: 1.6;
+    }
+    .decision-section { background: white; padding: 84px 0; }
+    .decision-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; }
+    .decision-card {
+      border: 1px solid #e8dfd2;
+      background: #faf8f4;
+      border-radius: 16px;
+      padding: 22px;
+    }
+    .decision-card h3 { margin: 0 0 10px; color: var(--dark); font-size: 18px; line-height: 1.25; }
+    .decision-card p { margin: 0; color: #555; font-size: 14px; line-height: 1.65; }
+    .decision-card strong { color: var(--gold); display: block; font-size: 12px; letter-spacing: .12em; text-transform: uppercase; margin-bottom: 8px; }
     .dark-section { background: var(--dark); color: white; }
     .installation-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 44px; align-items: stretch; }
     .dark-section .section-kicker { color: var(--gold-light); }
@@ -640,7 +683,7 @@
 
     @media (max-width: 1024px) {
       nav { display: none; }
-      .stats-grid, .grid-system, .installation-grid, .module-grid, .optics-grid, .applications, .oem-grid, .contact-grid { grid-template-columns: 1fr; }
+      .stats-grid, .grid-system, .installation-grid, .module-grid, .optics-grid, .applications, .market-grid, .decision-grid, .oem-grid, .contact-grid { grid-template-columns: 1fr; }
       .why-split { grid-template-columns: 1fr; gap: 32px; }
       .faq-split { grid-template-columns: 1fr; gap: 28px; }
       .card-grid, .specs, .check-grid { grid-template-columns: 1fr; }
@@ -720,7 +763,7 @@
       color: #6a6a6a;
     }
     @media (max-width: 768px) {
-      .system-layout { grid-template-columns: 1fr; gap: 40px; }
+      .system-layout { grid-template-columns: 1fr !important; gap: 40px !important; }
       #system { padding: 80px 0; }
       .system-sub { max-width: 100%; }
       .system-item { padding: 14px 0; }
@@ -791,13 +834,88 @@
     <section class="hero" role="banner">
       <img alt="48V magnetic track lighting system for commercial projects and B2B procurement" src="images/image_1.webp" width="1920" height="1080" loading="eager" decoding="async" />
       <div class="container hero-content">
-        <h1>Complete 48V Magnetic Track Lighting<br>for Modern Interior Projects</h1>
-        <p class="hero-sub">Tracks, magnetic modules, drivers and accessories matched as one 48V system — for residential, retail, office, hotel and showroom applications.</p>
+        <h1>Market-Matched 48V Magnetic Track Lighting<br>for B2B Interior Projects</h1>
+        <p class="hero-sub">Complete track rails, magnetic modules, drivers and accessories matched for distributors, fit-out contractors and OEM lighting brands.</p>
         <div class="hero-actions">
-          <a class="btn btn-gold" href="#contact">Get a Quotation →</a>
+          <a class="btn btn-gold" href="#contact">Request Project Evaluation →</a>
           <a class="btn btn-ghost" href="#system">View System →</a>
         </div>
 
+      </div>
+    </section>
+
+    <section class="market-section" id="market-fit">
+      <div class="container">
+        <div class="section-head">
+          <div class="section-kicker">Market Fit</div>
+          <h2>Built around the buying situations with real demand.</h2>
+          <p>Different markets need different magnetic track lighting systems. We help buyers choose by installation condition, compliance requirement and business model instead of pushing one universal product.</p>
+        </div>
+        <div class="market-grid">
+          <div class="market-card">
+            <div class="market-label">GCC / Middle East Projects</div>
+            <h3>Surface-mounted systems for fit-out work</h3>
+            <p>Retail, hospitality and restaurant projects often need fast renovation, concrete-ceiling installation and clear project documentation.</p>
+            <ul>
+              <li>Surface-mounted and pendant track options</li>
+              <li>Long-run driver and power-feed matching</li>
+              <li>Project Series for hotel and retail spaces</li>
+            </ul>
+          </div>
+          <div class="market-card">
+            <div class="market-label">US / Europe Distribution</div>
+            <h3>Compliance-aware systems for resale</h3>
+            <p>Importers and distributors need stable SKUs, quality evidence and market-specific documentation before they commit to repeat orders.</p>
+            <ul>
+              <li>CE/RoHS documentation where applicable</li>
+              <li>UL/ETL support reviewed by target SKU</li>
+              <li>Value, Commercial and Project quality tiers</li>
+            </ul>
+          </div>
+          <div class="market-card">
+            <div class="market-label">OEM / Private Label</div>
+            <h3>Existing platforms adapted for brands</h3>
+            <p>New lighting brands can start with a proven 48V platform, then add packaging, finish, beam angle and control choices after sample approval.</p>
+            <ul>
+              <li>Neutral or private-label packaging</li>
+              <li>Custom finish, CCT, CRI and beam-angle options</li>
+              <li>Barcode, datasheet and packing-list support</li>
+            </ul>
+          </div>
+        </div>
+        <div class="market-note">For DIY or small retail demand, we treat kits as a distributor product line, not the main Tracklinear website position. The main offer remains complete B2B systems with compatibility, documentation and engineering review.</div>
+      </div>
+    </section>
+
+    <section class="decision-section" id="buyer-decision">
+      <div class="container">
+        <div class="section-head">
+          <div class="section-kicker">Buyer Decision</div>
+          <h2>Answer the questions buyers ask before they trust a supplier.</h2>
+          <p>Professional buyers are not only comparing price. They need to know whether the system fits their market, whether the quotation is complete, and what evidence can be checked before bulk order.</p>
+        </div>
+        <div class="decision-grid">
+          <div class="decision-card">
+            <strong>Procurement Intent</strong>
+            <h3>Which buyer is this for?</h3>
+            <p>Distributors need repeatable SKUs and margin. Contractors need project matching. OEM brands need private-label options without rebuilding the full system from zero.</p>
+          </div>
+          <div class="decision-card">
+            <strong>Purchase Doubt</strong>
+            <h3>Will all parts work together?</h3>
+            <p>Track width, conductor position, module structure, driver capacity, power feed and dimming method are checked as one 48V system before quotation.</p>
+          </div>
+          <div class="decision-card">
+            <strong>Quotation Risk</strong>
+            <h3>Is the price complete?</h3>
+            <p>A useful quotation should include rails, light modules, drivers, power feeds, connectors, end caps, mounting parts, packing and shipping terms where relevant.</p>
+          </div>
+          <div class="decision-card">
+            <strong>Trust Evidence</strong>
+            <h3>What can be verified?</h3>
+            <p>Buyers can request recent quality evidence such as aging records, inspection photos, test videos or a completed QC report matched to the order.</p>
+          </div>
+        </div>
       </div>
     </section>
 
@@ -1058,8 +1176,8 @@
       <div class="container">
         <div class="section-head">
           <div class="section-kicker">From Our Blog</div>
-          <h2>Professional insights for lighting specifiers</h2>
-          <p>Technical guides, design trends, and real project case studies written by our team.</p>
+          <h2>Use articles to go deeper after the core decision.</h2>
+          <p>The homepage keeps the buying path focused. Blog and handbook articles expand the specific questions buyers may need to verify before RFQ.</p>
         </div>
         <div class="blog-preview-grid">
           <a href="/blog/boutique-hotel-track-lighting-case-study.html" class="blog-preview-card">
